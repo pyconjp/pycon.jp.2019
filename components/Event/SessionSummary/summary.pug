@@ -1,0 +1,25 @@
+div.session-summary.uk-flex.uk-flex-column(v-if="session")
+  span.langage.uk-flex.uk-flex-middle.uk-flex-center(v-if="(category ==='talk') && !isList") {{ language }}
+  span.room(v-if="(category === 'talk') && !isList") {{ room }}
+  span.event-type(v-if="(category === 'talk') && !isList") {{ talk_format }}
+  div.talk-schedule.uk-flex.uk-flex-wrap(v-if="isList")
+    time(v-if="category === 'talk' || category === 'lt'") {{ dates }}
+    time(v-if="category === 'poster'") {{ $t('event.conference.posterSummary.coretime') }}
+    span.event-type(v-if="category === 'talk'") Talk({{ talk_format }})
+    span.event-type(v-if="category === 'lt'") LightningTalk({{ $t('event.conference.ltSummary.talkTime')}})
+    span.room(v-if="category === 'talk'") {{ room }}
+    span.room(v-if="category === 'poster'") {{ $t('event.conference.posterSummary.room') }}
+    span.room(v-if="category === 'lt'") {{ $t('event.conference.posterSummary.room') }}
+    dl.talk-property.uk-flex.uk-flex-wrap
+      dt.talk-langage(v-if="category === 'talk'") {{ $t('event.conference.sessionDetail.talkLanguage') }}:
+      dd(v-if="category === 'talk'") {{ language }}
+      dt.doc-langage(v-if="category === 'talk'") {{ $t('event.conference.sessionDetail.slideLanguage') }}:
+      dd(v-if="category === 'talk'") {{ slide_language }}
+      dt.talk-level {{ $t('event.conference.sessionDetail.audience') }}:
+      dd {{ level }}
+  h3 {{ title }}
+  p.name {{ name }}
+  dl.talk-property.uk-flex(v-if="(category === 'talk') && !isList")
+    dt.talk-level {{ $t('event.conference.sessionDetail.audience') }}:
+    dd(:class="{all: level == 'All', beginner: level == 'Beginner', intermediate: level == 'Intermediate', advanced: level == 'Advanced'}") {{ level }}
+  a.detail(@click="toModal()") {{ $t('event.conference.sessionSummary.detail')}}

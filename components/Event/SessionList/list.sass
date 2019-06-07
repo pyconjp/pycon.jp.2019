@@ -1,0 +1,31 @@
+article#session-lists
+  ul.category-tab
+    @media (max-width: $breakpoint-xsmall-max)
+      padding: 0 .5rem
+    li
+      a
+        font-size: 20px
+        font-weight: 300
+        @media (max-width: $breakpoint-xsmall-max)
+          font-size: 14px
+          padding: .2rem 0
+
+  #list-contents
+    margin-bottom: 10rem
+    ul.sessions
+      padding-left: .5rem
+      @media (max-width: $breakpoint-xsmall-max)
+        padding: 0
+      li
+        border-bottom: 1px solid #ddd
+        padding: .7rem 0
+        @media (max-width: $breakpoint-xsmall-max)
+          padding: .7rem .5rem
+      li.comingsoon
+        border-bottom: none
+        list-style: none
+    .loading
+      font-size: 14px
+      font-weight: 300
+      color: #979797
+      text-align: center

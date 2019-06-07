@@ -1,0 +1,28 @@
+div#modal-session(uk-modal)
+  div.detail-innter.uk-modal-dialog.uk-modal-body
+    a.uk-modal-close-default(uk-close)
+    div.talk-schedule
+      time(v-if="category === 'talk' || category === 'lt'") {{ dates }}
+      time(v-if="category === 'poster'") {{ $t('event.conference.posterSummary.coretime') }}
+      span.event-type(v-if="category === 'talk'") {{ $t('event.conference.sessionCategory.talk') }}({{ talk_format }})
+      span.event-type(v-if="category === 'lt'") {{ $t('event.conference.sessionCategory.lt') }}({{ $t('event.conference.ltSummary.talkTime') }})
+      span.event-type(v-if="category === 'poster'") {{ $t('event.conference.sessionCategory.poster') }}
+      span.room(v-if="category === 'talk'") {{ room }}
+      span.room(v-if="category === 'lt'") {{ $t('event.conference.ltSummary.room') }}
+      span.room(v-if="category === 'poster'") {{ $t('event.conference.posterSummary.room') }}
+    dl.talk-property.uk-flex.uk-flex-wrap
+      dt.talk-langage(v-if="category === 'talk'") {{ $t('event.conference.sessionDetail.talkLanguage') }} :
+      dd(v-if="category === 'talk'") {{ language }}
+      dt.doc-langage(v-if="category === 'talk'") {{ $t('event.conference.sessionDetail.slideLanguage') }} :
+      dd(v-if="category === 'talk'") {{ slide_language }}
+      dt.talk-level {{ $t('event.conference.sessionDetail.audience') }} :
+      dd {{ level }}
+    h3.uk-modal-title {{ title }}
+    p {{ abstract }}
+    h4.name {{ name }}
+    p.profile {{ profile }}
+    h4 {{ $t('event.conference.sessionDetail.description') }}
+    p.desc {{ description }}
+    h4.keyword(v-if="tags") keywords
+    ul.tag.uk-flex.uk-flex-wrap
+      li( v-for="item in tags") {{ item }}

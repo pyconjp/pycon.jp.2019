@@ -1,0 +1,112 @@
+// font-family
+$global-font-family: "Noto Sans CJK JP", sans-serif
+
+//breakpoints
+$breakpoint-xsmall-max: 639px
+$breakpoint-small: 640px !default
+$breakpoint-medium: 960px !default
+$breakpoint-large: 1300px !default
+$breakpoint-xlarge: 1600px !default
+
+// uk-container's width
+$container-max-width: 1300px !default
+
+// uk-container padding (pc)
+$global-medium-gutter: 20px
+
+// uk-container padding (sp)
+$container-padding-horizontal: 0 !default
+
+// body
+$global-color: #666 !default
+$global-inverse-color: #fff !default
+$base-body-color: $global-color !default
+
+// link-setting
+$global-link-color: #29abe2 !default
+$base-link-color: $global-link-color !default
+$base-link-text-decoration: none !default
+$global-link-hover-color: #00dfd8 !default
+$base-link-hover-color: $global-link-hover-color !default
+$base-link-hover-text-decoration: none !default
+
+// global color setting
+$pycon-global-color-red: #a40014
+
+
+// h2
+$base-h2-font-size: 50px !default
+$base-h2-line-height: 1.3 !default
+
+// sp nav theme
+$offcanvas-bar-background: #333 !default
+$offcanvas-bar-color-mode: light !default
+
+$pycon-global-footer-bg-color: #f6f6f6
+
+
+
+// ---
+// sponsor contents
+// ---
+$sponsor-1-3-width: 378px
+$sponsor-1-4-width: 270px
+
+@mixin name
+  display: block
+
+@mixin card($height, $width)
+  width: $width
+  min-height: $height
+  position: relative
+  margin: 0 4rem 50px 0
+  z-index: 1
+  @media (max-width: $breakpoint-small)
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    margin: 0 1rem 4rem
+  &:before
+      content: ""
+      position: absolute
+      display: block
+      z-index: -1
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #FFF
+      border-radius: 4px
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2)
+  &:after
+      content: ""
+      position: absolute
+      display: block
+      z-index: -2
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border-radius: 4px
+      transform: rotate(5deg)
+      background-image: linear-gradient(62deg, rgba(40, 170, 226, 0.5), rgba(0, 223, 216, 0.5))
+  &:nth-child(2n)
+    &:after
+      background-image: linear-gradient(62deg, rgba(255, 244, 63, 0.5), rgba(232, 214, 0, 0.5))
+
+
+// ---
+// event contents
+// ---
+@mixin event-box
+  min-height: 150px
+  padding: .4rem
+  text-align: left
+  margin: .4rem .3rem
+  border: solid 1px #d0d0d0
+  border-radius: 4px
+  background-color: #FFF
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15)
+  @media (max-width: $breakpoint-xsmall-max)
+    width: calc(100% - .8rem)

@@ -1,0 +1,35 @@
+article#session-lists
+  ul.category-tab.uk-tab( data-uk-tab="{connect:'#list-contents'}" uk-switcher="{swiping:false}" )
+    li.uk-active(data-tab="talks")
+      a Talks
+    li(data-tab="posters")
+      a Posters
+    li(data-tab="lts")
+      a lightningTalks
+
+  div#list-contents.uk-switcher
+    div#talks
+      div.loading.uk-flex.uk-flex-center.uk-flex-column(v-if="talks == ''")
+        div(uk-spinner="ratio:1.5")
+        p now loading
+      ul.sessions
+        li.uk-flex.uk-flex-wrap(v-for="talk in talks")
+          sessionSummary(:session="talk" category="talk" isList="true" @summary-event="showDetail('talk',talk)")
+
+    div#posters
+      div.loading.uk-flex.uk-flex-center.uk-flex-column(v-if="posters == ''")
+        div(uk-spinner="ratio:1.5")
+        p now loading
+      ul.sessions
+        li.uk-flex.uk-flex-wrap(v-for="poster in posters")
+          sessionSummary(:session="poster" category="poster" isList="true" @summary-event="showDetail('poster',poster)")
+
+    div#lts
+      div.loading.uk-flex.uk-flex-center.uk-flex-column(v-if="lts == ''")
+        div(uk-spinner="ratio:1.5")
+        p now loading
+      ul.sessions
+        li.uk-flex.uk-flex-wrap(v-for="lt in lts")
+          sessionSummary(:session="lt" category="lt" isList="true" @summary-event="showDetail('lt',lt)")
+
+  SessionDetail(:category="currentSessionDetail.category" :session="currentSessionDetail.session", :date="currentSessionDetail.date", :no="currentSessionDetail.no")

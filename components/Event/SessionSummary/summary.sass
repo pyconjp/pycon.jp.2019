@@ -1,0 +1,92 @@
+/* session summary */
+div.session-summary
+  @include event-box
+  h4
+    margin: .2rem 0 .1rem
+    font-size: 12px
+    color: #9B9B9B
+  p
+    word-wrap: break-word
+  p.disc
+    margin: .4rem 0 0 0
+    font-size: 10px
+
+  dl.talk-property
+    margin: .5rem 0 0
+    dt,dd
+      font-size: 12px
+    dt
+      color: #9B9B9B
+      margin-right: .2rem
+      font-weight: normal
+    dd
+      align-self: center
+      line-height: 120%
+    dd.all
+      border-bottom: 1px solid #29abe2
+    dd.beginner
+      border-bottom: 1px solid #8FBD28
+    dd.intermediate
+      border-bottom: 1px solid #E9D700
+    dd.advanced
+      border-bottom: 1px solid #ea4918
+  a.detail
+    margin-top: .6rem
+    width: 3rem
+    font-size: 14px
+    align-self: flex-end
+    text-align: center
+
+/* session list style */
+article#session-lists
+  div#list-contents
+      .session-summary
+        border: none
+        min-height: 0
+        border-radius: 0
+        box-shadow: none
+        margin: 0
+        padding: 0
+        width: 100%
+      ul
+        li
+          div.talk-schedule
+            margin-bottom: .3rem
+            @media (max-width: $breakpoint-xsmall-max)
+              margin-bottom: .5rem
+            time,span
+              font-size: 13px
+              margin-right: .5rem
+          dl.talk-property
+            margin: 0
+            @media (max-width: $breakpoint-xsmall-max)
+              width: 100%
+            dt,dd
+              font-size: 13px
+            dt
+              font-weight: normal
+              margin-right: .2rem
+            dd
+              margin-right: .5rem
+          ul.talk-tags
+            margin: 0 0 .5rem
+            padding: 0
+            li.uk-label
+              margin-right: .3rem
+              margin-bottom: .2rem
+              font-size: 10px
+      h3
+        margin: 0 0 .1rem
+        font-size: 16px
+      p.name
+        margin: 0 0 0 .1rem
+        font-size: 13px
+        @media (max-width: $breakpoint-xsmall-max)
+          width: 100%
+      a.detail
+        margin-top: -1.3rem
+        align-self: right
+        text-align: right
+        margin-right: .4rem
+        @media (max-width: $breakpoint-xsmall-max)
+          margin-top: .2rem

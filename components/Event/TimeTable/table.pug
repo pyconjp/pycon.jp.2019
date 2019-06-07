@@ -1,0 +1,368 @@
+div#TimeTable
+  ul.uk-tab(uk-tab="{connect:'#tables'}" uk-switcher="{swiping:false}")
+    li.uk-active(data-tab="day-1" @click="changeTab")
+      a {{ $t('event.conference.tab.day1') }} 
+    li(data-tab="day-2" @click="changeTab")
+      a {{ $t('event.conference.tab.day2') }} 
+
+  div#tables.uk-switcher(v-scroll="fixedHead" v-elScroll="parallelScroll")
+    section
+      no-ssr
+        div.t-head(ref="day-1" :class='{headFixed:isFixed}' class="uk-visible@s" uk-sticky="offset: 112; media: @s" )
+          ul.uk-flex
+            li.t-time
+            li {{ $t('event.conference.rooms.roomA') }} 
+            li {{ $t('event.conference.rooms.roomB') }} 
+            li {{ $t('event.conference.rooms.roomC') }} 
+            li {{ $t('event.conference.rooms.roomD') }} 
+            li {{ $t('event.conference.rooms.roomE') }} 
+            li {{ $t('event.conference.rooms.roomF') }} 
+      table#day-1
+        tbody
+          tr.t-admission
+            th
+              time 9:30
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.regist') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-opening
+            th
+              time 9:45
+            td
+            td
+            td
+            td.event
+              div.session-summary.uk-flex.uk-flex-column
+                span.room {{ $t('event.conference.rooms.roomD') }} 
+                span.event-type 15min
+                p {{ $t('event.conference.timeEvent.opening') }} 
+            td
+            td
+          tr.t-keynote
+            th
+              time 10:10
+            td
+            td
+            td
+            td.event
+              div.session-summary.uk-flex.uk-flex-column
+                span.langage.uk-flex.uk-flex-middle.uk-flex-center en
+                span.room {{ $t('event.conference.rooms.roomD') }} 
+                span.event-type 60min
+                h3
+                  span {{ $t('event.conference.timeEvent.keynote') }}
+                  br
+                  | {{ $t('top.keynote.foreigner.theme') }} 
+                p.name {{ $t('top.keynote.foreigner.name') }}
+            td
+            td
+          tr.t-invited-lecture
+            th
+              time 11:10
+            td
+            td
+            td
+            td.event
+              div.session-summary.uk-flex.uk-flex-column
+                span.langage.uk-flex.uk-flex-middle.uk-flex-center ja
+                span.room {{ $t('event.conference.rooms.roomD') }}
+                span.event-type 45min
+                h3 
+                  span {{ $t('event.conference.timeEvent.invitedLecture') }} 
+                  br
+                  | {{ $t('top.invited-lecture.second.theme') }} 
+                p.name {{ $t('top.invited-lecture.second.name') }}
+            td
+            td
+          tr.t-lunch
+            th
+              time 12:00
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.lunch') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-sponsor-event
+            th.dotline
+              time 12:20
+            td
+            td
+            td
+            td.event
+              div.session-summary.uk-flex.uk-flex-column
+                span.langage.uk-flex.uk-flex-middle.uk-flex-center ja
+                span.room {{ $t('event.conference.rooms.roomD') }} 
+                h3.title {{ $t('event.conference.timeEvent.sponsorEvent') }} 
+                p.desc {{ $t('event.conference.timeEvent.sponsorEventDesc') }} 
+            td
+            td
+          tr
+            th
+              time 13:30
+            td.t-session(v-for="room in rooms.dayOne")
+              SessionSummary(category="talk" :session="getTalk(1,1,room)" @summary-event="showDetail(1,1,room)")
+          tr.t-rest
+            th
+              time 14:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.break') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 14:30
+            td.t-session(v-for="room in rooms.dayOne")
+              SessionSummary(category="talk" :session="getTalk(1,2,room)" @summary-event="showDetail(1,2,room)")
+          tr.t-rest.t-snack
+            th
+              time 15:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.snack') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 15:45
+            td.t-session(v-for="room in rooms.dayOne")
+              SessionSummary(category="talk" :session="getTalk(1,3,room)" @summary-event="showDetail(1,3,room)")
+          tr.t-rest
+            th
+              time 16:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.break') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 16:30
+            td.t-session(v-for="room in rooms.dayOne")
+              SessionSummary(category="talk" :session="getTalk(1,4,room)" @summary-event="showDetail(1,4,room)")
+          tr.t-closing
+            th
+              time 17:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.closing') }} 
+            td
+            td
+            td
+            td
+            td          
+          tr.t-party
+            th
+              time 17:30
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.lightningTalk') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.t-party
+            th
+              time 18:00
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.party') }} 
+            td
+            td
+            td
+            td
+            td
+          tr.end
+            th
+              time 20:30
+            td
+            td
+            td
+            td
+            td
+            td
+
+    section
+      no-ssr
+        div#day-2-rooms.t-head(ref="day-2" :class='{headFixed:isFixed}' class="uk-visible@s"  uk-sticky="offset: 112; media: @s")
+          ul.uk-flex
+            li.t-time
+              li {{ $t('event.conference.rooms.roomA') }} 
+              li {{ $t('event.conference.rooms.roomB') }} 
+              li {{ $t('event.conference.rooms.roomC') }} 
+              li {{ $t('event.conference.rooms.roomD2') }} 
+              li {{ $t('event.conference.rooms.roomD3') }} 
+              li {{ $t('event.conference.rooms.roomE') }} 
+              li {{ $t('event.conference.rooms.roomF') }} 
+      table#day-2
+        tbody
+          tr.t-admission
+            th
+              time 9:30
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.regist') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-keynote.connect
+            th
+              time 10:00
+            td
+            td
+            td
+            td.event.keynote
+              div.session-summary.uk-flex.uk-flex-column
+                span.langage.uk-flex.uk-flex-middle.uk-flex-center ja
+                span.room {{ $t('event.conference.rooms.roomD') }}
+                span.event-type 60min
+                h3
+                  span {{ $t('event.conference.timeEvent.keynote') }}
+                  br
+                  | {{ $t('top.keynote.japanese.theme') }}
+                p.name {{ $t('top.keynote.japanese.name') }}
+            td
+            td
+            td
+          tr.t-rest
+            th
+              time 11:00
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.break') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-session.connect
+            th
+              time 11:15
+            td.t-session(v-for="room in rooms.dayTwo")
+              SessionSummary.mini(category="talk" :session="getTalk(2,1,room)" @summary-event="showDetail(2,1,room)")
+          tr.t-lunch
+            th
+              time 12:00
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.lunch') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 13:30
+            td.t-session(v-for="room in rooms.dayTwo")
+              SessionSummary.mini(category="talk" :session="getTalk(2,2,room)" @summary-event="showDetail(2,2,room)")
+          tr.t-rest
+            th
+              time 14:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.break') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 14:30
+            td.t-session(v-for="room in rooms.dayTwo")
+              SessionSummary.mini(category="talk" :session="getTalk(2,3,room)" @summary-event="showDetail(2,3,room)")
+          tr.t-rest.t-snack
+            th
+              time 15:00
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.snack') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 15:45
+            td.t-session(v-for="room in rooms.dayTwo")
+              SessionSummary.mini(category="talk" :session="getTalk(2,4,room)" @summary-event="showDetail(2,4,room)")
+          tr.t-rest
+            th
+              time 16:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.break') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-session
+            th
+              time 16:30
+            td.t-session(v-for="room in rooms.dayTwo")
+              SessionSummary.mini(category="talk" :session="getTalk(2,5,room)" @summary-event="showDetail(2,5,room)")
+          tr.t-party
+            th
+              time 17:15
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.lightningTalk') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.t-closing
+            th
+              time 18:30
+            td.mass-event
+              span.uk-flex.uk-flex-center
+                p {{ $t('event.conference.timeEvent.closing') }} 
+            td
+            td
+            td
+            td
+            td
+            td
+          tr.end
+            th
+              time 19:00
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+  
+  SessionDetail(category="talk" :session="currentTalkDetail.talk", :date="currentTalkDetail.date", :no="currentTalkDetail.no")
