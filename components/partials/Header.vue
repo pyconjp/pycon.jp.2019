@@ -1,7 +1,7 @@
 <template lang="pug">
 v-toolbar#header(flat).white
     v-toolbar-title.ml-4.pa-2
-        img(src="/images/horizontal_logo.png" width="180px").mt-2
+        img(src="@/assets/images/horizontal_logo.png" width="180px").mt-2
     v-toolbar-title.grey--text.text--lighten-4.display-1 |
     .menu(v-for="item in items" :key="item.id")
         template(v-if="item.submenus.length === 0")
@@ -38,7 +38,7 @@ v-toolbar#header(flat).white
 
 <script>
 export default {
-    name: "header",
+    name: "pycon-header",
     data() {
         return {
             items: [

@@ -3,7 +3,7 @@
     v-container
         v-layout.py-4
             v-flex.xs4.text-xs-center
-                img(src="/images/pyconjp_logo.png" width="200px")
+                img(src="@/assets/images/pyconjp_logo.png" width="200px")
             v-flex.xs8
                 .title.py-2 主催: 一般社団法人PyCon JP
                 .subheading.py-2
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-    name: "Footer"
+    name: "pycon-footer"
 }
 </script>
 

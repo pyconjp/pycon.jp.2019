@@ -5,7 +5,7 @@
                 v-flex.md6.left
                     v-layout.column
                         v-flex
-                            v-img(src="/images/square_logo.png" width="500px")
+                            v-img(:src="require('@/assets/images/square_logo.png')" width="500px")
                         v-flex.my-4.text-xs-left
                             .headline
                                 span.primaryText--text ──── 2019.09.14 - 17
