@@ -6,19 +6,24 @@
                 .display-3.primary--text(style="text-decoration: underline;") Conference
         v-layout.pa-4
             v-flex.xs12.text-xs-left
-                .body-2 ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+                .body-2 {{ dummyText }}
         v-layout.pa-4.justify-center
             v-flex.xs4.text-xs-right
-                v-btn(outline round color="primary" large) セッション一覧
+                v-btn(outline round color="primary" large)
+                    span.font-weight-bold セッション一覧
+                    v-icon.ml-3 keyboard_arrow_right
             v-flex.xs4.text-xs-left
-                v-btn(outline round color="primary" large) タイムテーブル一覧
+                v-btn(outline round color="primary" large)
+                    span.font-weight-bold タイムテーブル一覧
+                    v-icon.ml-3 keyboard_arrow_right
         v-layout.my-4
             v-flex.xs12.text-xs-center
                 .display-3.primary--text(style="text-decoration: underline;") Overview
-        v-layout.my-3
+        .spacer.py-2
+        v-layout.my-4
             v-flex.xs12
                 secondary-heading(name="Keynote" description="基調講演")
-        v-layout.justify-space-between
+        v-layout.justify-space-between.px-4
             v-flex.md6
                 talk-card(
                     date="09.16"
@@ -26,7 +31,7 @@
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
-                    profile=dummyText
+                    :profile="dummyText"
                 )
             v-flex.md6.ml-4
                 talk-card(
@@ -35,12 +40,13 @@
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
-                    profile=dummyText
+                    :profile="dummyText"
                 )
-        v-layout.my-3
+        .spacer.py-4
+        v-layout.my-4
             v-flex.xs12
                 secondary-heading(name="Invited Lecture" description="招待講演")
-        v-layout.justify-space-between
+        v-layout.justify-space-between.px-4
             v-flex.md6
                 talk-card(
                     date="09.16"
@@ -48,7 +54,7 @@
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
-                    profile=dummyText
+                    :profile="dummyText"
                 )
             v-flex.md6.ml-4
                 talk-card(
@@ -57,8 +63,9 @@
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
-                    profile=dummyText
+                    :profile="dummyText"
                 )
+        .spacer.py-4
         v-layout.mt-4.mb-2
             v-flex.xs12
                 secondary-heading(name="Sessions" description="その他カンファレンス内容")

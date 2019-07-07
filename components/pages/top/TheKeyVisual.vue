@@ -32,17 +32,20 @@
                                 span.title.font-weight-bold 参加申し込み
                                 v-icon keyboard_arrow_right
                         v-flex.text-xs-center.mt-4.mb-2.subheading
-                            v-icon(color="secondaryText") tag_faces
-                            span.secondaryText--text 子供向けワークショップも同時開催！
+                            v-layout.align-center.justify-center
+                                v-flex.xs12
+                                    v-icon(color="secondaryText") tag_faces
+                                    span.secondaryText--text.ml-2.font-weight-bold 子供向けワークショップも同時開催！
                         v-flex.text-xs-center
                             v-card(color="secondaryText").pa-3.text-xs-left
                                 span.title.white--text Youth Coder Workshop
                                 v-btn(color="white" block large)
-                                    span.title 09.16
-                                    span.caption.ml-2 月・祝
+                                    v-flex.align-end
+                                        span.title 09.16
+                                        span.caption.ml-2 月・祝
                                     v-spacer
-                                    span.primaryText--text.subheading 詳細情報
-                                    v-icon keyboard_arrow_right
+                                    span.secondary--text.subheading.font-weight-bold 詳細情報
+                                    v-icon.secondary--text.ml-2 keyboard_arrow_right
 </template>
 
 <style lang="sass" scoped>
