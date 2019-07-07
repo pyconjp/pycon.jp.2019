@@ -1,24 +1,31 @@
 <template lang="pug">
-    div.outer-container
-        no-ssr
-          global-header
-        nuxt
-        div#global-footer-wrapper.uk-container-expand
-          global-footer
-
+v-app
+  pyconjp-header
+  v-content
+    nuxt
+  contact
+  pyconjp-footer
 </template>
 
+<style lang="sass">
+.application--wrap
+  background-color: white
+</style>
+
+
 <script>
-import GlobalHeader from '../components/GlobalHeader'
-import GlobalFooter from '../components/GlobalFooter'
+import Header from "@/components/partials/Header"
+import Contact from "@/components/partials/Contact"
+import Footer from "@/components/partials/Footer"
 
 export default {
-  name: 'default',
   components: {
-    GlobalHeader,
-    GlobalFooter
+    "pyconjp-header": Header,
+    "contact": Contact,
+    "pyconjp-footer": Footer,
+  },
+  data() {
+    return {}
   }
 }
 </script>
-
-<style src="./default.sass" lang="sass" />
