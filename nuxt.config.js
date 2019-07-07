@@ -1,5 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/pycon.jp.2019/'
+  }
+} : {}
+
+
 export default {
   mode: 'spa',
   /*
@@ -55,6 +62,7 @@ export default {
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
+ ...routerBase,
   vuetify: {
     theme: {
       primary: "#D66194",

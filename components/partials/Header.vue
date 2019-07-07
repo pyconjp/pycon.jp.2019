@@ -18,8 +18,10 @@ v-toolbar#header(flat).white
                     v-list-tile(v-for='submenu in item.submenus' :key="submenu.id")
                         v-list-tile-title(v-text="submenu.name")
     v-spacer
-    v-toolbar-title.subheading.pa-3 English
-    v-toolbar-items
+    v-btn(outline round)
+        v-icon(small).tertiary--text fas fa-globe
+        span.ml-2.textColor--text English
+    v-toolbar-items.ml-2
         v-btn(color="primary").depressed.subheading
             span 各種申込み
             v-icon expand_more
