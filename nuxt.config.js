@@ -66,6 +66,7 @@ export default {
       background: "#E9EBF0",
       twitter: "#6BAAE8",
       facebook: "#3876EA",
+      textColor: "#4D4659",
       accent: colors.grey.darken3,
       info: colors.teal.lighten1,
       warning: colors.amber.base,

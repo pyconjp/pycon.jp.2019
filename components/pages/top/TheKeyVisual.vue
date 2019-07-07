@@ -2,7 +2,7 @@
     #key-visual
         v-container
             v-layout
-                v-flex.md6
+                v-flex.md6.left
                     v-layout.column
                         v-flex
                             v-img(src="/images/square_logo.png" width="500px")
@@ -51,6 +51,8 @@
 <style lang="sass" scoped>
 .right-padding
     padding: 40px 90px !important
+.left
+    border-right: solid 1px #E9EBF0
 </style>
 
 

@@ -1,10 +1,22 @@
 <template lang="pug">
 v-toolbar#header(flat).white
-    v-toolbar-title.mx-4
-        img(src="/images/horizontal_logo.png" width="150px")
-    v-toolbar-title.grey--text.text--lighten-2.display-2 |
-    v-toolbar-title(v-for="item in items" :key="item.id").subheading.text-xs-center.pa-2
-        | {{ item.name }}
+    v-toolbar-title.ml-4.pa-2
+        img(src="/images/horizontal_logo.png" width="180px").mt-2
+    v-toolbar-title.grey--text.text--lighten-4.display-1 |
+    .menu(v-for="item in items" :key="item.id")
+        template(v-if="item.submenus.length === 0")
+            v-btn(flat).text-xs-center.menu-btn
+                span.subheading.font-weight-bold.textColor--text {{ item.name }}
+        template(v-else)
+            v-menu(:nudge-width="100")
+                template(v-slot:activator="{ on }")
+                    .btn(v-on="on")
+                        v-btn(flat).text-xs-center.menu-btn
+                            span.subheading.font-weight-bold.textColor--text {{ item.name }}
+                            v-icon.textColor--text arrow_drop_down
+                v-list
+                    v-list-tile(v-for='submenu in item.submenus' :key="submenu.id")
+                        v-list-tile-title(v-text="submenu.name")
     v-spacer
     v-toolbar-title.subheading.pa-3 English
     v-toolbar-items
@@ -13,10 +25,12 @@ v-toolbar#header(flat).white
             v-icon expand_more
 </template>
 
-<style lang="scss">
-#header .v-toolbar__content {
-    padding: 0 !important;
-}
+<style lang="sass">
+#header .v-toolbar__content
+    padding: 0 !important
+
+.menu-btn
+    padding: 0 !important
 </style>
 
 
@@ -26,10 +40,13 @@ export default {
     data() {
         return {
             items: [
-                { id: 1, name: "Home" },
-                { id: 2, name: "About" },
-                { id: 3, name: "Event" },
-                { id: 4, name: "News" }
+                { id: 1, name: "Home", submenus: [] },
+                { id: 2, name: "About", submenus: [{id: 1, name: "◯◯について"}, {id: 2, name: "△△について"}] },
+                { id: 3, name: "Event", submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorail"}] },
+                { id: 4, name: "News", submenus: [] },
+                { id: 5, name: "Access", submenus: [] },
+                { id: 6, name: "Support", submenus: [] },
+                { id: 7, name: "Sponsor", submenus: [] }
             ]
         }
     }

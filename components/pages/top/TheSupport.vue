@@ -5,7 +5,7 @@
             v-flex.xs12.text-xs-center
                 .display-3.primary--text(style="text-decoration: underline;") Support
         v-layout.fill-height
-            v-flex(v-for="item in items" :key="item.id").md4.pa-1
+            v-flex(v-for="item in items" :key="item.id").md4.pa-2
                 v-card(height="100%")
                     v-img(:src="item.img" height="200")
                     v-layout.column.py-2.px-3
