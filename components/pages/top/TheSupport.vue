@@ -3,9 +3,9 @@
     v-container
         v-layout.my-4
             v-flex.xs12.text-xs-center
-                .display-3.primary--text(style="text-decoration: underline;") Support
-        v-layout.fill-height
-            v-flex(v-for="item in items" :key="item.id").md4.pa-2
+                first-heading(name="Support")
+        v-layout.fill-height.wrap
+            v-flex(v-for="item in items" :key="item.id").xs12.sm12.md4.pa-2
                 v-card(height="100%")
                     v-img(:src="item.img" height="200")
                     v-layout.column.py-2.px-3
@@ -21,8 +21,12 @@
 </template>
 
 <script>
+import FirstHeading from "@/components/parts/FirstHeading"
 export default {
     name: "TheSupport",
+    components: {
+        "first-heading": FirstHeading,
+    },
     data() {
         return {
             items: [

@@ -1,7 +1,7 @@
 <template lang="pug">
 .secondary-heading.pl-4
     .bar.primary--text.display-1 ─
-    .display-1.font-weight-bold.name
+    .display-1.font-weight-bold.name.heading-font
         span {{ name }}
     .caption.grey--text.grey--lighten-3.font-weight-bold.mt-2 {{ description }}
 </template>

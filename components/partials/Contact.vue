@@ -1,9 +1,9 @@
 <template lang="pug">
 #sponsor.tertiary
     v-container
-        v-layout.my-4
+        v-layout.mb-4
             v-flex.xs12.text-xs-center
-                .display-3.white--text(style="text-decoration: underline;") Contact
+                first-heading(name="Contact")
         v-layout
             v-flex.xs12.text-xs-center.white--text
                 .subheading
@@ -21,8 +21,12 @@
 </template>
 
 <script>
+import FirstHeading from "@/components/parts/FirstHeading"
 export default {
-    name: "Contact"
+    name: "Contact",
+    components: {
+        "first-heading": FirstHeading,
+    }
 }
 </script>
 

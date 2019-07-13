@@ -23,6 +23,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' },
     ]
   },
@@ -34,12 +36,15 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/style/app.styl',
+    '@/assets/style/custom.styl',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "@/plugins/googleMap.js"
+    "@/plugins/googleMap.js",
+    "@/plugins/i18n.js"
   ],
   /*
   ** Nuxt.js modules
@@ -58,11 +63,14 @@ export default {
   */
   axios: {
   },
+  ...routerBase,
+  router: {
+    middleware: 'i18n'
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
- ...routerBase,
   vuetify: {
     theme: {
       primary: "#D66194",
@@ -81,16 +89,6 @@ export default {
       error: colors.deepOrange.accent4,
       success: colors.green.accent3
     }
-    // theme: {
-    //   primary: colors.blue.darken2,
-    //   pycon: colors.red.darken2,
-    //   accent: colors.grey.darken3,
-    //   secondary: colors.amber.darken3,
-    //   info: colors.teal.lighten1,
-    //   warning: colors.amber.base,
-    //   error: colors.deepOrange.accent4,
-    //   success: colors.green.accent3
-    // }
   },
   /*
   ** Build configuration

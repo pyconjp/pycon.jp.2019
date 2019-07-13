@@ -1,0 +1,26 @@
+{
+    "header": {
+        "menu": {
+            "home": "ホーム",
+            "about": "PyCon JPについて",
+            "events": "イベント一覧",
+            "news": "ニュース",
+            "access": "アクセス",
+            "support": "サポートする",
+            "sponsor": "スポンサー"
+        },
+        "apply": "各種申込み"
+    },
+    "home": {
+        "title": "トップページ",
+        "keyvisual": {
+            "mon": "月・祝", 
+            "tue": "火",
+            "access": "会場",
+            "pio": "大田区産業プラザ PiO",
+            "apply": "参加申し込み",
+            "child-workshop": "子供向けワークショップも同時開催！",
+            "detail": "詳細情報"
+        }
+    }
+}

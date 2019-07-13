@@ -1,5 +1,8 @@
 <template lang="pug">
-v-app
+v-app(
+  class="hide-overflow"
+  style="position: relative;"
+)
   pyconjp-header
   v-content
     nuxt

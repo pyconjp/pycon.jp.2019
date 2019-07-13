@@ -1,0 +1,26 @@
+{
+    "header": {
+        "menu": {
+            "home": "Home",
+            "about": "About",
+            "events": "Events",
+            "news": "News",
+            "access": "Access",
+            "support": "Support",
+            "sponsor": "Sponsor"
+        },
+        "apply": "Apply"
+    },
+    "home": {
+        "title": "Top Page",
+        "keyvisual": {
+            "mon": "Mon",
+            "tue": "Tue",
+            "access": "Access",
+            "pio": "Otaku Industrial Plaza PiO",
+            "apply": "Apply",
+            "child-workshop": "We will also hold a workshop for children",
+            "detail": "Detail"
+        }
+    }
+}

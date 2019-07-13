@@ -3,28 +3,27 @@
     v-container
         v-layout.my-4
             v-flex.xs12.text-xs-center
-                .display-3.primary--text(style="text-decoration: underline;") Conference
+                first-heading(name="Conference")
         v-layout.pa-4
             v-flex.xs12.text-xs-left
                 .body-2 {{ dummyText }}
-        v-layout.pa-4.justify-center
-            v-flex.xs4.text-xs-right
-                v-btn(outline round color="primary" large)
+        v-layout.wrap.pa-4.justify-center
+            v-flex.xs12.sm12.md4.text-xs-right.px-2
+                v-btn(outline block round color="primary" large)
                     span.font-weight-bold セッション一覧
                     v-icon.ml-3 keyboard_arrow_right
-            v-flex.xs4.text-xs-left
-                v-btn(outline round color="primary" large)
+            v-flex.xs12.sm12.md4.text-xs-left.px-2
+                v-btn(outline block round color="primary" large)
                     span.font-weight-bold タイムテーブル一覧
                     v-icon.ml-3 keyboard_arrow_right
-        v-layout.my-4
-            v-flex.xs12.text-xs-center
-                .display-3.primary--text(style="text-decoration: underline;") Overview
         .spacer.py-2
         v-layout.my-4
-            v-flex.xs12
+            v-flex.md12
                 secondary-heading(name="Keynote" description="基調講演")
-        v-layout.justify-space-between.px-4
-            v-flex.md6
+        v-layout.justify-space-between(
+            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-4': $vuetify.breakpoint.mdAndUp}"
+        )
+            v-flex.xs12.sm12.md6
                 talk-card(
                     date="09.16"
                     weekday="月・祝"
@@ -33,7 +32,9 @@
                     sessionTheme="TBD"
                     :profile="dummyText"
                 )
-            v-flex.md6.ml-4
+            v-flex.xs12.sm12.md6.pt-1(
+                :class="{'ml-0': $vuetify.breakpoint.smAndDown, 'ml-4': $vuetify.breakpoint.mdAndUp, 'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
+            )
                 talk-card(
                     date="09.16"
                     weekday="月・祝"
@@ -46,8 +47,10 @@
         v-layout.my-4
             v-flex.xs12
                 secondary-heading(name="Invited Lecture" description="招待講演")
-        v-layout.justify-space-between.px-4
-            v-flex.md6
+        v-layout.justify-space-between(
+            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-4': $vuetify.breakpoint.mdAndUp}"
+        )
+            v-flex.xs12.sm12.md6
                 talk-card(
                     date="09.16"
                     weekday="月・祝"
@@ -56,7 +59,9 @@
                     sessionTheme="TBD"
                     :profile="dummyText"
                 )
-            v-flex.md6.ml-4
+            v-flex.xs12.sm12.md6(
+                :class="{'ml-0': $vuetify.breakpoint.smAndDown, 'ml-4': $vuetify.breakpoint.mdAndUp, 'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
+            )
                 talk-card(
                     date="09.16"
                     weekday="月・祝"
@@ -85,6 +90,7 @@
 </template>
 
 <script>
+import FirstHeading from "@/components/parts/FirstHeading"
 import SecondaryHeading from "@/components/parts/SecondHeading"
 import TalkCard from "@/components/parts/TalkCard"
 
@@ -93,6 +99,7 @@ const dummyText = "この文章はダミーです。文字の大きさ、量、�
 export default {
     name: "TheConference",
     components: {
+        "first-heading": FirstHeading,
         "secondary-heading": SecondaryHeading,
         "talk-card": TalkCard
     },

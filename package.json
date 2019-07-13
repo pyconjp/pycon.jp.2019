@@ -19,6 +19,7 @@
     "@nuxtjs/vuetify": "0.5.5",
     "lodash": "^4.17.11",
     "nuxt": "^2.0.0",
+    "nuxt-i18n": "^5.12.7",
     "vue-i18n": "^8.11.2",
     "vue2-google-maps": "^0.10.6"
   },
