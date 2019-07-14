@@ -1,6 +1,11 @@
-# pycon.jp.2019
+## pycon.jp.2019
 
-> PyCon JP 2019 Web Site
+PyCon JP 2019 Web Site
+
+## Hosting
+
+Dev: https://pyconjp-2019-dev.firebaseapp.com
+Prd: https://pyconjp/2019/ (Not deployed yet)
 
 ## Build Setup
 
