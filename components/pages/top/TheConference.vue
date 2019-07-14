@@ -10,11 +10,11 @@
         v-layout.wrap.pa-4.justify-center
             v-flex.xs12.sm12.md4.text-xs-right.px-2
                 v-btn(outline block round color="primary" large)
-                    span.font-weight-bold セッション一覧
+                    span.font-weight-bold {{ $t("home.conference.sessions") }}
                     v-icon.ml-3 keyboard_arrow_right
             v-flex.xs12.sm12.md4.text-xs-left.px-2
                 v-btn(outline block round color="primary" large)
-                    span.font-weight-bold タイムテーブル一覧
+                    span.font-weight-bold {{ $t("home.conference.timetables") }}
                     v-icon.ml-3 keyboard_arrow_right
         .spacer.py-2
         v-layout.my-4
@@ -37,7 +37,7 @@
             )
                 talk-card(
                     date="09.16"
-                    weekday="月・祝"
+                    :weekday="$t('weekday.mon')"
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
@@ -53,7 +53,7 @@
             v-flex.xs12.sm12.md6
                 talk-card(
                     date="09.16"
-                    weekday="月・祝"
+                    :weekday="$t('weekday.mon')"
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
@@ -64,7 +64,7 @@
             )
                 talk-card(
                     date="09.16"
-                    weekday="月・祝"
+                    :weekday="$t('weekday.mon')"
                     profileImg="https://via.placeholder.com/500"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
@@ -85,7 +85,7 @@
                             .body-1.my-2 {{ session.description }}
                         v-flex.xs12.px-4
                             v-btn(round color="primary" block outline)
-                                span 詳細情報
+                                span {{ $t("basic.detail") }}
                                 v-icon keyboard_arrow_right
 </template>
 

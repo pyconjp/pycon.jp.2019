@@ -1,12 +1,16 @@
 <template lang="pug">
-.display-3.primary--text.heading-font(style="text-decoration: underline;") {{ name }}
+.display-3.heading-font(
+    style="text-decoration: underline;"
+    :class="`${color}--text`"
+) {{ name }}
 </template>
 
 <script>
 export default {
     name: "first-heading",
     props: {
-        "name": {type: String}
+        "name": {type: String},
+        "color": {type: String, default: "primary"}
     }
 }
 </script>

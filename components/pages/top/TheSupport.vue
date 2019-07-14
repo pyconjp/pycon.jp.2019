@@ -16,7 +16,7 @@
                     v-layout(v-show="item.canApply").pb-2
                         v-flex.xs12.text-xs-center
                             v-btn(color="primary" large round)
-                                span 申し込み
+                                span {{ $t("basic.apply") }}
                                 v-icon keyboard_arrow_right
 </template>
 
@@ -29,19 +29,29 @@ export default {
     },
     data() {
         return {
-            items: [
+        }
+    },
+    computed: {
+        items() {
+            return [
                 {
-                    id: 1, title: "食事", description: "各日程で食事が付きます。", canApply: false,
+                    id: 1, title: this.$t("home.support.food.title"), 
+                    description: this.$t("home.support.food.desc"),
+                    canApply: false,
                     img: "https://via.placeholder.com/500"
                 },
                 {
-                    id: 2, title: "託児所", description: "各日程で託児所が開設されます。", canApply: true,
+                    id: 2, title: this.$t("home.support.nursery.title"), 
+                    description: this.$t("home.support.nursery.desc"),
+                    canApply: false,
                     img: "https://via.placeholder.com/500"
                 },
                 {
-                    id: 3, title: "遠方支援", description: "遠方支援についてのテキスト", canApply: true,
+                    id: 3, title: this.$t("home.support.distant-support.title"), 
+                    description: this.$t("home.support.distant-support.desc"),
+                    canApply: false,
                     img: "https://via.placeholder.com/500"
-                },
+                }
             ]
         }
     }

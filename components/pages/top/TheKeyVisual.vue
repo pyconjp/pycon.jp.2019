@@ -24,17 +24,17 @@
                             span
                                 span.text-no-wrap
                                     span.display-2 09.16
-                                    span.title.ml-2 {{ $t("home.keyvisual.mon") }}
+                                    span.title.ml-2 {{ $t("weekday.mon") }}
                                 span.display-1.grey--text.grey--lighten(:class="{'mx-2': $vuetify.breakpoint.smAndDown, 'mx-4': $vuetify.breakpoint.mdAndUp}") -
                                 span.text-no-wrap
                                     span.display-2 09.17
-                                    span.title.ml-2  {{ $t("home.keyvisual.tue") }}
+                                    span.title.ml-2  {{ $t("weekday.tue") }}
                         v-flex
                             v-icon.material-icons-outlined location_on
-                            span.title.ml-2  {{ $t("home.keyvisual.access") }}: {{ $t("home.keyvisual.pio") }}
+                            span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                         v-flex.text-xs-center.my-2.pa-4
                             v-btn(block color="primary" large round style="height: 60px;")
-                                span.title.font-weight-bold {{ $t("home.keyvisual.apply") }}
+                                span.title.font-weight-bold {{ $t("basic.apply") }}
                                 v-icon keyboard_arrow_right
                         v-flex.text-xs-center.mt-4.mb-2.subheading
                             v-layout.align-center.justify-center
@@ -47,9 +47,9 @@
                                 v-btn(color="white" block large)
                                     v-flex.align-end
                                         span.title 09.16
-                                        span.caption.ml-2 {{ $t("home.keyvisual.mon") }}
+                                        span.caption.ml-2 {{ $t("weekday.mon") }}
                                     v-spacer
-                                    span.secondary--text.subheading.font-weight-bold {{ $t("home.keyvisual.detail") }}
+                                    span.secondary--text.subheading.font-weight-bold {{ $t("basic.detail") }}
                                     v-icon.secondary--text.ml-2 keyboard_arrow_right
 </template>
 

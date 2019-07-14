@@ -11,19 +11,19 @@
                         v-flex.md12.text-xs-center
                             span
                                 span.headline 09.15
-                                span.caption.ml-1 日
+                                span.caption.ml-1 {{ $t("weekday.sun") }}
                                 span.headline.px-3 /
                                 span.headline 09.16
-                                span.caption.ml-1 月・祝
+                                span.caption.ml-1 {{ $t("weekday.mon") }}
                                 span.headline.px-3 /
                                 span.headline 09.17
-                                span.caption.ml-1 火
+                                span.caption.ml-1 {{ $t("weekday.tue") }}
                     v-divider
                     v-layout.column.pa-3
                         v-flex.md12.text-xs-left
                             .display-1
                                 v-icon(size=40).primary--text location_on
-                                span.ml-3 大田区産業プラザ PiO
+                                span.ml-3 {{ $t("basic.pio") }}
                         v-flex.xs12.pa-3
                             GmapMap(
                                 :center="{lat:35.5587595, lng:139.7219626}"
@@ -43,13 +43,13 @@
                     v-layout.justify-center.pa-3
                         v-flex.md12.text-xs-center
                             span.headline 09.14
-                            span.caption.ml-1 土
+                            span.caption.ml-1 {{ $t("weekday.sat") }}
                     v-divider
                     v-layout.column.pa-3
                         v-flex.xs12.text-xs-left
                             .display-1
                                 v-icon(size=40).primary--text location_on
-                                span.ml-3 HDE
+                                span.ml-3 {{ $t("basic.hde") }}
                         v-flex.xs12.pa-3
                             GmapMap(
                                 :center="{lat: 35.6549717, lng: 139.6926278}"

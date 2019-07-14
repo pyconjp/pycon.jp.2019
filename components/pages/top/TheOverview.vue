@@ -10,13 +10,13 @@
                 v-flex.md8.pa-4
                     v-layout.column
                         v-flex.md12
-                            secondary-heading(name=" What is PyCon JP?" description="PyCon JPとは")
+                            secondary-heading(name="What is PyCon JP?" description="PyCon JPとは")
                         v-flex.md12.my-4
                             .body-1 {{ dummyText }}
                     v-layout.justify-start
                         v-flex.xs12.sm12.md6
                             v-btn(large block outline round color="primary")
-                                span.font-weight-bold 行動規範
+                                span.font-weight-bold {{ $t("basic.norm") }}
                                 v-icon.ml-3 keyboard_arrow_right
                 v-flex.md4
                     v-img(src="https://via.placeholder.com/500" width="100%" height="350px")
@@ -32,8 +32,8 @@ const dummyText = "この文章はダミーです。文字の大きさ、量、�
 export default {
     name: "TheOverview",
     components: {
-        "secondary-heading": SecondaryHeading,
         "first-heading": FirstHeading,
+        "secondary-heading": SecondaryHeading,
     },
     data() {
         return {

@@ -23,11 +23,11 @@
         v-layout.my-3.wrap.justify-center
             v-flex.xs12.sm12.md3.text-xs-right.px-2
                 v-btn(outline block color="primary" round large)
-                    span スポンサーリスト
+                    span {{ $t("home.sponsor.list") }}
                     v-icon keyboard_arrow_right
             v-flex.xs12.sm12.md3.text-xs-left.px-2
                 v-btn(block color="primary" round large)
-                    span スポンサー募集中
+                    span {{ $t("home.sponsor.hiring") }}
                     v-icon keyboard_arrow_right
 </template>
 

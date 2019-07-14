@@ -14,19 +14,19 @@
                             v-card.pa-3
                                 v-card-title.align-end
                                     span.display-1 09.14 
-                                    span.mx-2 土
+                                    span.mx-2 {{ $t("weekday.sat") }
                                     v-icon location_on
-                                    span 会場HDE
+                                    span {{ $t("basic.access") }}: {{ $t("basic.hde") }}
                                 v-card-text
-                                    span 短期集中型のソフトウェア開発イベントです。
+                                    span {{ $t("home.session.dev-spr.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.xs12.sm12.md6.px-1
                                         v-btn(block color="primary" round outline)
-                                            span 詳細情報
+                                            span {{ $t("basic.detail") }}
                                             v-icon keyboard_arrow_right
                                     v-flex.xs12.xs12.sm12.md6.px-1
                                         v-btn(block color="primary" round)
-                                            span.font-weight-bold 参加申し込み
+                                            span.font-weight-bold {{ $t("basic.apply") }}
                                             v-icon keyboard_arrow_right
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
                     :class="{'px-4': $vuetify.breakpoint.smAndDown, 'pl-4': $vuetify.breakpoint.mdAndUp}"
@@ -42,17 +42,17 @@
                                     span.display-1 09.15
                                     span.mx-2 日
                                     v-icon location_on
-                                    span 会場: 大田区産業プラザ PiO
+                                    span {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                                 v-card-text
-                                    span 初心者向けのイベントです。
+                                    span {{ $t("home.session.tutorial.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.sm12.md6.px-1
                                         v-btn(block color="primary" round outline)
-                                            span 詳細情報
+                                            span {{ $t("basic.detail") }}
                                             v-icon keyboard_arrow_right
                                     v-flex.xs12.sm12.md6.px-1
                                         v-btn(block color="primary" round)
-                                            span.font-weight-bold 参加申し込み
+                                            span.font-weight-bold {{ $t("basic.apply") }}
                                             v-icon keyboard_arrow_right
 </template>
 
@@ -73,9 +73,6 @@
     .expand-background
         left: 100%
         background-color: #E1A7C2
-
-
-
 </style>
 
 

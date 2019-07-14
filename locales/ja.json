@@ -1,4 +1,18 @@
 {
+    "basic": {
+        "access": "会場",
+        "pio": "大田区産業プラザ PiO",
+        "hde": "HDE",
+        "detail": "詳細情報",
+        "apply": "参加申し込み",
+        "norm": "行動規範"
+    },
+    "weekday": {
+        "mon": "月・祝",
+        "tue": "火",
+        "sat": "土",
+        "sun": "日"
+    },
     "header": {
         "menu": {
             "home": "ホーム",
@@ -14,13 +28,41 @@
     "home": {
         "title": "トップページ",
         "keyvisual": {
-            "mon": "月・祝", 
-            "tue": "火",
-            "access": "会場",
-            "pio": "大田区産業プラザ PiO",
-            "apply": "参加申し込み",
-            "child-workshop": "子供向けワークショップも同時開催！",
-            "detail": "詳細情報"
+            "child-workshop": "子供向けワークショップも同時開催！"
+        },
+        "session": {
+            "dev-spr": {
+                "desc": "短期集中型のソフトウェア開発イベントです。"
+            },
+            "tutorial": {
+                "desc": "初心者向けのイベントです。"
+            }
+        },
+        "conference": {
+            "sessions": "セッション一覧",
+            "timetables": "タイムテーブル一覧"
+        },
+        "support": {
+            "food": {
+                "title": "食事",
+                "desc": "各日程で食事が付きます。"
+            },
+            "nursery": {
+                "title": "託児所",
+                "desc": "各日程で託児所が開設されます。"
+            },
+            "distant-support": {
+                "title": "遠方支援",
+                "desc": "遠方支援についてのテキスト"
+            }
+        },
+        "sponsor": {
+            "list": "スポンサーリスト",
+            "hiring": "スポンサー募集中"
         }
+    },
+    "contact": {
+        "desc1": "事前に<a href='/' style='color: white;'>FAQ</a>をご確認いただけますようにお願いします。",
+        "desc2": "ボランティアによる運営ですので、回答には1週間程度を要します。<br>何卒お待ちいただけますようにお願いします。"
     }
 }

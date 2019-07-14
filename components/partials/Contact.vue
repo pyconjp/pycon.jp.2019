@@ -3,16 +3,13 @@
     v-container
         v-layout.mb-4
             v-flex.xs12.text-xs-center
-                first-heading(name="Contact")
+                first-heading(name="Contact" color="white")
         v-layout
             v-flex.xs12.text-xs-center.white--text
                 .subheading
-                    span 事前に
-                    nuxt-link(to="/" style="color: white;") FAQ
-                    span をご確認いただけますようにお願いします。
+                    span(v-html="$t('contact.desc1')")
                 .subheading
-                    span ボランティアによる運営ですので、回答には1週間程度を要します。
-                    span 何卒お待ちいただけますようにお願いします。
+                    span(v-html="$t('contact.desc2')")
         v-layout.mt-4
             v-flex.xs12.text-xs-center
                 v-btn(round color="white")

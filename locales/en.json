@@ -1,4 +1,18 @@
 {
+    "basic": {
+        "access": "Venue",
+        "pio": "PiO",
+        "hde": "HDE",
+        "detail": "Detail",
+        "apply": "Apply",
+        "norm": "Norm"
+    },
+    "weekday": {
+        "mon": "Mon",
+        "tue": "Tue",
+        "sat": "Sat",
+        "sun": "Sun"
+    },
     "header": {
         "menu": {
             "home": "Home",
@@ -14,13 +28,41 @@
     "home": {
         "title": "Top Page",
         "keyvisual": {
-            "mon": "Mon",
-            "tue": "Tue",
-            "access": "Access",
-            "pio": "Otaku Industrial Plaza PiO",
-            "apply": "Apply",
-            "child-workshop": "We will also hold a workshop for children",
-            "detail": "Detail"
+            "child-workshop": "We will also hold a workshop for children"
+        },
+        "session": {
+            "dev-spr": {
+                "desc": "Development Session description"
+            },
+            "tutorial": {
+                "desc": "Tutorial"
+            }
+        },
+        "conference": {
+            "sessions": "Sessions",
+            "timetables": "Time Tables"
+        },
+        "support": {
+            "food": {
+                "title": "Food",
+                "desc": "Food description"
+            },
+            "nursery": {
+                "title": "Nursery",
+                "desc": "Nursery description"
+            },
+            "distant-support": {
+                "title": "Distant Support",
+                "desc": "Distant Support description"
+            }
+        },
+        "sponsor": {
+            "list": "Sponsors",
+            "hiring": "Hiring sponsor"
         }
+    },
+    "contact": {
+        "desc1": "Please check <a href='/' style='color: white;'>FAQ</a> in advance.",
+        "desc2": "We members are all volunteer staff. It might take a week to reply for your message."
     }
 }
