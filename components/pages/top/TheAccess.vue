@@ -26,13 +26,13 @@
                                 span.ml-3 {{ $t("basic.pio") }}
                         v-flex.xs12.pa-3
                             GmapMap(
-                                :center="{lat:35.5587595, lng:139.7219626}"
+                                :center="{lat:35.558812, lng:139.724187}"
                                 :zoom="16"
-                                map-type-id="terrain"
+                                :map-type-id="roadmap"
                                 style="width: 100%; height: 400px"
                             )
                                 GmapMarker(
-                                    :position="{lat: 35.5587595, lng: 139.7219626}"
+                                    :position="{lat:35.558812, lng:139.724187}"
                                     :clickable="true"
                                     :draggable="true"
                                 )
@@ -49,16 +49,16 @@
                         v-flex.xs12.text-xs-left
                             .display-1
                                 v-icon(size=40).primary--text location_on
-                                span.ml-3 {{ $t("basic.hde") }}
+                                span.ml-3 {{ $t("basic.hennge") }}
                         v-flex.xs12.pa-3
                             GmapMap(
-                                :center="{lat: 35.6549717, lng: 139.6926278}"
+                                :center="{lat:35.654938, lng:139.694813}"
                                 :zoom="16"
-                                map-type-id="terrain"
+                                :map-type-id="roadmap"
                                 style="width: 100%; height: 400px"
                             )
                                 GmapMarker(
-                                    :position="{lat: 35.6549717, lng: 139.6926278}"
+                                    :position="{lat:35.654938, lng:139.694813}"
                                     :clickable="true"
                                     :draggable="true"
                                 )
