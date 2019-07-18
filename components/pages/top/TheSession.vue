@@ -34,7 +34,7 @@
                     .expand-background
                     v-layout.column.mt-2
                         v-flex.my-2.white--text
-                            .display-1.font-weight-bold.heading-font Tutorial
+                            .display-1.font-weight-bold.heading-font Tutorial Day
                             .subheading チュートリアル
                         v-flex
                             v-card.pa-3
