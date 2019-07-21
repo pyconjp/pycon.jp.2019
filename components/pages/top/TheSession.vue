@@ -14,9 +14,9 @@
                             v-card.pa-3
                                 v-card-title.align-end
                                     span.display-1 09.14 
-                                    span.mx-2 {{ $t("weekday.sat") }
+                                    span.mx-2 {{ $t("weekday.sat") }}
                                     v-icon location_on
-                                    span {{ $t("basic.access") }}: {{ $t("basic.hde") }}
+                                    span {{ $t("basic.access") }}: {{ $t("basic.hennge") }}
                                 v-card-text
                                     span {{ $t("home.session.dev-spr.desc") }}
                                 v-layout.wrap.pa-2
@@ -40,7 +40,7 @@
                             v-card.pa-3
                                 v-card-title.align-end
                                     span.display-1 09.15
-                                    span.mx-2 日
+                                    span.mx-2 {{ $t("weekday.sun") }}
                                     v-icon location_on
                                     span {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                                 v-card-text
