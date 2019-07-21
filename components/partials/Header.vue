@@ -76,7 +76,7 @@ export default {
             return [
                 { id: 1, name: this.$t("header.menu.home"), submenus: [] },
                 { id: 2, name: this.$t("header.menu.about"), submenus: [{id: 1, name: "◯◯について"}, {id: 2, name: "△△について"}] },
-                { id: 3, name: this.$t("header.menu.events"), submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorail"}] },
+                { id: 3, name: this.$t("header.menu.events"), submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorial Day"}] },
                 { id: 4, name: this.$t("header.menu.news"), submenus: [] },
                 { id: 5, name: this.$t("header.menu.access"), submenus: [] },
                 { id: 6, name: this.$t("header.menu.support"), submenus: [] },
