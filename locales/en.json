@@ -2,7 +2,7 @@
     "basic": {
         "access": "Venue",
         "pio": "PiO",
-        "hde": "HDE",
+        "hennge": "HENNGE",
         "detail": "Detail",
         "apply": "Apply",
         "norm": "Norm"
@@ -35,7 +35,7 @@
                 "desc": "Development Session description"
             },
             "tutorial": {
-                "desc": "Tutorial"
+                "desc": "Tutorial Day"
             }
         },
         "conference": {
