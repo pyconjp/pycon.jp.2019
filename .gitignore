@@ -86,3 +86,9 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+# source of sponsors data
+sponsors.csv
+
+# generated sponsors data
+sponsors.json
