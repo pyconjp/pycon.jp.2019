@@ -29,14 +29,14 @@
                     span {{ $t('header.apply') }}
                     v-icon expand_more
     template(v-else="$vuetify.breakpoint.smAndDown")
-        v-toolbar#header(fixed inverted-scroll).white.pa-2
+        v-toolbar#header.white.pa-2
             v-toolbar-title.ml-2
                 img(src="@/assets/images/horizontal_logo.png" width="150px")
             v-spacer
-            v-btn(flat icon)
-                v-icon(medium).tertiary--text fas fa-globe
             v-btn(flat icon).mr-2
-                v-icon(medium) menu
+                v-icon(medium).tertiary--text fas fa-globe
+            //- v-btn(flat icon).mr-2
+            //-     v-icon(medium) menu
 </template>
 
 <style lang="sass">
