@@ -18,6 +18,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/vuetify": "0.5.5",
     "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
     "vue-i18n": "^8.11.2",
