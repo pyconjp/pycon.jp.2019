@@ -4,12 +4,9 @@
         v-layout.my-4.wrap
             v-flex.md12.text-xs-center
                 first-heading(name="Sponsors")
-        h3.text-xs-center.display-1 Diamond
-        sponsors-group(:sponsors="diamondSponsors" :xs="12" :sm="6" :md="4")
-        h3.text-xs-center.display-1 Platinum
-        sponsors-group(:sponsors="platinumSponsors" :xs="8" :sm="4" :md="3")
-        h3.text-xs-center.display-1 Gold
-        sponsors-group(:sponsors="goldSponsors" :xs="6" :sm="3" :md="2")
+        sponsors-group(:sponsors="diamondSponsors" :xs="12" :sm="12" :md="5")
+        sponsors-group(:sponsors="platinumSponsors" :xs="6" :sm="6" :md="4")
+        sponsors-group(:sponsors="goldSponsors" :xs="4" :sm="4" :md="3")
         v-layout.my-3.wrap.justify-center
             //- TODO: #sudame スポンサー一覧ページが完成し次第コメント解除
             //- v-flex.xs12.sm12.md3.text-xs-right.px-2
