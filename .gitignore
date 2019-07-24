@@ -86,6 +86,3 @@ sw.*
 
 # Mac OSX
 .DS_Store
-
-# generated sponsors data
-sponsors.json
