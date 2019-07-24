@@ -2,7 +2,7 @@
 #top
     key-visual
     //- session
-    news
+    //- news
     //- overview
     //- conference
     //- access

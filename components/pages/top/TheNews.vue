@@ -27,19 +27,20 @@ import SecondaryHeading from "@/components/parts/SecondHeading"
 import moment from "moment"
 
 export default {
-    async mounted() {
-        const url = "https://script.googleusercontent.com/macros/echo?user_content_key=ZuppFUvp3G9UxR6aKZgBgrPE8vTQf7A4sOk7z8ph6UhBwb2PlKVjstNi6-DZzJbuHWvbCKqjK6wu0_qLhFwJLL_zwJge3Cckm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJ9mZKgggRSOURRQ0WvbGHmV5NYIYqOUFVR_DbOCwbvdNONDik88y9c0VZXY9HZEGr0uJ9YYKCWC&lib=MnV3PmCdam9EutRvBBsyupNVJGv4Fseyb"
-        const resp = await this.$axios.get(url)
-        console.log(resp.data.item)
-        this.items = resp.data.item.map((theItem) => {
-            return {
-                title: theItem.title,
-                date: moment(new Date(theItem.pubDate)).format("YYYY.MM.DD") ,
-                link: theItem.link,
-            }
-        })
+    // TODO: #sudame NewsのCORS問題が解決し次第URL変更の上コメントアウト解除
+    // async mounted() {
+    //     const url = "https://script.googleusercontent.com/macros/echo?user_content_key=ZuppFUvp3G9UxR6aKZgBgrPE8vTQf7A4sOk7z8ph6UhBwb2PlKVjstNi6-DZzJbuHWvbCKqjK6wu0_qLhFwJLL_zwJge3Cckm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJ9mZKgggRSOURRQ0WvbGHmV5NYIYqOUFVR_DbOCwbvdNONDik88y9c0VZXY9HZEGr0uJ9YYKCWC&lib=MnV3PmCdam9EutRvBBsyupNVJGv4Fseyb"
+    //     const resp = await this.$axios.get(url)
+    //     console.log(resp.data.item)
+    //     this.items = resp.data.item.map((theItem) => {
+    //         return {
+    //             title: theItem.title,
+    //             date: moment(new Date(theItem.pubDate)).format("YYYY.MM.DD") ,
+    //             link: theItem.link,
+    //         }
+    //     })
         
-    },
+    // },
     name: "TheNews",
     components: {
         "secondary-heading": SecondaryHeading,
