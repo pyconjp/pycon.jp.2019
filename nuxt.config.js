@@ -7,6 +7,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 
+const devHost = "https://pyconjp-2019-development.firebaseapp.com"
+
 export default {
   mode: 'spa',
   /*
@@ -53,6 +55,7 @@ export default {
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     [
       '@nuxtjs/dotenv', { filename: ".env" }
     ],
@@ -62,6 +65,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: "/"
   },
   ...routerBase,
   router: {
@@ -99,5 +103,8 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  proxy: {
+    '/api/': { target: devHost },
   }
 }
