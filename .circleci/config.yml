@@ -19,6 +19,7 @@ jobs:
 
       - run: yarn install
       - run: cd functions && yarn install
+      - run: yarn add -D firebase-tools
 
       - save_cache:
           paths:
@@ -26,7 +27,7 @@ jobs:
             - functions/node_modules
           key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
 
-      - run: yarn test
+      # - run: yarn test
       - run: yarn build
 
   deploy:
@@ -35,8 +36,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - attach_workspace:
-            at: .
-      - run: yarn add -D firebase-tools
+        at: .
+      - run: pwd
       - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
       - run: yarn run firebase deploy --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
 
