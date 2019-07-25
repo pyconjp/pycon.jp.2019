@@ -90,7 +90,6 @@ workflows:
               only:
                 - master
                 - production
-                - improve-cicd
       - deploy:
           name: deploy_to_development
           requires:
