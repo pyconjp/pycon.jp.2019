@@ -12,15 +12,12 @@
     "generate": "nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "convert-csv": "yarn run -s csv2json data/sponsors.csv assets"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/vuetify": "0.5.5",
-    "csv2json": "./scripts/csv2json",
     "lodash": "^4.17.11",
-    "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
     "vue-i18n": "^8.11.2",

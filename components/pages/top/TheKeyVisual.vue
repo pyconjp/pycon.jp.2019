@@ -11,10 +11,9 @@
                                 span.primaryText--text
                                     span(v-show="$vuetify.breakpoint.mdAndUp").mr-1 ────
                                     span 2019.09.14 - 17
-                                a(href="https://twitter.com/search?q=%23pyconjp" target="_blank")
-                                    span.ml-4.text-no-wrap
-                                        v-icon(color="twitter") fab fa-twitter
-                                    span.ml-2.twitter--text #pyconjp
+                                span.ml-4.text-no-wrap
+                                    v-icon(color="twitter") fab fa-twitter
+                                span.ml-2.twitter--text #pyconjp
                 v-flex.md6.xs12.sm12(:class="{'pa-0': $vuetify.breakpoint.smAndDown, 'pa-5': $vuetify.breakpoint.mdAndUp}")
                     v-layout.column.right-padding
                         v-flex
@@ -31,11 +30,10 @@
                                     span.display-2 09.17
                                     span.title.ml-2  {{ $t("weekday.tue") }}
                         v-flex
-                            a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank")
-                                v-icon.material-icons-outlined location_on
-                                span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
+                            v-icon.material-icons-outlined location_on
+                            span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                         v-flex.text-xs-center.my-2.pa-4
-                            v-btn(block color="primary" large round style="height: 60px;" href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
+                            v-btn(block color="primary" large round style="height: 60px;")
                                 span.title.font-weight-bold {{ $t("basic.apply") }}
                                 v-icon keyboard_arrow_right
                         v-flex.text-xs-center.mt-4.mb-2.subheading
@@ -46,8 +44,7 @@
                         v-flex.text-xs-center
                             v-card(color="secondaryText").pa-3.text-xs-left
                                 span.title.white--text Youth Coder Workshop
-                                //- TODO: #sudame 情報が公開され次第v-btnのdisabledを削除
-                                v-btn(color="white" block large disabled)
+                                v-btn(color="white" block large)
                                     v-flex.align-end
                                         span.title 09.16
                                         span.caption.ml-2 {{ $t("weekday.mon") }}

@@ -4,53 +4,39 @@
         v-layout.my-4.wrap
             v-flex.md12.text-xs-center
                 first-heading(name="Sponsors")
-        sponsors-group(:sponsors="diamondSponsors" :xs="12" :sm="12" :md="5")
-        sponsors-group(:sponsors="platinumSponsors" :xs="6" :sm="6" :md="4")
-        sponsors-group(:sponsors="goldSponsors" :xs="4" :sm="4" :md="3")
+        v-layout.wrap.justify-start
+            v-flex.xs12.sm12.md6(v-for="i in 3" :key="i").pa-2
+                v-card
+                    v-img(src="https://via.placeholder.com/500" height="100")
+        v-layout.wrap.justify-start
+            v-flex.xs12.sm12.md4(v-for="i in 10" :key="i").pa-2
+                v-card
+                    v-img(src="https://via.placeholder.com/500" height="100")
+        v-layout.wrap.justify-start
+            v-flex.xs12.sm12.md3(v-for="i in 10" :key="i").pa-2
+                v-card
+                    v-img(src="https://via.placeholder.com/500" height="100")
+        v-layout.wrap.justify-start
+            v-flex.xs12.sm12.md2(v-for="i in 20" :key="i").pa-2
+                v-card
+                    v-img(src="https://via.placeholder.com/500" height="100")
         v-layout.my-3.wrap.justify-center
-            //- TODO: #sudame スポンサー一覧ページが完成し次第コメント解除
-            //- v-flex.xs12.sm12.md3.text-xs-right.px-2
-            //-     v-btn(outline block color="primary" round large)
-            //-         span {{ $t("home.sponsor.list") }}
-            //-         v-icon keyboard_arrow_right
+            v-flex.xs12.sm12.md3.text-xs-right.px-2
+                v-btn(outline block color="primary" round large)
+                    span {{ $t("home.sponsor.list") }}
+                    v-icon keyboard_arrow_right
             v-flex.xs12.sm12.md3.text-xs-left.px-2
-                v-btn(block color="primary" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
+                v-btn(block color="primary" round large)
                     span {{ $t("home.sponsor.hiring") }}
                     v-icon keyboard_arrow_right
 </template>
 
 <script>
 import FirstHeading from "@/components/parts/FirstHeading"
-import SponsorsGroup from "@/components/parts/SponsorsGroup"
-import sponsorsData from "@/assets/sponsors"
-
 export default {
-    name: "TheSponsor",
+    name: "TheSupport",
     components: {
         "first-heading": FirstHeading,
-        "sponsors-group": SponsorsGroup,
-    },
-    data() {
-        return {
-            sponsors: sponsorsData,
-        }
-    },
-    computed: {
-        diamondSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Diamond")
-        },
-        platinumSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Platinum")
-        },
-        goldSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Gold")
-        },
-        sprintSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Sprint Sponsorship")
-        },
-        additionalSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Additional Plans")
-        }
     }
 }
 </script>
