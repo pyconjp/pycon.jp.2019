@@ -29,8 +29,6 @@ jobs:
 
       # - run: yarn test
       - run: yarn build
-      - run: pwd
-      - run: ls
       - persist_to_workspace:
           root: .
           paths:
@@ -43,8 +41,6 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: pwd
-      - run: ls
       - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
       - run: yarn run firebase deploy --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
 
