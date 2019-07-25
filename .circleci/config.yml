@@ -18,7 +18,7 @@ jobs:
             - v1-dependencies-
 
       - run: yarn install
-      - run: cd funcsions && yarn install
+      - run: cd functions && yarn install
 
       - save_cache:
           paths:
