@@ -18,10 +18,33 @@ jobs:
             - v1-dependencies-
 
       - run: yarn install
+      - run: cd funcsions && yarn install
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - functions/node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
 
       - run: yarn test
+      - run: yarn build
+
+  deploy:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+            at: .
+      - run: yarn add -D firebase-tools
+      - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
+      - run: yarn run firebase deploy --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build

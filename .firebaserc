@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pyconjp-2019-dev"
+    "default": "pyconjp-2019-development",
+    "dev": "pyconjp-2019-development"
   }
 }
