@@ -29,6 +29,8 @@ jobs:
 
       # - run: yarn test
       - run: yarn build
+      - run: pwd
+      - run: ls
 
   deploy:
     docker:
@@ -36,7 +38,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - attach_workspace:
-            at: .
+          at: .
       - run: pwd
       - run: ls
       - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
