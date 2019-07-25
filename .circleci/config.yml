@@ -1,27 +1,110 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  default:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
 
+commands:
+  restore_npm:
     steps:
-      - checkout
       - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+          name: Restore npm dependencies
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
 
-      - run: yarn install
-
+  save_npm:
+    steps:
       - save_cache:
+          name: Cache npm dependencies
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - functions/node_modules
+  persist:
+    steps:
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  attach:
+    steps:
+      - attach_workspace:
+          at: .
 
+jobs:
+  setup:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - restore_npm
+      - run: yarn install
+      - run: cd functions && yarn install
+      - run: yarn add -D firebase-tools
+      - save_npm
       - run: yarn test
+      - persist
+  test:
+    executor:
+      name: default
+    steps:
+      - attach
+      - run: yarn test
+      - persist
+  build:
+    executor:
+      name: default
+    steps:
+      - attach
+      - run: yarn build
+      - persist
+  deploy:
+    parameters:
+      project_name:
+        type: enum
+        enum: ["pyconjp-2019-development", "pyconjp-2019-production"]
+    executor:
+      name: default
+    steps:
+      - attach
+      - run:
+          name: Use firebase project << parameters.project_name >>
+          command: yarn run firebase use << parameters.project_name >> --project << parameters.project_name >> --token "$FIREBASE_TOKEN"
+      - run:
+          name: Deploy to firebase project << parameters.project_name >>
+          command: yarn run firebase deploy --project << parameters.project_name >> --token "$FIREBASE_TOKEN"
+
+workflows:
+  build_and_deploy:
+    jobs:
+      - setup
+      - test:
+          requires:
+            - setup
+      - build:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
+                - production
+      - deploy:
+          name: deploy_to_development
+          requires:
+            - build
+          project_name: pyconjp-2019-development
+          filters:
+            branches:
+              only:
+                - master
+      - deploy:
+          name: deploy_to_production
+          requires:
+            - build
+          project_name: pyconjp-2019-production
+          filters:
+            branches:
+              only:
+                - production
