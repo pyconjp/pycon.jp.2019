@@ -12,7 +12,7 @@
                     span(v-html="$t('contact.desc2')")
         v-layout.mt-4
             v-flex.xs12.text-xs-center
-                v-btn(round color="white")
+                v-btn(round color="white" href="mailto:pyconjp@pycon.jp")
                     v-icon(color='primary') mail
                     span.primary--text.ml-2 pyconjp@pycon.jp
 </template>
