@@ -33,12 +33,7 @@ commands:
           at: .
 
 jobs:
-  test:
-    executor:
-      name: default
-    steps:
-      - run: yarn test
-  build:
+  setup:
     executor:
       name: default
     steps:
@@ -48,22 +43,48 @@ jobs:
       - run: cd functions && yarn install
       - run: yarn add -D firebase-tools
       - save_npm
-      - run: yarn build
+      - run: yarn test
       - persist
-
-  deploy:
+  test:
     executor:
       name: default
     steps:
       - attach
-      - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
-      - run: yarn run firebase deploy --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
+      - run: yarn test
+      - persist
+  build:
+    executor:
+      name: default
+    steps:
+      - attach
+      - run: yarn build
+      - persist
+  deploy:
+    parameters:
+      project_name:
+        type: enum
+        enum: ["pyconjp-2019-development", "pyconjp-2019-production"]
+    executor:
+      name: default
+    steps:
+      - attach
+      - run:
+          name: Use firebase project << parameters.project_name >>
+          command: yarn run firebase use << parameters.project_name >> --project << parameters.project_name >> --token "$FIREBASE_TOKEN"
+      - run:
+          name: Deploy to firebase project << parameters.project_name >>
+          command: yarn run firebase deploy --project << parameters.project_name >> --token "$FIREBASE_TOKEN"
 
 workflows:
   build_and_deploy:
     jobs:
-      - test
+      - setup
+      - test:
+          requires:
+            - setup
       - build:
+          requires:
+            - test
           filters:
             branches:
               only:
@@ -71,11 +92,22 @@ workflows:
                 - production
                 - improve-cicd
       - deploy:
+          name: deploy_to_development
           requires:
             - build
+          project_name: pyconjp-2019-development
           filters:
             branches:
               only:
                 - master
+                - improve-cicd
+      - deploy:
+          name: deploy_to_production
+          requires:
+            - build
+          project_name: pyconjp-2019-production
+          filters:
+            branches:
+              only:
                 - production
                 - improve-cicd
