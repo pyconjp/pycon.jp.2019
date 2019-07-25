@@ -100,7 +100,6 @@ workflows:
             branches:
               only:
                 - master
-                - improve-cicd
       - deploy:
           name: deploy_to_production
           requires:
@@ -110,4 +109,3 @@ workflows:
             branches:
               only:
                 - production
-                - improve-cicd

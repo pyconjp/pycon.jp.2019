@@ -33,8 +33,7 @@ export default {
     "sponsor": TheSponsor
   },
   head () {
-    // return { title: this.$t('home.title') }
-    return { title: "test deploy" }
+    return { title: this.$t('home.title') }
   },
   async created() {
     // News
