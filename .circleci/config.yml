@@ -1,54 +1,81 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  default:
+    working_directory: ~/repo
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
 
+commands:
+  restore_npm:
     steps:
-      - checkout
       - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+          name: Restore npm dependencies
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
 
-      - run: yarn install
-      - run: cd functions && yarn install
-      - run: yarn add -D firebase-tools
-
+  save_npm:
+    steps:
       - save_cache:
+          name: Cache npm dependencies
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
           paths:
             - node_modules
             - functions/node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "functions/package.json" }}
-
-      # - run: yarn test
-      - run: yarn build
+  persist:
+    steps:
       - persist_to_workspace:
           root: .
           paths:
             - .
-
-  deploy:
-    docker:
-      - image: circleci/node:10
-    working_directory: ~/repo
+  attach:
     steps:
       - attach_workspace:
           at: .
+
+jobs:
+  test:
+    executor:
+      name: default
+    steps:
+      - run: yarn test
+  build:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - restore_npm
+      - run: yarn install
+      - run: cd functions && yarn install
+      - run: yarn add -D firebase-tools
+      - save_npm
+      - run: yarn build
+      - persist
+
+  deploy:
+    executor:
+      name: default
+    steps:
+      - attach
       - run: yarn run firebase use dev --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
       - run: yarn run firebase deploy --project "$FIREBASE_PROJECT_NAME" --token "$FIREBASE_TOKEN"
 
 workflows:
-  version: 2
   build_and_deploy:
     jobs:
-      - build
+      - test
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+                - production
+                - improve-cicd
       - deploy:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
+                - production
+                - improve-cicd

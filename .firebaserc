@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "pyconjp-2019-development",
-    "dev": "pyconjp-2019-development"
+    "dev": "pyconjp-2019-development",
+    "prd": "pyconjp-2019-production"
   }
 }
