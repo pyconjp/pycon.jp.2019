@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/vuetify": "0.5.5",
+    "@nuxtjs/vuetify": "1.0.1",
     "csv2json": "./scripts/csv2json",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",

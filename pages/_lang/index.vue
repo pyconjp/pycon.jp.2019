@@ -1,12 +1,12 @@
 <template lang="pug">
 #top
     key-visual
-    //- session
-    //- news
-    //- overview
-    //- conference
-    //- access
-    //- support
+    session
+    news
+    overview
+    conference
+    access
+    support
     sponsor
 </template>
 
