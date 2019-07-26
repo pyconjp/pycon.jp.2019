@@ -34,14 +34,13 @@
                         v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
                             v-list-tile-title {{$t("basic.apply")}}
     template(v-else="$vuetify.breakpoint.smAndDown")
-        v-toolbar#header.white.pa-2
+        v-toolbar.elevation-0#header.white.pa-2
             v-toolbar-title.ml-2
                 img(src="@/assets/images/horizontal_logo.png" width="150px")
             v-spacer
-            v-btn(flat icon).mr-2
-                v-icon(medium).tertiary--text fas fa-globe
-            //- v-btn(flat icon).mr-2
-            //-     v-icon(medium) menu
+            v-btn(flat icon @click="toggleDrawer").mr-2
+                v-icon(medium v-if="$store.state.drawerIsOpen") close
+                v-icon(medium v-else) menu
 </template>
 
 <style lang="sass">
@@ -54,7 +53,7 @@
 
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState, mapActions, mapMutations } from 'vuex';
 
 export default {
     name: "pycon-header",
@@ -92,7 +91,11 @@ export default {
         }
     },
     methods: {
-        ...mapActions(["switchLang"])
+        ...mapActions(["switchLang"]),
+        toggleDrawer() {
+            console.log('yes!');
+            this.$store.commit('toggleDrawer');
+        }
     }
 }
 </script>
