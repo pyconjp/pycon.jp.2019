@@ -63,7 +63,7 @@ jobs:
     parameters:
       project_name:
         type: enum
-        enum: ["pyconjp-2019-development", "pyconjp-2019-production"]
+        enum: ["pyconjp-2019-branch", "pyconjp-2019-development", "pyconjp-2019-production"]
     executor:
       name: default
     steps:
@@ -85,9 +85,14 @@ workflows:
       - build:
           requires:
             - test
+      - deploy:
+          name: deploy_to_branch
+          requires:
+            - build
+          project_name: pyconjp-2019-branch
           filters:
             branches:
-              only:
+              ignore:
                 - master
                 - production
       - deploy:
