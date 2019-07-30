@@ -48,8 +48,6 @@ export default {
 
 <style lang="scss" scoped>
 .primary {
-  background-color: #d66194;
-
   color: white;
 }
 </style>
