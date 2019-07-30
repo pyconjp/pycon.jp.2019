@@ -39,7 +39,7 @@
                 img(src="@/assets/images/horizontal_logo.png" width="150px")
             v-spacer
             v-btn(flat icon @click="toggleDrawer").mr-2
-                v-icon(medium v-if="$store.state.drawerIsOpen") close
+                v-icon(medium v-if="drawerIsOpen") close
                 v-icon(medium v-else) menu
 </template>
 
@@ -63,9 +63,7 @@ export default {
         }
     },
     computed: {
-        ...mapState({
-            locale: state => state.locale
-        }),
+        ...mapState(['locale', 'drawerIsOpen']),
         toLang() {
             return this.locale === "ja" ? "English" : "日本語"
         },
@@ -92,9 +90,7 @@ export default {
     },
     methods: {
         ...mapActions(["switchLang"]),
-        toggleDrawer() {
-            this.$store.commit('toggleDrawer');
-        }
+        ...mapMutations(["toggleDrawer"]),
     }
 }
 </script>
