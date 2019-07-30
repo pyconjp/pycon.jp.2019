@@ -93,7 +93,6 @@ export default {
     methods: {
         ...mapActions(["switchLang"]),
         toggleDrawer() {
-            console.log('yes!');
             this.$store.commit('toggleDrawer');
         }
     }
