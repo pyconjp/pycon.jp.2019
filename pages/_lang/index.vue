@@ -1,7 +1,7 @@
 <template lang="pug">
 #top
     key-visual
-    //- session
+    session
     news
     //- overview
     //- conference

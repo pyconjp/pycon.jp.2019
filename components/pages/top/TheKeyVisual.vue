@@ -35,7 +35,7 @@
                                 v-icon.material-icons-outlined location_on
                                 span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                         v-flex.text-xs-center.my-2.pa-4
-                            v-btn(block color="primary" large round style="height: 60px;" href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
+                            v-btn(block color="primary" large round style="height: 60px;" href="https://pyconjp.connpass.com/event/135734/" target="_blank")
                                 span.title.font-weight-bold {{ $t("basic.apply") }}
                                 v-icon keyboard_arrow_right
                         v-flex.text-xs-center.mt-4.mb-2.subheading
@@ -46,8 +46,7 @@
                         v-flex.text-xs-center
                             v-card(color="secondaryText").pa-3.text-xs-left
                                 span.title.white--text Youth Coder Workshop
-                                //- TODO: #sudame 情報が公開され次第v-btnのdisabledを削除
-                                v-btn(color="white" block large disabled)
+                                v-btn(color="white" block large href="https://pyconjp.connpass.com/event/139133/" target="_blank")
                                     v-flex.align-end
                                         span.title 09.16
                                         span.caption.ml-2 {{ $t("weekday.mon") }}

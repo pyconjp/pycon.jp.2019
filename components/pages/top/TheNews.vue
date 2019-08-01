@@ -40,6 +40,9 @@ export default {
                 link: theItem.link,
             }
         })
+        // slice
+        this.items = this.items.slice(0, 3)
+
     },
     name: "TheNews",
     components: {
