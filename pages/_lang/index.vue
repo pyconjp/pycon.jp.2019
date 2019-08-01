@@ -2,7 +2,7 @@
 #top
     key-visual
     //- session
-    //- news
+    news
     //- overview
     //- conference
     //- access
@@ -36,9 +36,6 @@ export default {
     return { title: this.$t('home.title') }
   },
   async created() {
-    // News
-    const url = "/api/news"
-    const resp = await this.$axios.get(url)
   }
 }
 </script>
