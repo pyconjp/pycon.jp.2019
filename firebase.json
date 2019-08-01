@@ -3,8 +3,8 @@
     "public": "public",
     "rewrites": [
       {
-          "source": "/api/news",
-          "function": "news"
+          "source": "api/**",
+          "function": "api"
       },
       {
         "source": "**",

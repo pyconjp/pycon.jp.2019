@@ -1,8 +1,8 @@
 <template lang="pug">
 #top
     key-visual
-    //- session
-    //- news
+    session
+    news
     //- overview
     //- conference
     //- access
@@ -36,9 +36,6 @@ export default {
     return { title: this.$t('home.title') }
   },
   async created() {
-    // News
-    const url = "/api/news"
-    const resp = await this.$axios.get(url)
   }
 }
 </script>

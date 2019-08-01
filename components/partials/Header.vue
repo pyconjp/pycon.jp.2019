@@ -25,14 +25,16 @@
                     v-icon(small).tertiary--text fas fa-globe
                     span.ml-2.textColor--text {{ toLang }}
             v-toolbar-items.ml-2
-                v-menu(v-model="applyMenu" :offset-y="true")
-                    template(v-slot:activator="{ on }")
-                        v-btn(small color="primary" v-on="on").depressed.subheading
-                            span {{ $t('header.apply') }}
-                            v-icon expand_more
-                    v-list
-                        v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
-                            v-list-tile-title {{$t("basic.apply")}}
+                v-btn(small color="primary" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
+                    span {{ $t('header.apply') }}
+                //- v-menu(v-model="applyMenu" :offset-y="true")
+                //-     template(v-slot:activator="{ on }")
+                //-         v-btn(small color="primary" v-on="on").depressed.subheading
+                //-             span {{ $t('header.apply') }}
+                //-             v-icon expand_more
+                //-     v-list
+                //-         v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
+                //-             v-list-tile-title {{$t("basic.apply")}}
     template(v-else="$vuetify.breakpoint.smAndDown")
         v-toolbar.elevation-0#header.white.pa-2
             v-toolbar-title.ml-2

@@ -7,12 +7,11 @@
   "scripts": {
     "test": "jest",
     "dev": "nuxt --port 4000",
-    "build": "nuxt build && rm -rf functions/dist/* && cp -r dist/* functions/dist/",
+    "build:dev": "DEPLOY_ENV=DEV nuxt build && rm -rf functions/dist/* && mkdir -p functions/dist/dev-2019 && cp -r dist/* functions/dist/dev-2019/",
+    "build:branch": "nuxt build && rm -rf functions/dist/* && mkdir -p functions/dist && cp -r dist/* functions/dist/",
+    "build:prd": "DEPLOY_ENV=PRD nuxt build && rm -rf functions/dist/* && mkdir -p functions/dist/2019 && cp -r dist/* functions/dist/2019/",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "convert-csv": "yarn run -s csv2json data/sponsors.csv assets"
   },
   "dependencies": {

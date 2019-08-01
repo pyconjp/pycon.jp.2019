@@ -1,13 +1,19 @@
 import colors from 'vuetify/es5/util/colors'
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/pycon.jp.2019/'
-  }
-} : {}
+let routerBase = "/"
+let dotenvFile = "./config/.env.dev"
 
-
-const devHost = "https://pyconjp-2019-development.firebaseapp.com"
+switch(process.env.DEPLOY_ENV){
+  case "DEV":
+    routerBase = '/dev-2019/'
+    break
+  case "PRD":
+    routerBase = '/2019/'
+    dotenvFile = "./config/.env.prd"
+    break
+  default:
+    routerBase = "/"
+}
 
 export default {
   mode: 'spa',
@@ -57,7 +63,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
     [
-      '@nuxtjs/dotenv', { filename: ".env" }
+      '@nuxtjs/dotenv', { filename: dotenvFile }
     ],
   ],
   /*
@@ -67,9 +73,9 @@ export default {
   axios: {
     baseURL: "/"
   },
-  ...routerBase,
   router: {
-    middleware: 'i18n'
+    middleware: 'i18n',
+    base: routerBase
   },
   /*
   ** vuetify module configuration
@@ -104,7 +110,4 @@ export default {
     extend(config, ctx) {
     }
   },
-  proxy: {
-    '/api/': { target: devHost },
-  }
 }

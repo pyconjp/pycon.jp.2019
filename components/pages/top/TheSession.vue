@@ -21,11 +21,11 @@
                                     span {{ $t("home.session.dev-spr.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round outline)
+                                        v-btn(block color="primary" round outline disabled)
                                             span {{ $t("basic.detail") }}
                                             v-icon keyboard_arrow_right
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round)
+                                        v-btn(block color="primary" round href="https://pyconjp.connpass.com/event/136558/" target="_blank")
                                             span.font-weight-bold {{ $t("basic.apply") }}
                                             v-icon keyboard_arrow_right
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
@@ -47,11 +47,11 @@
                                     span {{ $t("home.session.tutorial.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round outline)
+                                        v-btn(block color="primary" round outline disabled)
                                             span {{ $t("basic.detail") }}
                                             v-icon keyboard_arrow_right
                                     v-flex.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round)
+                                        v-btn(block color="primary" round disabled)
                                             span.font-weight-bold {{ $t("basic.apply") }}
                                             v-icon keyboard_arrow_right
 </template>

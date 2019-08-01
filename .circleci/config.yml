@@ -53,11 +53,15 @@ jobs:
       - run: yarn test
       - persist
   build:
+    parameters:
+      stage:
+        type: enum
+        enum: ["branch", "dev", "prd"]
     executor:
       name: default
     steps:
       - attach
-      - run: yarn build
+      - run: yarn build:<< parameters.stage >>
       - persist
   deploy:
     parameters:
@@ -83,31 +87,56 @@ workflows:
           requires:
             - setup
       - build:
+          name: build_for_branch
           requires:
             - test
-      - deploy:
-          name: deploy_to_branch
-          requires:
-            - build
-          project_name: pyconjp-2019-branch
+          stage: branch
           filters:
             branches:
               ignore:
                 - master
                 - production
       - deploy:
-          name: deploy_to_development
+          name: deploy_to_branch
           requires:
-            - build
-          project_name: pyconjp-2019-development
+            - build_for_branch
+          project_name: pyconjp-2019-branch
+          filters:
+            branches:
+              ignore:
+                - master
+                - production
+      - build:
+          name: build_for_development
+          requires:
+            - test
+          stage: dev
           filters:
             branches:
               only:
                 - master
       - deploy:
+          name: deploy_to_development
+          requires:
+            - build_for_development
+          project_name: pyconjp-2019-development
+          filters:
+            branches:
+              only:
+                - master
+      - build:
+          name: build_for_production
+          requires:
+            - test
+          stage: prd
+          filters:
+            branches:
+              only:
+                - production
+      - deploy:
           name: deploy_to_production
           requires:
-            - build
+            - build_for_production
           project_name: pyconjp-2019-production
           filters:
             branches:

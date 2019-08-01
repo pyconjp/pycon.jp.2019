@@ -14,7 +14,7 @@
             v-flex.xs12.text-xs-center
                 v-btn(round color="white" href="mailto:pyconjp@pycon.jp")
                     v-icon(color='primary') mail
-                    span.primary--text.ml-2 pyconjp@pycon.jp
+                    span.primary--text.ml-2.text-lowercase pyconjp@pycon.jp
 </template>
 
 <script>
