@@ -39,7 +39,6 @@ export default {
     // News
     const url = "/api/news"
     const resp = await this.$axios.get(url)
-    console.log(resp)
   }
 }
 </script>
