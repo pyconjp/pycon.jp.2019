@@ -51,7 +51,7 @@
                                         span.title 09.16
                                         span.caption.ml-2 {{ $t("weekday.mon") }}
                                     v-spacer
-                                    span.secondary--text.subheading.font-weight-bold {{ $t("basic.detail") }}
+                                    span.secondary--text.subheading.font-weight-bold {{ $t("basic.apply") }}
                                     v-icon.secondary--text.ml-2 keyboard_arrow_right
 </template>
 
