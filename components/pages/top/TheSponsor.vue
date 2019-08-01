@@ -8,8 +8,8 @@
         sponsors-group(:sponsors="platinumSponsors" :xs="6" :sm="6" :md="4")
         sponsors-group(:sponsors="goldSponsors" :xs="4" :sm="4" :md="3")
         sponsors-group(:sponsors="silverSponsors" :xs="4" :sm="4" :md="2")
-        sponsors-group(:sponsors="sprintSponsors" :xs="4" :sm="4" :md="2")
-        sponsors-group(:sponsors="otherSponsors" :xs="4" :sm="4" :md="2")
+        sponsors-group(:sponsors="sprintSponsors" :xs="12" :sm="12" :md="5")
+        //- sponsors-group(:sponsors="otherSponsors" :xs="4" :sm="4" :md="2")
         v-layout.my-3.wrap.justify-center
             //- TODO: #sudame スポンサー一覧ページが完成し次第コメント解除
             //- v-flex.xs12.sm12.md3.text-xs-right.px-2
