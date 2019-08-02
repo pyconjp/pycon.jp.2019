@@ -107,7 +107,33 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    babel: {
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: {
+              ie: "11"
+            },
+            useBuiltIns: 'usage',
+            corejs: 3,
+            // { version: 3, proposals: true },
+          }
+        ]
+      ],
+    },
+    postcss: {
+      plugins: {
+      },
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
+    },
     extend(config, ctx) {
+      // console.log(config)
+      config.entry = ["core-js/stable", "regenerator-runtime/runtime"]
     }
-  },
+  }
 }
