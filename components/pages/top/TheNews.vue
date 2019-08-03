@@ -5,9 +5,11 @@
             v-flex.xs12
                 v-layout.align-center
                     v-flex(shirnk)
-                        secondary-heading(name="News" description="お知らせ")
-                    v-flex.md11.text-xs-left.ml-2
-                        span.caption.mx-2 お知らせ一覧
+                        secondary-heading(name="News" description="お知らせ" :right="true")
+                            template(#additional)
+                                v-flex.md11
+                                    a(href="https://pyconjp.blogspot.com/search/label/pyconjp2019" target="_blank").subheading.pl-4 お知らせ一覧
+                                    v-icon keyboard_arrow_right
             v-flex.xs12(
                 :class="{'pl-0': $vuetify.breakpoint.smAndDown, 'pl-4': $vuetify.breakpoint.mdAndUp}"
             )

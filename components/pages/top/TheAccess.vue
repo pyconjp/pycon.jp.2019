@@ -28,7 +28,7 @@
                             GmapMap(
                                 :center="{lat:35.558812, lng:139.724187}"
                                 :zoom="16"
-                                :map-type-id="roadmap"
+                                map-type-id="roadmap"
                                 style="width: 100%; height: 400px"
                             )
                                 GmapMarker(
@@ -54,7 +54,7 @@
                             GmapMap(
                                 :center="{lat:35.654938, lng:139.694813}"
                                 :zoom="16"
-                                :map-type-id="roadmap"
+                                map-type-id="roadmap"
                                 style="width: 100%; height: 400px"
                             )
                                 GmapMarker(

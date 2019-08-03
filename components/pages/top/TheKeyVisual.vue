@@ -20,40 +20,44 @@
                         v-flex
                             h2.display-2.primaryText--text.font-weight-bold.heading-font Conference
                         v-flex.caption
-                            span.primaryText--text カンファレンス
-                        v-flex.py-4.text-xs-center
+                            span.primaryText--text.font-weight-bold カンファレンス
+                        v-flex.py-4.text-md-left
                             span
                                 span.text-no-wrap
-                                    span.display-2 09.16
-                                    span.title.ml-2 {{ $t("weekday.mon") }}
+                                    span.display-2.heading-font 09.16
+                                    span.title.ml-2.font-weight-bold {{ $t("weekday.mon") }}
                                 span.display-1.grey--text.grey--lighten(:class="{'mx-2': $vuetify.breakpoint.smAndDown, 'mx-4': $vuetify.breakpoint.mdAndUp}") -
                                 span.text-no-wrap
-                                    span.display-2 09.17
-                                    span.title.ml-2  {{ $t("weekday.tue") }}
+                                    span.display-2.heading-font 09.17
+                                    span.title.ml-2.font-weight-bold  {{ $t("weekday.tue") }}
                         v-flex
                             a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank")
-                                v-icon.material-icons-outlined location_on
-                                span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
-                        v-flex.text-xs-center.my-2.pa-4
-                            v-btn(block color="primary" large round style="height: 60px;" href="https://pyconjp.connpass.com/event/135734/" target="_blank")
-                                span.title.font-weight-bold {{ $t("basic.apply") }}
-                                v-icon keyboard_arrow_right
-                        v-flex.text-xs-center.mt-4.mb-2.subheading
-                            v-layout.align-center.justify-center
-                                v-flex.xs12
-                                    v-icon(color="secondaryText") tag_faces
+                                v-layout.align-center
+                                    v-flex.shrink
+                                        // TODO: (ikedaosushi) outlinedにしたい
+                                        v-icon(large) location_on
+                                    v-flex
+                                        span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
+                        v-flex.text-md-center.my-2.pa-4
+                            button-with-arrow.title(color="primary" customStyle="height: 60px;" href="https://pyconjp.connpass.com/event/135734/") {{ $t("basic.apply") }}
+                        v-flex.text-md-left.mt-4.mb-2.subheading
+                            v-layout.align-center
+                                v-flex.shrink
+                                    v-icon(large color="secondaryText") tag_faces
+                                v-flex
                                     span.secondaryText--text.ml-2.font-weight-bold {{ $t("home.keyvisual.child-workshop") }}
                         v-flex.text-xs-center
                             v-card(color="secondaryText").pa-3.text-xs-left
-                                span.title.white--text Youth Coder Workshop
-                                v-btn(color="white" block large href="https://pyconjp.connpass.com/event/139133/" target="_blank")
+                                span.title.white--text.font-weight-bold Youth Coder Workshop
+                                v-btn(color="white" block large style="height: 40px;" href="https://pyconjp.connpass.com/event/139133/" target="_blank")
                                     v-flex.align-end
-                                        span.title 09.16
-                                        span.caption.ml-2 {{ $t("weekday.mon") }}
+                                        span.headline.heading-font 09.16
+                                        span.caption.ml-2.font-weight-bold {{ $t("weekday.mon") }}
                                     v-spacer
                                     span.secondary--text.subheading.font-weight-bold {{ $t("basic.apply") }}
                                     v-icon.secondary--text.ml-2 keyboard_arrow_right
 </template>
+
 
 <style lang="sass" scoped>
 .right-border
@@ -62,7 +66,12 @@
 
 
 <script>
+import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
+
 export default {
-    name: "TheKeyVisual"
+   name: "TheKeyVisual",
+   components: {
+        "button-with-arrow": ButtonWithArrow
+   }
 }
 </script>

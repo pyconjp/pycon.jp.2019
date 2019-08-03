@@ -25,16 +25,16 @@
                     v-icon(small).tertiary--text fas fa-globe
                     span.ml-2.textColor--text {{ toLang }}
             v-toolbar-items.ml-2
-                v-btn(small color="primary" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
-                    span {{ $t('header.apply') }}
-                //- v-menu(v-model="applyMenu" :offset-y="true")
-                //-     template(v-slot:activator="{ on }")
-                //-         v-btn(small color="primary" v-on="on").depressed.subheading
-                //-             span {{ $t('header.apply') }}
-                //-             v-icon expand_more
-                //-     v-list
-                //-         v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
-                //-             v-list-tile-title {{$t("basic.apply")}}
+                //- v-btn(large color="primary" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
+                //-     span {{ $t('header.apply') }}
+                v-menu(v-model="applyMenu" :offset-y="true")
+                    template(v-slot:activator="{ on }")
+                        v-btn(color="primary" v-on="on").depressed.subheading.px-3
+                            span {{ $t('header.apply') }}
+                            v-icon expand_more
+                    v-list
+                        v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
+                            v-list-tile-title {{$t("basic.apply")}}
     template(v-else="$vuetify.breakpoint.smAndDown")
         v-toolbar.elevation-0#header.white.pa-2
             v-toolbar-title.ml-2
@@ -81,12 +81,12 @@ export default {
             // TODO: #sudame 情報が公開され次第コメントアウト解除
             return [
                 { id: 1, name: this.$t("header.menu.home"), submenus: [] },
-                // { id: 2, name: this.$t("header.menu.about"), submenus: [{id: 1, name: "◯◯について"}, {id: 2, name: "△△について"}] },
-                // { id: 3, name: this.$t("header.menu.events"), submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorial Day"}] },
-                // { id: 4, name: this.$t("header.menu.news"), submenus: [] },
-                // { id: 5, name: this.$t("header.menu.access"), submenus: [] },
-                // { id: 6, name: this.$t("header.menu.support"), submenus: [] },
-                // { id: 7, name: this.$t("header.menu.sponsor"), submenus: [] }
+                { id: 2, name: this.$t("header.menu.about"), submenus: [{id: 1, name: "◯◯について"}, {id: 2, name: "△△について"}] },
+                { id: 3, name: this.$t("header.menu.events"), submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorial Day"}] },
+                { id: 4, name: this.$t("header.menu.news"), submenus: [] },
+                { id: 5, name: this.$t("header.menu.access"), submenus: [] },
+                { id: 6, name: this.$t("header.menu.support"), submenus: [] },
+                { id: 7, name: this.$t("header.menu.sponsor"), submenus: [] }
             ]
         }
     },

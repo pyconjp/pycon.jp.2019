@@ -7,17 +7,17 @@
 
         v-card
             v-layout.wrap
-                v-flex.md8.pa-4
-                    v-layout.column
+                v-flex.md8.py-4
+                    v-layout.wrap
                         v-flex.md12
                             secondary-heading(name="What is PyCon JP?" description="PyCon JPとは")
-                        v-flex.md12.my-4
-                            .body-1 {{ dummyText }}
-                    v-layout.justify-start
-                        v-flex.xs12.sm12.md6
-                            v-btn(large block outline round color="primary")
-                                span.font-weight-bold {{ $t("basic.norm") }}
-                                v-icon.ml-3 keyboard_arrow_right
+                    v-layout.wrap.px-5
+                        v-flex.md12.py-4
+                            .body-1  {{ $t("home.overview.about") }}
+                        v-flex.xs12.sm12.md6.px-3.py-2
+                            button-with-arrow(:outline="true" size="large" color="primary") {{  $t("home.overview.theme") }}
+                        v-flex.xs12.sm12.md6.px-3.py-2
+                            button-with-arrow(:outline="true" size="large" color="primary") {{ $t("basic.norm") }}
                 v-flex.md4
                     v-img(src="https://via.placeholder.com/500" width="100%" height="350px")
 
@@ -26,6 +26,7 @@
 <script>
 import FirstHeading from "@/components/parts/FirstHeading"
 import SecondaryHeading from "@/components/parts/SecondHeading"
+import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
 
 const dummyText = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。";
 
@@ -34,6 +35,7 @@ export default {
     components: {
         "first-heading": FirstHeading,
         "secondary-heading": SecondaryHeading,
+        "button-with-arrow": ButtonWithArrow
     },
     data() {
         return {

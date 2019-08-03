@@ -8,14 +8,10 @@
             v-flex.xs12.text-xs-left
                 .body-2 {{ dummyText }}
         v-layout.wrap.pa-4.justify-center
-            v-flex.xs12.sm12.md4.text-xs-right.px-2
-                v-btn(outline block round color="primary" large)
-                    span.font-weight-bold {{ $t("home.conference.sessions") }}
-                    v-icon.ml-3 keyboard_arrow_right
-            v-flex.xs12.sm12.md4.text-xs-left.px-2
-                v-btn(outline block round color="primary" large)
-                    span.font-weight-bold {{ $t("home.conference.timetables") }}
-                    v-icon.ml-3 keyboard_arrow_right
+            v-flex.xs12.sm12.md4.text-xs-right.px-3
+                button-with-arrow(:outline="true" color="primary" size="large") {{ $t("home.conference.sessions") }}
+            v-flex.xs12.sm12.md4.text-xs-left.px-3
+                button-with-arrow(:outline="true" color="primary" size="large") {{ $t("home.conference.timetables") }}
         .spacer.py-2
         v-layout.my-4
             v-flex.md12
@@ -93,6 +89,7 @@
 import FirstHeading from "@/components/parts/FirstHeading"
 import SecondaryHeading from "@/components/parts/SecondHeading"
 import TalkCard from "@/components/parts/TalkCard"
+import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
 
 const dummyText = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。";
 
@@ -101,7 +98,8 @@ export default {
     components: {
         "first-heading": FirstHeading,
         "secondary-heading": SecondaryHeading,
-        "talk-card": TalkCard
+        "talk-card": TalkCard,
+        "button-with-arrow": ButtonWithArrow
     },
     data() {
         return {

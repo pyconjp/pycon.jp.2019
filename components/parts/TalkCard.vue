@@ -5,19 +5,19 @@
         .corner-right-bottom
         v-layout
             v-flex.xs12.text-xs-left
-                span.title {{ date }}
+                span.title.heading-font {{ date }}
                 span.caption.grey--text.grey--lighten-2.ml-2 {{ weekday }}
         v-layout
             v-flex.xs12.text-xs-center
                 img(:src="profileImg" width=150 height=150).profile-img
         v-layout.mt-4
             v-flex.xs12.text-xs-left
-                .title.font-weight-bold.quaternary--text.my-4 Session Theme
+                .title.font-weight-bold.quaternary--text.my-4.heading-font Session Theme
                 .title.font-weight-bold.my-4 {{ sessionTheme }}
         v-divider
         v-layout.mt-2
             v-flex.xs12.text-xs-left
-                .title.quaternary--text.my-4 Profile
+                .title.quaternary--text.my-4.heading-font Profile
                 .body-2 {{ profile }}
 
 </template>

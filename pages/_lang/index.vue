@@ -3,10 +3,10 @@
     key-visual
     session
     news
-    //- overview
-    //- conference
-    //- access
-    //- support
+    overview
+    conference
+    access
+    support
     sponsor
 </template>
 

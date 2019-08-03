@@ -9,11 +9,11 @@
                     v-layout.column.mt-2
                         v-flex.my-2.white--text
                             .display-1.font-weight-bold.heading-font Development Sprints
-                            .subheading 開発者スプリント
-                        v-flex
+                            .body-2 開発者スプリント
+                        v-flex.py-3
                             v-card.pa-3
                                 v-card-title.align-end
-                                    span.display-1 09.14 
+                                    span.display-1.heading-font 09.14 
                                     span.mx-2 {{ $t("weekday.sat") }}
                                     v-icon location_on
                                     span {{ $t("basic.access") }}: {{ $t("basic.hennge") }}
@@ -21,13 +21,9 @@
                                     span {{ $t("home.session.dev-spr.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round outline disabled)
-                                            span {{ $t("basic.detail") }}
-                                            v-icon keyboard_arrow_right
+                                        button-with-arrow(color="primary" :outline="true" :disabled="true" size="normal") {{ $t("basic.detail") }}
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round href="https://pyconjp.connpass.com/event/136558/" target="_blank")
-                                            span.font-weight-bold {{ $t("basic.apply") }}
-                                            v-icon keyboard_arrow_right
+                                        button-with-arrow(color="primary" size="normal" href="https://pyconjp.connpass.com/event/136558/") {{ $t("basic.apply") }}
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
                     :class="{'px-4': $vuetify.breakpoint.smAndDown, 'pl-4': $vuetify.breakpoint.mdAndUp}"
                 )
@@ -35,11 +31,11 @@
                     v-layout.column.mt-2
                         v-flex.my-2.white--text
                             .display-1.font-weight-bold.heading-font Tutorial Day
-                            .subheading チュートリアル
-                        v-flex
+                            .body-2 チュートリアル
+                        v-flex.py-3
                             v-card.pa-3
                                 v-card-title.align-end
-                                    span.display-1 09.15
+                                    span.display-1.heading-font 09.15
                                     span.mx-2 {{ $t("weekday.sun") }}
                                     v-icon location_on
                                     span {{ $t("basic.access") }}: {{ $t("basic.pio") }}
@@ -47,13 +43,9 @@
                                     span {{ $t("home.session.tutorial.desc") }}
                                 v-layout.wrap.pa-2
                                     v-flex.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round outline disabled)
-                                            span {{ $t("basic.detail") }}
-                                            v-icon keyboard_arrow_right
+                                        button-with-arrow(color="primary" :outline="true" :disabled="true" size="normal") {{ $t("basic.detail") }}
                                     v-flex.xs12.sm12.md6.px-1
-                                        v-btn(block color="primary" round disabled)
-                                            span.font-weight-bold {{ $t("basic.apply") }}
-                                            v-icon keyboard_arrow_right
+                                        button-with-arrow(color="primary" size="normal" href="" :disabled="true" ) {{ $t("basic.apply") }}
 </template>
 
 <style lang="sass" scoped>
@@ -77,8 +69,12 @@
 
 
 <script>
+import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
 export default {
-    name: "TheSession"
+    name: "TheSession",
+    components: {
+        "button-with-arrow": ButtonWithArrow
+    }
 }
 </script>
 
