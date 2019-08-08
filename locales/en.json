@@ -5,7 +5,8 @@
         "hennge": "HENNGE",
         "detail": "Detail",
         "apply": "Apply",
-        "norm": "Norm"
+        "norm": "Norm",
+        "recruit": "Recruit"
     },
     "weekday": {
         "mon": "Mon",
@@ -64,5 +65,8 @@
     "contact": {
         "desc1": "Please check <a href='/' style='color: white;'>FAQ</a> in advance.",
         "desc2": "We members are all volunteer staff. It might take a week to reply for your message."
+    },
+    "sponsor": {
+        "title": "Sponsors"
     }
 }

@@ -5,7 +5,8 @@
         "hennge": "HENNGE",
         "detail": "詳細情報",
         "apply": "参加申し込み",
-        "norm": "行動規範"
+        "norm": "行動規範",
+        "recruit": "採用について"
     },
     "weekday": {
         "mon": "月・祝",
@@ -64,5 +65,8 @@
     "contact": {
         "desc1": "事前に<a href='/' style='color: white;'>FAQ</a>をご確認いただけますようにお願いします。",
         "desc2": "ボランティアによる運営ですので、回答には1週間程度を要します。<br>何卒お待ちいただけますようにお願いします。"
+    },
+    "sponsor": {
+        "title": "スポンサー"
     }
 }
