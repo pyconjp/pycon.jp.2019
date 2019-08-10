@@ -49,15 +49,15 @@ export default {
   .left-top {
     left: -2px;
     top: -2px;
-    border-top: 4px solid #EBA4C3;
-    border-left: 4px solid #EBA4C3;
+    border-top: 3px solid #EBA4C3;
+    border-left: 3px solid #EBA4C3;
   }
 
   .right-bottom {
     right: -2px;
     bottom: -2px;
-    border-bottom: 4px solid #EBA4C3;
-    border-right: 4px solid #EBA4C3;
+    border-bottom: 3px solid #EBA4C3;
+    border-right: 3px solid #EBA4C3;
   }
 }
 </style>
