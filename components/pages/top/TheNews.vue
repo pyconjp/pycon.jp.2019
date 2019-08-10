@@ -19,7 +19,7 @@
                             :class="{'ml-0': $vuetify.breakpoint.smAndDown, 'ml-3': $vuetify.breakpoint.mdAndUp}"
                         )
                             v-flex.md2.xs4.sm3.text-xs-center
-                                v-card(depressed flat).primary.white--text.pa-1 {{item.date}}
+                                v-card(depressed flat).themeColor3.white--text.pa-1 {{item.date}}
                             v-flex.md10.xs8.sm9.ml-3 {{item.title}}
 
 </template>

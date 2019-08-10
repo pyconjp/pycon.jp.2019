@@ -4,10 +4,12 @@
         v-layout.my-4
             v-flex.xs12.text-xs-center
                 first-heading(name="Overview")
+        // Spacer
+        v-layout.py-3
 
         v-card
             v-layout.wrap
-                v-flex.md8.py-4
+                v-flex.md8.py-5
                     v-layout.wrap
                         v-flex.md12
                             secondary-heading(name="What is PyCon JP?" description="PyCon JPとは")
@@ -15,11 +17,11 @@
                         v-flex.md12.py-4
                             .body-1  {{ $t("home.overview.about") }}
                         v-flex.xs12.sm12.md6.px-3.py-2
-                            button-with-arrow(:outline="true" size="large" color="primary") {{  $t("home.overview.theme") }}
+                            button-with-arrow(:outline="true" size="large" color="themeColor3") {{  $t("home.overview.theme") }}
                         v-flex.xs12.sm12.md6.px-3.py-2
-                            button-with-arrow(:outline="true" size="large" color="primary") {{ $t("basic.norm") }}
+                            button-with-arrow(:outline="true" size="large" color="themeColor3") {{ $t("basic.norm") }}
                 v-flex.md4
-                    v-img(src="https://via.placeholder.com/500" width="100%" height="350px")
+                    v-img(:src="require('~/assets/images/top/whatispyconjp.png')" width="100%" min-height="100%")
 
 </template>
 

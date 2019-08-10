@@ -11,8 +11,8 @@
     //- p.mt-4(v-if="sponsor.description") {{ sponsor.description }}
     p.mt-4 {{ dummyText }}
     .text-md-center(v-if="showRec")
-      //- v-btn.font-weight-bold(v-if="sponsor.recruitUrl" outline round color="primary" :href="sponsor.recruitUrl") {{ $t("basic.recruit") }}
-      v-btn.font-weight-bold.px-5.py-2(outline round color="primary" href="https://example.com/" target="_blank") 
+      //- v-btn.font-weight-bold(v-if="sponsor.recruitUrl" outline round color="themeColor3" :href="sponsor.recruitUrl") {{ $t("basic.recruit") }}
+      v-btn.font-weight-bold.px-5.py-2(outline round color="themeColor3" href="https://example.com/" target="_blank") 
         v-layout.align-center.subheading
           v-flex
             span.mr-2 {{ $t("basic.recruit") }}

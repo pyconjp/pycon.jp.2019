@@ -4,7 +4,7 @@
         v-layout.my-4
             v-flex.xs12.text-xs-center
                 first-heading(name="Access")
-        v-layout.wrap.fill-height
+        v-layout.wrap.fill-height.access
             v-flex.xs12.sm12.md8.px-2
                 v-card(height="100%")
                     v-layout.pa-3
@@ -22,7 +22,7 @@
                     v-layout.column.pa-3
                         v-flex.md12.text-xs-left
                             .display-1
-                                v-icon(size=40).primary--text location_on
+                                v-icon(size=40).themeColor3--text location_on
                                 span.ml-3 {{ $t("basic.pio") }}
                         v-flex.xs12.pa-3
                             GmapMap(
@@ -48,7 +48,7 @@
                     v-layout.column.pa-3
                         v-flex.xs12.text-xs-left
                             .display-1
-                                v-icon(size=40).primary--text location_on
+                                v-icon(size=40).themeColor3--text location_on
                                 span.ml-3 {{ $t("basic.hennge") }}
                         v-flex.xs12.pa-3
                             GmapMap(
@@ -63,6 +63,12 @@
                                     :draggable="true"
                                 )
 </template>
+
+<style lang="sass" scoped>
+.access
+    margin: 0 -8px
+</style>
+
 
 <script>
 import FirstHeading from "@/components/parts/FirstHeading"

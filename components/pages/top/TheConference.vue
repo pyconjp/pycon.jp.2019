@@ -9,81 +9,84 @@
                 .body-2 {{ dummyText }}
         v-layout.wrap.pa-4.justify-center
             v-flex.xs12.sm12.md4.text-xs-right.px-3
-                button-with-arrow(:outline="true" color="primary" size="large") {{ $t("home.conference.sessions") }}
+                button-with-arrow(:outline="true" color="themeColor3" size="large") {{ $t("home.conference.sessions") }}
             v-flex.xs12.sm12.md4.text-xs-left.px-3
-                button-with-arrow(:outline="true" color="primary" size="large") {{ $t("home.conference.timetables") }}
+                button-with-arrow(:outline="true" color="themeColor3" size="large") {{ $t("home.conference.timetables") }}
+
         .spacer.py-2
+
+        // 基調講演
         v-layout.my-4
             v-flex.md12
                 secondary-heading(name="Keynote" description="基調講演")
         v-layout.justify-space-between(
-            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-4': $vuetify.breakpoint.mdAndUp}"
+            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
         )
             v-flex.xs12.sm12.md6
                 talk-card(
                     date="09.16"
-                    weekday="月・祝"
-                    profileImg="https://via.placeholder.com/500"
+                    :weekday="$t('weekday.mon')"
+                    profileImg="cory_althoff.png"
                     speakerName="Cory Althoff"
                     sessionTheme="TBD"
-                    :profile="dummyText"
+                    :profile="$t('home.conference.cory_profile')"
                 )
             v-flex.xs12.sm12.md6.pt-1(
                 :class="{'ml-0': $vuetify.breakpoint.smAndDown, 'ml-4': $vuetify.breakpoint.mdAndUp, 'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
             )
                 talk-card(
-                    date="09.16"
-                    :weekday="$t('weekday.mon')"
-                    profileImg="https://via.placeholder.com/500"
-                    speakerName="Cory Althoff"
+                    date="09.17"
+                    :weekday="$t('weekday.tue')"
+                    profileImg="koike.png"
+                    speakerName="小池 誠"
                     sessionTheme="TBD"
-                    :profile="dummyText"
+                    :profile="$t('home.conference.koike_profile')"
                 )
         .spacer.py-4
+
+        // 招待講演
         v-layout.my-4
             v-flex.xs12
                 secondary-heading(name="Invited Lecture" description="招待講演")
         v-layout.justify-space-between(
-            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-4': $vuetify.breakpoint.mdAndUp}"
+            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
         )
-            v-flex.xs12.sm12.md6
-                talk-card(
-                    date="09.16"
-                    :weekday="$t('weekday.mon')"
-                    profileImg="https://via.placeholder.com/500"
-                    speakerName="Cory Althoff"
-                    sessionTheme="TBD"
-                    :profile="dummyText"
-                )
             v-flex.xs12.sm12.md6(
-                :class="{'ml-0': $vuetify.breakpoint.smAndDown, 'ml-4': $vuetify.breakpoint.mdAndUp, 'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
+                :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
             )
                 talk-card(
-                    date="09.16"
-                    :weekday="$t('weekday.mon')"
-                    profileImg="https://via.placeholder.com/500"
-                    speakerName="Cory Althoff"
+                    date="09.17"
+                    :weekday="$t('weekday.tue')"
+                    profileImg="lyu.png"
+                    speakerName="Renyuan Lyu"
                     sessionTheme="TBD"
-                    :profile="dummyText"
+                    :profile="$t('home.conference.lyu_profile')"
                 )
         .spacer.py-4
         v-layout.mt-4.mb-2
             v-flex.xs12
                 secondary-heading(name="Sessions" description="その他カンファレンス内容")
-        v-layout.row.wrap
+
+        v-layout.row.wrap(
+            :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
+        ).sessions
             v-flex.md4.pa-2(v-for="session in sessions" :key="session.id")
                 v-card
                     v-img(:src="session.img" height="150px")
-                    v-layout.pa-3.column
+                    v-layout.pa-4.column
                         v-flex.xs12
                             .title.font-weight-bold {{ session.title }}
                             .caption.grey--text.grey--lighten-2.mt-1 {{ session.caption }}
                             .body-1.my-2 {{ session.description }}
                         v-flex.xs12.px-4
-                            v-btn(round color="primary" block outline)
-                                span {{ $t("basic.detail") }}
-                                v-icon keyboard_arrow_right
+                            button-with-arrow(color="themeColor3" :outline="true" size="normal") {{ $t("basic.detail") }}
 </template>
+
+<style lang="sass" scoped>
+.sessions
+    margin: 0 -8px
+</style>
+
 
 <script>
 import FirstHeading from "@/components/parts/FirstHeading"
@@ -106,19 +109,19 @@ export default {
             dummyText: dummyText,
             sessions: [
                 {
-                    id: 1, img: "https://via.placeholder.com/500", title: "Talk Session", caption: "トークセッション", description: dummyText,
+                    id: 1, img: require("~/assets/images/top/talk.png"), title: "Talk Session", caption: "トークセッション", description: dummyText,
                 },
                 {
-                    id: 2, img: "https://via.placeholder.com/500", title: "Begginer's Session", caption: "ビギナーセッション", description: dummyText,
+                    id: 2, img: require("~/assets/images/top/begginer_session.png"), title: "Begginer's Session", caption: "ビギナーセッション", description: dummyText,
                 },
                 {
-                    id: 3, img: "https://via.placeholder.com/500", title: "lightning talk", caption: "ライトニングトーク", description: dummyText,
+                    id: 3, img: require("~/assets/images/top/lt.png"), title: "lightning talk", caption: "ライトニングトーク", description: dummyText,
                 },
                 {
-                    id: 4, img: "https://via.placeholder.com/500", title: "Poster", caption: "ポスターセッション", description: dummyText,
+                    id: 4, img: require("~/assets/images/top/poster.png"), title: "Poster", caption: "ポスターセッション", description: dummyText,
                 },
                 {
-                    id: 5, img: "https://via.placeholder.com/500", title: "Job Fair", caption: "ジョブフェア", description: dummyText,
+                    id: 5, img: require("~/assets/images/top/poster_com.png"), title: "Job Fair", caption: "ジョブフェア", description: dummyText,
                 }
             ]
         }

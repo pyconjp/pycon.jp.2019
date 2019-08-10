@@ -1,7 +1,7 @@
 <template lang="pug">
 v-btn(
-     :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle" :href="href" target="_blank"
-     :disabled="disabled"
+     :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle" :href="href" :target="target"
+     :disabled="disabled" :dark="dark"
 ).parent
     span.font-weight-bold
         slot
@@ -27,7 +27,9 @@ export default {
         href: {type: String},
         block: {type: Boolean, default: true},
         outline: {type: Boolean, default: false},
-        disabled: {type: Boolean, default: false}
+        disabled: {type: Boolean, default: false},
+        dark: {type: Boolean, default: false},
+        target: {type: String, default: "_self"}
     }
 }
 </script>

@@ -8,7 +8,7 @@
                             img(:src="require('@/assets/images/square_logo.png')" :width="$vuetify.breakpoint.sm ? '50%' : '100%'")
                         v-flex.my-4.text-xs-left.text-xs-center
                             span.headline
-                                span.primaryText--text
+                                span.themeColor3--text
                                     span(v-show="$vuetify.breakpoint.mdAndUp").mr-1 ────
                                     span 2019.09.14 - 17
                                 a(href="https://twitter.com/search?q=%23pyconjp" target="_blank")
@@ -18,28 +18,28 @@
                 v-flex.md6.xs12.sm12(:class="{'pa-0': $vuetify.breakpoint.smAndDown, 'pa-5': $vuetify.breakpoint.mdAndUp}")
                     v-layout.column.right-padding
                         v-flex
-                            h2.display-2.primaryText--text.font-weight-bold.heading-font Conference
+                            h2.display-2.themeColor3--text.heading-font Conference
                         v-flex.caption
-                            span.primaryText--text.font-weight-bold カンファレンス
+                            span.themeColor3--text.font-weight-bold カンファレンス
                         v-flex.py-4.text-md-left
                             span
                                 span.text-no-wrap
                                     span.display-2.heading-font 09.16
-                                    span.title.ml-2.font-weight-bold {{ $t("weekday.mon") }}
+                                    span.title.ml-2.themeRed--text {{ $t("weekday.mon") }}
                                 span.display-1.grey--text.grey--lighten(:class="{'mx-2': $vuetify.breakpoint.smAndDown, 'mx-4': $vuetify.breakpoint.mdAndUp}") -
                                 span.text-no-wrap
                                     span.display-2.heading-font 09.17
-                                    span.title.ml-2.font-weight-bold  {{ $t("weekday.tue") }}
+                                    span.title.ml-2  {{ $t("weekday.tue") }}
                         v-flex
-                            a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank")
+                            a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank").text1--text
                                 v-layout.align-center
                                     v-flex.shrink
                                         // TODO: (ikedaosushi) outlinedにしたい
                                         v-icon(large) location_on
                                     v-flex
-                                        span.title.ml-2  {{ $t("basic.access") }}: {{ $t("basic.pio") }}
+                                        span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.my-2.pa-4
-                            button-with-arrow.title(color="primary" customStyle="height: 60px;" href="https://pyconjp.connpass.com/event/135734/") {{ $t("basic.apply") }}
+                            button-with-arrow.title(color="themeColor3" :dark="true" customStyle="height: 60px;" href="https://pyconjp.connpass.com/event/135734/") {{ $t("basic.apply") }}
                         v-flex.text-md-left.mt-4.mb-2.subheading
                             v-layout.align-center
                                 v-flex.shrink

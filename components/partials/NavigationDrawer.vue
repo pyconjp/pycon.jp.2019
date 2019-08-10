@@ -9,7 +9,7 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute width="300")
                 div.ml-2.grey--text {{ toLang }}
         v-divider
         a(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank" rel="noreferrer noopener" @click="toggleDrawer")
-            v-list-tile.primary
+            v-list-tile.themeColor3
                 v-list-tile-content
                 v-list-tile-title.font-weight-bold {{$t("basic.apply")}}
 </template>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.primary {
+.themeColor3 {
   color: white;
 }
 </style>

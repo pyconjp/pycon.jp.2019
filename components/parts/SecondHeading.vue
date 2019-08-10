@@ -1,10 +1,10 @@
 <template lang="pug">
 .secondary-heading.pl-5
-    .bar.primary--text.display-1 ─
+    .bar.themeColor3--text.display-1 ─
     .display-1.font-weight-bold.name.heading-font
         v-layout.align-center
             v-flex.shirnk
-                span {{ name }}
+                span.themeBlack--text {{ name }}
             slot(name="additional")
     .caption.grey--text.grey--lighten-3.font-weight-bold.mt-2 {{ description }}
 </template>
