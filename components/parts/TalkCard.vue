@@ -36,8 +36,8 @@
 .corner-left-top
     top: -2px
     left: -2px
-    border-left: solid 4px #E1A7C2
-    border-top: solid 4px #E1A7C2
+    border-left: solid 4px #EBA4C3
+    border-top: solid 4px #EBA4C3
 .corner-right-bottom
     right: -2px
     bottom: -2px
