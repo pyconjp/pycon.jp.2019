@@ -83,25 +83,25 @@ export default {
   */
   vuetify: {
     theme: {
-      themeColor0: "#4F455A",
-      themeColor1: "#9C8CBE",
-      themeColor2: "#EBA4C3",
-      themeColor3: "#5970A5",
-      themeColor4: "#C8A177",
-      apply: "#E55493",
-      applyLighten: "#E75C99",
-      applyDarken: "#E24D8B",
-      blueBlack: "#36476D",
-      pupleBlack: "#443565",
-      pinkBlack: "#6E314C",
-      brownBlack: "#544331",
-      customBlack: "#222222",
-      themeGrey1: "#444444",
-      themeGrey2: "#888888",
-      blueGrey1: "#CDCFD4",
-      blueGrey2: "#E9EBF0",
-      themeRed: "#CC2343",
-      themeBlue: "#3484C0",
+      themeColor0: "#4F455A", // テーマカラー0： ロゴのタイプ部分
+      themeColor1: "#9C8CBE", // テーマカラー1： フレームボタン、開発スプリント等
+      themeColor2: "#EBA4C3", // テーマカラー2： 小見出しテキスト、チュートリアル等
+      themeColor3: "#5970A5", // テーマカラー3： エリア見出し、セクション見出しマーカー、カンファレンス等
+      themeColor4: "#C8A177", // テーマカラー4： 子供向けワークショップ等
+      apply: "#E55493", // 申し込み・リンクカラー： 申し込みボタン基本色、テキストリンク
+      applyLighten: "#E75C99", // 申し込み・リンクカラー明： 申し込みボタン（グラデーション明側）
+      applyDarken: "#E24D8B", // 申し込み・リンクカラー暗： 申し込みボタン（グラデーション暗側）
+      blueBlack: "#36476D", // ブルーブラック： ドロップシャドウ（基本）
+      pupleBlack: "#443565", // パープルブラック： ドロップシャドウ（テーマカラー1が地の場合）
+      pinkBlack: "#6E314C", // ピンクブラック： ドロップシャドウ（テーマカラー2が地の場合）
+      brownBlack: "#544331", // ブラウンブラック： ドロップシャドウ（テーマカラー4が地の場合）
+      customBlack: "#222222", // ブラック： キャッチフレーズ、見出しテキスト
+      themeGrey1: "#444444", // グレー1： 本文テキスト1
+      themeGrey2: "#888888", // グレー2： 本文テキスト2
+      blueGrey1: "#CDCFD4", // ブルーグレー： セクション見出しサブテキスト、補足・注釈テキスト
+      blueGrey2: "#E9EBF0", // ブルーグレー2： 罫線、エリア背景
+      themeRed: "#CC2343", // レッド： 注意、日曜・祝日
+      themeBlue: "#3484C0", // ブルー： 土曜
       primary: "#D66194",
       primaryText: "#5E6FA1",
       secondary: "#C2A27D",
