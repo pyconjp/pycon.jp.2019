@@ -30,16 +30,19 @@ export default {
     'pyconjp-footer': Footer,
     'navigation-drawer': NavigationDrawer
   },
+  created(){
+    console.log(this)
+  },
   data() {
     return {
       navigations: [
         {
           id: 0,
           name: this.$t('header.menu.about.parent'),
-          to: '/about',
+          to: this.$router.history.base + '/about',
           submenus: [
             { id: 0, name: this.$t('header.menu.about.about-event'), to: "/#overview" },
-            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: true, to: "/code-of-conduct" }
+            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: false, to: "/code-of-conduct" }
           ]
         },
         {
@@ -49,7 +52,7 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: "/#conference",
+              to: this.$router.history.base + "/#conference",
               // subsubmenus: [
               //   {
               //     id: 0,
@@ -70,12 +73,12 @@ export default {
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: "/#session"
+              to: this.$router.history.base + "/#session"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: "/#session"
+              to: this.$router.history.base + "/#session"
             }
           ]
         },
@@ -89,19 +92,19 @@ export default {
         {
           id: 4,
           name: this.$t('header.menu.access'),
-          to: '/#access',
+          to: this.$router.history.base + '/#access',
           submenus: []
         },
         {
           id: 5,
           name: this.$t('header.menu.support'),
-          to: '/#support',
+          to: this.$router.history.base + '/#support',
           submenus: []
         },
         {
           id: 6,
           name: this.$t('header.menu.sponsor'),
-          to: '/#sponsor',
+          to: this.$router.history.base + '/sponsors',
           submenus: []
         }
       ],
