@@ -9,11 +9,12 @@ v-layout.wrap.justify-center.pb-4
                 v-layout(align-center justify-center row fill-height)
                   p.text-xs-center.font-weight-bold(
                     :class="{'small': $vuetify.breakpoint.smAndDown, 'headline': $vuetify.breakpoint.mdAndUp}"
-                  ) {{sponsor.name}}
-
+                  ) {{name(sponsor)}}
 </template>
 
 <script>
+import { mapState, mapActions, mapMutations } from 'vuex';
+
 export default {
   props: {
     sponsors: {
@@ -33,6 +34,12 @@ export default {
       required: true
     }
   },
+  computed: {
+    ...mapState(['locale'])
+  },
+  methods: {
+    name(sponsor) { return  this.locale === "ja" ? sponsor.nameJa : sponsor.nameEn }
+  }
 }
 </script>
 

@@ -14,11 +14,11 @@
         v-layout.my-3.wrap.justify-center
             //- TODO: #sudame スポンサー一覧ページが完成し次第コメント解除
             //- v-flex.xs12.sm12.md3.text-xs-right.px-2
-            //-     v-btn(outline block color="primary" round large)
+            //-     v-btn(outline block color="themeColor3" round large)
             //-         span {{ $t("home.sponsor.list") }}
             //-         v-icon keyboard_arrow_right
             //- v-flex.xs12.sm12.md3.text-xs-left.px-2
-            //-     v-btn(block color="primary" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
+            //-     v-btn(block color="themeColor3" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
             //-         span {{ $t("home.sponsor.hiring") }}
             //-         v-icon keyboard_arrow_right
 </template>

@@ -5,7 +5,8 @@
         "hennge": "HENNGE",
         "detail": "Detail",
         "apply": "Apply",
-        "norm": "Norm"
+        "norm": "Norm",
+        "recruit": "Recruit"
     },
     "weekday": {
         "mon": "Mon",
@@ -15,13 +16,28 @@
     },
     "header": {
         "menu": {
-            "home": "Home",
-            "about": "About",
-            "events": "Events",
+            "about": {
+                "parent": "About",
+                "about-event": "Event",
+                "coc": "Code Of Conduct"
+            },
+            "events": {
+                "parent": "Events",
+                "conference": {
+                    "parent": "Conference",
+                    "timetable": "Timetable",
+                    "sessions": "Sessions"
+                },
+                "child-workshop": "Child Workshop",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
+            },
             "news": "News",
             "access": "Access",
             "support": "Support",
-            "sponsor": "Sponsor"
+            "sponsor": "Sponsor",
+            "staff": "Staff",
+            "faq": "FAQ"
         },
         "apply": "Apply"
     },
@@ -38,7 +54,14 @@
                 "desc": "Tutorial Day"
             }
         },
+        "news": {
+            "list": "News",
+            "staff": "Looking for Staff！",
+            "staff_desc": "PyCon JP 2019開催を積極的に進められるコアスタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
+            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は https://pyconjp-staff.connpass.com/ から「にぎやかし」で参加してみてください。"
+        },
         "conference": {
+            "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.",
             "sessions": "Sessions",
             "timetables": "Time Tables"
         },
@@ -64,5 +87,8 @@
     "contact": {
         "desc1": "Please check <a href='/' style='color: white;'>FAQ</a> in advance.",
         "desc2": "We members are all volunteer staff. It might take a week to reply for your message."
+    },
+    "sponsor": {
+        "title": "Sponsors"
     }
 }
