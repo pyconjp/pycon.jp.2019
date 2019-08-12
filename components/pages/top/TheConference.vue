@@ -52,7 +52,7 @@
             :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
         )
             v-flex.xs12.sm12.md6(
-                :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
+                :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp, 'mx-0': $vuetify.breakpoint.smAndDown, 'mr-3': $vuetify.breakpoint.mdAndUp }"
             )
                 talk-card(
                     date="09.17"
@@ -62,6 +62,18 @@
                     sessionTheme="TBD"
                     :profile="$t('home.conference.lyu_profile')"
                 )
+            v-flex.xs12.sm12.md6(
+                :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp, 'mx-0': $vuetify.breakpoint.smAndDown, 'ml-3': $vuetify.breakpoint.mdAndUp }"
+            )
+                v-card(flat color="blueGrey2")
+                    .pa-3
+                        v-img(:src="require('@/assets/images/pycontaiwan2019.svg')")
+                    v-card-title
+                        a(href="https://tw.pycon.org/2019/en-us/" target="_blank")
+                            h3.themeColor1--text
+                                | PyCon Taiwan
+                                v-icon.pl-2(color="themeColor1" small) tab
+                        p.mt-2 招待講演の講師Renyuan LyuさんもスタッフをつとめるPyCon TW 2019がPyCon JP 2019の1週間後に、台湾台北市の中央研究院（Academia Sinica）、Humanities and Social Science Building（HSSB）にて開催されます。
         .spacer.py-4
         v-layout.mt-4.mb-2
             v-flex.xs12
