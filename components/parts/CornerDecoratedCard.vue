@@ -19,13 +19,13 @@ v-card(flat).pa-4.card
 .corner-left-top {
   top: -2px;
   left: -2px;
-  border-left: solid 4px #eba4c3;
-  border-top: solid 4px #eba4c3;
+  border-left: solid 3px #eba4c3;
+  border-top: solid 3px #eba4c3;
 }
 .corner-right-bottom {
   right: -2px;
   bottom: -2px;
-  border-right: solid 4px #e1a7c2;
-  border-bottom: solid 4px #e1a7c2;
+  border-right: solid 3px #e1a7c2;
+  border-bottom: solid 3px #e1a7c2;
 }
 </style>
