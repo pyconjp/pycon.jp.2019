@@ -3,10 +3,14 @@
     v-container
         v-layout.my-4
             v-flex.xs12.text-xs-center
-                first-heading(name="Access")
+                first-heading(name="Venue")
         v-layout.wrap.fill-height.access
             v-flex.xs12.sm12.md8.px-2
-                v-card(height="100%")
+                v-card.pt-3.mt-3(height="100%")
+                    .tags
+                        v-chip.heading-font(label color="themeColor3" small).font-weight-bold.white--text Conference
+                        v-chip.heading-font(label color="themeColor2" small).font-weight-bold.white--text Tutorial
+                        v-chip.heading-font(label color="themeColor4" small).font-weight-bold.white--text Youth Coder Workshop
                     v-layout.pa-3
                         v-flex.md12.text-xs-center
                             span
@@ -39,7 +43,9 @@
             v-flex.xs12.sm12.md4.px-2(
                 :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
             )
-                v-card(height="100%")
+                v-card.pt-3.mt-3(height="100%")
+                    .tags
+                        v-chip.heading-font(label color="themeColor1" small).font-weight-bold.white--text Development Sprints
                     v-layout.justify-center.pa-3
                         v-flex.md12.text-xs-center
                             span.headline 09.14
@@ -67,6 +73,12 @@
 <style lang="sass" scoped>
 .access
     margin: 0 -8px
+.tags 
+  position: absolute;
+  width: 100%
+  top: 0
+  transform: translateY(-50%)
+  text-align: center
 </style>
 
 
