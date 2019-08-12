@@ -72,7 +72,7 @@
                         a(href="https://tw.pycon.org/2019/en-us/" target="_blank")
                             h3.themeColor1--text
                                 | PyCon Taiwan
-                                v-icon.pl-2(color="themeColor1" small) tab
+                                v-icon.pl-2(color="themeColor1") open_in_new
                         p.mt-2 招待講演の講師Renyuan LyuさんもスタッフをつとめるPyCon TW 2019がPyCon JP 2019の1週間後に、台湾台北市の中央研究院（Academia Sinica）、Humanities and Social Science Building（HSSB）にて開催されます。
         .spacer.py-4
         v-layout.mt-4.mb-2
