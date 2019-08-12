@@ -16,13 +16,28 @@
     },
     "header": {
         "menu": {
-            "home": "Home",
-            "about": "About",
-            "events": "Events",
+            "about": {
+                "parent": "About",
+                "about-event": "Event",
+                "coc": "Code Of Conduct"
+            },
+            "events": {
+                "parent": "Events",
+                "conference": {
+                    "parent": "Conference",
+                    "timetable": "Timetable",
+                    "sessions": "Sessions"
+                },
+                "child-workshop": "Child Workshop",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
+            },
             "news": "News",
             "access": "Access",
             "support": "Support",
-            "sponsor": "Sponsor"
+            "sponsor": "Sponsor",
+            "staff": "Staff",
+            "faq": "FAQ"
         },
         "apply": "Apply"
     },
