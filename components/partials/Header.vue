@@ -5,21 +5,30 @@
             v-toolbar-title.ml-4.pa-2
                 img(src="@/assets/images/horizontal_logo.png" width="180px").mt-2
             v-toolbar-title.grey--text.text--lighten-4.display-1 |
-            .menu(v-for="item in items" :key="item.id")
-                template(v-if="item.submenus.length === 0")
-                    nuxt-link(:to="item.to")
+            .menu(v-for="menu in navigations" :key="menu.id")
+                template(v-if="menu.submenus.length === 0")
+                    nuxt-link(:to="menu.to")
                         v-btn(flat).text-xs-center.menu-btn
-                            span.subheading.font-weight-bold.textColor--text {{ item.name }}
+                            span.subheading.font-weight-bold.textColor--text {{ menu.name }}
                 template(v-else)
-                    v-menu(:nudge-width="100")
-                        template(v-slot:activator="{ on }")
+                    v-menu(:nudge-width="100" offset-y)
+                        template(#activator="{ on }")
                             .btn(v-on="on")
                                 v-btn(flat).text-xs-center.menu-btn
-                                    span.subheading.font-weight-bold.textColor--text {{ item.name }}
+                                    span.subheading.font-weight-bold.textColor--text {{ menu.name }}
                                     v-icon.textColor--text arrow_drop_down
-                        v-list
-                            v-list-tile(v-for='submenu in item.submenus' :key="submenu.id")
-                                v-list-tile-title(v-text="submenu.name")
+                        v-card(depressed color="themeColor0")
+                            v-layout.column.py-3.px-4
+                                v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
+                                    v-layout.align-top
+                                        v-flex.shrink
+                                            span.white--text.subheading {{ submenu.name }}
+                                        v-flex.ml-4
+                                            v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
+                                    .subsubmenus(v-if="submenu.subsubmenus").pt-2
+                                        .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-2
+                                            span.subheading.themeColor3--text.font-weight-bold ─
+                                            span.subheading.ml-2.white--text {{ ssmenu.name }}
             v-spacer
             nuxt-link(:to="toLocale")
                 v-btn(outline round)
@@ -28,16 +37,33 @@
             v-toolbar-items.ml-2
                 //- v-btn(large color="themeColor3" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
                 //-     span {{ $t('header.apply') }}
-                v-menu(v-model="applyMenu" :offset-y="true")
+                v-menu(v-model="applyMenu" offset-y min-width="350px")
                     template(v-slot:activator="{ on }")
-                        v-btn(color="themeColor3" v-on="on").depressed.subheading.px-3.white--text
-                            span {{ $t('header.apply') }}
+                        v-btn(color="themeColor3" v-on="on" depressed).subheading.font-weight-bold.px-4.white--text
+                            span {{ $t('header.apply.parent') }}
                             v-icon expand_more
-                    v-list
-                        v-list-tile(href="https://pyconjp.blogspot.com/2019/06/pyconjp-2019-tickets.html" target="_blank")
-                            v-list-tile-title {{$t("basic.apply")}}
-    template(v-else="$vuetify.breakpoint.smAndDown")
-        v-toolbar.elevation-0#header.white.pa-2
+                    // TODO: ikedaosushi 右寄せできていないので方法を検討する
+                    v-card(depressed color="themeColor3")
+                        v-layout.column.py-1
+                            v-flex(v-for='(menu, idx) in applies' :key="menu.id")
+                                .pl-4.py-3
+                                    v-layout.align-top.pr-1
+                                        v-flex.shrink
+                                            span.white--text.subheading.font-weight-bold {{ menu.name }}
+                                        v-flex.ml-4
+                                            v-icon(v-if="menu.pageTrans" medium color="white") keyboard_arrow_right
+                                    .subsubmenus(v-if="menu.submenus").pt-2
+                                        .subsubmenu(v-for="submenu in menu.submenus" :key="submenu.id").py-1
+                                            v-layout.align-center
+                                                v-flex.shrink
+                                                    span.body-2.white--text ─
+                                                v-flex.shrink
+                                                    span.body-2.ml-3.white--text {{ submenu.name }}
+                                                v-flex.ml-2
+                                                    v-icon(v-if="submenu.pageTrans" color="white") keyboard_arrow_right
+                                v-divider(v-if="idx != applies.length - 1" color="white")
+    template(v-if="$vuetify.breakpoint.smAndDown")
+        v-toolbar(flat)#header.white.pa-2
             v-toolbar-title.ml-2
                 img(src="@/assets/images/horizontal_logo.png" width="150px")
             v-spacer
@@ -52,6 +78,7 @@
 
 .menu-btn
     padding: 0 !important
+
 </style>
 
 
@@ -60,6 +87,9 @@ import { mapState, mapActions, mapMutations } from 'vuex';
 
 export default {
     name: "pycon-header",
+    props: [
+        "navigations", "applies"
+    ],
     data() {
         return {
             applyMenu: false,
@@ -77,17 +107,6 @@ export default {
                 case "en":
                     return "/ja" + this.$route.fullPath.replace("en/", "")
             }
-        },
-        items() {
-            return [
-                { id: 1, name: this.$t("header.menu.home"), to: "/", submenus: [] },
-                { id: 2, name: this.$t("header.menu.about"), to: "/about", submenus: [{id: 1, name: "◯◯について"}, {id: 2, name: "△△について"}] },
-                { id: 3, name: this.$t("header.menu.events"), submenus: [{id: 1, name: "Conference"}, {id: 2, name: "Tutorial Day"}] },
-                { id: 4, name: this.$t("header.menu.news"), to: "/news", submenus: [] },
-                { id: 5, name: this.$t("header.menu.access"), to: "/access", submenus: [] },
-                { id: 6, name: this.$t("header.menu.support"), to: "/supports", submenus: [] },
-                { id: 7, name: this.$t("header.menu.sponsor"), to: "/sponsors", submenus: [] }
-            ]
         }
     },
     methods: {

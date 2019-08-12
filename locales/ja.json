@@ -17,14 +17,48 @@
     "header": {
         "menu": {
             "home": "ホーム",
-            "about": "PyCon JPについて",
-            "events": "イベント一覧",
-            "news": "ニュース",
-            "access": "アクセス",
-            "support": "サポートする",
-            "sponsor": "スポンサー"
+            "about": {
+                "parent": "概要",
+                "about-event": "開催概要",
+                "coc": "行動規範"
+            }
+            ,
+            "events": {
+                "parent": "イベント一覧",
+                "conference": {
+                    "parent": "カンファレンス",
+                    "timetable": "タイムテーブル",
+                    "sessions": "セッション一覧"
+                },
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "news": "お知らせ",
+            "access": "会場",
+            "support": "サポート",
+            "sponsor": "スポンサー",
+            "staff": "スタッフ",
+            "faq": "FAQ"
         },
-        "apply": "各種申込み"
+        "apply": {
+            "parent": "各種申込み",
+            "event": {
+                "parent": "イベント参加申し込み",
+                "conference": "カンファレンス",
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "nursery": {
+                "parent": "託児所の申請",
+                "conf-child": "カンファレンス/子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "distant-support": "遠方支援の申請"
+        }
+        
     },
     "home": {
         "title": "トップページ",

@@ -3,9 +3,9 @@ v-app(
   class="hide-overflow"
   style="position: relative;"
 )
-  pyconjp-header
+  pyconjp-header(:navigations="navigations" :applies="applies")
   v-content
-    navigation-drawer
+    navigation-drawer(v-if="$vuetify.breakpoint.smAndDown" :navigations="navigations" :applies="applies")
     nuxt
   contact
   pyconjp-footer
@@ -29,6 +29,107 @@ export default {
     contact: Contact,
     'pyconjp-footer': Footer,
     'navigation-drawer': NavigationDrawer
+  },
+  data() {
+    return {
+      navigations: [
+        {
+          id: 0,
+          name: this.$t('header.menu.about.parent'),
+          to: '/about',
+          submenus: [
+            { id: 0, name: this.$t('header.menu.about.about-event') },
+            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: true }
+          ]
+        },
+        {
+          id: 1,
+          name: this.$t('header.menu.events.parent'),
+          submenus: [
+            {
+              id: 1,
+              name: this.$t('header.menu.events.conference.parent'),
+              subsubmenus: [
+                {
+                  id: 0,
+                  name: this.$t('header.menu.events.conference.timetable')
+                },
+                {
+                  id: 1,
+                  name: this.$t('header.menu.events.conference.sessions')
+                }
+              ]
+            },
+            {
+              id: 2,
+              name: this.$t('header.menu.events.child-workshop'),
+              pageTrans: true
+            },
+            {
+              id: 3,
+              name: this.$t('header.menu.events.dev-spr')
+            },
+            {
+              id: 4,
+              name: this.$t('header.menu.events.tutorial')
+            }
+          ]
+        },
+        {
+          id: 3,
+          name: this.$t('header.menu.news'),
+          to: '/news',
+          submenus: []
+        },
+        {
+          id: 4,
+          name: this.$t('header.menu.access'),
+          to: '/access',
+          submenus: []
+        },
+        {
+          id: 5,
+          name: this.$t('header.menu.support'),
+          to: '/supports',
+          submenus: []
+        },
+        {
+          id: 6,
+          name: this.$t('header.menu.sponsor'),
+          to: '/sponsors',
+          submenus: []
+        }
+      ],
+      applies: [
+        {
+          id: 0,
+          name: this.$t('header.apply.event.parent'),
+          submenus: [
+            { id: 0, name: this.$t('header.apply.event.conference') },
+            { id: 1, name: this.$t('header.apply.event.child-workshop') },
+            { id: 2, name: this.$t('header.apply.event.dev-spr') },
+            { id: 3, name: this.$t('header.apply.event.tutorial') }
+          ]
+        },
+        {
+          id: 1,
+          name: this.$t('header.apply.nursery.parent'),
+          submenus: [
+            {
+              id: 0,
+              name: this.$t('header.apply.nursery.conf-child'),
+              pageTrans: true
+            },
+            { id: 1, name: this.$t('header.apply.nursery.dev-spr') },
+            { id: 2, name: this.$t('header.apply.nursery.tutorial') }
+          ]
+        },
+        {
+          id: 2,
+          name: this.$t('header.apply.distant-support')
+        }
+      ]
+    }
   }
 }
 </script>
