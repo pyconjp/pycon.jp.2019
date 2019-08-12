@@ -32,10 +32,10 @@
       v-layout.wrap.px-5.py-3.sponsors
         v-flex.pa-2.md3.sm3.xs4(v-for="sponsor in filteredSponsors('Silver')" :key="sponsor.id")
           sponsor(:sponsor="sponsor" :image-aspect-ratio="16/9" title-size="title")
-    section
-      second-heading(name="Patron" description="パトロン")
-    section
-      second-heading(name="Media Sponsor" description="メディア")
+    //- section
+    //-   second-heading(name="Patron" description="パトロン")
+    //- section
+    //-   second-heading(name="Media Sponsor" description="メディア")
     section
       second-heading(name="Network Sponsor" description="ネットワーク")
       v-layout.wrap.px-5.py-3.sponsors
@@ -67,11 +67,11 @@ export default {
   methods: {
     filteredSponsors(packageName) {
       return this.sponsors.filter(sponsor => {
-        console.log(
-          sponsor.package,
-          packageName,
-          sponsor.package === packageName
-        )
+        // console.log(
+        //   sponsor.package,
+        //   packageName,
+        //   sponsor.package === packageName
+        // )
         return sponsor.package === packageName
       })
     }

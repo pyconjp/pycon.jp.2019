@@ -11,19 +11,30 @@
                             .display-1.heading-font Development Sprints
                             .body-2 開発者スプリント
                         v-flex.py-3
-                            v-card.pa-3
-                                v-card-title.align-end
-                                    .day.pr-3.right-border
+                            v-card(
+                                :class="{'pa-3': $vuetify.breakpoint.mdAndUp }"
+                            )
+                                v-layout.align-center(
+                                        :class="{'pa-2': $vuetify.breakpoint.smAndDown, 'pa-3': $vuetify.breakpoint.mdAndUp }"
+                                    )
+                                    v-flex.shrink.day.right-border(
+                                        :class="{'pr-3': $vuetify.breakpoint.mdAndUp }"
+                                    )
                                         span.display-1.heading-font 09.14 
                                         span.mx-2.themeBlue--text {{ $t("weekday.sat") }}
-                                    .venue.ml-3
+                                    v-flex.shrink.venue.mx-2
                                         v-icon location_on
-                                        span {{ $t("basic.access") }}: {{ $t("basic.hennge") }}
+                                    v-flex.text-xs-left
+                                        span.body-2 {{ $t("basic.access") }}: {{ $t("basic.hennge") }}
                                 v-card-text
                                     span {{ $t("home.session.dev-spr.desc") }}
-                                v-layout.wrap.pa-2
-                                    v-flex.xs12.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" :outline="true" :disabled="true" size="normal") {{ $t("basic.detail") }}
+                                v-layout.wrap.pa-2.align-center
+                                    v-flex.xs12.xs12.sm12.md6.px-1.py-2
+                                        a 
+                                            v-layout.align-center
+                                                v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
+                                                v-flex.text-md-left.pl-2
+                                                    v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.xs12.sm12.md6.px-1
                                         button-with-arrow(color="themeColor3" :dark="true" size="normal" href="https://pyconjp.connpass.com/event/136558/") {{ $t("basic.apply") }}
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
@@ -35,19 +46,28 @@
                             .display-1.heading-font Tutorial Day
                             .body-2 チュートリアル
                         v-flex.py-3
-                            v-card.pa-3
-                                v-card-title.align-end
-                                    .day.pr-3.right-border
+                            v-card(
+                                :class="{'pa-3': $vuetify.breakpoint.mdAndUp }"
+                            )
+                                v-layout.align-center(
+                                    :class="{'pa-2': $vuetify.breakpoint.smAndDown, 'pa-3': $vuetify.breakpoint.mdAndUp }"
+                                )
+                                    v-flex.shrink.day.right-border
                                         span.display-1.heading-font 09.15
                                         span.mx-2 {{ $t("weekday.sun") }}
-                                    .venue.ml-3
+                                    v-flex.shrink.venue.mx-2
                                         v-icon location_on
-                                        span {{ $t("basic.access") }}: {{ $t("basic.pio") }}
+                                    v-flex.text-xs-left
+                                        span.body-2 {{ $t("basic.access") }}: {{ $t("basic.pio") }}
                                 v-card-text
                                     span {{ $t("home.session.tutorial.desc") }}
-                                v-layout.wrap.pa-2
-                                    v-flex.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" :outline="true" :disabled="true" size="normal") {{ $t("basic.detail") }}
+                                v-layout.wrap.pa-2.align-center
+                                    v-flex.xs12.sm12.md6.px-1.py-2
+                                        a 
+                                            v-layout.align-center
+                                                v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
+                                                v-flex.text-md-left.pl-2
+                                                    v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.sm12.md6.px-1
                                         button-with-arrow(color="themeColor3" size="normal" href="" :disabled="true" ) {{ $t("basic.apply") }}
 </template>

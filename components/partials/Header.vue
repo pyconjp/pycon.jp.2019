@@ -2,12 +2,13 @@
 #pyconjp-header
     template(v-if="$vuetify.breakpoint.mdAndUp")
         v-toolbar#header(flat).white
-            v-toolbar-title.ml-4.pa-2
-                img(src="@/assets/images/horizontal_logo.png" width="180px").mt-2
+            nuxt-link(to="/")
+                v-toolbar-title.ml-4.pa-2
+                    img(src="@/assets/images/horizontal_logo.png" width="180px").mt-2
             v-toolbar-title.grey--text.text--lighten-4.display-1 |
             .menu(v-for="menu in navigations" :key="menu.id")
                 template(v-if="menu.submenus.length === 0")
-                    nuxt-link(:to="menu.to")
+                    a(:href="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
                         v-btn(flat).text-xs-center.menu-btn
                             span.subheading.font-weight-bold.textColor--text {{ menu.name }}
                 template(v-else)
@@ -20,11 +21,12 @@
                         v-card(depressed color="themeColor0")
                             v-layout.column.py-3.px-4
                                 v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
-                                    v-layout.align-top
-                                        v-flex.shrink
-                                            span.white--text.subheading {{ submenu.name }}
-                                        v-flex.ml-4
-                                            v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
+                                    a(:href="submenu.to" :target="submenu.pageTrans ? '_blank' : '_self'")
+                                        v-layout.align-top
+                                            v-flex.shrink
+                                                span.white--text.subheading {{ submenu.name }}
+                                            v-flex.ml-4
+                                                v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
                                     .subsubmenus(v-if="submenu.subsubmenus").pt-2
                                         .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-2
                                             span.subheading.themeColor3--text.font-weight-bold ─

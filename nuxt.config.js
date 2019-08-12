@@ -104,6 +104,7 @@ export default {
       blueGrey2: "#E9EBF0", // ブルーグレー2： 罫線、エリア背景
       themeRed: "#CC2343", // レッド： 注意、日曜・祝日
       themeBlue: "#3484C0", // ブルー： 土曜
+      linkBlue: "#1976D2",
       // themeColor3: "#D66194",
       // themeColor3: "#5E6FA1",
       secondary: "#C2A27D",

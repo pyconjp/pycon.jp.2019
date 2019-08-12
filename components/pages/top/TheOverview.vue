@@ -13,7 +13,9 @@
                     v-layout.wrap
                         v-flex.md12
                             secondary-heading(name="What is PyCon JP?" description="PyCon JPとは")
-                    v-layout.wrap.px-5
+                    v-layout.wrap(
+                        :class="{'px-2': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
+                    )
                         v-flex.md12.py-4
                             .body-1  {{ $t("home.overview.about") }}
                         v-flex.xs12.sm12.md6.px-3.py-2
@@ -30,8 +32,6 @@ import FirstHeading from "@/components/parts/FirstHeading"
 import SecondaryHeading from "@/components/parts/SecondHeading"
 import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
 
-const dummyText = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。";
-
 export default {
     name: "TheOverview",
     components: {
@@ -41,7 +41,6 @@ export default {
     },
     data() {
         return {
-            dummyText: dummyText
         }
     }
 }

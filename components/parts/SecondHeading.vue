@@ -2,7 +2,7 @@
 .secondary-heading.pl-5
     .bar.themeColor3--text.display-1 ─
     .display-1.font-weight-bold.name.heading-font
-        v-layout.align-center
+        v-layout.align-top
             v-flex.shirnk
                 span.themeBlack--text {{ name }}
             slot(name="additional")

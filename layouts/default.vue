@@ -38,8 +38,8 @@ export default {
           name: this.$t('header.menu.about.parent'),
           to: '/about',
           submenus: [
-            { id: 0, name: this.$t('header.menu.about.about-event') },
-            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: true }
+            { id: 0, name: this.$t('header.menu.about.about-event'), to: "/#overview" },
+            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: true, to: "/code-of-conduct" }
           ]
         },
         {
@@ -49,54 +49,59 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              subsubmenus: [
-                {
-                  id: 0,
-                  name: this.$t('header.menu.events.conference.timetable')
-                },
-                {
-                  id: 1,
-                  name: this.$t('header.menu.events.conference.sessions')
-                }
-              ]
+              to: "/#conference",
+              // subsubmenus: [
+              //   {
+              //     id: 0,
+              //     name: this.$t('header.menu.events.conference.timetable')
+              //   },
+              //   {
+              //     id: 1,
+              //     name: this.$t('header.menu.events.conference.sessions')
+              //   }
+              // ]
             },
             {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
-              pageTrans: true
+              pageTrans: true,
+              to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
-              name: this.$t('header.menu.events.dev-spr')
+              name: this.$t('header.menu.events.dev-spr'),
+              to: "/#session"
             },
             {
               id: 4,
-              name: this.$t('header.menu.events.tutorial')
+              name: this.$t('header.menu.events.tutorial'),
+              to: "/#session"
             }
           ]
         },
         {
           id: 3,
           name: this.$t('header.menu.news'),
-          to: '/news',
-          submenus: []
+          to: 'https://pyconjp.blogspot.com/search/label/pyconjp2019',
+          submenus: [],
+          pageTrans: true
         },
         {
           id: 4,
           name: this.$t('header.menu.access'),
-          to: '/access',
+          to: '/#access',
           submenus: []
         },
         {
           id: 5,
           name: this.$t('header.menu.support'),
-          to: '/supports',
+          to: '/#support',
           submenus: []
         },
         {
           id: 6,
           name: this.$t('header.menu.sponsor'),
-          to: '/sponsors',
+          to: '/#sponsor',
           submenus: []
         }
       ],

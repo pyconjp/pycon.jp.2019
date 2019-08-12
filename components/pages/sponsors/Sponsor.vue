@@ -7,12 +7,11 @@
     v-img(v-else :src="require('~/assets/images/horizontal_logo.png')" contain :aspect-ratio="imageAspectRatio")
   v-divider.mx-4
   .content.pa-4
-    p.font-weight-bold(:class="titleSize") {{ sponsor.name }}
-    //- p.mt-4(v-if="sponsor.description") {{ sponsor.description }}
-    p.mt-4 {{ dummyText }}
+    p.font-weight-bold(:class="titleSize") {{ name }}
+    p.mt-4(v-if="pr") {{ pr }}
     .text-md-center(v-if="showRec")
       //- v-btn.font-weight-bold(v-if="sponsor.recruitUrl" outline round color="themeColor3" :href="sponsor.recruitUrl") {{ $t("basic.recruit") }}
-      v-btn.font-weight-bold.px-5.py-2(outline round color="themeColor3" href="https://example.com/" target="_blank") 
+      v-btn.font-weight-bold.px-5.py-2(outline round color="themeColor3" :href="url" target="_blank") 
         v-layout.align-center.subheading
           v-flex
             span.mr-2 {{ $t("basic.recruit") }}
@@ -21,14 +20,19 @@
 </template>
 
 <script>
-const dummyText = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。";
+import { mapState, mapActions, mapMutations } from 'vuex';
 
 export default {
   props: {'sponsor': {}, 'image-aspect-ratio': {}, 'title-size': {}, 'showRec': { type: Boolean, default: false }},
-  data() {
-    return {
-      dummyText
-    }
+  created() {
+    console.log(this.sponsor)
+  },
+  computed: {
+      ...mapState(['locale']),
+      name() { return this.locale === "ja" ? this.sponsor.nameJa : this.sponsor.nameEn},
+      pr() { return this.locale === "ja" ? this.sponsor.prJa : this.sponsor.prEn},
+      url() { return this.locale === "ja" ? this.sponsor.urlJa : this.sponsor.urlEn},
+      recruit() { return this.locale === "ja" ? this.sponsor.recruitJa : this.sponsor.recruitEn}
   }
 }
 </script>

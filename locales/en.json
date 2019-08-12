@@ -55,9 +55,13 @@
             }
         },
         "news": {
-            "staff": "Looking for Staff！"
+            "list": "News",
+            "staff": "Looking for Staff！",
+            "staff_desc": "PyCon JP 2019開催を積極的に進められるコアスタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
+            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は https://pyconjp-staff.connpass.com/ から「にぎやかし」で参加してみてください。"
         },
         "conference": {
+            "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.",
             "sessions": "Sessions",
             "timetables": "Time Tables"
         },

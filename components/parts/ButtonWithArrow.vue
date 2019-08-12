@@ -1,7 +1,7 @@
 <template lang="pug">
 v-btn(
      :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle" :href="href" :target="target"
-     :disabled="disabled" :dark="dark"
+     :disabled="disabled" :dark="dark" :flat="flat"
 ).parent
     span.font-weight-bold
         slot
@@ -13,7 +13,10 @@ v-btn(
     position: relative
 .child
     position: absolute
-    right: 0px
+    right: -10px
+@media only screen and (min-width: 1264px)
+    .child
+        right: 0px
 </style>
 
 
@@ -29,7 +32,8 @@ export default {
         outline: {type: Boolean, default: false},
         disabled: {type: Boolean, default: false},
         dark: {type: Boolean, default: false},
-        target: {type: String, default: "_self"}
+        target: {type: String, default: "_self"},
+        flat: {type: Boolean, default: false}
     }
 }
 </script>

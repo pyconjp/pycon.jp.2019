@@ -8,8 +8,12 @@
                         secondary-heading(name="News" description="お知らせ" :right="true")
                             template(#additional)
                                 v-flex.md11
-                                    a(href="https://pyconjp.blogspot.com/search/label/pyconjp2019" target="_blank").subheading.pl-4 お知らせ一覧
-                                    v-icon keyboard_arrow_right
+                                    a(href="https://pyconjp.blogspot.com/search/label/pyconjp2019" target="_blank")
+                                        v-layout.align-top.justify-start
+                                            v-flex.shrink
+                                                span.subheading.pl-4 {{ $t("home.news.list") }}
+                                            v-flex.ml-2
+                                                v-icon(medium).linkBlue--text keyboard_arrow_right
             // ニュース一覧
             v-flex.xs12(
                 :class="{'px-0': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
@@ -22,15 +26,18 @@
                             v-flex.md10.xs8.sm9.ml-3 {{item.title}}
             // スタッフ募集
             a(href="" target="_blank")
-                v-layout.staff(
-                    :class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}"
-                ).my-3.py-3.align-center
-                    v-flex.md4.text-md-center.pa-3.right-border
-                        v-icon(medium).px-2 supervised_user_circle
-                        span.themeColor3--text.headline.font-weight-bold {{ $t("home.news.staff") }} 
-                    v-flex.md7.text-md-left.py-3.pl-4
+                v-layout.staff(:class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}").my-3.py-3.align-center.wrap
+                    v-flex.xs12.md4.text-md-center.pa-3.right-border
+                        v-layout.justify-center
+                            v-flex.text-xs-right.text-md-right.pr-1
+                                v-icon(medium).px-2 supervised_user_circle
+                            v-flex
+                                span.themeColor3--text.headline.font-weight-bold {{ $t("home.news.staff") }} 
+                    v-flex.xs10.md7.text-md-left.py-3.pl-4
                         .body-1.themeColor3--text {{ $t("home.news.staff_desc") }}
-                    v-flex.md1.text-md-right.px-4
+                    v-flex.xs1.md1.text-xs-right.text-md-right(
+                        :class="{'px-0': $vuetify.breakpoint.smAndDown, 'px-4': $vuetify.breakpoint.mdAndUp}"
+                    )
                         v-icon(large) keyboard_arrow_right
             v-layout(
                 :class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}"

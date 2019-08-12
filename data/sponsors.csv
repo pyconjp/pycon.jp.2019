@@ -1,38 +1,90 @@
-一意に特定できるID,スポンサープラン,企業名,「ロゴ」フォルダにいれたファイル名,採用リンク,紹介文
-id,package,name,logoIImage,recruitUrl,description
-pythonic-exam.com2,Breakfast Sponsor (朝食スポンサー),一般社団法人Pythonエンジニア育成推進協会,pythonic-exam_com.png,,
-gmo.jp,Diamond,GMOインターネット株式会社,gmo_jp.png,,
-squeeze-inc.co.jp,Gold,株式会社SQUEEZE,squeeze_inc_co_jp.png,,
-r.recruit.co.jp,Gold,アイシン精機,aisin.png,,
-scala-com.jp,Gold,（株）スカラコミュニケーションズ,scala-com_jp.png,,
-xica.net,Gold,株式会社サイカ,xica_net.png,,
-jsl.co.jp,Gold,株式会社日本システム技研,jsl_co_jp.jpg,,
-e-seikatsu.co.jp,Gold,（株）いい生活,e-seikatsu_co_jp.png,,
-prtimes.co.jp,Gold,株式会社PR TIMES,prtimes_co_jp.png,,
-tohmatsu.co.jp,Gold,デロイト トーマツ ファイナンシャルアドバイザリー合同会社,DEL_g_PRI_RGB.png,,
-iridge.jp,Gold,株式会社アイリッジ,iridge_jp.png,,
-leadinge.co.jp,Gold,株式会社リーディング・エッジ社,leadinge_co_jp.jpg,,
-olta.co.jp,Gold,OLTA株式会社,olta_co_jp.png,,
-jxpress.net,Gold,株式会社JX通信社,jxpress_net.png,,
-satori.team,Gold,SATORI株式会社,satori_team.png,,
-visasq.com,Gold,株式会社ビザスク,visasq_com.png,,
-intimatemerger.com,Other,株式会社インティメート・マージャー,intimatemerger_com.png,,
-groove-x.com,Platinum,GROOVE X株式会社,,,
-pythonic-exam.com,Platinum,一般社団法人Pythonエンジニア育成推進協会,pythonic-exam_com.png,,
-https://spherelinks.co.jp/,Silver,スフィアリンクス株式会社,spherelinks_co_jp.png,,
-stroly.jp,Silver,株式会社Stroly,stroly_jp.png,,
-beproud.jp,Silver,株式会社ビープラウド,beproud_jp.png,,
-nex.nikkei.com,Silver,日本経済新聞社,,,
-nexedi.com,Silver,Nexedi,,,
-samuraism.com,Silver,株式会社サムライズム,samuraism_com.png,,
-brainpad.co.jp,Silver,株式会社ブレインパッド,brainpad_co_jp.png,,
-opengroove.com,Silver,株式会社オープングルーヴ,opengroove_com.png,,
-mlabs.jp,Silver,株式会社 m-Lab,mlabs_jp.jpg,,
-https://pay.jp,Silver,"PAY, Inc.",pay_jp.png,,
-https://safie.link/,Silver,セーフィー株式会社,safie_link.png,,
-https://rightcode.co.jp,Silver,株式会社ライトコード,rightcode_co_jp.png,,
-https://supership.jp/,Silver,Supership株式会社,supership_jp.png,,
-hennge.com,Sprint Sponsorship,HENNGE株式会社,hennge_com.png,,
-revcomm.co.jp,Silver,株式会社RevComm,revcomm_co_jp.png,,
-conbu.net,Network Sponsor,COnference Network BUilders,conbu.png,,
-www.bbtower.co.jp,Network Sponsor,株式会社ブロードバンドタワー,bbt.png,,
+id,package,nameJa,nameEn,logoIImage,prJa,prEn,urlJa,urlEn,recruitEn,recruitJa
+pythonic-exam.com2,Breakfast Sponsor,一般社団法人Pythonエンジニア育成推進協会,"Python Engineer Development Co., ltd.",pythonic-exam_com.png,,,https://www.pythonic-exam.com/,https://www.pythonic-exam.com/en,,
+gmo.jp,Diamond,GMOインターネット株式会社,GMOインターネット株式会社,gmo_jp.png,,,,,,
+squeeze-inc.co.jp,Gold,株式会社SQUEEZE,SQUEEZE Inc.,squeeze_inc_co_jp.png,株式会社SQUEEZEは「価値の詰まった社会を創る」というミッションのもと、「空き家問題解消による地域活性化」と「⼈材の再発掘・活⽤による⼈材不⾜の解消」に取り組んでいます。主要事業として、宿泊事業者向けのクラウドサービスである「suitebook」、IoTやクラウドソーシングを活⽤したスマートホテル「Minn」や「Theatel」の運営を⾏っています。私たちはテクノロジーの⼒を⽤いて宿泊事業という領域を改⾰し、⼈々がより本質的な働き⽅が実現できるように、社会に貢献していきます。,"At SQUEEZE, our mission is to create a society squeezed full of value. We aim to revitalize areas with an abundance of vacant houses and to solve the lack of human resources. Our primary business is to provide a cloud service「suitebook」to property owners, as well as managing our own smart hotels, 「Minn」and「Theatel」which incorporates IoT and cloud sourcing. With the power of technology, we aim to revolutionize the accommodation business and to create a better working environment.",https://squeeze-inc.co.jp/,https://squeeze-inc.co.jp/,"At SQUEEZE we develop our main products using Python/Django, Go, and Angular. And we adopt Scrum as a development process. We are also aiming to use Python to analyze data and connect with IoT devices. Members of our company actively participate in events, as organizers, staffs, and as an information hub under our core value, “With Our Community”.",SQUEEZEでは主要なプロダクトを、Python/Django、Angularを⽤いて開発しています。また開発プロセスにスクラムを取り⼊れています。今後はIoT機器との連携やデータ分析の分野でもPythonの活⽤を進めていきます。 SQUEEZEではコアバリューの⼀つに `With Our Community`を掲げ、コミュニティ活動を推奨しています。そのため開発メンバーの多くが、イベントの主催、イベントスタッフ、外部への情報発信などを⾏なっており、積極的にコミュニティに関わっています。
+r.recruit.co.jp,Gold,アイシン精機,"Aisin Seiki Co., Ltd.",aisin.522f47f.png,,,,,,
+scala-com.jp,Gold,（株）スカラコミュニケーションズ,（株）スカラコミュニケーションズ,scala-com_jp.png,,,,,,
+xica.net,Gold,株式会社サイカ,"XICA CO.,LTD.",xica_net.png,「すべてのデータに示唆を届けすべての人に幸福を届ける」とミッションを掲げ、統計分析システムの開発・提供を行っています。創業から一貫して「分析のプロ」ではなく「現場のプロ」をユーザー対象としており、従来は専門知識を持つ一部の人しか享受できなかった分析による恩恵を、知識の有無を問わずすべての人々が享受できる世界を目指しています。現在は、テレビCMなどのオフライン広告の効果測定が可能な統計分析ツール「XICA magellan」を提供。国内大手企業を中心に導入され、国内トップのシェアを有しています。,"Our company's mission is ""To show meaning to all data, to deliver happiness to all people"", we now provide a data analysis tool called XICA Magellan which can measure the effects of offline ads such as TV commercials. Our target users are ""business professionals on site"" so data analysis can benefit all even without the statistical expertise, and that's the world we're creating. Many domestic leading companies to begin with have installed our product and we now hold the largest domestic share.",https://xica.net,https://xica.net,"Our development team's catchphrase is ""to choose technology that make the best"". It means that even in this era of drastic change we still hold the attitude to always understand our users' challenges and choose the technology that makes the best for them. Starting from chart rendering on the frontend, to web development on the backend, to data modeling design and implementation of analysis logic, we are hiring companions who would work alongside us on our mission.",開発チームでは「一番を選択し最高にする技術」をキャッチフレーズとしています。これは、急激なエンジニアリングの進歩により技術を使いこなす難易度が劇的に上がった現代においても、常にユーザーに向き合い、ユーザー課題を深く理解することを通して「一番の技術」を選択し、プロダクトをユーザーにとって「最高に価値ある状態」へ導く姿勢を表しています。フロントエンドのデータビジュアライゼーションからデータモデル設計や分析ロジックの実装まで、「すべてのデータに示唆を届ける」挑戦を共にしてくれる仲間を募集しています！
+jsl.co.jp,Gold,株式会社 日本システム技研,"Japan System Laboratory Co., Ltd.",jsl_co_jp.jpg,"株式会社日本システム技研(JSL)は「「技術力×人間力」で社会から注目され続ける企業になること」をビジョンに長野でPythonとAWSを中心としたWebの業務を中心に開発をしています。
+そして、積極的に外部への情報発信を行うためコワーキングスペースGEEKLAB.NAGANO(ギークラボ・ナガノ)を運営しています。
+GEEKLAB.NAGANOは、PythonやDjango、AWS、ディープラーニング、IoTなど
+新しい技術に関心があるエンジニアが集まり勉強会を開催しています。","Japan System Laboratory Co.,Ltd. (JSL) ""To become a company that continues to attract attention from society with"" technical power x human power """" in Nagano With the vision, we are developing mainly web operations centered on Python and AWS.
+We operate the coworking space GEEKLAB.NAGANO to actively disseminate information to the outside.
+At GEEKLAB.NAGANO, engineers who are interested in new technologies such as Python, Django, AWS, deep learning, and IoT gather to hold study sessions.",https://jsl.co.jp/,https://jsl.co.jp/,"We are recruiting web application engineers working in Nagano Prefecture! In addition to web applications, you can rely on AWS design, operation, and mobile application development. Even those with little experience are welcome if they are willing to learn and are motivated! ! This is a challenging work that is no different from a web system development company in the inner city that makes full use of trend technology. In addition, because it is a super flex system without core time, you decide your working hours and break times yourself. If you have a great engineer life in Nagano, why not consider the choice of Japan System Laboratory Co., Ltd.?","長野県で働くWebアプリケーションエンジニアを募集します！
+Webアプリケーションのほか、AWS設計・運用・モバイルアプリ開発をおまかせします。
+経験が浅い方でも、学習意欲があり、やる気がある方であれば歓迎します！！
+トレンド技術を駆使した都心のWebシステム開発会社と変わらないやりがいのある仕事です。
+また、コアタイムなしのスーパーフレックス制なので、出勤時間も休憩時間も自分で決めます。
+長野で充実したエンジニアライフをすごすなら、日本システム技研という選択肢を考えてみてはどうですか?"
+e-seikatsu.co.jp,Gold,いい生活,"e-Seikatsu Co., Ltd.",e-seikatsu_co_jp.png,"人は住むことをやめられません。
+いい生活は「全ての人の生活に関わる""不動産市場""を、テクノロジーでより良いものへ。」をミッションに掲げ、不動産業界で起こる売り手と買い手、貸主と借主の情報格差を埋めるため、皆さんがより「いい生活」が行えるようになるためにサービスの提供を行っています。
+不動産ビジネスの生産性向上のためのデスクトップツール「ESいい物件One」、住まいに関するコミュニケーションをサポートするスマートフォンアプリケーション「pocketpost」などを開発しています。","We are leading ReTech(Real Estate Technology) company in Japan, and provide many cloud services for both realtors and consumers.
+We were founded in 2000, and have been driving innovation in the real estate market for almost 20 years.
+Our name, `e-Seikatsu' means `good life' in Japanese, and our mission is ""Make real estate market better with technology"".
+We are confident that we can continue to innovate the market in the future.",https://www.e-seikatsu.info/,https://www.e-seikatsu.info/en/,"The server side component of our core product `e-bukken One` is written in Python and running on the microservice architecture.
+These services are processing huge amount of information related to real estates, such as property, contracts, customers, and so on.
+Thus, we have very big private and public data related to real estate, and we utilize these data for innovating market.
+If you are interested in our business, application, technology, or data, please contact us in our booth.
+We are hiring!"," 当社が提供しているサービスESいい物件Oneはマイクロサービス化しており、Pythonで書かれています。
+ ESいい物件Oneは不動産取引にかかわる様々を支援するクラウドサービスです。
+ 物件、契約、顧客にかかわる様々な大量な情報をPythonで書かれたプログラムが処理しております。
+ 我々はさらに業務システムだけでなくこれらのデータをさらに活用し、社会的価値の創造に挑戦します！
+ 興味がある方はぜひ当社ブースにお越しください。"
+prtimes.co.jp,Gold,株式会社PR TIMES,"PR TIMES, Inc.",prtimes_co_jp.png,,,,,,
+tohmatsu.co.jp,Gold,デロイト トーマツ ファイナンシャルアドバイザリー合同会社,,DEL_g_PRI_RGB.png,,,,,,
+iridge.jp,Gold,株式会社アイリッジ,"iRidge, Inc.",iridge_jp.png,,,,,,
+leadinge.co.jp,Gold,株式会社リーディング・エッジ社,"Leading Edge Co., Ltd.",leadinge_co_jp.jpg,"「エンジニアの生涯価値向上」を理念とし ”憧れの製品開発に携わりたい””多くのPJで力をつけたい””自らの技術力で新事業を立ち上げたい”など、技術者としてのキャリアにかかわる局面で技術者の皆さんをバックアップする事業に取り組んでいます。
+Webアプリ開発からインフラ構築まで、実績は多岐にわたりますが、近年はPythonを用いた深層学習やデータサイエンス、深層学習などの技術を最も得意としております。
+超一流の熟練者によるサポート体制や充実した教育制度を活用し、誰もが憧れの技術を習得できます。
+",,https://www.leadinge.co.jp/,https://www.leadinge.co.jp/,,"一生涯IT業界で活躍したい皆さまのご入社をお待ちしております。
+Pythonでの開発経験がおありの方、データサイエンス実務経験者、自然言語処理や機械学習の知見をお持ちの方は勿論、JavaやC言語など他言語での開発経験者やインフラエンジニアの方、未経験からAI領域にキャリアチェンジをお考えの方まで、広く歓迎します。
+通算49回、4年以上開催の『みんなのPython勉強会』や社内研修会への参加、先輩社員との面談からご案内することも可能です。
+ご興味をお持ちの方は弊社スタッフまでお声掛けください。"
+olta.co.jp,Gold,OLTA株式会社,OLTA株式会社,olta_co_jp.png,,,,,,
+jxpress.net,Gold,JX通信社,JXPRESS Corporation,jxpress_net.png,"JX通信社は、テクノロジーで「ビジネスとジャーナリズムの両立」を実現する事を目指す報道ベンチャーです。労働集約型である報道機関を中心としたあらゆる産業の業務を弊社のテクノロジーで機械化することにより「人間にしかできない仕事」に注力できるようお手伝いしています。
+主なサービス：速報特化型アプリ「NewsDigest」、リスク情報SaaS「FASTALERT」、自動電話情勢調査「JX通信社 情勢調査」",,https://jxpress.net/,https://jxpress.net/,,"弊社サービス「FASTALERT」と「NewsDigest」の開発を行う機械学習エンジニア、サーバサイドエンジニアを募集しています。
+業務時間内の勉強会参加OK(参加費会社負担)、書籍全額負担制度、社内勉強会、開発合宿などがあるため働きながら自己研鑽することができます。"
+satori.team,Gold,SATORI株式会社,SATORI Inc,satori_team.png,"SATORI株式会社は「あなたのマーケティング活動を一歩先へ」をミッションとして掲げ、
+集客に強いマーケティングオートメーション（MA）ツール「SATORI」を提供しています。
+「SATORI」は国産MAツールとして認知度No.1（2017年3月現在）で、これまでに500社以上の導入実績があります。","SATORI株式会社は「あなたのマーケティング活動を一歩先へ」をミッションとして掲げ、
+集客に強いマーケティングオートメーション（MA）ツール「SATORI」を提供しています。
+「SATORI」は国産MAツールとして認知度No.1（2017年3月現在）で、これまでに500社以上の導入実績があります。",https://satori.marketing/,https://satori.marketing/,SATORI株式会社では開発メンバーを絶賛募集中です！ プロダクトの開発にはPython、Ruby、Java、JavaScript、Goといった言語を適材適所で採用しています。 必要十分な作業マシンの貸与、勤務への柔軟な対応、家事代行サービスが会社負担で利用できるなど、 エンジニアが生産性高く働ける環境作りに取り組んでいます。 応募は求人サイトまたは当社ブーススタッフにお気軽にお声がけください！,"SATORI株式会社では開発メンバーを絶賛募集中です！
+プロダクトの開発にはPython、Ruby、Java、JavaScript、Goといった言語を適材適所で採用しています。
+必要十分な作業マシンの貸与、勤務への柔軟な対応、家事代行サービスが会社負担で利用できるなど、
+エンジニアが生産性高く働ける環境作りに取り組んでいます。
+応募は求人サイトまたは当社ブーススタッフにお気軽にお声がけください！"
+visasq.com,Gold,株式会社ビザスク,株式会社ビザスク,visasq_com.png,,,,,,
+elastic.co,Gold,Elastic,Elastic,elastic_co.jpg,,,,,,
+https://datumstudio.jp2,Lunch Sponsor,DATUM STUDIO株式会社,DATUM STUDIO Co.LTD.,DATUM STUDIO_logo3.png,,,https://datumstudio.jp/,https://datumstudio.jp/,,
+conbu.net,Network Sponsor,COnference Network BUilders,COnference Network BUilders,conbu.png,,,https://conbu.net/,,,
+www.bbtower.co.jp,Network Sponsor,株式会社ブロードバンドタワー,"BroadBand Tower, Inc.",bbt.png,,,https://www.bbtower.co.jp/,,,
+groove-x.com,Platinum,GROOVE X株式会社,"GROOVE X, Inc.",groove_x.39d453a.png,,,,,,
+pythonic-exam.com,Platinum,一般社団法人Pythonエンジニア育成推進協会,"Python Engineer Development Co., ltd.",pythonic-exam_com.png,Python3エンジニア認定基礎文法試験とPython3データ分析試験を全国200か所以上の会場で一年中実施しています。学生と先生は半額で受験できます。Python3エンジニア認定基礎文法試験は開始2年で5千人の受験を頂き、とても感謝しています。ありがとうございました。PyCon JPには業界還元の一環でスポンサードしています。,"The company originated to authorize tests and learning materials, which serve as guidelines for study, in addition to schools in order to support the training of sound Python programmers who understand Pythonic as the market for the language grows.",https://www.pythonic-exam.com/,https://www.pythonic-exam.com/en,,
+enthought.com,Platinum,Enthought,Enthought,enthought_com.png,,,,,,
+https://spherelinks.co.jp/,Silver,スフィアリンクス株式会社,スフィアリンクス株式会社,spherelinks_co_jp.png,,,,,,
+stroly.jp,Silver,株式会社Stroly,Stroly Inc.,stroly_jp.png,,,https://stroly.com/ja/,https://stroly.com/en/,,
+beproud.jp,Silver,ビープラウド,BeProud,beproud_jp.png,,,https://www.beproud.jp/,,,
+nex.nikkei.com,Silver,日本経済新聞社,Nikkei Inc.,nikkei.cfa5a16.png,,,https://hack.nikkei.com/,https://hack.nikkei.com/,,
+nexedi.com,Silver,Nexedi,Nexedi,nexedi.690f5cf.png,,,,,,
+samuraism.com,Silver,株式会社サムライズム,株式会社サムライズム,samuraism_com.png,,,,,,
+brainpad.co.jp,Silver,株式会社ブレインパッド,BrainPad Inc.,brainpad_co_jp.png,,,,,,
+opengroove.com,Silver,株式会社オープングルーヴ,株式会社オープングルーヴ,opengroove_com.png,,,,,,
+mlabs.jp,Silver,株式会社 m-Lab,株式会社 m-Lab,mlabs_jp.jpg,,,,,,
+https://pay.jp,Silver,"PAY, Inc.","PAY, Inc.",pay_jp.png,,,,,,
+https://safie.link/,Silver,セーフィー株式会社,Safie Inc.,safie_link.png,,,,,,
+https://rightcode.co.jp,Silver,株式会社ライトコード,RightCode Inc.,rightcode_co_jp.png,,,https://rightcode.co.jp,https://rightcode.co.jp,,
+https://supership.jp/,Silver,Supership株式会社,Supership Inc.,supership_jp.png,,,https://supership.jp/,https://supership.jp/,,
+revcomm.co.jp,Silver,株式会社RevComm,RevComm Inc,revcomm_co_jp.png,,,https://www.revcomm.co.jp/,,,
+https://cloud.google.com,Silver,Google Cloud,Google Cloud,cloud_google_com.png,,,,,,
+https://jpn.nec.com/,Silver,日本電気株式会社,NEC Corporation,,,,,,,
+https://datumstudio.jp/,Silver,DATUM STUDIO株式会社,DATUM STUDIO Co.LTD.,DATUM STUDIO_logo3.png,,,https://datumstudio.jp/,https://datumstudio.jp/,,
+https://churadata.okinawa/,Silver,ちゅらデータ株式会社,Chura DATA Inc,churadata_logo_si-sa.png,,,https://churadata.okinawa/,https://churadata.okinawa/,,
+https://www.cmscom.jp,Silver,(株)CMSコミュニケーションズ,(株)CMSコミュニケーションズ,cms.png,,,,,,
+https://jobhub.co.jp/,Silver,株式会社パソナJOB HUB,株式会社パソナJOB HUB,pasona.png,,,,,,
+http://sora.flights/,Silver,株式会社空,株式会社空,sora_logo_large.png,,,,,,
+hennge.com,Sprint Sponsor,HENNGE株式会社,HENNGE,hennge_com.png,,,,,,
+intimatemerger.com,Water Sponsor,株式会社インティメート・マージャー,"Intimate Merger, Inc.",intimatemerger_com.png,,,https://corp.intimatemerger.com/,,,
+brainpad.co.jp_w,Water Sponsor,株式会社ブレインパッド,BrainPad Inc.,brainpad_co_jp.png,,,,,,
+beproud.jp2,Tutrial Cooperation,ビープラウド,BeProud,,,,,,,
+classmethod,Tutrial Cooperation,クラスメソッド,classmethod,,,,,,,
+nvidia,Tutrial Cooperation,NVIDIA,NVIDIA,,,,,,,

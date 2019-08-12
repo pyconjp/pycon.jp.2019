@@ -6,7 +6,7 @@
                 first-heading(name="Conference")
         v-layout.pa-4
             v-flex.xs12.text-xs-left
-                .body-2 {{ dummyText }}
+                .body-2(v-html="$t('home.conference.main')")
         v-layout.wrap.pa-4.justify-center
             v-flex.xs12.sm12.md4.text-xs-right.px-3
                 button-with-arrow(:outline="true" color="themeColor3" size="large") {{ $t("home.conference.sessions") }}
@@ -83,7 +83,7 @@
             :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
         ).sessions
             v-flex.md4.pa-2(v-for="session in sessions" :key="session.id")
-                v-card
+                v-card(style="height: 100%")
                     v-img(:src="session.img" height="150px")
                     v-layout.pa-4.column
                         v-flex.xs12
@@ -106,8 +106,6 @@ import SecondaryHeading from "@/components/parts/SecondHeading"
 import TalkCard from "@/components/parts/TalkCard"
 import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
 
-const dummyText = "この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。";
-
 export default {
     name: "TheConference",
     components: {
@@ -118,23 +116,31 @@ export default {
     },
     data() {
         return {
-            dummyText: dummyText,
             sessions: [
                 {
-                    id: 1, img: require("~/assets/images/top/talk.png"), title: "Talk Session", caption: "トークセッション", description: dummyText,
+                    id: 1, img: require("~/assets/images/top/talk.png"), title: "Talk Session", caption: "トークセッション", 
+                    description: this.$t("home.conference.talk_session"),
                 },
                 {
-                    id: 2, img: require("~/assets/images/top/begginer_session.png"), title: "Begginer's Session", caption: "ビギナーセッション", description: dummyText,
+                    id: 2, img: require("~/assets/images/top/begginer_session.png"), title: "Begginer's Session", caption: "ビギナーセッション", 
+                    description: this.$t("home.conference.begginer_session"),
                 },
                 {
-                    id: 3, img: require("~/assets/images/top/lt.png"), title: "lightning talk", caption: "ライトニングトーク", description: dummyText,
+                    id: 3, img: require("~/assets/images/top/lt.png"), title: "lightning talk", caption: "ライトニングトーク", 
+                    description: this.$t("home.conference.lightning_talk"),
                 },
                 {
-                    id: 4, img: require("~/assets/images/top/poster.png"), title: "Poster", caption: "ポスターセッション", description: dummyText,
+                    id: 4, img: require("~/assets/images/top/poster.png"), title: "Poster(Indivisual)", caption: "ポスターセッション(個人)", 
+                    description: this.$t("home.conference.poster_indivisual"),
                 },
                 {
-                    id: 5, img: require("~/assets/images/top/poster_com.png"), title: "Job Fair", caption: "ジョブフェア", description: dummyText,
-                }
+                    id: 5, img: require("~/assets/images/top/poster_com.png"), title: "Poster(Community)", caption: "ポスターセッション(コミュニティ)", 
+                    description: this.$t("home.conference.poster_community"),
+                },
+                // {
+                //     id: 6, img: require("~/assets/images/top/poster_com.png"), title: "Job Fair", caption: "ジョブフェア", 
+                //     description: this.$t("home.conference.talk_session"),
+                // }
             ]
         }
     }
