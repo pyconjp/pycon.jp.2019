@@ -3,7 +3,7 @@
     v-container
         v-layout.my-4
             v-flex.xs12.text-xs-center
-                first-heading(name="Access")
+                first-heading(name="Venue")
         v-layout.wrap.fill-height.access
             v-flex.xs12.sm12.md8.px-2
                 v-card.pt-3.mt-3(height="100%")
