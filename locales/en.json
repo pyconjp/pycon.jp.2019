@@ -39,6 +39,9 @@
                 "desc": "Tutorial Day"
             }
         },
+        "news": {
+            "staff": "Looking for Staff！"
+        },
         "conference": {
             "sessions": "Sessions",
             "timetables": "Time Tables"
