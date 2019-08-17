@@ -15,7 +15,7 @@
                             .subheading {{ item.description }}
                     v-layout(v-show="item.canApply").py-2
                         v-flex.xs12.text-xs-center.px-5
-                            button-with-arrow(:dark="true" color="themeColor3" size="normal") {{ $t("basic.apply") }}
+                            button-with-arrow(:dark="true" :href="item.url" target="_blank" color="themeColor3" size="normal") {{ $t("basic.apply") }}
 </template>
 
 <script>
@@ -45,12 +45,13 @@ export default {
                     id: 2, title: this.$t("home.support.nursery.title"), 
                     description: this.$t("home.support.nursery.desc"),
                     canApply: true,
-                    img: require("~/assets/images/top/nursery.png")
+                    img: require("~/assets/images/top/nursery.png"),
+                    url: "https://pyconjp.connpass.com/event/137599/"
                 },
                 {
                     id: 3, title: this.$t("home.support.distant-support.title"), 
                     description: this.$t("home.support.distant-support.desc"),
-                    canApply: true,
+                    canApply: false,
                     img: require("~/assets/images/top/distant_support.png")
                 }
             ]

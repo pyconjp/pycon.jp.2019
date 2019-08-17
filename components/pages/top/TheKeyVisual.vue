@@ -39,7 +39,7 @@
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.my-2.pa-4
-                            button-with-arrow.title(color="themeColor3" :dark="true" customStyle="height: 60px;" href="https://pyconjp.connpass.com/event/135734/") {{ $t("basic.apply") }}
+                            button-with-arrow.title(color="themeColor3" :dark="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply") }}
                         v-flex.text-md-left.mt-4.mb-2.subheading
                             v-layout.align-center
                                 v-flex.shrink
@@ -49,7 +49,7 @@
                         v-flex.text-xs-center
                             v-card(color="secondaryText").pa-3.text-xs-left
                                 span.title.white--text.font-weight-bold Youth Coder Workshop
-                                v-btn(color="white" block large style="height: 40px;" href="https://pyconjp.connpass.com/event/139133/" target="_blank")
+                                v-btn(color="white" block large style="height: 40px;" :href="$t('links.child-workshop')" target="_blank")
                                     v-flex.align-end
                                         span.headline.heading-font 09.16
                                         span.caption.ml-2.font-weight-bold {{ $t("weekday.mon") }}

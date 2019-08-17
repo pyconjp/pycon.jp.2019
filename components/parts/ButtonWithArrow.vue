@@ -1,22 +1,29 @@
 <template lang="pug">
 v-btn(
      :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle" :href="href" :target="target"
-     :disabled="disabled" :dark="dark" :flat="flat"
+     :disabled="disabled" :dark="dark" :flat="flat" @click="$emit('click')"
 ).parent
-    span.font-weight-bold
+    span.font-weight-bold.px-5
         slot
-    v-icon(:[size]="true").child keyboard_arrow_right
+    v-icon(v-if="right" :[size]="true").child-right keyboard_arrow_right
+    v-icon(v-else :[size]="true").child-left keyboard_arrow_left
 </template>
 
 <style lang="sass" scoped>
 .parent
     position: relative
-.child
+.child-right
     position: absolute
     right: -10px
 @media only screen and (min-width: 1264px)
-    .child
+    .child-right
         right: 0px
+.child-left
+    position: absolute
+    left: -10px
+@media only screen and (min-width: 1264px)
+    .child-left
+        left: 0px
 </style>
 
 
@@ -33,7 +40,8 @@ export default {
         disabled: {type: Boolean, default: false},
         dark: {type: Boolean, default: false},
         target: {type: String, default: "_self"},
-        flat: {type: Boolean, default: false}
+        flat: {type: Boolean, default: false},
+        right: {type: Boolean, default: true}
     }
 }
 </script>

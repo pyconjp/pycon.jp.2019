@@ -6,7 +6,15 @@
         "detail": "詳細情報",
         "apply": "参加申し込み",
         "norm": "行動規範",
-        "recruit": "採用について"
+        "recruit": "採用について",
+        "company-desc": "企業概要"
+    },
+    "links": {
+        "conference": "https://pyconjp.connpass.com/event/135734/",
+        "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
+        "tutorial": "https://pyconjp.connpass.com/event/136606/",
+        "child-workshop": "https://pyconjp.connpass.com/event/139133/",
+        "nursery": "https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et"
     },
     "weekday": {
         "mon": "月・祝",
@@ -76,8 +84,8 @@
         "news": {
             "list": "お知らせ一覧",
             "staff": "スタッフ募集中！",
-            "staff_desc": "PyCon JP 2019開催を積極的に進められるコアスタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
-            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は https://pyconjp-staff.connpass.com/ から「にぎやかし」で参加してみてください。"
+            "staff_desc": "PyCon JP 2019開催を積極的に進められる当日スタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
+            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> から「にぎやかし」で参加してみてください。"
         },
         "overview": {
             "about": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyCon JPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。",
