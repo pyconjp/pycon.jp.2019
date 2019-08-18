@@ -15,7 +15,7 @@
     p.font-weight-bold(v-else :class="titleSize") {{ name }}
     p.mt-4(v-if="pr") {{ text }}
     .text-md-center(v-if="showButton")
-      button-with-arrow(@click="isPr = !isPr" :right="isPr" :block="false" :outline="true" color="themeColor3" size="normal") {{ buttonText }}
+      button-with-arrow(@click="isPr = !isPr" :right="isPr" :block="false" :outline="true" color="apply" size="normal") {{ buttonText }}
 </template>
 
 <style lang="sass">

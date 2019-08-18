@@ -1,5 +1,5 @@
 <template lang="pug">
-#sponsor.tertiary
+#sponsor.themeColor3
     v-container
         v-layout.mb-4
             v-flex.xs12.text-xs-center

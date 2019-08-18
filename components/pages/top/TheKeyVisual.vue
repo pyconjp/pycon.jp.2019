@@ -18,7 +18,7 @@
                 v-flex.md6.xs12.sm12(:class="{'pa-0': $vuetify.breakpoint.smAndDown, 'pa-5': $vuetify.breakpoint.mdAndUp}")
                     v-layout.column.right-padding
                         v-flex
-                            h2.display-2.themeColor3--text.heading-font Conference
+                            h2.display-2.themeColor3--text.font-weight-bold.heading-font Conference
                         v-flex.caption
                             span.themeColor3--text.font-weight-bold カンファレンス
                         v-flex.py-4.text-md-left
@@ -39,7 +39,7 @@
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.my-2.pa-4
-                            button-with-arrow.title(color="themeColor3" :dark="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply") }}
+                            button-with-arrow.title(color="apply" :dark="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply") }}
                         v-flex.text-md-left.mt-4.mb-2.subheading
                             v-layout.align-center
                                 v-flex.shrink

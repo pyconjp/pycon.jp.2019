@@ -1,7 +1,7 @@
 <template lang="pug">
 #page-header.pt-5.pb-3.text-xs-center
-  h1.display-2.themeColor3--text.heading-font {{ en }}
-  p.subheading.py-2.themeColor3Transparent--text {{ ja }}
+  h1.display-2.apply--text.heading-font {{ en }}
+  p.subheading.py-2.applyTransparent--text {{ ja }}
 </template>
 
 <script>

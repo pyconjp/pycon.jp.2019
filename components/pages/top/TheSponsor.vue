@@ -13,11 +13,11 @@
         sponsors-group(:sponsors="otherSponsors" :xs="4" :sm="4" :md="3")
         //- v-layout.my-3.wrap.justify-center
         //-     v-flex.xs12.sm12.md3.text-xs-right.px-2
-        //-         v-btn(outline block color="themeColor3" round large)
+        //-         v-btn(outline block color="apply" round large)
         //-             span {{ $t("home.sponsor.list") }}
         //-             v-icon keyboard_arrow_right
         //-     v-flex.xs12.sm12.md3.text-xs-left.px-2
-        //-         v-btn(block color="themeColor3" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
+        //-         v-btn(block color="apply" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
         //-             span {{ $t("home.sponsor.hiring") }}
         //-             v-icon keyboard_arrow_right
 </template>

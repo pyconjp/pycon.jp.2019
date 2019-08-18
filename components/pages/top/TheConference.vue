@@ -10,9 +10,9 @@
         //- タイムテーブルとセッション一覧を公開したら外す
         //- v-layout.wrap.pa-4.justify-center
         //-     v-flex.xs12.sm12.md4.text-xs-right.px-3
-        //-         button-with-arrow(:outline="true" color="themeColor3" size="large") {{ $t("home.conference.sessions") }}
+        //-         button-with-arrow(:outline="true" color="apply" size="large") {{ $t("home.conference.sessions") }}
         //-     v-flex.xs12.sm12.md4.text-xs-left.px-3
-        //-         button-with-arrow(:outline="true" color="themeColor3" size="large") {{ $t("home.conference.timetables") }}
+        //-         button-with-arrow(:outline="true" color="apply" size="large") {{ $t("home.conference.timetables") }}
 
         .spacer.py-2
 
@@ -94,7 +94,7 @@
                             .caption.grey--text.grey--lighten-2.mt-1 {{ session.caption }}
                             .body-1.my-2 {{ session.description }}
                         //- v-flex.xs12.px-4
-                        //-     button-with-arrow(color="themeColor3" :outline="true" size="normal") {{ $t("basic.detail") }}
+                        //-     button-with-arrow(color="apply" :outline="true" size="normal") {{ $t("basic.detail") }}
 </template>
 
 <style lang="sass" scoped>

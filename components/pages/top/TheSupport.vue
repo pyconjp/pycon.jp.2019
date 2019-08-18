@@ -15,7 +15,7 @@
                             .subheading {{ item.description }}
                     v-layout(v-show="item.canApply").py-2
                         v-flex.xs12.text-xs-center.px-5
-                            button-with-arrow(:dark="true" :href="item.url" target="_blank" color="themeColor3" size="normal") {{ $t("basic.apply") }}
+                            button-with-arrow(:dark="true" :outline="true" :href="item.url" target="_blank" color="themeColor3" size="normal") {{ $t("basic.apply") }}
 </template>
 
 <script>

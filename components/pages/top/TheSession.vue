@@ -36,7 +36,7 @@
                                         //-         v-flex.text-md-left.pl-2
                                         //-             v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" :dark="true" size="normal" :href="$t('links.dev-sprint')") {{ $t("basic.apply") }}
+                                        button-with-arrow(color="apply" :dark="true" size="normal" :href="$t('links.dev-sprint')") {{ $t("basic.apply") }}
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
                     :class="{'px-4': $vuetify.breakpoint.smAndDown, 'pl-4': $vuetify.breakpoint.mdAndUp}"
                 )
@@ -69,7 +69,7 @@
                                             //-     v-flex.text-md-left.pl-2
                                             //-         v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" :dark="true" size="normal" :href="$t('links.tutorial')") {{ $t("basic.apply") }}
+                                        button-with-arrow(color="apply" :dark="true" size="normal" :href="$t('links.tutorial')") {{ $t("basic.apply") }}
 </template>
 
 <style lang="sass" scoped>

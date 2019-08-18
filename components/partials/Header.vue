@@ -29,7 +29,7 @@
                                                 v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
                                     .subsubmenus(v-if="submenu.subsubmenus").pt-2
                                         .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-2
-                                            span.subheading.themeColor3--text.font-weight-bold ─
+                                            span.subheading.apply--text.font-weight-bold ─
                                             span.subheading.ml-2.white--text {{ ssmenu.name }}
             v-spacer
             nuxt-link(:to="toLocale")
@@ -38,15 +38,15 @@
                     span.ml-2.textColor--text {{ toLang }}
             // 「参加申込み」
             v-toolbar-items.ml-2
-                //- v-btn(large color="themeColor3" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
+                //- v-btn(large color="apply" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading
                 //-     span {{ $t('header.apply') }}
                 v-menu(v-model="applyMenu" offset-y min-width="350px")
                     template(v-slot:activator="{ on }")
-                        v-btn(color="themeColor3" v-on="on" depressed).subheading.font-weight-bold.px-4.white--text
+                        v-btn(color="apply" v-on="on" depressed).subheading.font-weight-bold.px-4.white--text
                             span {{ $t('header.apply.parent') }}
                             v-icon expand_more
                     // TODO: ikedaosushi 右寄せできていないので方法を検討する
-                    v-card(depressed color="themeColor3")
+                    v-card(depressed color="apply")
                         v-layout.column.py-1
                             v-flex(v-for='(menu, idx) in applies' :key="menu.id")
                                 .pl-4.py-3

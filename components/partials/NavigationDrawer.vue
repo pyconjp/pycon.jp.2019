@@ -4,11 +4,11 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
     .pa-0
         nuxt-link(:to="toLocale")
           v-layout.align-center.justify-end.pa-3
-              v-icon.themeColor3--text fas fa-globe
-              div.ml-2.themeColor3--text {{ toLang }}
+              v-icon.apply--text fas fa-globe
+              div.ml-2.apply--text {{ toLang }}
         // 参加申し込み
-        v-expansion-panel(dark).themeColor3
-          v-expansion-panel-content(expand-icon="arrow_drop_down" color="themeColor3")
+        v-expansion-panel(dark).apply
+          v-expansion-panel-content(expand-icon="arrow_drop_down" color="apply")
             template(#header style="color")
               span.subheading.font-weight-bold  {{$t("basic.apply")}}
             v-card(flat)
@@ -57,7 +57,7 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
                         .py-2
                           .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-1
                             a(:href="ssmenu.to" :target="ssmenu.pageTrans ? '_blank' : '_self'")
-                              span.subheading.themeColor3--text.font-weight-bold ─
+                              span.subheading.apply--text.font-weight-bold ─
                               span.body-1.ml-2 {{ ssmenu.name }}
                               v-icon(v-if="ssmenu.pageTrans" color="text1").ml-2 keyboard_arrow_right
                       template(v-else).pt-2
@@ -71,13 +71,13 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
 <style lang="sass" scoped>
 a
   color: #444444
-.themeColor3 a
+.apply a
   color: white
 </style>
 
 
 <style lang="sass">
-.themeColor3 
+.apply 
   .v-expansion-panel__container, .v-sheet
     background-color: #5970A5 !important 
 </style>

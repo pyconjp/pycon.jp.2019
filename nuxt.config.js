@@ -87,7 +87,7 @@ export default {
       themeColor1: "#9C8CBE", // テーマカラー1： フレームボタン、開発スプリント等
       themeColor2: "#EBA4C3", // テーマカラー2： 小見出しテキスト、チュートリアル等
       themeColor3: "#5970A5", // テーマカラー3： エリア見出し、セクション見出しマーカー、カンファレンス等
-      themeColor3Transparent: "#BBC2D6", // テーマカラー3、透明度50%
+      applyTransparent: "#BBC2D6", // テーマカラー3、透明度50%
       themeColor4: "#C8A177", // テーマカラー4： 子供向けワークショップ等
       apply: "#E55493", // 申し込み・リンクカラー： 申し込みボタン基本色、テキストリンク
       applyLighten: "#E75C99", // 申し込み・リンクカラー明： 申し込みボタン（グラデーション明側）
@@ -105,8 +105,8 @@ export default {
       themeRed: "#CC2343", // レッド： 注意、日曜・祝日
       themeBlue: "#3484C0", // ブルー： 土曜
       linkBlue: "#1976D2",
-      // themeColor3: "#D66194",
-      // themeColor3: "#5E6FA1",
+      // apply: "#D66194",
+      // apply: "#5E6FA1",
       secondary: "#C2A27D",
       secondaryText: "#C2A27D",
       tertiary: "#998CBA",
