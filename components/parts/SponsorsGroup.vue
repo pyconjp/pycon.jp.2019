@@ -4,16 +4,17 @@ v-layout.wrap.justify-center.pb-4
         v-card(
           :class="{'pa-2': $vuetify.breakpoint.smAndDown, 'pa-4': $vuetify.breakpoint.mdAndUp}"
         )
-            v-img(v-if="sponsor.logoIImage" :src="require(`@/assets/images/logos/${sponsor.logoIImage}`)" :aspect-ratio="3/2" contain)
+            v-img(v-if="sponsor.logoImage" :src="require(`@/assets/images/logos/${sponsor.logoImage}`)" :aspect-ratio="3/2" contain)
             v-responsive(v-else :aspect-ratio="3/2")
                 v-layout(align-center justify-center row fill-height)
                   p.text-xs-center.font-weight-bold(
                     :class="{'small': $vuetify.breakpoint.smAndDown, 'headline': $vuetify.breakpoint.mdAndUp}"
-                  ) {{sponsor.name}}
-
+                  ) {{name(sponsor)}}
 </template>
 
 <script>
+import { mapState, mapActions, mapMutations } from 'vuex';
+
 export default {
   props: {
     sponsors: {
@@ -33,6 +34,12 @@ export default {
       required: true
     }
   },
+  computed: {
+    ...mapState(['locale'])
+  },
+  methods: {
+    name(sponsor) { return  this.locale === "ja" ? sponsor.nameJa : sponsor.nameEn }
+  }
 }
 </script>
 

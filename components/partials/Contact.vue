@@ -1,5 +1,5 @@
 <template lang="pug">
-#sponsor.tertiary
+#sponsor.themeColor3
     v-container
         v-layout.mb-4
             v-flex.xs12.text-xs-center
@@ -13,8 +13,8 @@
         v-layout.mt-4
             v-flex.xs12.text-xs-center
                 v-btn(round color="white" href="mailto:pyconjp@pycon.jp")
-                    v-icon(color='primary') mail
-                    span.primary--text.ml-2.text-lowercase pyconjp@pycon.jp
+                    v-icon(color='themeColor3') mail
+                    span.themeColor3--text.ml-2.text-lowercase pyconjp@pycon.jp
 </template>
 
 <script>

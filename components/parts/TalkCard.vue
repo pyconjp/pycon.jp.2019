@@ -5,20 +5,25 @@
         .corner-right-bottom
         v-layout
             v-flex.xs12.text-xs-left
-                span.title {{ date }}
+                span.title.heading-font {{ date }}
                 span.caption.grey--text.grey--lighten-2.ml-2 {{ weekday }}
         v-layout
             v-flex.xs12.text-xs-center
-                img(:src="profileImg" width=150 height=150).profile-img
+                //- img(:src="require(this.profileImg)" width=150 height=150).profile-img
+                img(:src="solvedProfImage" width=150 height=150).profile-img
+        v-layout
+            v-flex.xs12.text-xs-center
+                span.headline.heading-font.font-weight-bold {{ speakerName }}
         v-layout.mt-4
             v-flex.xs12.text-xs-left
-                .title.font-weight-bold.quaternary--text.my-4 Session Theme
+                .title.font-weight-bold.quaternary--text.my-4.heading-font Session Title
                 .title.font-weight-bold.my-4 {{ sessionTheme }}
         v-divider
         v-layout.mt-2
             v-flex.xs12.text-xs-left
-                .title.quaternary--text.my-4 Profile
-                .body-2 {{ profile }}
+                .title.quaternary--text.my-4.heading-font Profile
+                //- .body-2(v-html="profile") {{ profile }}
+                .body-2(v-html="profile") 
 
 </template>
 
@@ -36,8 +41,8 @@
 .corner-left-top
     top: -2px
     left: -2px
-    border-left: solid 4px #E1A7C2
-    border-top: solid 4px #E1A7C2
+    border-left: solid 4px #EBA4C3
+    border-top: solid 4px #EBA4C3
 .corner-right-bottom
     right: -2px
     bottom: -2px
@@ -49,7 +54,13 @@
 <script>
 export default {
     name: "talk-card",
-    props: ["date", "weekday", "profileImg", "speakerName", "sessionTheme", "profile"]
+    props: ["date", "weekday", "profileImg", "speakerName", "sessionTheme", "profile"],
+    computed: {
+        solvedProfImage() {
+            if(!this.profileImg) return ""
+            return require(`~/assets/images/top/${this.profileImg}`)
+        }
+    }
 }
 </script>
 

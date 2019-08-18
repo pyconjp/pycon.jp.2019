@@ -10,7 +10,7 @@ export default {
     name: "first-heading",
     props: {
         "name": {type: String},
-        "color": {type: String, default: "primary"}
+        "color": {type: String, default: "themeColor3"}
     }
 }
 </script>

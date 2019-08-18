@@ -8,19 +8,18 @@
         sponsors-group(:sponsors="platinumSponsors" :xs="6" :sm="6" :md="4")
         sponsors-group(:sponsors="goldSponsors" :xs="4" :sm="4" :md="3")
         sponsors-group(:sponsors="silverSponsors" :xs="4" :sm="4" :md="2")
-        sponsors-group(:sponsors="sprintSponsors" :xs="12" :sm="6" :md="3")
-        sponsors-group(:sponsors="networkSponsors" :xs="4" :sm="4" :md="2")
-        //- sponsors-group(:sponsors="otherSponsors" :xs="4" :sm="4" :md="2")
-        v-layout.my-3.wrap.justify-center
-            //- TODO: #sudame スポンサー一覧ページが完成し次第コメント解除
-            //- v-flex.xs12.sm12.md3.text-xs-right.px-2
-            //-     v-btn(outline block color="primary" round large)
-            //-         span {{ $t("home.sponsor.list") }}
-            //-         v-icon keyboard_arrow_right
-            //- v-flex.xs12.sm12.md3.text-xs-left.px-2
-            //-     v-btn(block color="primary" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
-            //-         span {{ $t("home.sponsor.hiring") }}
-            //-         v-icon keyboard_arrow_right
+        //- sponsors-group(:sponsors="sprintSponsors" :xs="12" :sm="6" :md="3")
+        //- sponsors-group(:sponsors="networkSponsors" :xs="4" :sm="4" :md="2")
+        sponsors-group(:sponsors="otherSponsors" :xs="4" :sm="4" :md="3")
+        //- v-layout.my-3.wrap.justify-center
+        //-     v-flex.xs12.sm12.md3.text-xs-right.px-2
+        //-         v-btn(outline block color="apply" round large)
+        //-             span {{ $t("home.sponsor.list") }}
+        //-             v-icon keyboard_arrow_right
+        //-     v-flex.xs12.sm12.md3.text-xs-left.px-2
+        //-         v-btn(block color="apply" href="https://pyconjp.blogspot.com/2019/04/sponsor-application.html" target="_blank" round large)
+        //-             span {{ $t("home.sponsor.hiring") }}
+        //-             v-icon keyboard_arrow_right
 </template>
 
 <script>
@@ -36,7 +35,7 @@ export default {
     },
     data() {
         return {
-            sponsors: sponsorsData,
+            sponsors: sponsorsData.filter(sponsor => sponsor.logoImage),
         }
     },
     computed: {
@@ -52,14 +51,14 @@ export default {
         silverSponsors() {
             return this.sponsors.filter(sponsor => sponsor.package === "Silver")
         },
-        sprintSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Sprint Sponsorship")
-        },
-        networkSponsors() {
-            return this.sponsors.filter(sponsor => sponsor.package === "Network Sponsor")
-        },
+        // sprintSponsors() {
+        //     return this.sponsors.filter(sponsor => sponsor.package === "Sprint")
+        // },
+        // networkSponsors() {
+        //     return this.sponsors.filter(sponsor => sponsor.package === "Network")
+        // },
         otherSponsors() {
-            return this.sponsors.filter(sponsor => !["Diamond", "Platinum", "Gold", "Silver", "Sprint Sponsorship"].includes(sponsor.package))
+            return this.sponsors.filter(sponsor => ["Lunch", "Breakfast", "Water", "Network", "Sprint"].includes(sponsor.package))
         }
     }
 }

@@ -5,7 +5,16 @@
         "hennge": "HENNGE",
         "detail": "詳細情報",
         "apply": "参加申し込み",
-        "norm": "行動規範"
+        "norm": "行動規範",
+        "recruit": "採用について",
+        "company-desc": "企業概要"
+    },
+    "links": {
+        "conference": "https://pyconjp.connpass.com/event/135734/",
+        "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
+        "tutorial": "https://pyconjp.connpass.com/event/136606/",
+        "child-workshop": "https://pyconjp.connpass.com/event/139133/",
+        "nursery": "https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et"
     },
     "weekday": {
         "mon": "月・祝",
@@ -16,14 +25,48 @@
     "header": {
         "menu": {
             "home": "ホーム",
-            "about": "PyCon JPについて",
-            "events": "イベント一覧",
-            "news": "ニュース",
-            "access": "アクセス",
-            "support": "サポートする",
-            "sponsor": "スポンサー"
+            "about": {
+                "parent": "概要",
+                "about-event": "開催概要",
+                "coc": "行動規範"
+            }
+            ,
+            "events": {
+                "parent": "イベント一覧",
+                "conference": {
+                    "parent": "カンファレンス",
+                    "timetable": "タイムテーブル",
+                    "sessions": "セッション一覧"
+                },
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "news": "お知らせ",
+            "access": "会場",
+            "support": "サポート",
+            "sponsor": "スポンサー",
+            "staff": "スタッフ",
+            "faq": "FAQ"
         },
-        "apply": "各種申込み"
+        "apply": {
+            "parent": "各種申込み",
+            "event": {
+                "parent": "イベント参加申し込み",
+                "conference": "カンファレンス",
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "nursery": {
+                "parent": "託児所の申請",
+                "conf-child": "カンファレンス/子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "distant-support": "遠方支援の申請"
+        }
+        
     },
     "home": {
         "title": "トップページ",
@@ -38,22 +81,41 @@
                 "desc": "初心者向けのイベントです。"
             }
         },
+        "news": {
+            "list": "お知らせ一覧",
+            "staff": "スタッフ募集中！",
+            "staff_desc": "PyCon JP 2019開催を積極的に進められる当日スタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
+            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> から「にぎやかし」で参加してみてください。"
+        },
+        "overview": {
+            "about": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyCon JPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。",
+            "theme": "今年のテーマについて"
+        },
         "conference": {
+            "main": "私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。<br><br> PyCon JPを素晴らしいカンファレンスとして維持していくには、ただ自分たちの会を毎年同じ時期に同じ場所で開催するだけでは足りないと、私たちは考えます。国内外で行われるカンファレンスとの連携や、ユーザー間の交流の促進、Pythonや関連するソフトウェアの普及・啓蒙をお手伝いしていくことで、Pythonにもっと多くの関心が集まり、沢山のユーザやソフトウェアが生まれていくことが、私たちの原動力となると信じています。<br><br> PyCon JP 2019 今年のテーマはPython New Era です。日本で元号が新しくなった事。Python も 2 から3 へ新しい時代へ移っていく事をコンセプトとしています。<br><br> PyCon JP 2019は参加する皆さんが新しい繋がりや知識を得て楽しめるカンファレンスを目標に開催します。",
             "sessions": "セッション一覧",
-            "timetables": "タイムテーブル一覧"
+            "timetables": "タイムテーブル一覧",
+            "cory_profile": "コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。",
+            "koike_profile": "静岡県にある太平洋に面したのどかな町で農業を営んでいます。<br> 6年前までは組込みエンジニアとしてC言語を使った開発に携わっていましたが、退職を期にPythonを独学で学ぶことを始めました。",
+            "lyu_profile": "Renyuan Lyuは、20代で台湾国立大学大学院電気工学研究科で博士号を取得。その後、台湾の桃園にある長庚大学にてオーディオ、スピーチ、言語、およびパターン処理を専門とする教員になりました。<br><br> 最初の数年間、彼はC / C ++、Matlab、Perlを使って学術研究と教育活動を行い、表準中国語と台湾語の音声認識システムを作成しました。<br><br>  また、彼は2015年から2017年にてPyCon JP で登壇しました。<br><br>  現在、彼は大学の准教授で、確率統計、信号処理、パターン認識、および音声認識を教え、台湾の言語（台湾および北京語）の処理に関するトピックをすべてPython言語を使用して研究しています。",
+            "talk_session": "Pythonに関する様々なテーマの発表を行うセッションです。 ４５分、３０分、１５分の発表があります。 ",
+            "begginer_session": "Pythonの初心者が次のステップに踏み出すきっかけづくりを提供するセッションです。",
+            "poster_indivisual": "発表者がポスターの前で発表を行う形式のセッションです。 発表者と聴講者が直接、意見交換や議論を行えます。",
+            "poster_community": "Pythonに関するコミュニティの活動報告などを行うセッションです。",
+            "lightning_talk": "Pythonに関する様々なテーマを５分間の発表で行うセッションです。"
         },
         "support": {
             "food": {
                 "title": "食事",
-                "desc": "各日程で食事が付きます。"
+                "desc": "各日程で食事が付きます。ベジタリアン向けやハラル対応のメニューも用意いたします。"
             },
             "nursery": {
                 "title": "託児所",
-                "desc": "各日程で託児所が開設されます。"
+                "desc": "各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。"
             },
             "distant-support": {
                 "title": "遠方支援",
-                "desc": "遠方支援についてのテキスト"
+                "desc": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。"
             }
         },
         "sponsor": {
@@ -64,5 +126,8 @@
     "contact": {
         "desc1": "事前に<a href='/' style='color: white;'>FAQ</a>をご確認いただけますようにお願いします。",
         "desc2": "ボランティアによる運営ですので、回答には1週間程度を要します。<br>何卒お待ちいただけますようにお願いします。"
+    },
+    "sponsor": {
+        "title": "スポンサー"
     }
 }
