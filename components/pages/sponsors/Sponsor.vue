@@ -4,25 +4,39 @@
   .right-bottom
   .img.mx-4.py-5
     v-img(v-if="sponsor.logoImage" :src="require(`~/assets/images/logos/${sponsor.logoImage}`)" contain :aspect-ratio="imageAspectRatio")
-    v-img(v-else :src="require('~/assets/images/horizontal_logo.png')" contain :aspect-ratio="imageAspectRatio")
+    v-img(v-else :src="require('~/assets/images/noImage.png')" contain :aspect-ratio="imageAspectRatio")
   v-divider.mx-4
   .content.pa-4
-    a(v-if="sponsorUrl" :href="sponsorUrl" target="_blank")
-      p.font-weight-bold(:class="titleSize")  {{ name }}
+    a.sponsor-name(v-if="sponsorUrl" :href="sponsorUrl" target="_blank")
+      span.font-weight-bold(:class="titleSize") {{ name }}
+      v-icon.ml-2(:small="titleSize == 'title'" :style="titleSize == 'title' ? 'line-height: 20px;' : ''") far fa-window-restore
+      //- TODO: ikedaosushi カスタムiconを使う
+      //- svg-icon(icon='symbol_blankWindow')
     p.font-weight-bold(v-else :class="titleSize") {{ name }}
     p.mt-4(v-if="pr") {{ text }}
     .text-md-center(v-if="showButton")
       button-with-arrow(@click="isPr = !isPr" :right="isPr" :block="false" :outline="true" color="themeColor3" size="normal") {{ buttonText }}
 </template>
 
+<style lang="sass">
+a.sponsor-name, a.sponsor-name i
+  color: #444444 !important
+  transition-duration: 0s !important
+  &:hover, &:hover i
+    color: #5970A5 !important
+</style>
+
+
 <script>
 import { mapState, mapActions, mapMutations } from 'vuex';
 import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
+import SvgIcon from "@/components/icons/SvgIcon"
 
 export default {
   props: {'sponsor': {}, 'image-aspect-ratio': {}, 'title-size': {}, 'showRec': { type: Boolean, default: false }},
   components: {
-    "button-with-arrow": ButtonWithArrow
+    "button-with-arrow": ButtonWithArrow,
+    "svg-icon": SvgIcon
   },
   data() {
     return {

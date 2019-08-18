@@ -31,7 +31,6 @@ export default {
     'navigation-drawer': NavigationDrawer
   },
   created(){
-    console.log(this)
   },
   data() {
     return {

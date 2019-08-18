@@ -119,7 +119,14 @@ export default {
       // warning: colors.amber.base,
       // error: colors.deepOrange.accent4,
       // success: colors.green.accent3,
-    }
+    },
+    // icons: {
+    //   values: {
+    //     blankWindow: {
+    //       component: BlankWindow
+    //     },
+    //   },
+    // },
   },
   /*
   ** Build configuration
@@ -155,6 +162,17 @@ export default {
     extend(config, ctx) {
       // console.log(config)
       config.entry = ["core-js/stable", "regenerator-runtime/runtime"]
+
+      // TODO: ikedaosushi
+      // Custom Iconとしてsvgを追加するためにbase64エンコーディングされないように追加したがうまく行かず
+      config.module.rules.push({
+        test: /\.(svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1,
+          name: 'img/[name].[hash:7].[ext]'
+        }
+      })
     }
   }
 }

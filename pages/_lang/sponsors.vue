@@ -90,23 +90,23 @@ export default {
           ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
         },
         {
-          id: 4, name: "Breakfast Sponsor", description: "朝食スポンサー", filter: "Breakfast", 
+          id: 5, name: "Breakfast Sponsor", description: "朝食スポンサー", filter: "Breakfast", 
           ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
         },
         {
-          id: 4, name: "Water Sponsor", description: "Waterスポンサー", filter: "Water", 
+          id: 6, name: "Water Sponsor", description: "Waterスポンサー", filter: "Water", 
           ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
         },
         {
-          id: 4, name: "Network Sponsor", description: "ネットワーク スポンサー", filter: "Network", 
+          id: 7, name: "Network Sponsor", description: "ネットワーク スポンサー", filter: "Network", 
           ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
         },
         {
-          id: 5, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint", 
+          id: 8, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint", 
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         },
         {
-          id: 5, name: "Tutrial Sponsor", description: "チュートリアルスポンサー", filter: "Tutrial", 
+          id: 9, name: "Tutorial Lecturer Cooperation", description: "チュートリアル特別協力", filter: "Tutrial", 
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         }
       ]
