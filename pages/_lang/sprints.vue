@@ -3,7 +3,7 @@
     page-header(ja="開発スプリント" en="Developer Sprints" color="themeColor1" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
     event-header(day14 day14Time="10:00 - 18:00" :image="require('@/assets/images/photo_image2.png')" applyLink="#" place="HENNGE")
     section.abstract
-        v-container.py-0
+        v-container.pb-0
             p
                 | 短期集中型のソフトウェア開発イベントです。開発テーマを提案する人と、そのテーマに興味を持った人が集まり交流する機会になります。
                 br
