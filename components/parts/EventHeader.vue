@@ -3,17 +3,17 @@
     v-container.content-page-header
         .content-page-header__left
             .schedule
-                template(v-if="day1")
+                template(v-if="day16")
                     span.date.display-2.heading-font 09.16
                     span.day.themeRed--text 月・祝
-                template(v-if="day1 && day1Time")
-                    span.time.heading-font {{ day1Time }}
-                span.d2d.display-2(v-if="day1 && day2") -
-                template(v-if="day2")
+                template(v-if="day16 && day16Time")
+                    span.time.heading-font {{ day16Time }}
+                span.d2d.display-2(v-if="day16 && day17") -
+                template(v-if="day17")
                     span.date.display-2.heading-font 09.17
                     span.day 火
-                template(v-if="day2 && day2Time")
-                    span.time.heading-font {{ day2Time }}
+                template(v-if="day17 && day17Time")
+                    span.time.heading-font {{ day17Time }}
             .place
                 v-icon place
                 span {{ place }}
@@ -32,18 +32,18 @@ export default {
     ButtonWithArrow
   },
   props: {
-    day1: {
+    day16: {
       type: Boolean,
       default: false
     },
-    day2: {
+    day17: {
       type: Boolean,
       default: false
     },
-    day1Time: {
+    day16Time: {
       type: String
     },
-    day2Time: {
+    day17Time: {
       type: String
     },
     place: {

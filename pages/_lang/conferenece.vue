@@ -1,7 +1,7 @@
 <template lang="pug">
 #conference
     page-header(ja="カンファレンス" en="Conference" color="themeColor3" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
-    event-header(day1 day2 :image="require('@/assets/images/photo_image2.png')" applyLink="#" place="大田区産業プラザPiO")
+    event-header(day16 day17 :image="require('@/assets/images/photo_image2.png')" applyLink="#" place="大田区産業プラザPiO")
     section.abstract
         v-container.py-0
             p 私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。
@@ -18,9 +18,9 @@
             hs カンファレンスの開催概要
             .summary__schedule
                 h3 日程
-                schedule-table(day1 day2 day1Time="09:30 - 20:30" day2Time="09:30 - 19:00")
-                    template(#day1-detail) ※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。
-                    template(#day2-detail) ※昼食はお弁当が出ます。またおやつの提供があります。
+                schedule-table(day16 day17 day16Time="09:30 - 20:30" day17Time="09:30 - 19:00")
+                    template(#day16-detail) ※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。
+                    template(#day17-detail) ※昼食はお弁当が出ます。またおやつの提供があります。
             .summary__place
                 h3 会場
                 p.font-weight-bold 大田区産業プラザ PiO
@@ -31,7 +31,7 @@
             hs(sub="基調講演") Keynote
             two-columns-layout
                 template(#left)
-                    schedule-table(day1 day1Time="00:00 - 00:00")
+                    schedule-table(day16 day16Time="00:00 - 00:00")
                     p 開催場所（ホール名など）テキストテキスト
                     talk-card(
                         profileImg="cory_althoff.png"
@@ -40,7 +40,7 @@
                         :profile="$t('home.conference.cory_profile')"
                     )
                 template(#right)
-                    schedule-table(day2 day2Time="00:00 - 00:00")
+                    schedule-table(day17 day17Time="00:00 - 00:00")
                     p 開催場所（ホール名など）テキストテキスト
                     talk-card(
                         profileImg="koike.png"
@@ -53,7 +53,7 @@
             hs(sub="招待講演") Invited Lecture
             two-columns-layout(only-left)
                 template(#left)
-                    schedule-table(day2 day2Time="00:00 - 00:00")
+                    schedule-table(day17 day17Time="00:00 - 00:00")
                     p 開催場所(ホールなど) テキストテキスト
             two-columns-layout
                 template(#left)
@@ -98,7 +98,7 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
             .event-detail.mt-5.pa-5
                 h3 日時・場所
-                schedule-table(day1 day2 day1Time="00:00 - 00:00 （n分間）　枠数：n枠" day2Time="00:00 - 00:00 （n分間）　枠数：n枠")
+                schedule-table(day16 day17 day16Time="00:00 - 00:00 （n分間）　枠数：n枠" day17Time="00:00 - 00:00 （n分間）　枠数：n枠")
                 p 開催場所（ホール名など）テキストテキスト
                 h3 LT発表希望者の方へ
                 p 当日朝に写真のような形でホワイトボードに名前を書いてもらう方式で募集します。早い者勝ちで行うので、LTやるぞ！という方は早目に会場入りをしてください。LTの時間は5分で、枠数は1日目8枠、2日目7枠を予定してます。
@@ -114,7 +114,7 @@
                     p 説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
             .event-detail.pa-5
                 h3 日時・場所
-                schedule-table(day1 day1Time="00:00 - 00:00 （n分間）")
+                schedule-table(day16 day16Time="00:00 - 00:00 （n分間）")
                 p 開催場所（ホール名など）テキストテキスト
                 h3 参加対象
                 p 説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
@@ -146,7 +146,7 @@
                 template(#left)
                     p カンファレンスの終わりにアフターパーティが～…参加情報や注意点など説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
                     h3 日時・場所
-                    schedule-table(day1 day1Time="00:00 - 00:00")
+                    schedule-table(day16 day16Time="00:00 - 00:00")
                     p 開催場所（ホール名など）テキストテキスト
                 template(#right)
                     v-img(:src="require('@/assets/images/after-party.png')")
