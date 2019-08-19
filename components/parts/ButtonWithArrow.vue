@@ -32,19 +32,20 @@ v-btn(
 
 <script>
 export default {
-    name: "button-with-arrow",
-    props: {
-        color: {tyep: String},
-        size: {type: String, default: "large"},
-        customStyle: {type: String},
-        href: {type: String},
-        block: {type: Boolean, default: true},
-        outline: {type: Boolean, default: false},
-        disabled: {type: Boolean, default: false},
-        dark: {type: Boolean, default: false},
-        target: {type: String, default: "_self"},
-        flat: {type: Boolean, default: false}
-    }
+  name: 'button-with-arrow',
+  props: {
+    color: { tyep: String },
+    size: { type: String, default: 'large' },
+    customStyle: { type: String },
+    href: { type: String },
+    block: { type: Boolean, default: true },
+    outline: { type: Boolean, default: false },
+    disabled: { type: Boolean, default: false },
+    dark: { type: Boolean, default: false },
+    target: { type: String, default: '_self' },
+    flat: { type: Boolean, default: false },
+    right: { type: Boolean, default: true }
+  }
 }
 </script>
 

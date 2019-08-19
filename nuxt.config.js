@@ -159,20 +159,23 @@ export default {
         }
       }
     },
-    extend(config, ctx) {
-      // console.log(config)
-      config.entry = ["core-js/stable", "regenerator-runtime/runtime"]
+    // SVGファイルが正しく表示されないのでとりあえず無効化しました[sudame]
+    // TODO: SVGファイルのアイコンセット化
 
-      // TODO: ikedaosushi
-      // Custom Iconとしてsvgを追加するためにbase64エンコーディングされないように追加したがうまく行かず
-      config.module.rules.push({
-        test: /\.(svg)$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1,
-          name: 'img/[name].[hash:7].[ext]'
-        }
-      })
-    }
+    // extend(config, ctx) {
+    //   // console.log(config)
+    //   config.entry = ["core-js/stable", "regenerator-runtime/runtime"]
+
+    //   // TODO: ikedaosushi
+    //   // Custom Iconとしてsvgを追加するためにbase64エンコーディングされないように追加したがうまく行かず
+    //   config.module.rules.push({
+    //     test: /\.(svg)$/,
+    //     loader: 'url-loader',
+    //     query: {
+    //       limit: 1,
+    //       name: 'img/[name].[hash:7].[ext]'
+    //     }
+    //   })
+    // }
   }
 }
