@@ -1,6 +1,7 @@
 <template lang="pug">
 .section-header
     h2.section-header__main
+        .section-header__bar(:class="color")
         slot
         .section-header__tail(v-if="tail") - {{ tail }}
     p.section-header__sub.blueGrey1--text.font-weight-bold {{ sub }}
@@ -14,6 +15,10 @@ export default {
     },
     tail: {
       type: String
+    },
+    color: {
+      type: String,
+      default: 'themeColor3'
     }
   }
 }
@@ -31,15 +36,15 @@ export default {
     vertical-align: middle;
     margin: 24px 0 0;
     margin-left: -60px;
+  }
 
-    &::before {
-      content: '';
-      display: inline-block;
-      height: 4px;
-      width: 40px;
-      margin-right: 20px;
-      background-color: $themeColor3;
-    }
+  &__bar {
+    vertical-align: middle;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 40px;
+    margin-right: 20px;
   }
 
   &__tail {
