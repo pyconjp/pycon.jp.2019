@@ -1,7 +1,7 @@
 <template lang="pug">
 #dev-sprints
     page-header(ja="開発スプリント" en="Development Sprints" color="themeColor1" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
-    event-header(day14 day14Time="10:00 - 18:00" :image="require('@/assets/images/photo_image2.png')" applyLink="#" place="HENNGE")
+    event-header(day14 day14Time="10:00 - 18:00" :image="require('@/assets/images/sprint.png')" applyLink="#" place="HENNGE")
     section.abstract
         v-container.pb-0
             p
