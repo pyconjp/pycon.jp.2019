@@ -94,6 +94,7 @@ export default {
   &__left {
     flex: 1;
     margin-left: auto;
+    margin-right: 24px;
 
     @media #{$display-breakpoint-xs-only} {
       margin: auto;
