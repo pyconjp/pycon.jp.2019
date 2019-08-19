@@ -15,4 +15,39 @@ h3 {
 
 .event-detail {
   border: 1px solid $blueGrey2;
+  padding: 32px;
+}
+
+ul.list {
+  list-style: none;
+  padding: 0;
+  li {
+    position: relative;
+    vertical-align: middle;
+    line-height: 2em;
+    padding-left: 1.5rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      left: 0;
+      top: 0.75em;
+      display: inline-block;
+      background-color: $themeColor3;
+      margin-right: 1em;
+    }
+
+    ul.list {
+      margin-bottom: 6px;
+
+      li {
+        &::before {
+          background-color: $themeColor3Transparent;
+        }
+      }
+    }
+  }
 }

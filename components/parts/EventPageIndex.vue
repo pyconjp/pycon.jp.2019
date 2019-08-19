@@ -5,10 +5,18 @@ section.my-5.page-index
         .page-index__indexes.blueGrey2
             .page-index__index.first
                 ul
-                    li(v-for="index in slicedIndexes[0]" :key="index") {{index}}
+                    li(v-for="index in slicedIndexes[0]" :key="index.title ? index.title : index")
+                        template(v-if="index.title")
+                            span.text2.white--text.px-2.mr-2 {{ index.tag }}
+                            span {{ index.title }}
+                        template(v-else) {{ index }}
             .page-index__index.second(v-if="")
                 ul
-                    li(v-for="index in slicedIndexes[1]" :key="index") {{index}}
+                    li(v-for="index in slicedIndexes[1]" :key="index.title ? index.title : index")
+                        template(v-if="index.title")
+                            span.text2.white--text.px-2.mr-2 {{ index.tag }}
+                            span {{ index.title }}
+                        template(v-else) {{ index }}
 
 </template>
 
