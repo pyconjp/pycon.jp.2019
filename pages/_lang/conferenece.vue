@@ -51,28 +51,14 @@
     section.invited-lecture
         v-container.py-0
             hs(sub="招待講演") Invited Lecture
-            two-columns-layout(only-left)
-                template(#left)
-                    schedule-table(day17 day17Time="00:00 - 00:00")
-                    p 開催場所(ホールなど) テキストテキスト
-            two-columns-layout
-                template(#left)
-                    talk-card(
-                    profileImg="lyu.png"
-                    speakerName="Renyuan Lyu"
-                    sessionTheme="TBD"
-                    :profile="$t('home.conference.lyu_profile')"
-                    )
-                template(#right)
-                    v-card(flat color="blueGrey2")
-                        .pa-3
-                            v-img(max-height="20vh" :src="require('@/assets/images/pycontaiwan2019.svg')")
-                        v-card-title
-                            a(href="https://tw.pycon.org/2019/en-us/" target="_blank")
-                            h3.themeColor1--text
-                                | PyCon Taiwan
-                                v-icon.pl-2(color="themeColor1") open_in_new
-                            p.mt-2 招待講演の講師Renyuan LyuさんもスタッフをつとめるPyCon TW 2019がPyCon JP 2019の1週間後に、台湾台北市の中央研究院（Academia Sinica）、Humanities and Social Science Building（HSSB）にて開催されます。
+            schedule-table(day17 day17Time="00:00 - 00:00")
+            p 開催場所(ホールなど) テキストテキスト
+            talk-card(
+            profileImg="lyu.png"
+            speakerName="Renyuan Lyu"
+            sessionTheme="TBD"
+            :profile="$t('home.conference.lyu_profile')"
+            )
     section.talk-session
         v-container.py-0
             hs(sub="トークセッション") Talk Session
