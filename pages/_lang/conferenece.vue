@@ -1,13 +1,13 @@
 <template lang="pug">
 #conference
     page-header(ja="カンファレンス" en="Conference" color="themeColor3" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
-    event-header(day16 day17 :image="require('@/assets/images/photo_image2.png')" applyLink="#" place="大田区産業プラザPiO")
+    event-header(day16 day17 :image="require('@/assets/images/photo_image2.png')" :applyLink="$t('links.conference')" place="大田区産業プラザPiO")
     section.abstract
         v-container.py-0
             p {{ $t("home.conference.main") }}
             .text-xs-center.text-sm-left
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t("home.conference.sessions") }}
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t("home.conference.timetables") }}
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.session_list')") {{ $t("home.conference.sessions") }}
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.timetable_list')") {{ $t("home.conference.timetables") }}
     event-page-index(:indexes="pageIndexes")
     section.summary
         v-container.py-0
@@ -63,14 +63,14 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/Photo5.png')")
                 template(#right)
                     p {{ $t('conference.talk_session') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t('conference.talk_session_list') }}
+                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.talk_session_list')") {{ $t('conference.talk_session_list') }}
     section.lightning-talk
         v-container.py-0
             hs(:sub="$t('conference.sections.lightning_talk')") Lightning Talk
             two-columns-layout(sm-reverse)
                 template(#left)
                     p {{ $t('conference.lightning_talk') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t('conference.lightning_talk_list') }}
+                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.lightning_talk_list')") {{ $t('conference.lightning_talk_list') }}
                 template(#right)
                     v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
             .event-detail.mt-5.pa-5
@@ -100,7 +100,7 @@
             two-columns-layout(sm-reverse)
                 template(#left)
                     p {{ $t('conference.poster_indivisual') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t('conference.posters') }}
+                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_indivisual_list')") {{ $t('conference.posters') }}
                 template(#right)
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-indivisual.png')")
     section.poster-community
@@ -111,7 +111,7 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-community.png')")
                 template(#right)
                     p {{ $t('conference.poster_community') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") {{ $t('conference.posters') }}
+                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_community_list')") {{ $t('conference.posters') }}
     supports
     section.after-party
         v-container.py-0

@@ -16,6 +16,12 @@
     },
     "links": {
         "conference": "https://pyconjp.connpass.com/event/135734/",
+        "session_list": "",
+        "timetable_list": "",
+        "talk_session_list": "",
+        "lightning_talk_list": "",
+        "poster_indivisual_list": "",
+        "poster_community_list": "",
         "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
         "tutorial": "https://pyconjp.connpass.com/event/136606/",
         "child-workshop": "https://pyconjp.connpass.com/event/139133/",
