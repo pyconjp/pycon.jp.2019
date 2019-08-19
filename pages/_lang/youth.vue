@@ -22,7 +22,7 @@
     section.workshop-content
         v-container.py-0
             hs(color="themeColor4") ワークショップの学習内容
-            two-columns-layout
+            two-columns-layout(sm-reverse)
                 template(#left)
                     p Circuit Playground Expressと呼ばれる小さなコンピュータを使ってPythonを学びます。
                         br
