@@ -1,0 +1,18 @@
+@import "@/assets/style/variables.scss";
+
+// イベントページに統一スタイルを当てるためのスタイルシート
+// イベントページを作る場合は読み込むこと
+// Component化するまでもない(しないほうが好ましい)部品のスタイルに関してもここに書いていく
+
+section {
+  margin: 36px 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.event-detail {
+  border: 1px solid $blueGrey2;
+}
