@@ -27,7 +27,7 @@ section.my-5.support.blueGrey2
                         h3 遠方支援
                         p 主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。
                         v-spacer
-                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") 申し込みへ
+                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#" disabled) 申し込みへ
 </template>
 
 <script>

@@ -8,6 +8,11 @@
                     span.day.themeBlue--text 土
                 template(v-if="day14 && day14Time")
                     span.time.heading-font {{ day14Time }}
+                template(v-if="day15")
+                    span.date.display-2.heading-font 09.15
+                    span.day.themeRed--text 日
+                template(v-if="day15 && day15Time")
+                    span.time.heading-font {{ day15Time }}
                 template(v-if="day16")
                     span.date.display-2.heading-font 09.16
                     span.day.themeRed--text 月・祝
@@ -41,6 +46,10 @@ export default {
       type: Boolean,
       default: false
     },
+    day15: {
+      type: Boolean,
+      default: false
+    },
     day16: {
       type: Boolean,
       default: false
@@ -48,9 +57,6 @@ export default {
     day17: {
       type: Boolean,
       default: false
-    },
-    day14Time: {
-      type: String
     },
     day16Time: {
       type: String
@@ -94,6 +100,7 @@ export default {
   &__left {
     flex: 1;
     margin-left: auto;
+    margin-right: 24px;
 
     @media #{$display-breakpoint-xs-only} {
       margin: auto;

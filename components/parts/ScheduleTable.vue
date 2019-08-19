@@ -6,6 +6,11 @@ table.schedule-table
                 | 2019.09.14（土） {{ day14Time }}
                 br
                 slot(name="day14-detail")
+        tr(v-if="day15")
+            td
+                | 2019.09.15（日） {{ day15Time }}
+                br
+                slot(name="day15-detail")
         tr(v-if="day16")
             td.themeColor3--text.font-weight-bold 1日目
             td
@@ -27,6 +32,10 @@ export default {
       type: Boolean,
       default: false
     },
+    day15: {
+      type: Boolean,
+      default: false
+    },
     day16: {
       type: Boolean,
       default: false
@@ -36,6 +45,9 @@ export default {
       default: false
     },
     day14Time: {
+      type: String
+    },
+    day15Time: {
       type: String
     },
     day16Time: {
