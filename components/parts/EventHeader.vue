@@ -3,6 +3,11 @@
     v-container.content-page-header
         .content-page-header__left
             .schedule
+                template(v-if="day14")
+                    span.date.display-2.heading-font 09.14
+                    span.day.themeBlue--text 土
+                template(v-if="day14 && day14Time")
+                    span.time.heading-font {{ day14Time }}
                 template(v-if="day16")
                     span.date.display-2.heading-font 09.16
                     span.day.themeRed--text 月・祝
@@ -32,6 +37,10 @@ export default {
     ButtonWithArrow
   },
   props: {
+    day14: {
+      type: Boolean,
+      default: false
+    },
     day16: {
       type: Boolean,
       default: false
@@ -39,6 +48,9 @@ export default {
     day17: {
       type: Boolean,
       default: false
+    },
+    day14Time: {
+      type: String
     },
     day16Time: {
       type: String
