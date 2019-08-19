@@ -1,6 +1,11 @@
 <template lang="pug">
 table.schedule-table
     tbody
+        tr(v-if="day14")
+            td
+                | 2019.09.14（土） {{ day14Time }}
+                br
+                slot(name="day14-detail")
         tr(v-if="day16")
             td.themeColor3--text.font-weight-bold 1日目
             td
@@ -18,6 +23,10 @@ table.schedule-table
 <script>
 export default {
   props: {
+    day14: {
+      type: Boolean,
+      default: false
+    },
     day16: {
       type: Boolean,
       default: false
@@ -25,6 +34,9 @@ export default {
     day17: {
       type: Boolean,
       default: false
+    },
+    day14Time: {
+      type: String
     },
     day16Time: {
       type: String
