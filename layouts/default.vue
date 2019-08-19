@@ -31,7 +31,6 @@ export default {
     'navigation-drawer': NavigationDrawer
   },
   created(){
-    console.log(this)
   },
   data() {
     return {
@@ -41,8 +40,12 @@ export default {
           name: this.$t('header.menu.about.parent'),
           to: this.$router.history.base + '/about',
           submenus: [
-            { id: 0, name: this.$t('header.menu.about.about-event'), to: "/#overview" },
-            { id: 1, name: this.$t('header.menu.about.coc'), pageTrans: false, to: "/code-of-conduct" }
+            { 
+              id: 0, name: this.$t('header.menu.about.about-event'), to: this.$router.history.base + "/#overview" 
+            },
+            { 
+              id: 1, name: this.$t('header.menu.about.coc'), pageTrans: false, to: this.$router.history.base + "/code-of-conduct" 
+            }
           ]
         },
         {
@@ -113,29 +116,48 @@ export default {
           id: 0,
           name: this.$t('header.apply.event.parent'),
           submenus: [
-            { id: 0, name: this.$t('header.apply.event.conference') },
-            { id: 1, name: this.$t('header.apply.event.child-workshop') },
-            { id: 2, name: this.$t('header.apply.event.dev-spr') },
-            { id: 3, name: this.$t('header.apply.event.tutorial') }
+            { 
+              id: 0, name: this.$t('header.apply.event.conference'), pageTrans: true, link: this.$t('links.conference')
+            },
+            { 
+              id: 1, name: this.$t('header.apply.event.child-workshop'), pageTrans: true, link: this.$t('links.child-workshop')
+            },
+            { 
+              id: 2, name: this.$t('header.apply.event.dev-spr'), pageTrans: true, link: this.$t('links.dev-sprint')
+            },
+            { 
+              id: 3, name: this.$t('header.apply.event.tutorial'), pageTrans: true, link: this.$t('links.tutorial')
+            }
           ]
         },
         {
           id: 1,
           name: this.$t('header.apply.nursery.parent'),
-          submenus: [
-            {
-              id: 0,
-              name: this.$t('header.apply.nursery.conf-child'),
-              pageTrans: true
-            },
-            { id: 1, name: this.$t('header.apply.nursery.dev-spr') },
-            { id: 2, name: this.$t('header.apply.nursery.tutorial') }
-          ]
+          pageTrans: true,
+          link: this.$t('links.nursery')
+          // submenus: [
+          //   {
+          //     id: 0,
+          //     name: this.$t('header.apply.nursery.conf-child'),
+          //     pageTrans: true,
+          //     link: ""
+          //   },
+          //   { 
+          //     id: 1, name: this.$t('header.apply.nursery.dev-spr'),
+          //     link: ""
+          //   },
+          //   { 
+          //     id: 2, name: this.$t('header.apply.nursery.tutorial'),
+          //     // pageTrans: true,
+          //     // link: this.$t('links.tutorial'),
+              
+          //   }
+          // ]
         },
-        {
-          id: 2,
-          name: this.$t('header.apply.distant-support')
-        }
+        // {
+        //   id: 2,
+        //   name: this.$t('header.apply.distant-support')
+        // }
       ]
     }
   }

@@ -30,13 +30,13 @@
                                     span {{ $t("home.session.dev-spr.desc") }}
                                 v-layout.wrap.pa-2.align-center
                                     v-flex.xs12.xs12.sm12.md6.px-1.py-2
-                                        a 
-                                            v-layout.align-center
-                                                v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
-                                                v-flex.text-md-left.pl-2
-                                                    v-icon(color="linkBlue") keyboard_arrow_right
+                                        //- a 
+                                        //-     v-layout.align-center
+                                        //-         v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
+                                        //-         v-flex.text-md-left.pl-2
+                                        //-             v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" :dark="true" size="normal" href="https://pyconjp.connpass.com/event/136558/") {{ $t("basic.apply") }}
+                                        button-with-arrow(color="apply" :dark="true" size="normal" :href="$t('links.dev-sprint')") {{ $t("basic.apply") }}
                 v-flex#turorial.xs12.sm12.md6.quaternary.pb-4(
                     :class="{'px-4': $vuetify.breakpoint.smAndDown, 'pl-4': $vuetify.breakpoint.mdAndUp}"
                 )
@@ -64,12 +64,12 @@
                                 v-layout.wrap.pa-2.align-center
                                     v-flex.xs12.sm12.md6.px-1.py-2
                                         a 
-                                            v-layout.align-center
-                                                v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
-                                                v-flex.text-md-left.pl-2
-                                                    v-icon(color="linkBlue") keyboard_arrow_right
+                                            //- v-layout.align-center
+                                            //-     v-flex.text-xs-right(:class="{'shrink': $vuetify.breakpoint.mdAndUp}") {{ $t("basic.detail") }}
+                                            //-     v-flex.text-md-left.pl-2
+                                            //-         v-icon(color="linkBlue") keyboard_arrow_right
                                     v-flex.xs12.sm12.md6.px-1
-                                        button-with-arrow(color="themeColor3" size="normal" href="" :disabled="true" ) {{ $t("basic.apply") }}
+                                        button-with-arrow(color="apply" :dark="true" size="normal" :href="$t('links.tutorial')") {{ $t("basic.apply") }}
 </template>
 
 <style lang="sass" scoped>

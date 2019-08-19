@@ -43,7 +43,7 @@
                 :class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}"
             ).py-1.text-md-center
                 v-flex
-                    .body-2  {{ $t("home.news.staff_note") }}
+                    .body-2(v-html='$t("home.news.staff_note")') 
 </template>
 
 <style lang="sass" scoped>

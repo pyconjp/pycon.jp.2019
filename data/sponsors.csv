@@ -1,5 +1,5 @@
-id,package,nameJa,nameEn,logoIImage,prJa,prEn,urlJa,urlEn,recruitEn,recruitJa
-pythonic-exam.com2,Breakfast Sponsor,一般社団法人Pythonエンジニア育成推進協会,"Python Engineer Development Co., ltd.",pythonic-exam_com.png,,,https://www.pythonic-exam.com/,https://www.pythonic-exam.com/en,,
+id,package,nameJa,nameEn,logoImage,prJa,prEn,urlJa,urlEn,recruitEn,recruitJa
+pythonic-exam.com2,Breakfast,一般社団法人Pythonエンジニア育成推進協会,"Python Engineer Development Co., ltd.",pythonic-exam_com.png,,,https://www.pythonic-exam.com/,https://www.pythonic-exam.com/en,,
 gmo.jp,Diamond,GMOインターネット株式会社,GMOインターネット株式会社,gmo_jp.png,,,,,,
 squeeze-inc.co.jp,Gold,株式会社SQUEEZE,SQUEEZE Inc.,squeeze_inc_co_jp.png,株式会社SQUEEZEは「価値の詰まった社会を創る」というミッションのもと、「空き家問題解消による地域活性化」と「⼈材の再発掘・活⽤による⼈材不⾜の解消」に取り組んでいます。主要事業として、宿泊事業者向けのクラウドサービスである「suitebook」、IoTやクラウドソーシングを活⽤したスマートホテル「Minn」や「Theatel」の運営を⾏っています。私たちはテクノロジーの⼒を⽤いて宿泊事業という領域を改⾰し、⼈々がより本質的な働き⽅が実現できるように、社会に貢献していきます。,"At SQUEEZE, our mission is to create a society squeezed full of value. We aim to revitalize areas with an abundance of vacant houses and to solve the lack of human resources. Our primary business is to provide a cloud service「suitebook」to property owners, as well as managing our own smart hotels, 「Minn」and「Theatel」which incorporates IoT and cloud sourcing. With the power of technology, we aim to revolutionize the accommodation business and to create a better working environment.",https://squeeze-inc.co.jp/,https://squeeze-inc.co.jp/,"At SQUEEZE we develop our main products using Python/Django, Go, and Angular. And we adopt Scrum as a development process. We are also aiming to use Python to analyze data and connect with IoT devices. Members of our company actively participate in events, as organizers, staffs, and as an information hub under our core value, “With Our Community”.",SQUEEZEでは主要なプロダクトを、Python/Django、Angularを⽤いて開発しています。また開発プロセスにスクラムを取り⼊れています。今後はIoT機器との連携やデータ分析の分野でもPythonの活⽤を進めていきます。 SQUEEZEではコアバリューの⼀つに `With Our Community`を掲げ、コミュニティ活動を推奨しています。そのため開発メンバーの多くが、イベントの主催、イベントスタッフ、外部への情報発信などを⾏なっており、積極的にコミュニティに関わっています。
 r.recruit.co.jp,Gold,アイシン精機,"Aisin Seiki Co., Ltd.",aisin.522f47f.png,,,,,,
@@ -31,8 +31,15 @@ We are hiring!"," 当社が提供しているサービスESいい物件Oneはマ
  我々はさらに業務システムだけでなくこれらのデータをさらに活用し、社会的価値の創造に挑戦します！
  興味がある方はぜひ当社ブースにお越しください。"
 prtimes.co.jp,Gold,株式会社PR TIMES,"PR TIMES, Inc.",prtimes_co_jp.png,,,,,,
-tohmatsu.co.jp,Gold,デロイト トーマツ ファイナンシャルアドバイザリー合同会社,,DEL_g_PRI_RGB.png,,,,,,
-iridge.jp,Gold,株式会社アイリッジ,"iRidge, Inc.",iridge_jp.png,,,,,,
+tohmatsu.co.jp,Gold,デロイトトーマツファイナンシャルアドバイザリー合同会社,Deloitte Tohmatsu Financial Advisory LLC,DEL_g_PRI_RGB.png,デロイトトーマツファイナンシャルアドバイザリー合同会社は、「日本のビジネスを強く、世界へ」をコーポレートスローガンに掲げています。このスローガンには、日本企業が事業基盤を強固にし、海外へ展開していくことを私たちのグローバルネットワークを使って支援していきたいという思いが込められています。また、日本企業がグローバル市場で勝者になるために、当社として大きな貢献を果たしたいと考えています。,"Deloitte Tohmatsu Financial Advisory LLC has the corporate slogan  “Making Japanese business stronger and more global.”
+With this slogan, we hope to provide support for Japanese companies to strengthen their core foundations and develop their overseas businesses by utilizing our global network. We aim to contribute to their becoming winners in the global market.",https://www.deloitte.com/jp/dtfa,https://www.deloitte.com/jp/en/dtfa,"We are a professional firm that specializes in providing financial advisory services such as M & A and crisis management. We use AI and data analytics to improve the value of professional services. In addition to data utilization support and reporting based on analysis, we will also develop business platforms using AI to improve business efficiency and discover new knowledge. We are also focusing on DX as a new business. Would you like to strengthen Japanese business with us?",当社は、M&Aやクライシスマネジメントなどのファイナンシャルアドバイザリーサービスを専門的に提供するプロフェッショナルファームです。加えて近年では、AIやデータアナリティクスを活用し、プロフェッショナルサービスの価値向上に取り組んでいます。データ利活用の支援や分析によるレポーティングだけではなく、AIを活用したビジネスプラットフォームの開発なども行い、ビジネスの効率化や新たな知見の発見を実現します。また、新規事業としてDXにも注力しています。私たちと日本のビジネスを強くしていきませんか？
+iridge.jp,Gold,株式会社アイリッジ,"iRidge, Inc.",iridge_jp.png,"株式会社アイリッジは、「Tech Tomorrow」をミッションに掲げ、自社プロダクトであるインターネットサービスの開発やスマートフォンアプリの受託開発を行なっている会社です。 
+Python/Djangoを使ったO2Oソリューション「FANSHIP」や音声アシスタント対応アプリ制作ツール「NOID」、スマートフォンアプリのバックエンドサーバーから業務を改善するちょっとしたスクリプトまでPythonで開発しています。","iRidge, Inc. provides solutions of web services and smartphone applications with ""Tech Tomorrow"" as our mission.
+ We use Python/Django for our products such as O2O solution 'FANSHIP', development tool for voice assistant 'NOID', 
+and the script improvement tool to support backend operation.",https://iridge.jp/,https://iridge.jp/,"We actively sponsors technical conferences and holds in-house study sessions (FlyHigh Friday / Weekly Individual Activities, Issue Bash / Monthly Intensive Development). Development Environment - ES6, TypeScript, Vue.js, Nuxt.js, Storybook, GraphQL - Python, Django, Docker,Go - AWS(ECS, etc..),Terraform, Datadog, Pagerduty, GitLab/CI","アイリッジでは技術カンファレンスへの協賛や、社内勉強会（FlyHigh Friday/毎週行う個人の取組に関するもくもく会、Issue Bash/毎月行う集中開発）の開催をしており、技術力向上に積極的です。主な開発環境
+- ES6, TypeScript, Vue.js, Nuxt.js, Storybook, GraphQL
+- Python, Django, Docker,Go
+- AWS, Terraform, Datadog, Pagerduty, GitLab/CI"
 leadinge.co.jp,Gold,株式会社リーディング・エッジ社,"Leading Edge Co., Ltd.",leadinge_co_jp.jpg,"「エンジニアの生涯価値向上」を理念とし ”憧れの製品開発に携わりたい””多くのPJで力をつけたい””自らの技術力で新事業を立ち上げたい”など、技術者としてのキャリアにかかわる局面で技術者の皆さんをバックアップする事業に取り組んでいます。
 Webアプリ開発からインフラ構築まで、実績は多岐にわたりますが、近年はPythonを用いた深層学習やデータサイエンス、深層学習などの技術を最も得意としております。
 超一流の熟練者によるサポート体制や充実した教育制度を活用し、誰もが憧れの技術を習得できます。
@@ -55,10 +62,10 @@ satori.team,Gold,SATORI株式会社,SATORI Inc,satori_team.png,"SATORI株式会�
 応募は求人サイトまたは当社ブーススタッフにお気軽にお声がけください！"
 visasq.com,Gold,株式会社ビザスク,株式会社ビザスク,visasq_com.png,,,,,,
 elastic.co,Gold,Elastic,Elastic,elastic_co.jpg,,,,,,
-https://datumstudio.jp2,Lunch Sponsor,DATUM STUDIO株式会社,DATUM STUDIO Co.LTD.,DATUM STUDIO_logo3.png,,,https://datumstudio.jp/,https://datumstudio.jp/,,
-conbu.net,Network Sponsor,COnference Network BUilders,COnference Network BUilders,conbu.png,,,https://conbu.net/,,,
-www.bbtower.co.jp,Network Sponsor,株式会社ブロードバンドタワー,"BroadBand Tower, Inc.",bbt.png,,,https://www.bbtower.co.jp/,,,
-groove-x.com,Platinum,GROOVE X株式会社,"GROOVE X, Inc.",groove_x.39d453a.png,,,,,,
+https://datumstudio.jp2,Lunch,DATUM STUDIO株式会社,DATUM STUDIO Co.LTD.,DATUM STUDIO_logo3.png,,,https://datumstudio.jp/,https://datumstudio.jp/,,
+conbu.net,Network,COnference Network BUilders,COnference Network BUilders,conbu.png,,,https://conbu.net/,,,
+www.bbtower.co.jp,Network,株式会社ブロードバンドタワー,"BroadBand Tower, Inc.",bbt.png,,,https://www.bbtower.co.jp/,,,
+groove-x.com,Platinum,GROOVE X株式会社,"GROOVE X, Inc.",gx_logo_line.png,,,,,,
 pythonic-exam.com,Platinum,一般社団法人Pythonエンジニア育成推進協会,"Python Engineer Development Co., ltd.",pythonic-exam_com.png,Python3エンジニア認定基礎文法試験とPython3データ分析試験を全国200か所以上の会場で一年中実施しています。学生と先生は半額で受験できます。Python3エンジニア認定基礎文法試験は開始2年で5千人の受験を頂き、とても感謝しています。ありがとうございました。PyCon JPには業界還元の一環でスポンサードしています。,"The company originated to authorize tests and learning materials, which serve as guidelines for study, in addition to schools in order to support the training of sound Python programmers who understand Pythonic as the market for the language grows.",https://www.pythonic-exam.com/,https://www.pythonic-exam.com/en,,
 enthought.com,Platinum,Enthought,Enthought,enthought_com.png,,,,,,
 https://spherelinks.co.jp/,Silver,スフィアリンクス株式会社,スフィアリンクス株式会社,spherelinks_co_jp.png,,,,,,
@@ -69,9 +76,9 @@ nexedi.com,Silver,Nexedi,Nexedi,nexedi.690f5cf.png,,,,,,
 samuraism.com,Silver,株式会社サムライズム,株式会社サムライズム,samuraism_com.png,,,,,,
 brainpad.co.jp,Silver,株式会社ブレインパッド,BrainPad Inc.,brainpad_co_jp.png,,,,,,
 opengroove.com,Silver,株式会社オープングルーヴ,株式会社オープングルーヴ,opengroove_com.png,,,,,,
-mlabs.jp,Silver,株式会社 m-Lab,株式会社 m-Lab,mlabs_jp.jpg,,,,,,
+mlabs.jp,Silver,株式会社 m-Lab,"m-Lab, Inc.",mlabs_jp.jpg,,,https://m-lab.inc,https://m-lab.inc,,
 https://pay.jp,Silver,"PAY, Inc.","PAY, Inc.",pay_jp.png,,,,,,
-https://safie.link/,Silver,セーフィー株式会社,Safie Inc.,safie_link.png,,,,,,
+https://safie.link/,Silver,セーフィー株式会社,Safie Inc.,safie_link.png,,,https://safie.link/safietimes/?by=pyconjp2019,https://safie.link/safietimes/?by=pyconjp2019,,
 https://rightcode.co.jp,Silver,株式会社ライトコード,RightCode Inc.,rightcode_co_jp.png,,,https://rightcode.co.jp,https://rightcode.co.jp,,
 https://supership.jp/,Silver,Supership株式会社,Supership Inc.,supership_jp.png,,,https://supership.jp/,https://supership.jp/,,
 revcomm.co.jp,Silver,株式会社RevComm,RevComm Inc,revcomm_co_jp.png,,,https://www.revcomm.co.jp/,,,
@@ -82,9 +89,10 @@ https://churadata.okinawa/,Silver,ちゅらデータ株式会社,Chura DATA Inc,
 https://www.cmscom.jp,Silver,(株)CMSコミュニケーションズ,(株)CMSコミュニケーションズ,cms.png,,,,,,
 https://jobhub.co.jp/,Silver,株式会社パソナJOB HUB,株式会社パソナJOB HUB,pasona.png,,,,,,
 http://sora.flights/,Silver,株式会社空,株式会社空,sora_logo_large.png,,,,,,
-hennge.com,Sprint Sponsor,HENNGE株式会社,HENNGE,hennge_com.png,,,,,,
-intimatemerger.com,Water Sponsor,株式会社インティメート・マージャー,"Intimate Merger, Inc.",intimatemerger_com.png,,,https://corp.intimatemerger.com/,,,
-brainpad.co.jp_w,Water Sponsor,株式会社ブレインパッド,BrainPad Inc.,brainpad_co_jp.png,,,,,,
-beproud.jp2,Tutrial Cooperation,ビープラウド,BeProud,,,,,,,
-classmethod,Tutrial Cooperation,クラスメソッド,classmethod,,,,,,,
-nvidia,Tutrial Cooperation,NVIDIA,NVIDIA,,,,,,,
+hennge.com,Sprint,HENNGE株式会社,HENNGE,hennge_com.png,,,,,,
+intimatemerger.com,Water,株式会社インティメート・マージャー,"Intimate Merger, Inc.",intimatemerger_com.png,,,https://corp.intimatemerger.com/,,,
+brainpad.co.jp_w,Water,株式会社ブレインパッド,BrainPad Inc.,brainpad_co_jp.png,,,,,,
+beproud.jp2,Tutrial,ビープラウド,BeProud,beproud_jp.png,,,https://www.beproud.jp/,,,
+classmethod,Tutrial,クラスメソッド,classmethod,,,,https://classmethod.jp/,,,
+nvidia,Tutrial,NVIDIA,NVIDIA,,,,https://www.nvidia.com/ja-jp/,,,
+google,Tutrial,Google Cloud,Google Cloud,cloud_google_com.png,,,https://about.google/,,,

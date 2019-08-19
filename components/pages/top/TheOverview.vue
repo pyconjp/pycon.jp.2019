@@ -19,9 +19,9 @@
                         v-flex.md12.py-4
                             .body-1  {{ $t("home.overview.about") }}
                         v-flex.xs12.sm12.md6.px-3.py-2
-                            button-with-arrow(:outline="true" size="large" color="themeColor3") {{  $t("home.overview.theme") }}
+                            //- button-with-arrow(:outline="true" size="large" color="apply") {{  $t("home.overview.theme") }}
                         v-flex.xs12.sm12.md6.px-3.py-2
-                            button-with-arrow(:outline="true" size="large" color="themeColor3") {{ $t("basic.norm") }}
+                            button-with-arrow(:outline="true" :href='$router.history.base + "/code-of-conduct"' size="large" color="themeColor3") {{ $t("basic.norm") }}
                 v-flex.md4
                     v-img(:src="require('~/assets/images/top/whatispyconjp.png')" width="100%" min-height="100%")
 

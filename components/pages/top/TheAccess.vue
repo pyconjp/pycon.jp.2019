@@ -54,7 +54,7 @@
                     v-layout.column.pa-3
                         v-flex.xs12.text-xs-left
                             .display-1
-                                v-icon(size=40).themeColor3--text location_on
+                                v-icon(size=40).apply--text location_on
                                 span.ml-3 {{ $t("basic.hennge") }}
                         v-flex.xs12.pa-3
                             GmapMap(
