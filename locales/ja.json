@@ -1,16 +1,27 @@
 {
     "basic": {
         "access": "会場",
+        "schedule": "日程",
+        "access_schedule": "日時・場所",
         "pio": "大田区産業プラザ PiO",
         "hennge": "HENNGE",
         "detail": "詳細情報",
         "apply": "参加申し込み",
         "norm": "行動規範",
         "recruit": "採用について",
-        "company-desc": "企業概要"
+        "company-desc": "企業概要",
+        "address": {
+            "pio": "〒144-0035　東京都大田区南蒲田一丁目20番20号"
+        }
     },
     "links": {
         "conference": "https://pyconjp.connpass.com/event/135734/",
+        "session_list": "",
+        "timetable_list": "",
+        "talk_session_list": "",
+        "lightning_talk_list": "",
+        "poster_indivisual_list": "",
+        "poster_community_list": "",
         "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
         "tutorial": "https://pyconjp.connpass.com/event/136606/",
         "child-workshop": "https://pyconjp.connpass.com/event/139133/",
@@ -29,8 +40,7 @@
                 "parent": "概要",
                 "about-event": "開催概要",
                 "coc": "行動規範"
-            }
-            ,
+            },
             "events": {
                 "parent": "イベント一覧",
                 "conference": {
@@ -66,7 +76,6 @@
             },
             "distant-support": "遠方支援の申請"
         }
-        
     },
     "home": {
         "title": "トップページ",
@@ -92,7 +101,7 @@
             "theme": "今年のテーマについて"
         },
         "conference": {
-            "main": "私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。<br><br> PyCon JPを素晴らしいカンファレンスとして維持していくには、ただ自分たちの会を毎年同じ時期に同じ場所で開催するだけでは足りないと、私たちは考えます。国内外で行われるカンファレンスとの連携や、ユーザー間の交流の促進、Pythonや関連するソフトウェアの普及・啓蒙をお手伝いしていくことで、Pythonにもっと多くの関心が集まり、沢山のユーザやソフトウェアが生まれていくことが、私たちの原動力となると信じています。<br><br> PyCon JP 2019 今年のテーマはPython New Era です。日本で元号が新しくなった事。Python も 2 から3 へ新しい時代へ移っていく事をコンセプトとしています。<br><br> PyCon JP 2019は参加する皆さんが新しい繋がりや知識を得て楽しめるカンファレンスを目標に開催します。",
+            "main": "私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。\n\n PyCon JPを素晴らしいカンファレンスとして維持していくには、ただ自分たちの会を毎年同じ時期に同じ場所で開催するだけでは足りないと、私たちは考えます。国内外で行われるカンファレンスとの連携や、ユーザー間の交流の促進、Pythonや関連するソフトウェアの普及・啓蒙をお手伝いしていくことで、Pythonにもっと多くの関心が集まり、沢山のユーザやソフトウェアが生まれていくことが、私たちの原動力となると信じています。\n\n PyCon JP 2019 今年のテーマはPython New Era です。日本で元号が新しくなった事。Python も 2 から3 へ新しい時代へ移っていく事をコンセプトとしています。\n\n PyCon JP 2019は参加する皆さんが新しい繋がりや知識を得て楽しめるカンファレンスを目標に開催します。",
             "sessions": "セッション一覧",
             "timetables": "タイムテーブル一覧",
             "cory_profile": "コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。",
@@ -129,5 +138,45 @@
     },
     "sponsor": {
         "title": "スポンサー"
+    },
+    "events": {
+        "place": "開催場所",
+        "target": "参加対象",
+        "lunch_oyatsu_party": "※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。",
+        "lunch_oyatsu": "※昼食はお弁当が出ます。またおやつの提供があります。"
+    },
+    "conference": {
+        "posters": "ポスターセッション一覧",
+        "lightning_talk": "5分間で行う発表（プレゼンテーション）のことです。「Lightning Talk（稲妻トーク）」を略して「LT」とも呼びます。\n楽しくても5分、つまらなくても5分。より多くの人に発表する機会をもってもらうための企画です。Pythonに関係あっても無くてもOKです！\n\nクロージングLTは、カンファレンス最後に参加者全員が、メイン会場に集まって行っています。発表者は全員の前で発表ができ、聞く人も含めた全ての参加者が一緒に、イベントを盛り上げます。今年は、どんなLTが発表されるのか楽しみですね。みんなで盛り上げましょう！",
+        "talk_session": "!!!ダミーテキスト",
+        "begginer_session": "!!!ダミーテキスト",
+        "begginer_session_target": "!!!ダミーテキスト",
+        "poster_indivisual": "!!!ダミーテキスト",
+        "poster_community": "!!!ダミーテキスト",
+        "after_party": "!!!ダミーテキスト",
+        "for_LTer": "LT発表希望者の方へ",
+        "for_LTer_main": "当日朝に写真のような形でホワイトボードに名前を書いてもらう方式で募集します。早い者勝ちで行うので、LTやるぞ！という方は早目に会場入りをしてください。LTの時間は5分で、枠数は1日目8枠、2日目7枠を予定してます。",
+        "for_LTer_sub": "※日本語がわからない人もある程度楽しめるように、スライドは英語で作ってください。",
+        "talk_session_list": "トークセッション一覧",
+        "lightning_talk_list": "ライトニングトーク一覧",
+        "sections": {
+            "summary": "カンファレンスの開催概要",
+            "keynote": "基調講演",
+            "invited_lecture": "招待講演",
+            "talk_session": "トークセッション",
+            "lightning_talk": "ライトニングトーク",
+            "beginners_session": "ビギナーズセッション",
+            "poster_indivisual": "ポスターセッション(個人)",
+            "poster_community": "ポスターセッション(コミュニティ)",
+            "after_party": "アフターパーティ"
+        },
+        "place": {
+            "keynote_day16": "!!!ダミーテキスト",
+            "keynote_day17": "!!!ダミーテキスト",
+            "lightning_talk": "!!!ダミーテキスト",
+            "begginers_session": "!!!ダミーテキスト",
+            "after_party": "!!!ダミーテキスト",
+            "invited_lecture": "!!!ダミーテキスト"
+        }
     }
 }
