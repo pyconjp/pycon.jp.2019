@@ -58,6 +58,9 @@ export default {
       type: Boolean,
       default: false
     },
+    day14Time: {
+      type: String
+    },
     day16Time: {
       type: String
     },
