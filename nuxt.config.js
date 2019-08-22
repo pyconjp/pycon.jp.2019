@@ -138,6 +138,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    quiet: false,
     babel: {
       presets: [
         [
