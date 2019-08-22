@@ -29,6 +29,10 @@
         "child-workshop": "https://pyconjp.connpass.com/event/139133/",
         "nursery": "https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et"
     },
+    "days": {
+        "day1": "1日目",
+        "day2": "2日目"
+    },
     "weekday": {
         "mon": "月・祝",
         "tue": "火",
