@@ -3,24 +3,24 @@ table.schedule-table
     tbody
         tr(v-if="day14")
             td
-                | 2019.09.14（土） {{ day14Time }}
+                | 2019.09.14（{{ $t('weekday.sat') }}） {{ day14Time }}
                 br
                 slot(name="day14-detail")
         tr(v-if="day15")
             td
-                | 2019.09.15（日） {{ day15Time }}
+                | 2019.09.15（{{ $t('weekday.sun') }}） {{ day15Time }}
                 br
                 slot(name="day15-detail")
         tr(v-if="day16")
-            td.themeColor3--text.font-weight-bold 1日目
+            td.themeColor3--text.font-weight-bold {{ $t('days.day1') }}
             td
-                | 2019.09.16（月・祝） {{ day16Time }}
+                | 2019.09.16（{{ $t('weekday.mon') }}） {{ day16Time }}
                 br
                 slot(name="day16-detail")
         tr(v-if="day17")
-            td.themeColor3--text.font-weight-bold 2日目
+            td.themeColor3--text.font-weight-bold {{ $t('days.day2') }}
             td
-                | 2019.09.17（火） {{ day17Time }}
+                | 2019.09.17（{{ $t('weekday.tue') }}） {{ day17Time }}
                 br
                 slot(name="day17-detail")
 </template>
