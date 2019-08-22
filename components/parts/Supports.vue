@@ -7,27 +7,27 @@ section.my-5.support.blueGrey2
                 v-card.flex-card(height="100%")
                     v-img(max-height="20vh" :src="require('@/assets/images/eating.png')")
                     .card-content
-                        h3 食事
-                        p.themeColor3--text.font-weight-bold 1日目
-                        p 朝食（限定数）、ランチ、おやつ、夕食（アフターパーティー）
-                        p.themeColor3--text.font-weight-bold 2日目
-                        p 朝食（限定数）、ランチ、おやつ
+                        h3 {{ $t('events.supports.food.title') }}
+                        p.themeColor3--text.font-weight-bold {{ $t('days.day1') }}
+                        p {{ $t('events.supports.food.day1') }}
+                        p.themeColor3--text.font-weight-bold {{ $t('days.day2') }}
+                        p {{ $t('events.supports.food.day2') }}
             v-flex(xs12 md4 :class="{'mx-3': $vuetify.breakpoint.mdAndUp, 'my-2': $vuetify.breakpoint.smAndDown}")
                 v-card.flex-card(height="100%")
                     v-img(max-height="20vh" :src="require('@/assets/images/nursery.png')")
                     .card-content
-                        h3 託児所
-                        p 各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。
+                        h3 {{ $t('events.supports.nursery.title') }}
+                        p {{ $t('events.supports.nursery.content') }}
                         v-spacer
-                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#") 申し込みへ
+                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et") {{ $t('events.supports.nursery.to_apply') }}
             v-flex(xs12 md4 :class="{'ml-3': $vuetify.breakpoint.mdAndUp, 'mt-2': $vuetify.breakpoint.smAndDown}")
                 v-card.flex-card(height="100%")
                     v-img(max-height="20vh" :src="require('@/assets/images/support-local.png')")
                     .card-content
-                        h3 遠方支援
-                        p 主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。
+                        h3 {{ $t('events.supports.distant.title') }}
+                        p {{ $t('events.supports.distant.content') }}
                         v-spacer
-                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#" disabled) 申し込みへ
+                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  href="#" disabled) {{ $t('events.supports.distant.to_apply') }}
 </template>
 
 <script>
