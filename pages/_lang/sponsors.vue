@@ -9,7 +9,7 @@
     //-   p.grey--text ※Diamond/Gold/Platinum/Sprint/Waterの募集は締め切りました
     section(v-for="section in sections" :key="section.id")
       second-heading(:name="section.name" :description="section.description")
-      v-layout.wrap.px-5.py-3.sponsors
+      v-layout.wrap.py-3.sponsors(:class="{'px-5': $vuetify.breakpoint.mdAndUp }")
         v-flex.pa-2(
           v-for="sponsor in filteredSponsors(section.filter)" :key="sponsor.id"
           :class="section.class"
@@ -70,43 +70,43 @@ export default {
       sponsors: sponsors,
       sections: [
         {
-          id: 0, name: "Diamond Sponsor", description: "ダイヤモンド", filter: "Diamond", 
+          id: 0, name: "Diamond Sponsor", description: "ダイヤモンド", filter: "Diamond",
           ratio: 48/9, size: "headline", showRec: true, class: "md12 sm12 xs12"
         },
         {
-          id: 1, name: "Platinum Sponsor", description: "プラチナ", filter: "Platinum", 
+          id: 1, name: "Platinum Sponsor", description: "プラチナ", filter: "Platinum",
           ratio: 48/9, size: "headline", showRec: true, class: "md6 sm12 xs12"
         },
         {
-          id: 2, name: "Gold Sponsor", description: "ゴールド", filter: "Gold", 
-          ratio: 16/9, size: "title", showRec: true, class: "md4 sm6 xs6"
+          id: 2, name: "Gold Sponsor", description: "ゴールド", filter: "Gold",
+          ratio: 16/9, size: "title", showRec: true, class: "md4 sm12 xs12"
         },
         {
-          id: 3, name: "Silver Sponsor", description: "シルバー", filter: "Silver", 
-          ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
+          id: 3, name: "Silver Sponsor", description: "シルバー", filter: "Silver",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 4, name: "Lunch Sponsor", description: "ランチ スポンサー", filter: "Lunch", 
-          ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
+          id: 4, name: "Lunch Sponsor", description: "ランチ スポンサー", filter: "Lunch",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 5, name: "Breakfast Sponsor", description: "朝食スポンサー", filter: "Breakfast", 
-          ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
+          id: 5, name: "Breakfast Sponsor", description: "朝食スポンサー", filter: "Breakfast",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 6, name: "Water Sponsor", description: "Waterスポンサー", filter: "Water", 
-          ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
+          id: 6, name: "Water Sponsor", description: "Waterスポンサー", filter: "Water",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 7, name: "Network Sponsor", description: "ネットワーク スポンサー", filter: "Network", 
-          ratio: 16/9, size: "title", showRec: false, class: "md3 sm3 xs4"
+          id: 7, name: "Network Sponsor", description: "ネットワーク スポンサー", filter: "Network",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 8, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint", 
+          id: 8, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint",
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         },
         {
-          id: 9, name: "Tutorial Lecturer Cooperation", description: "チュートリアル特別協力", filter: "Tutrial", 
+          id: 9, name: "Tutorial Lecturer Cooperation", description: "チュートリアル特別協力", filter: "Tutrial",
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         }
       ]

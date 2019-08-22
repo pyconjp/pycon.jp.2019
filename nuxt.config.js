@@ -77,6 +77,9 @@ export default {
     middleware: 'i18n',
     base: routerBase
   },
+  generate: {
+    routes: ['/en/code-of-conduct', '/en/sponsors']
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -135,6 +138,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    quiet: false,
     babel: {
       presets: [
         [
