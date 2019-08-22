@@ -5,23 +5,23 @@
             .schedule
                 template(v-if="day14")
                     span.date.display-2.heading-font 09.14
-                    span.day.themeBlue--text 土
+                    span.day.themeBlue--text {{ $t('weekday.sat') }}
                 template(v-if="day14 && day14Time")
                     span.time.heading-font {{ day14Time }}
                 template(v-if="day15")
                     span.date.display-2.heading-font 09.15
-                    span.day.themeRed--text 日
+                    span.day.themeRed--text {{ $t('weekday.sun') }}
                 template(v-if="day15 && day15Time")
                     span.time.heading-font {{ day15Time }}
                 template(v-if="day16")
                     span.date.display-2.heading-font 09.16
-                    span.day.themeRed--text 月・祝
+                    span.day.themeRed--text {{ $t('weekday.mon') }}
                 template(v-if="day16 && day16Time")
                     span.time.heading-font {{ day16Time }}
                 span.d2d.display-2(v-if="day16 && day17") -
                 template(v-if="day17")
                     span.date.display-2.heading-font 09.17
-                    span.day 火
+                    span.day {{ $t('weekday.tue') }}
                 template(v-if="day17 && day17Time")
                     span.time.heading-font {{ day17Time }}
             .place
