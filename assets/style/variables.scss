@@ -1,0 +1,59 @@
+// break points px
+$grid-breakpoint-xs: 0;
+$grid-breakpoint-sm: 600px;
+$grid-breakpoint-md: 960px;
+$grid-breakpoint-lg: (1280px - 16px); // Desktop gets a 16dp reduction
+$grid-breakpoint-xl: (
+  1920px - 16px
+); // https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
+
+// break points media query
+$display-breakpoint-print-only: "only print";
+$display-breakpoint-screen-only: "only screen";
+$display-breakpoint-xs-only: "only screen and (max-width: "+ ($grid-breakpoint-sm - 1) +")";
+$display-breakpoint-sm-only: "only screen and (min-width: " + $grid-breakpoint-sm + ") and (max-width: " +
+  ($grid-breakpoint-md - 1)+ ")";
+$display-breakpoint-sm-and-down: "only screen and (max-width: "+ ($grid-breakpoint-md - 1)+ ")";
+$display-breakpoint-sm-and-up: "only screen and (min-width: " + $grid-breakpoint-sm + ")";
+$display-breakpoint-md-only: "only screen and (min-width: " + $grid-breakpoint-md + ") and (max-width: " +
+  $grid-breakpoint-lg - 1 +")";
+$display-breakpoint-md-and-down: "only screen and (max-width: " + ($grid-breakpoint-lg - 1) + ")";
+$display-breakpoint-md-and-up: "only screen and (min-width: " + $grid-breakpoint-md + ")";
+$display-breakpoint-lg-only: "only screen and (min-width: " + $grid-breakpoint-lg + ") and (max-width: " +
+  $grid-breakpoint-xl - 1+")";
+$display-breakpoint-lg-and-down: "only screen and (max-width: (" + $grid-breakpoint-xl + " - 1))";
+$display-breakpoint-lg-and-up: "only screen and (min-width: " + $grid-breakpoint-lg + ")";
+$display-breakpoint-xl-only: "only screen and (min-width: " + $grid-breakpoint-xl + ")";
+
+// colors
+$themeColor0: #4f455a; // テーマカラー0： ロゴのタイプ部分
+$themeColor1: #9c8cbe; // テーマカラー1： フレームボタン、開発スプリント等
+$themeColor2: #eba4c3; // テーマカラー2： 小見出しテキスト、チュートリアル等
+$themeColor3: #5970a5; // テーマカラー3： エリア見出し、セクション見出しマーカー、カンファレンス等
+$themeColor3Transparent: #bbc2d6; // テーマカラー3、透明度50%
+$themeColor4: #c8a177; // テーマカラー4： 子供向けワークショップ等
+$apply: #e55493; // 申し込み・リンクカラー： 申し込みボタン基本色、テキストリンク
+$applyLighten: #e75c99; // 申し込み・リンクカラー明： 申し込みボタン（グラデーション明側）
+$applyDarken: #e24d8b; // 申し込み・リンクカラー暗： 申し込みボタン（グラデーション暗側）
+$blueBlack: #36476d; // ブルーブラック： ドロップシャドウ（基本）
+$pupleBlack: #443565; // パープルブラック： ドロップシャドウ（テーマカラー1が地の場合）
+$pinkBlack: #6e314c; // ピンクブラック： ドロップシャドウ（テーマカラー2が地の場合）
+$brownBlack: #544331; // ブラウンブラック： ドロップシャドウ（テーマカラー4が地の場合）
+$themeBlack: #222222; // ブラック： キャッチフレーズ、見出しテキスト
+$text1: #444444; // グレー1： 本文テキスト1
+$text2: #888888; // グレー2： 本文テキスト2
+$blueGrey1: #cdcfd4; // ブルーグレー： セクション見出しサブテキスト、補足・注釈テキスト
+$blueGrey1Lighten: #f2f3f6; // ブルーグレー： セクション見出しサブテキスト、補足・注釈テキスト
+$blueGrey2: #e9ebf0; // ブルーグレー2： 罫線、エリア背景
+$themeRed: #cc2343; // レッド： 注意、日曜・祝日
+$themeBlue: #3484c0; // ブルー： 土曜
+$linkBlue: #1976d2;
+// $themeColor3: #d66194;
+// $themeColor3: #5e6fa1;
+$secondary: #c2a27d;
+$secondaryText: #c2a27d;
+$tertiary: #998cba;
+$quaternary: #e1a7c2;
+$background: #e9ebf0;
+$twitter: #6baae8;
+$facebook: #3876ea;
