@@ -168,6 +168,9 @@
                 "content": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。",
                 "to_apply": "申し込みへ"
             }
+        },
+        "section": {
+            "support": "サポート：食事、託児所、遠方支援"
         }
     },
     "conference": {
