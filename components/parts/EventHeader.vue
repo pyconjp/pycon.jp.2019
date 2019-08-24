@@ -61,9 +61,6 @@ export default {
     day14Time: {
       type: String
     },
-    day15Time: {
-      type: String
-    },
     day16Time: {
       type: String
     },
