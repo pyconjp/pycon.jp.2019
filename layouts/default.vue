@@ -55,7 +55,7 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: this.$router.history.base + "/#conference",
+              to: this.$router.history.base + "/conference",
               // subsubmenus: [
               //   {
               //     id: 0,
@@ -70,18 +70,19 @@ export default {
             {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
-              pageTrans: true,
-              to: "https://pyconjp.connpass.com/event/139133/"
+              // pageTrans: true,
+              to: this.$router.history.base + "/youth",
+              // to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: this.$router.history.base + "/#session"
+              to: this.$router.history.base + "/sprint"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: this.$router.history.base + "/#session"
+              to: this.$router.history.base + "/tutorial"
             }
           ]
         },
