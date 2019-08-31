@@ -38,9 +38,11 @@
                                         v-icon(large) location_on
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
-                        v-flex.text-md-center.my-2.pa-4
-                            button-with-arrow.title(color="apply" :dark="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply") }}
-                        v-flex.text-md-left.mt-4.mb-2.subheading
+                        v-flex.text-md-center.mt-2.pa-2
+                            button-with-arrow.title(color="apply" :disabled="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply-soldout") }}
+                        v-flex.text-md-center.my-2.body-2.grey--text
+                            span {{ $t('home.keyvisual.soldout-desc') }}
+                        v-flex.text-md-left.mb-2.subheading
                             v-layout.align-center
                                 v-flex.shrink
                                     v-icon(large color="secondaryText") tag_faces

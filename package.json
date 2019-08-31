@@ -12,7 +12,8 @@
     "build:prd": "DEPLOY_ENV=PRD nuxt build && rm -rf functions/dist/* && mkdir -p functions/dist/2019 && cp -r dist/* functions/dist/2019/",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "convert-csv": "yarn run -s csv2json data/sponsors.csv assets"
+    "convert-sponsors-csv": "yarn run -s csv2json data/sponsors.csv assets",
+    "convert-talks-csv": "yarn run -s csv2json data/talks.csv assets"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
