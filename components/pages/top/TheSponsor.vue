@@ -58,7 +58,7 @@ export default {
         //     return this.sponsors.filter(sponsor => sponsor.package === "Network")
         // },
         otherSponsors() {
-            return this.sponsors.filter(sponsor => ["Lunch", "Breakfast", "Water", "Network", "Sprint"].includes(sponsor.package))
+            return this.sponsors.filter(sponsor => ["Lunch", "Breakfast", "Water", "Network", "Media", "Sprint"].includes(sponsor.package))
         }
     }
 }

@@ -102,11 +102,15 @@ export default {
           ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
         },
         {
-          id: 8, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint",
+          id: 8, name: "Media Sponsor", description: "メディア スポンサー", filter: "Media",
+          ratio: 16/9, size: "title", showRec: false, class: "md3 sm4 xs6"
+        },
+        {
+          id: 9, name: "Sprint Sponsor", description: "開発スプリントスポンサー", filter: "Sprint",
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         },
         {
-          id: 9, name: "Tutorial Lecturer Cooperation", description: "チュートリアル特別協力", filter: "Tutrial",
+          id: 10, name: "Tutorial Lecturer Cooperation", description: "チュートリアル特別協力", filter: "Tutrial",
           ratio: 16/9, size: "title", showRec: false, class: "md4 sm4 xs6"
         }
       ]

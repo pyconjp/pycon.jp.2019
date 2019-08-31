@@ -7,6 +7,7 @@
         "hennge": "HENNGE",
         "detail": "詳細情報",
         "apply": "参加申し込み",
+        "apply-soldout": "参加申し込み(完売しました)",
         "norm": "行動規範",
         "recruit": "採用について",
         "company-desc": "企業概要",
@@ -86,7 +87,8 @@
     "home": {
         "title": "トップページ",
         "keyvisual": {
-            "child-workshop": "子供向けワークショップも同時開催！"
+            "child-workshop": "子供向けワークショップも同時開催！",
+            "soldout-desc": "PyCon JP 通常チケットは完売しました。PyCon JP はチケットの譲渡について関与しません。 キャンセルされた場合、参加費用の払い戻しは出来ません。 お勧めはキャンセル操作をせずに、ご自身でconnpass受付票を参加希望者に渡し権利を譲ってください｡ "
         },
         "session": {
             "dev-spr": {
