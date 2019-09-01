@@ -36,18 +36,15 @@
 <script>
 import Vue from 'vue'
 
-const roomsMaster = {
-    1001: "ab",
-    1002: "small",
-    1003: "ume",
-    1004: "uguisu",
-    1005: "d",
-    1006: "large",
-}
+import Card from "@/components/pages/schedule/Card"
+import { roomsMaster } from "@/plugins/constants"
 
 export default Vue.extend({
     name: "time-table",
     props: ['sessions'],
+    components: {
+        "card": Card
+    },
     data()  {
         return {
             rooms: [1001, 1002, 1003, 1004, 1005, 1006],
