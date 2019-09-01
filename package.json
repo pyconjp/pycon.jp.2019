@@ -13,7 +13,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "convert-sponsors-csv": "yarn run -s csv2json data/sponsors.csv assets",
-    "convert-talks-csv": "yarn run -s csv2json data/talks.csv assets"
+    "convert-sessions-csv": "yarn run -s csv2json data/sessions.csv assets"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",

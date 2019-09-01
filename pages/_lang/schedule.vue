@@ -1,23 +1,24 @@
 <template lang="pug">
-#conference
+#timetable
     page-header(ja="タイムテーブル" en="Timetable")
     v-container
       v-layout.my-4
         v-flex.text-md-left.font-weight-bold {{ $t("timetable.note") }}
       v-layout.tabs.timetable
-        v-flex.text-md-center.tab(:class="activeTab === 0 ? 'active' : ''")
-          v-btn(block flat @click="activeTab = 0")
+        v-flex.text-md-center.tab(:class="activeDay === 1 ? 'active' : ''")
+          v-btn(block flat @click="activeDay = 1")
             .headline 1日目 09.16 （月・祝）
-        v-flex.text-md-center.tab(:class="activeTab === 1 ? 'active' : ''")
-          v-btn(block flat @click="activeTab = 1")
+        v-flex.text-md-center.tab(:class="activeDay === 2 ? 'active' : ''")
+          v-btn(block flat @click="activeDay = 2")
             .headline 2日目 09.17 （火）
-      v-layout.tab-item(v-if="activeTab === 0")
-        v-flex 16 text
-      v-layout.tab-item(v-if="activeTab === 1")
-        v-flex 17 text
+      v-layout.tab-item
+        v-flex.mt-5
+          time-table(:sessions="activeSessions")
 </template>
 
 <script>
+import sessions from '@/assets/sessions.json'
+
 import PageHeader from '@/components/partials/PageHeader'
 import TwoColumnsLayout from '@/components/partials/TwoColumnsLayout'
 import ButtonWithArrow from '@/components/parts/ButtonWithArrow'
@@ -27,6 +28,7 @@ import ScheduleTable from '@/components/parts/ScheduleTable'
 import EventHeader from '@/components/parts/EventHeader'
 import EventPageIndex from '@/components/parts/EventPageIndex'
 import Supports from '@/components/parts/Supports'
+import TimeTable from "@/components/pages/schedule/TimeTable"
 
 export default {
   components: {
@@ -38,11 +40,21 @@ export default {
     ScheduleTable,
     EventHeader,
     EventPageIndex,
-    Supports
+    Supports,
+    TimeTable
   },
   data() {
     return {
-      activeTab: 0
+      activeDay: 1,
+      sessions: sessions
+    }
+  },
+  created() {
+    // console.log(sessions)
+  },
+  computed: {
+    activeSessions() {
+      return sessions.filter(s => s.day == this.activeDay)
     }
   }
 }
