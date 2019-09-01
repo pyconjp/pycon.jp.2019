@@ -1,6 +1,6 @@
 <template lang="pug">
-#conference
-    page-header(ja="タイムテーブル" en="Timetable")
+#timetable
+    page-header(ja="セッションリスト" en="Sessions")
     v-container
       v-layout.my-4
         v-flex.text-md-left.font-weight-bold {{ $t("timetable.note") }}
@@ -47,23 +47,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-.timetable .v-ripple__container
-  display: none
-
-</style>
-
-<style lang="sass" scoped>
-@import '@/assets/style/variables.scss'
-
-.tab
-  border-bottom: solid $blueGrey2 1px
-.tab.active
-  border-right: solid $blueGrey2 1px
-  border-left: solid $blueGrey2 1px
-  border-top: solid $blueGrey2 1px
-  border-bottom: none
-.v-btn:before
-  display: none
-</style>
