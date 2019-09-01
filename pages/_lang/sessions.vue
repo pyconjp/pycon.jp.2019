@@ -44,8 +44,11 @@ export default {
   },
   data() {
     return {
-      activeTab: 0
+        sessions: sessions
     }
+  },
+  created() {
+      console.log(this.sessions)
   }
 }
 </script>
