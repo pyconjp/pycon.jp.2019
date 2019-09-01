@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import sessions from '@/assets/sessions.json'
+
 import PageHeader from '@/components/partials/PageHeader'
 import TwoColumnsLayout from '@/components/partials/TwoColumnsLayout'
 import ButtonWithArrow from '@/components/parts/ButtonWithArrow'
