@@ -56,16 +56,17 @@ export default {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
               to: this.$router.history.base + "/conference",
-              // subsubmenus: [
-              //   {
-              //     id: 0,
-              //     name: this.$t('header.menu.events.conference.timetable')
-              //   },
-              //   {
-              //     id: 1,
-              //     name: this.$t('header.menu.events.conference.sessions')
-              //   }
-              // ]
+              subsubmenus: [
+                {
+                  id: 0,
+                  name: this.$t('header.menu.events.conference.timetable'),
+                  to: this.$router.history.base + "/schedule",
+                }
+                // {
+                //   id: 1,
+                //   name: this.$t('header.menu.events.conference.sessions')
+                // }
+              ]
             },
             {
               id: 2,
@@ -117,9 +118,9 @@ export default {
           id: 0,
           name: this.$t('header.apply.event.parent'),
           submenus: [
-            { 
-              id: 0, name: this.$t('header.apply.event.conference'), pageTrans: true, link: this.$t('links.conference')
-            },
+            // { 
+            //   id: 0, name: this.$t('header.apply.event.conference'), pageTrans: true, link: this.$t('links.conference')
+            // },
             { 
               id: 1, name: this.$t('header.apply.event.child-workshop'), pageTrans: true, link: this.$t('links.child-workshop')
             },

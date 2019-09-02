@@ -39,7 +39,9 @@
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.mt-2.pa-2
-                            button-with-arrow.title(color="apply" :disabled="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply-soldout") }}
+                            button-with-arrow.title(color="apply" customStyle="height: 60px;" :dark="true" :href="this.$router.history.base + '/schedule'") {{ $t("home.keyvisual.timetable") }}
+                        v-flex.text-md-center.pa-2
+                            button-with-arrow.title(color="apply" :disabled="true" target="_blank" :href="$t('links.conference')") {{ $t("basic.apply-soldout") }}
                         v-flex.text-md-center.my-2.body-2.grey--text
                             span {{ $t('home.keyvisual.soldout-desc') }}
                         v-flex.text-md-left.mb-2.subheading
