@@ -52,6 +52,7 @@
             p {{ $t('youth.supporters') }}
             ul.supporters__list
                 li {{ $t('youth.tanaka') }}
+                li {{ $t('youth.doi') }}
                 li {{ $t('youth.togazono') }}
                 li {{ $t('youth.masuzawa') }}
                 li {{ $t('youth.sakata') }}

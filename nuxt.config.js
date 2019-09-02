@@ -1,5 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
-
 let routerBase = "/"
 let dotenvFile = "./config/.env.dev"
 
@@ -22,14 +20,20 @@ export default {
   */
   head: {
     titleTemplate: '%s - PyCon JP 2019',
-    title: process.env.npm_package_name || '',
+    title: "PyCon JP 2019",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "PyCon JP 2019 Python New Era" }
+      { hid: 'description', name: 'description', content: "PyCon JP 2019 Python New Era" },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'PyCon JP 2019' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://pycon.jp/2019' },
+      { hid: 'og:title', property: 'og:title', content: 'PyCon JP 2019' },
+      { hid: 'og:description', property: 'og:description', content: "PyCon JPは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。" },
+      { hid: 'og:image', property: 'og:image', content: "https://pycon.jp/2019/logo.png" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: routerBase + "favicon.ico" },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP' },
@@ -78,7 +82,23 @@ export default {
     base: routerBase
   },
   generate: {
-    routes: ['/en/code-of-conduct', '/en/sponsors']
+    routes: ['/en/code-of-conduct', '/en/sponsors', '/en/schedule', '/en/conference', '/en/sessions', '/en/youth', '/en/tutorial', '/en/sprint']
+  },
+  render: {
+    csp: {
+      hashArgorism: 'sha256',
+      policies: {
+        'script-src': [
+          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
+        ],
+        'style-src': [
+          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
+        ],
+        'default-src': [
+          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
+        ]
+      }
+    }
   },
   /*
   ** vuetify module configuration
@@ -116,12 +136,7 @@ export default {
       quaternary: "#E1A7C2",
       background: "#E9EBF0",
       twitter: "#6BAAE8",
-      facebook: "#3876EA",
-      // accent: colors.grey.darken3,
-      // info: colors.teal.lighten1,
-      // warning: colors.amber.base,
-      // error: colors.deepOrange.accent4,
-      // success: colors.green.accent3,
+      facebook: "#3876EA"
     },
     // icons: {
     //   values: {

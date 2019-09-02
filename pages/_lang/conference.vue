@@ -47,13 +47,13 @@
                     )
     section.invited-lecture
         v-container.py-0
-            hs(:sub="$t('conference.sections.invited_lecture')") Invited Lecture
+            hs(:sub="$t('conference.sections.invited_lecture')") Invited Talk
             schedule-table(day17 day17Time="13:45 - 14:25")
             p {{ $t('events.place') }} {{ $t('rooms.small') }}
             talk-card(
             profileImg="lyu.png"
             speakerName="Renyuan Lyu"
-            sessionTheme="TBD"
+            sessionTheme="Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot"
             :profile="$t('home.conference.lyu_profile')"
             )
     section.talk-session
@@ -64,23 +64,23 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/Photo5.png')")
                 template(#right)
                     p {{ $t('conference.talk_session') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.talk_session_list')") {{ $t('conference.talk_session_list') }}
-    section.lightning-talk
-        v-container.py-0
-            hs(:sub="$t('conference.sections.lightning_talk')") Lightning Talk
-            two-columns-layout(sm-reverse)
-                template(#left)
-                    p(v-html="$t('conference.lightning_talk')")
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.lightning_talk_list')") {{ $t('conference.lightning_talk_list') }}
-                template(#right)
-                    v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
-            .event-detail.mt-5.pa-5
-                h3 {{ $t('basic.access_schedule') }}
-                schedule-table(day16 day17 day16Time="17:00 - 17:20" day17Time="16:45 - 17:05")
-                p {{ $t('events.place') }}: {{ $t('rooms.large') }}
-                h3 {{ $t('conference.for_LTer') }}
-                p {{ $t('conference.for_LTer_main') }}
-                p.text2--text {{ $t('conference.for_LTer_sub') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.talk_session_list')") {{ $t('conference.talk_session_list') }}
+    //- section.lightning-talk
+    //-     v-container.py-0
+    //-         hs(:sub="$t('conference.sections.lightning_talk')") Lightning Talk
+    //-         two-columns-layout(sm-reverse)
+    //-             template(#left)
+    //-                 p(v-html="$t('conference.lightning_talk')")
+    //-                 button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.lightning_talk_list')") {{ $t('conference.lightning_talk_list') }}
+    //-             template(#right)
+    //-                 v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
+    //-         .event-detail.mt-5.pa-5
+    //-             h3 {{ $t('basic.access_schedule') }}
+    //-             schedule-table(day16 day17 day16Time="17:00 - 17:20" day17Time="16:45 - 17:05")
+    //-             p {{ $t('events.place') }}: {{ $t('rooms.large') }}
+    //-             h3 {{ $t('conference.for_LTer') }}
+    //-             p {{ $t('conference.for_LTer_main') }}
+    //-             p.text2--text {{ $t('conference.for_LTer_sub') }}
     //- section.beginners-session
     //-     v-container.py-0
     //-         hs(:sub="$t('conference.sections.beginners_session')") Beginner's Session
@@ -101,7 +101,7 @@
             two-columns-layout(sm-reverse)
                 template(#left)
                     p {{ $t('conference.poster_indivisual') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_indivisual_list')") {{ $t('conference.posters') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_indivisual_list')") {{ $t('conference.posters') }}
                 template(#right)
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-indivisual.png')")
     section.poster-community
@@ -112,7 +112,7 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-community.png')")
                 template(#right)
                     p {{ $t('conference.poster_community') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_community_list')") {{ $t('conference.posters') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_community_list')") {{ $t('conference.posters') }}
     supports
     //- section.after-party
     //-     v-container.py-0

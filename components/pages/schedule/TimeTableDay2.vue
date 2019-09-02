@@ -44,17 +44,17 @@
                 card(v-if="matchSession(room, 5)" :session="matchSession(room, 5)")
     row(time="16:45")
         v-layout
-            v-flex.md2.pa-2.blueGrey2
+            v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.lt") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="17:20")
         v-layout
-            v-flex.md2.pa-2.blueGrey2
+            v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.smlt") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="17:40")
         v-layout
-            v-flex.md2.pa-2.blueGrey2
+            v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.photo2") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="17:50" :no-border="true")
