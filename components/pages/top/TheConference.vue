@@ -48,7 +48,7 @@
         // 招待講演
         v-layout.my-4
             v-flex.xs12
-                secondary-heading(name="Invited Lecture" description="招待講演")
+                secondary-heading(name="Invited Talk" description="招待講演")
         v-layout.justify-space-between(
             :class="{'wrap': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
         )
@@ -60,7 +60,7 @@
                     :weekday="$t('weekday.tue')"
                     profileImg="lyu.png"
                     speakerName="Renyuan Lyu"
-                    sessionTheme="TBD"
+                    sessionTheme="Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot"
                     :profile="$t('home.conference.lyu_profile')"
                 )
             //- v-flex.xs12.sm12.md6(
