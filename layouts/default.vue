@@ -55,33 +55,35 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: this.$router.history.base + "/#conference",
-              // subsubmenus: [
-              //   {
-              //     id: 0,
-              //     name: this.$t('header.menu.events.conference.timetable')
-              //   },
-              //   {
-              //     id: 1,
-              //     name: this.$t('header.menu.events.conference.sessions')
-              //   }
-              // ]
+              to: this.$router.history.base + "/conference",
+              subsubmenus: [
+                {
+                  id: 0,
+                  name: this.$t('header.menu.events.conference.timetable'),
+                  to: this.$router.history.base + "/schedule",
+                }
+                // {
+                //   id: 1,
+                //   name: this.$t('header.menu.events.conference.sessions')
+                // }
+              ]
             },
             {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
-              pageTrans: true,
-              to: "https://pyconjp.connpass.com/event/139133/"
+              // pageTrans: true,
+              to: this.$router.history.base + "/youth",
+              // to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: this.$router.history.base + "/#session"
+              to: this.$router.history.base + "/sprint"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: this.$router.history.base + "/#session"
+              to: this.$router.history.base + "/tutorial"
             }
           ]
         },
@@ -116,9 +118,9 @@ export default {
           id: 0,
           name: this.$t('header.apply.event.parent'),
           submenus: [
-            { 
-              id: 0, name: this.$t('header.apply.event.conference'), pageTrans: true, link: this.$t('links.conference')
-            },
+            // { 
+            //   id: 0, name: this.$t('header.apply.event.conference'), pageTrans: true, link: this.$t('links.conference')
+            // },
             { 
               id: 1, name: this.$t('header.apply.event.child-workshop'), pageTrans: true, link: this.$t('links.child-workshop')
             },
