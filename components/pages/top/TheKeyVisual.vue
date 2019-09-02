@@ -5,7 +5,7 @@
                 v-flex.md6.xs12.sm12
                     v-layout.column
                         v-flex.px-5.text-xs-center(:class="{'right-border': $vuetify.breakpoint.mdAndUp}")
-                            img(:src="require('@/assets/images/square_logo.png')" :width="$vuetify.breakpoint.sm ? '50%' : '100%'")
+                            img(:src="require('@/assets/images/rectangle_color.svg')" :width="$vuetify.breakpoint.sm ? '50%' : '100%'")
                         v-flex.my-4.text-xs-left.text-xs-center
                             span.headline
                                 span.themeColor3--text

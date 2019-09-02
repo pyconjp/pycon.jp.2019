@@ -4,7 +4,7 @@
         v-toolbar#header(flat).white
             nuxt-link(to="/")
                 v-toolbar-title.ml-4.pa-2
-                    img(src="@/assets/images/horizontal_logo.png" width="180px").mt-2
+                    img(src="@/assets/images/horizontal_color.svg" width="180px").mt-2
             v-toolbar-title.grey--text.text--lighten-4.display-1 |
             .menu(v-for="menu in navigations" :key="menu.id")
                 template(v-if="menu.submenus.length === 0")
