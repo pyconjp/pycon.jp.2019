@@ -53,7 +53,10 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
                 v-layout.column.py-1.px-3(v-if="menu.submenus.length !== 0")
                     v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
                       template(v-if="submenu.subsubmenus").pt-2
-                        .body-1 {{ submenu.name }}
+                        a(
+                          :href="submenu.to"
+                          :target="submenu.pageTrans ? '_blank' : '_self'"
+                        ).body-1 {{ submenu.name }}
                         .py-2
                           .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-1
                             a(:href="ssmenu.to" :target="ssmenu.pageTrans ? '_blank' : '_self'")

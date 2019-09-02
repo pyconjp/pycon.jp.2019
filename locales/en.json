@@ -44,7 +44,8 @@
     "home": {
         "title": "Top Page",
         "keyvisual": {
-            "child-workshop": "We will also hold a workshop for children"
+            "child-workshop": "We will also hold a workshop for children",
+            "timetable": "See timetables"
         },
         "session": {
             "dev-spr": {

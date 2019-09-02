@@ -16,7 +16,7 @@
 export default {
     props: ['icon'],
     mounted() {
-        console.log(this.$el.firstChild)
+        // console.log(this.$el.firstChild)
         // this.$el.firstChild.classList.add(this.$style.svg)
         // this.$el.firstChild.removeAttribute('height')
         // this.$el.firstChild.removeAttribute('width')
