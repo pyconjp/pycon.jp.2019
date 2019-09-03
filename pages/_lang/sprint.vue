@@ -5,14 +5,14 @@
     section.abstract
         v-container.pb-0
             p {{ $t('sprints.abstract') }}
-            .text-xs-center.text-sm-left
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.sprint_themes')") {{ $t('sprints.theme_list') }}
+            //- .text-xs-center.text-sm-left
+            //-     button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.sprint_themes')") {{ $t('sprints.theme_list') }}
     event-page-index(:indexes="pageIndexes")
     section.summary
         v-container.py-0
             hs {{ $t('sprints.section.summary') }}
             .summary__schedule
-                h3 {{ $t('basic.schedlue') }}
+                h3 {{ $t('basic.schedule') }}
                 schedule-table(day14 day14Time="10:00 - 18:00")
                     template(#day14-detail) {{ $t('events.hennge_dinner') }}
             .summary__place
@@ -23,20 +23,20 @@
     section.what-is-sprint
         v-container.py-0
             hs {{ $t('sprints.section.what_is_sprint') }}
-            p {{ $t('sprints.what_is_sprint') }}
+            p(v-html=" $t('sprints.what_is_sprint')")
     section.sprint-leader
         v-container.py-0
             hs {{ $t('sprints.section.sprint_leader') }}
-            p {{ $t('sprints.sprint_leader') }}
+            p(v-html="$t('sprints.sprint_leader')")
             h3 {{ $t('sprints.as_a_sprint_leader') }}
-            p {{ $t('sprints.as_a_sprint_leader_content') }}
-            p
-                a(:href="$t('links.sprint_themes')") {{ $t('sprints.submitted_theme_list') }}
-                v-icon(color="themeColor2" size="small").px-1 far fa-window-restore
-                | {{ $t('sprints.be_public') }}
-            p.text2--text {{ $t('sprints.every_Sat') }}
-                br
-                | {{ $t('sprints.is_based_on_answer') }}
+            p(v-html="$t('sprints.as_a_sprint_leader_content')")
+            //- p
+            //-     a(:href="$t('links.sprint_themes')") {{ $t('sprints.submitted_theme_list') }}
+            //-     v-icon(color="themeColor2" size="small").px-1 far fa-window-restore
+            //-     | {{ $t('sprints.be_public') }}
+            //- p.text2--text {{ $t('sprints.every_Sat') }}
+            //-     br
+            //-     | {{ $t('sprints.is_based_on_answer') }}
     supports
 </template>
 
@@ -58,6 +58,11 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports
+  },
+  head() {
+    return {
+      title: this.$t("sprints.title")
+    }
   },
   data() {
     return {

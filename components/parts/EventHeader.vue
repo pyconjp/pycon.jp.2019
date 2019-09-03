@@ -28,7 +28,7 @@
                 v-icon place
                 span {{ place }}
             .apply-button.text-xs-center.text-sm-left(v-if="applyLink")
-                button-with-arrow(color="applyLighten" :dark="true" :block="false"  :href="applyLink") {{ $t("basic.apply") }}
+                button-with-arrow(color="applyLighten" :disabled="applyDisable" target="_blank" :dark="!applyDisable" :block="false"  :href="applyLink") {{ $t("basic.apply") }}
         .content-page-header__right
             .content-page-header__image
                 v-img.v-img(:src="image" height="100%")
@@ -73,6 +73,10 @@ export default {
     applyLink: {
       type: String
     },
+    applyDisable: {
+      type: Boolean,
+      default: false
+    },
     image: {
       type: String
     }
@@ -114,7 +118,7 @@ export default {
   &__right {
     flex: 2;
     position: relative;
-    min-height: 250px;
+    // min-height: 250px;
     overflow: visible;
     align-self: stretch;
 
@@ -124,11 +128,11 @@ export default {
   }
 
   &__image {
-    width: 70vw;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
+    // width: 70vw;
+    // position: absolute;
+    // height: 100%;
+    // top: 0;
+    // left: 0;
 
     @media #{$display-breakpoint-xs-only} {
       margin-bottom: 12px;

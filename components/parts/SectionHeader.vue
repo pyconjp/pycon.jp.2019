@@ -34,8 +34,10 @@ export default {
 
     font-size: 28px;
     vertical-align: middle;
-    margin: 24px 0 0;
-    margin-left: -60px;
+    @media only screen and (min-width: 959px) {
+      margin: 24px 0 0;
+      margin-left: -60px;
+    }
   }
 
   &__bar {

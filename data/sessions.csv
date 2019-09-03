@@ -1,7 +1,7 @@
 id,name,title,abstract,talk_format_origin,talk_format,profile,room,day,no,room_id,lang_of_slide_origin,lang_of_talk_origin,lang_of_slide,lang_of_talk,audience_level,tags,description,papercall_name
-101,鈴木　庸氏,PythonとGoogle Optimization Toolsの最適化ライブラリで、「人と人の相性を考慮したシフトスケジューラ」を作ってみた。,Pythonを使って店舗施設や工場のシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成者への負荷を減らし、人と人との相性考慮により施設全体の生産性向上に繋げます。,Talk (45 minutes),45min,物流や生産計画の最適化＆シミュレーション、分析に携わっています。リーディングエッジ社所属。,Room A+B,1,1,1001,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Project case studies,"工場や店舗施設における業務効率向上のため、Pythonによるシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成は施設管理者の負担となる一方で、最適なスケジュールを作成することは、従業員のモチベーションを高め、施設全体の業務効率向上に繋がると考えられます。今後スタンダードとなる可能性のある数理最適化ソルバーGoogle Optimization Toolsを使用し、人と人の相性による生産性を数値化したデータから、シフトスケジューリング問題を解く2次計画アルゴリズムを開発しました。本発表では、Google Optimization Toolsに含まれる最適化ライブラリ群とそれらの概念、Pythonプログラムの実装、結果の評価、今後の目標であるシステム公開方法について紹介いたします。また、最近人気のあるメタヒューリスティック解法をPythonで実装した結果と、ソルバーによる厳密解法の結果との比較結果を紹介し、計算速度や解の最適性、高速化の方法、対応できる問題規模の差を知見として発表し、現実的な問題に対応するためのノウハウをご紹介いたします。
+101,鈴木　庸氏,PythonとGoogle Optimization Toolsの最適化ライブラリで、「人と人の相性を考慮したシフトスケジューラ」を作ってみた。,Pythonを使って店舗施設や工場のシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成者への負荷を減らし、人と人との相性考慮により施設全体の生産性向上に繋げます。,Talk (45 minutes),45min,物流や生産計画の最適化＆シミュレーション、分析に携わっています。リーディングエッジ社所属。,Room A+B,1,1,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"工場や店舗施設における業務効率向上のため、Pythonによるシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成は施設管理者の負担となる一方で、最適なスケジュールを作成することは、従業員のモチベーションを高め、施設全体の業務効率向上に繋がると考えられます。今後スタンダードとなる可能性のある数理最適化ソルバーGoogle Optimization Toolsを使用し、人と人の相性による生産性を数値化したデータから、シフトスケジューリング問題を解く2次計画アルゴリズムを開発しました。本発表では、Google Optimization Toolsに含まれる最適化ライブラリ群とそれらの概念、Pythonプログラムの実装、結果の評価、今後の目標であるシステム公開方法について紹介いたします。また、最近人気のあるメタヒューリスティック解法をPythonで実装した結果と、ソルバーによる厳密解法の結果との比較結果を紹介し、計算速度や解の最適性、高速化の方法、対応できる問題規模の差を知見として発表し、現実的な問題に対応するためのノウハウをご紹介いたします。
 ",鈴木庸氏
-102,知野 雄二/Yuji Chino,Pythonと便利ガジェット、サービス、ツールを使ってセンシング〜見る化してみよう,Pythonと便利ガジェット／サービス／ツールを使って、まかせるところはまかせて、「つくらない」「やらない」をテーマに、センシング〜Webで見える化までを目指します。,Talk (45 minutes),45min,日本システム技研所属。Webエンジニア。主はバックエンド。ハードは苦手なので便利ガジェットを使ってIoTやってます！,Small Exhibition Hall,1,1,1002,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,extending and embedding python in hardware,"センシング、クラウド、Webにわけて紹介していきます。
+102,知野 雄二/Yuji Chino,Pythonと便利ガジェット、サービス、ツールを使ってセンシング〜見る化してみよう,Pythonと便利ガジェット／サービス／ツールを使って、まかせるところはまかせて、「つくらない」「やらない」をテーマに、センシング〜Webで見える化までを目指します。,Talk (45 minutes),45min,日本システム技研所属。Webエンジニア。主はバックエンド。ハードは苦手なので便利ガジェットを使ってIoTやってます！,Small Exhibition Hall,1,1,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,extending and embedding python in hardware,"センシング、クラウド、Webにわけて紹介していきます。
 いくつかのサービス、ライブラリを使用するので、正直、最初は使い方で時間がかかってしまったり、覚えるのが大変かもしれません。
 それでも、使うことにより「作らなくてよい」「やらなくてよい」「任せられる」部分もたくさんあります。
 その分、やりたいことに集中でき、Pythonのコード量も減りよい面もたくさんあります！
@@ -20,7 +20,7 @@ id,name,title,abstract,talk_format_origin,talk_format,profile,room,day,no,room_i
 - コスト
   - 初期コスト、ランニングコストについて
     - いろいろなサービスを使用しているので気になりますよね。実績ベースで紹介します！",Yuji Chino
-103,芝田 将,PythonとAutoML,データ分析の活用の幅の広がりに伴い、AutoMLの重要性が増してきました。本セッションでは、AutoMLの基礎事項から研究のトレンド、注目すべきPythonのOSSライブラリの紹介を行ないます。,Talk (45 minutes),45min,Research engineer at AI Lab. 共訳書 エキスパートPythonプログラミング改訂2版,Convention Hall UME,1,1,1003,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Machine learning and data science,"1. AutoMLの全体像
+103,芝田 将,PythonとAutoML,データ分析の活用の幅の広がりに伴い、AutoMLの重要性が増してきました。本セッションでは、AutoMLの基礎事項から研究のトレンド、注目すべきPythonのOSSライブラリの紹介を行ないます。,Talk (45 minutes),45min,Research engineer at AI Lab. 共訳書 エキスパートPythonプログラミング改訂2版,Convention Hall UME,1,1,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Machine learning and data science,"1. AutoMLの全体像
     1. AutoMLを構成する主要な3つの要素技術
 1. ハイパーパラメーター最適化: 
     1. 3つの代表的なベイズ最適化手法: Gaussian Process, TPE, SMAC3
@@ -112,7 +112,7 @@ The outline of my presentation is below:
   - Automate your Boring Stuff with bot
 - Questions and Answers",Takanori Suzuki
 105,武山 文信,Excel と Python による社会インフラシステムの設定ファイルの自動生成,"
-Excelデータから設定ファイルを生成するツールを開発する際に用いた、ツールの配布方法、データクラスオブジェクトの作成方法、テンプレートエンジンによる設定ファイルの生成方法ついて説明する。",Talk (45 minutes),45min,東芝グループ内のソフトウェア開発部門のツール開発やプロセス改善などの支援と研究開発に従事,Room D,1,1,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Best practices,"社会インフラシステムは、仕向け毎に仕様の一部が異なることが多く、仕様の差異を多数の設定パラメータとして管理することがある。このような設定パラメータはしばしば Excel を用いてドキュメント化され、同時に、マクロとして実装されたツールにより、アプリケーションが解釈可能な設定ファイルの生成が行われている。しかしながら、このようなツールにはソースコードとしてのマクロの構成管理の難しさや、継続的インテグレーション（CI）を実現するツールからの実行が困難などの課題がある。
+Excelデータから設定ファイルを生成するツールを開発する際に用いた、ツールの配布方法、データクラスオブジェクトの作成方法、テンプレートエンジンによる設定ファイルの生成方法ついて説明する。",Talk (45 minutes),45min,東芝グループ内のソフトウェア開発部門のツール開発やプロセス改善などの支援と研究開発に従事,Room D,1,1,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Best practices,"社会インフラシステムは、仕向け毎に仕様の一部が異なることが多く、仕様の差異を多数の設定パラメータとして管理することがある。このような設定パラメータはしばしば Excel を用いてドキュメント化され、同時に、マクロとして実装されたツールにより、アプリケーションが解釈可能な設定ファイルの生成が行われている。しかしながら、このようなツールにはソースコードとしてのマクロの構成管理の難しさや、継続的インテグレーション（CI）を実現するツールからの実行が困難などの課題がある。
 
 そこで、我々はある社会インフラシステムの向けに、Excel で管理された設定データをもとに、設定ファイルを生成するツールを Python で開発した。本発表では、ツールの開発で得られた以下の知見について述べる。
 
@@ -135,7 +135,7 @@ Python から Excel データを読み込む方法はいくつかあるが、本
 -----------------------------------------------
 
 対象としたシステムの中には、設定ファイルの全体ではなく、一部のみを自動生成する必要のあるものがあった。このような設定ファイルの生成には、Web アプリケーションで使用されるテンプレートエンジンンの Jinja2 を使用した。これにより、手作業で編集する部分については、Jinja2 テンプレートを編集することで従来通りの方法を維持しつつ、一部のみを自動生成できる。",武山 文信
-106,末田卓巳 (Takumi SUEDA),Yet Another Isolation - Debian Packageと紐づく環境分離,Python環境の分離ノウハウは数あれど、多くのPythonプロジェクトを1台のマシンに詰め込み、統一管理するノウハウはほぼありません。今回は、それを実現した手法と道のりを紹介します。,Talk (45 minutes),45min,"Twitter, GitHub: @puhitaku | GROOVE X, Inc. にてLinuxやFPGAを担当。",Room A+B,1,2,1001,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Packaging,"venv に代表される「環境分離」を実現するツール類は、開発対象を問わず広く利用されています。開発者が自らのマシンの中で複数のPython環境を共存させる ― 例えば、venv でプロジェクト単位の ""箱庭"" を作る ― ことについては、これまでたくさんのノウハウが蓄積され、インターネットで広く共有されています。
+106,末田卓巳 (Takumi SUEDA),Yet Another Isolation - Debian Packageと紐づく環境分離,Python環境の分離ノウハウは数あれど、多くのPythonプロジェクトを1台のマシンに詰め込み、統一管理するノウハウはほぼありません。今回は、それを実現した手法と道のりを紹介します。,Talk (45 minutes),45min,"Twitter, GitHub: @puhitaku | GROOVE X, Inc. にてLinuxやFPGAを担当。",Room A+B,1,2,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Packaging,"venv に代表される「環境分離」を実現するツール類は、開発対象を問わず広く利用されています。開発者が自らのマシンの中で複数のPython環境を共存させる ― 例えば、venv でプロジェクト単位の ""箱庭"" を作る ― ことについては、これまでたくさんのノウハウが蓄積され、インターネットで広く共有されています。
 
 しかし、
  - もしその作っているソフトウェアが、自分だけのものではない共有のシステムで動くとしたら
@@ -161,14 +161,14 @@ Python から Excel データを読み込む方法はいくつかあるが、本
 
 などといった具体的なテクニックについて紹介します。",Takumi Sueda
 141,Renyuan Lyu,"Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot","In this speech, I will sort out  my previous speeches at Pycon JP 
-for several consecutive years (2015~2017). The topics includes using Python to study signal processing, especially in speech spectrum analysis, speech recognition, and intent recognition in chat bots. By the way, I also wish to share my experience and passion for learning and enjoying Japanese songs and language, all via the help of Python.",Talk (45 minutes),45min,"I am a university faculty member, engaged in teaching and research in the Department of Computer Science, Chang Gung University, TAIWAN. My expertise is probability, statistics, signal processing, speech/pattern recognition, and artificial intelligence.",Small Exhibition Hall,1,2,1002,日本語と英語/Japanese and English,英語/English,jaen,en,,Invited Talk,,
+for several consecutive years (2015~2017). The topics includes using Python to study signal processing, especially in speech spectrum analysis, speech recognition, and intent recognition in chat bots. By the way, I also wish to share my experience and passion for learning and enjoying Japanese songs and language, all via the help of Python.",Invited Talk (45 minutes),invited talk,"I am a university faculty member, engaged in teaching and research in the Department of Computer Science, Chang Gung University, TAIWAN. My expertise is probability, statistics, signal processing, speech/pattern recognition, and artificial intelligence.",Small Exhibition Hall,1,2,1002,日本語と英語/Japanese and English,英語/English,jpen,en,,Invited Talk,,
 108,Sebastian Witowski,It’s 2019 and I’m still using Python 2. Should I be worried?,"What will happen with Python 2 in 2020?
 What are the risks of staying on the unsupported version?
 What are the possible solutions?
 How to go through the migration process?",Talk (45 minutes),45min,I’m a former CERN DevOps that turned into a Python consultant and trainer,Convention Hall UME,1,2,1003,English Only,英語/English,en,en,Intermediate,Best practices,"The official End of Life date for Python 2 is set to 01.01.2020. What does it mean for projects that are still using it? Will someone pull the plug and everything will stop working on that day? In this talk, I will discuss the future of Python 2, the dangers of using the unsupported version of Python and opportunities for those who want to migrate to Python 3. But, I will also explain what choice you have if you __really__ can't move to Python 3 yet.
 
 This is not a _“how we migrated to Python 3 at Foo company”_ type of talk. There are many other talks that explain the migration process and outcome in various companies. I want to take a different approach and focus on comparing the options that you have: rewriting your Python project, migrating it, staying on Python 2 or moving to a different implementation, like PyPy (together with pros and cons of each). And for those of you who decide to migrate to Python 3, I will explain how to prepare to this kind of task, what tools and techniques can help you and what problems you might encounter.",Sebastian Witowski
-109,野村 将寛,機械学習におけるハイパーパラメータ最適化の理論と実践,機械学習システムの構築において、ハイパーパラメータ最適化は避けては通れない問題である。本発表では、ハイパーパラメータ最適化における最新の研究を含んだ理論の解説と、実践への適用可能性を議論する。,Talk (45 minutes),45min,株式会社サイバーエージェントにてハイパーパラメータ最適化の研究に従事。2019年より産総研特定集中研究専門員（兼務）。,Convention Hall UGUISU,1,2,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Advanced,Python libraries,"* ハイパーパラメータ最適化問題とは
+109,野村 将寛,機械学習におけるハイパーパラメータ最適化の理論と実践,機械学習システムの構築において、ハイパーパラメータ最適化は避けては通れない問題である。本発表では、ハイパーパラメータ最適化における最新の研究を含んだ理論の解説と、実践への適用可能性を議論する。,Talk (45 minutes),45min,株式会社サイバーエージェントにてハイパーパラメータ最適化の研究に従事。2019年より産総研特定集中研究専門員（兼務）。,Convention Hall UGUISU,1,2,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Advanced,Python libraries,"* ハイパーパラメータ最適化問題とは
     * 問題設定 : ブラックボックス最適化
     * 具体例
         * 機械学習モデルのチューニング
@@ -200,7 +200,7 @@ This is not a _“how we migrated to Python 3 at Foo company”_ type of talk. T
 
 * まとめ
 ",Masahiro Nomura
-110,大島和輝,Djangoで実践ドメイン駆動設計による実装,ドメイン駆動設計のクリーンアーキテクチャなどの実装方法ついてPytonのサンプルコードはあまり見かけません。 本セッションではDDDの用語や概念などについをDjangoのサンプルを用いてお話しします。,Talk (45 minutes),45min,DjangoでBtoC、CtoC向けのWEBアプリケーションを開発しているサーバーサイドエンジニアです。,Room D,1,2,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Web programming(including web frameworks) ,"複雑化してきたアプリケーションの開発で、ドメイン駆動設計の手法を一部取り入れた例などが最近出てきました。
+110,大島和輝,Djangoで実践ドメイン駆動設計による実装,ドメイン駆動設計のクリーンアーキテクチャなどの実装方法ついてPytonのサンプルコードはあまり見かけません。 本セッションではDDDの用語や概念などについをDjangoのサンプルを用いてお話しします。,Talk (45 minutes),45min,DjangoでBtoC、CtoC向けのWEBアプリケーションを開発しているサーバーサイドエンジニアです。,Room D,1,2,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Web programming(including web frameworks) ,"複雑化してきたアプリケーションの開発で、ドメイン駆動設計の手法を一部取り入れた例などが最近出てきました。
 アプリケーションの規模が増していくにつれて、MVCでの実装を続けていると、Fat ModelやFat Contollerと呼ばれる現象が出てくる際に、解決策の一つとしてDDDの手法などが最近話題になっています。
  
 しかし、ドメイン駆動設計界隈では有名な書籍である「エリックエヴァンスのドメイン駆動設計」は内容が抽象的で難解なことで有名です。
@@ -248,7 +248,7 @@ Instead of relying on OS installed Python distributions on Unix, our open-source
 Due to its size, it's also the perfect Python distribution for Docker containers.
 
 The talk will show how PyRun works, is built, how to customize it to include additional modules and applications.",Marc-Andre Lemburg
-113,小川 英幸,Dashとオープンデータでインタラクティブに日本経済を可視化する,分析ウェブフレームワークのDashでデータをインタラクティブに可視化します。Dashを使うことにより、組織において、これまで以上にデータを生かせるということを話します。,Talk (30 minutes),30min,合同会社長目CEO。Python Kansai、はんなりPython オーガナイザー。,Convention Hall UME,1,3,1003,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,All,Web programming(including web frameworks) ,"# Dashとオープンデータでインタラクティブに日本経済を可視化する
+113,小川 英幸,Dashとオープンデータでインタラクティブに日本経済を可視化する,分析ウェブフレームワークのDashでデータをインタラクティブに可視化します。Dashを使うことにより、組織において、これまで以上にデータを生かせるということを話します。,Talk (30 minutes),30min,合同会社長目CEO。Python Kansai、はんなりPython オーガナイザー。,Convention Hall UME,1,3,1003,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,Web programming(including web frameworks) ,"# Dashとオープンデータでインタラクティブに日本経済を可視化する
 
 ## データの可視化の重要性
 データを取った後まず行うことは、データを見る作業です。そこで色々なアイデアをデータからくみ取ります。そのあと機械学習のモデルにデータを渡すわけですが、世間では機械学習のモデルに注目が集まりがちで、その前の段階、データを見て何が有効か探すというところがおろそかになっています。また、実はデータを見ることにより非常に多くのことが分かります。可視化は機械学習やディープラーニングのように難しくなく、だれでも簡単にできるものですが、その効果は絶大です。そのため、可視化を取り上げます。     
@@ -286,7 +286,7 @@ Dashを使えばグラフをインタラクティブに作成でき、多くの�
      
 - ウェブアプリケーション： [https://dash-presentation.herokuapp.com/](https://dash-presentation.herokuapp.com/)
 - github:  [https://github.com/mazarimono/pyosaka201904](https://github.com/mazarimono/pyosaka201904)",小川　英幸
-114,長谷場 潤也,Pie Meets Py ― PythonでAndroidアプリをつくろう,PythonでAndroidアプリを開発するフレームワークを取り上げ、利用方法をご紹介するとともに、それぞれの特徴を比較します。新しい令和の時代にPythonの新しい可能性を感じてください。,Talk (30 minutes),30min,仕事ではPythonにあまり縁のないAndroidエンジニア兼Webエンジニア。好きな大阪桐蔭は中村剛也。,Convention Hall UGUISU,1,3,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,GUI and games,"# 概要
+114,長谷場 潤也,Pie Meets Py ― PythonでAndroidアプリをつくろう,PythonでAndroidアプリを開発するフレームワークを取り上げ、利用方法をご紹介するとともに、それぞれの特徴を比較します。新しい令和の時代にPythonの新しい可能性を感じてください。,Talk (30 minutes),30min,仕事ではPythonにあまり縁のないAndroidエンジニア兼Webエンジニア。好きな大阪桐蔭は中村剛也。,Convention Hall UGUISU,1,3,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,GUI and games,"# 概要
 
 AndroidアプリをPythonで実装する手法として、以下のフレームワークを取り上げます。
 
@@ -327,7 +327,7 @@ Pythonによるクロスプラットフォーム開発フレームワークで�
 - Androidアプリ開発に興味がある方（開発の経験は前提としません）
 - システム全体をPythonで構築したい方
 - ちょっと変わったPythonの使い方を知りたい方",長谷場 潤也
-115,池田 大志,Python による日本語自然言語処理 〜系列ラベリングによる実世界テキスト分析〜,日本語解析のための自然言語処理ツール nagisa の開発を行っています。 今回のトークでは、本ツールの系列ラベリング学習機能を用いて、開発現場で応用可能なテキストデータの分析方法をご紹介します。,Talk (30 minutes),30min,奈良先端科学技術大学院大学 自然言語処理学研究室（松本研）出身。 現在は企業にて、自然言語処理に関する研究開発に従事。,Room D,1,3,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Machine learning and data science,"現在、[nagisa](https://github.com/taishi-i/nagisa ""nagisa"") という日本語解析のための自然言語処理ツールの開発を行っています。
+115,池田 大志,Python による日本語自然言語処理 〜系列ラベリングによる実世界テキスト分析〜,日本語解析のための自然言語処理ツール nagisa の開発を行っています。 今回のトークでは、本ツールの系列ラベリング学習機能を用いて、開発現場で応用可能なテキストデータの分析方法をご紹介します。,Talk (30 minutes),30min,奈良先端科学技術大学院大学 自然言語処理学研究室（松本研）出身。 現在は企業にて、自然言語処理に関する研究開発に従事。,Room D,1,3,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Machine learning and data science,"現在、[nagisa](https://github.com/taishi-i/nagisa ""nagisa"") という日本語解析のための自然言語処理ツールの開発を行っています。
 本ツールは `pip install nagisa` でインストール可能であり、下記のようにシンプルな単語分割と品詞タグ付けの関数を提供します。
 
     import nagisa
@@ -355,7 +355,7 @@ Pythonによるクロスプラットフォーム開発フレームワークで�
 ##ライブラリーの特徴
 - 他の形態素解析器との差異：既存の形態素解析器（GiNZA、 janome、Stanford NLP）の説明と本ツールとの比較
 - nagisaの導入事例： Used by リポジトリの分析",池田 大志
-116,Yusuke Miyazaki,Python ウェブアプリケーションのためのプロファイラの実装,Pythonウェブアプリのためのラインプロファイラwsgi_lineprofのデザインと内部実装について紹介します．Python処理系の仕組みや低レイヤーを扱うライブラリ開発への理解を深めてみましょう!,Talk (15 minutes),15min,Site Reliability Engineer / ymyzk.com,Room A+B,1,4,1001,English Only,日本語/Japanese,en,ja,Intermediate,Web programming(including web frameworks) ,"はじめに，このトークで取り上げる [wsgi_lineprof](https://github.com/ymyzk/wsgi_lineprof) の機能やデザイン，設計思想などを簡単に紹介します．次にプロファイラの実装に利用している様々な技術や仕組みについて紹介します．最後に今後の展望についてまとめます．
+116,Yusuke Miyazaki,Python ウェブアプリケーションのためのプロファイラの実装,Pythonウェブアプリのためのラインプロファイラwsgi_lineprofのデザインと内部実装について紹介します．Python処理系の仕組みや低レイヤーを扱うライブラリ開発への理解を深めてみましょう!,Talk (15 minutes),15min,Site Reliability Engineer / ymyzk.com,Room A+B,1,4,1001,English Only,日本語/Japanese,en,jp,Intermediate,Web programming(including web frameworks) ,"はじめに，このトークで取り上げる [wsgi_lineprof](https://github.com/ymyzk/wsgi_lineprof) の機能やデザイン，設計思想などを簡単に紹介します．次にプロファイラの実装に利用している様々な技術や仕組みについて紹介します．最後に今後の展望についてまとめます．
 
 このトークでは以下のようなテーマを紹介します:
 
@@ -377,7 +377,7 @@ Attendees will learn how machine learning can be used to learn features for rare
 118,喜多智也,ブロックチェーンアプリのトランザクションに対するデータ分析,多くのブロックチェーンアプリはトークンと呼ばれるデジタル的な貨幣やアイテムを扱っています。このトークンのやり取りに関わるトランザクションを分析します。,Talk (15 minutes),15min,"エンジニア
 大学での研究は自然言語処理
 仕事ではブロックチェーン
-Gotanda.js スタッフ",Convention Hall UGUISU,1,4,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Fintech,"### 背景
+Gotanda.js スタッフ",Convention Hall UGUISU,1,4,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Fintech,"### 背景
 ブロックチェーンはハッシュ関数や電子署名などの暗号技術とP2Pネットワーク技術を用いた分散データベースです。多くの場合、次の特徴を持ちます。
 
 - データの改ざん検出が容易
@@ -425,7 +425,7 @@ GROUP BY name
 ORDER BY count DESC
 ```
 ",喜多智也
-119,Higashiguchi Kazuki,Pythonを使ったAPIサーバー開発を始める際に整備したCIとテスト機構,Pythonアプリケーションを開発し始める際のCIでのコード検査とユニットテストの整備について取り上げます。CIについては、スタイルチェックやエラー解析の自動化、ユニットテストについては、実DBを利用するケース等事前の設計・機構等の必要な工夫を紹介します。,Talk (15 minutes),15min,"BASE BANK, Inc.在籍。業務ではWebアプリケーション開発の全般業務を行う。",Room D,1,4,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Project case studies,"このトークでは、私自身がPythonを業務で活用しはじめた際に準備しておいてよかったという経験について話すものです。具体的には、CIとユニットテスト機構の準備について紹介します。
+119,Higashiguchi Kazuki,Pythonを使ったAPIサーバー開発を始める際に整備したCIとテスト機構,Pythonアプリケーションを開発し始める際のCIでのコード検査とユニットテストの整備について取り上げます。CIについては、スタイルチェックやエラー解析の自動化、ユニットテストについては、実DBを利用するケース等事前の設計・機構等の必要な工夫を紹介します。,Talk (15 minutes),15min,"BASE BANK, Inc.在籍。業務ではWebアプリケーション開発の全般業務を行う。",Room D,1,4,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Project case studies,"このトークでは、私自身がPythonを業務で活用しはじめた際に準備しておいてよかったという経験について話すものです。具体的には、CIとユニットテスト機構の準備について紹介します。
 
 ## CIについて
 CI（継続的インテグレーション）にて、自身が書いたコードがPythonの標準から外れていないか・問題がないかを検査しておくことは非常に有用です。CIが指摘する項目を修正することでコードの品質を保てることに加えて、Pythonを学習することができます。
@@ -451,7 +451,7 @@ CI（継続的インテグレーション）にて、自身が書いたコード
 - Post-proccesing
 In Pre-processing, we'll make model by GetFEM++ and solve the equation by GetFEM++. At the end in Post-proccesing, solution is visualized it in 3D by mayavi.
 All the process is performed in Jupyter-Notebook.",Tetsuo Koyama
-121,Daisuke Saito,Doujin-activity with Ren'Py,I have been using Ren’Py in Doujin activities. Ren’Py is Python based visual novel game engine. This talk demonstrates the benefits of using it. ,Talk (15 minutes),15min,Daisuke Saito is a researcher in computer science education. His hobby is game development.,Convention Hall UME,1,5,1003,日本語と英語/Japanese and English,英語/English,jaen,en,All,GUI and games,"## Introduction
+121,Daisuke Saito,Doujin-activity with Ren'Py,I have been using Ren’Py in Doujin activities. Ren’Py is Python based visual novel game engine. This talk demonstrates the benefits of using it. ,Talk (15 minutes),15min,Daisuke Saito is a researcher in computer science education. His hobby is game development.,Convention Hall UME,1,5,1003,日本語と英語/Japanese and English,英語/English,jpen,en,All,GUI and games,"## Introduction
 Ren'Py is a Python-based game engine for developing a Novel game.
 I have used this engine for game development in Doujin activities for eight years. In this talk, I would like to convey the goodness of Ren'Py based on eight years of experience.
 
@@ -476,7 +476,7 @@ Also, in this talk, I would like to convey the goodness of handling Python in th
 + Advantages of Ren'py(5 minutes)
 + Conclusion(5 minutes)
 + QA(2 minutes)",Daisuke Saito
-122,Tomoko FURUKI,pandasのStyling機能で強化するJupyter実験レポート,普段Jupyter Notebookで実験レポートを書くpandasユーザに向け、便利ながらも書籍等ではあまり紹介されないpandasのStyling機能について、利用例・使い方・注意点等を紹介します。,Talk (15 minutes),15min,大学では知能情報メディアを専攻し、就職後はPythonを使ったデータ活用のPoCや機械学習案件に従事。現在フリー。PyConJP登壇は2回目。,Convention Hall UGUISU,1,5,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Machine learning and data science,"▼対象   
+122,Tomoko FURUKI,pandasのStyling機能で強化するJupyter実験レポート,普段Jupyter Notebookで実験レポートを書くpandasユーザに向け、便利ながらも書籍等ではあまり紹介されないpandasのStyling機能について、利用例・使い方・注意点等を紹介します。,Talk (15 minutes),15min,大学では知能情報メディアを専攻し、就職後はPythonを使ったデータ活用のPoCや機械学習案件に従事。現在フリー。PyConJP登壇は2回目。,Convention Hall UGUISU,1,5,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Machine learning and data science,"▼対象   
 ① 普段Jupyter Notebookで実験レポートを書くpandasユーザーの方   
 
 ▼内容   
@@ -494,7 +494,7 @@ Also, in this talk, I would like to convey the goodness of handling Python in th
    - キャプションをつける
 - Excelへのエクスポート
 - Styling使用時の注意点",Tomoko FURUKI
-123,成瀬基樹,ListはIteratorですか？,タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがItera*tor*ではありません。このようなPython組込のクラスの型について発表します。,Talk (15 minutes),15min,Pythonが大好きです！趣味も仕事もウェブアプリ開発です。CPythonとtypeshedにコントリビュートしました。,Room D,1,5,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Best practices,"タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがIteratorではありません。
+123,成瀬基樹,ListはIteratorですか？,タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがItera*tor*ではありません。このようなPython組込のクラスの型について発表します。,Talk (15 minutes),15min,Pythonが大好きです！趣味も仕事もウェブアプリ開発です。CPythonとtypeshedにコントリビュートしました。,Room D,1,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがIteratorではありません。
 本発表の主役は[typing](https://docs.python.org/ja/3/library/typing.html)、[collections.abc](https://docs.python.org/ja/3/library/collections.abc.html)、それと[mypy](http://mypy-lang.org/)です。
 Pythonにはintやlistといった様々な組込の型があります。本発表ではその中でもlist(typing.List)やdict(typing.Dict)といった、何かを保持するための型に特に焦点を合わせます。これらの型のうち、Pythonプログラマが最初に触れるのはlistやdictで、次にtuple(typing.Tuple)やset(typing.Set)、さらにiterator(typing.Iterator)と進むのが一般的だと思います。
 これらは静的型チェックを行っていなくても、効率の良いプログラムを書こうと考えれば意識することになることです。これらの型を知っている、使っているだけではなく、それらの関係が分かると静的型チェックやドキュメントに引数の型をうまく書けるようになります。
@@ -545,7 +545,7 @@ I'll present the early-adopting, daring answer embraced for LOVOT:  **Python**, 
 If you appreciate the difficulties of concurrent programming, have battled real threads and lost, had a rough experience with asyncio or other async framework, or are simply interested in seeing what's possible when a great solution meets an interesting application– I hope you will gain from the talk.
 
 Covered items will include: an overview of Trio's *structured concurrency* and why Python is at the forefront of concurrency programming; highlights of how it's been applied to the LOVOT companion robot; Trio tooling strengths; an interactive web canvas server for embedded systems based on the Processing API;  a look at utilities built on Trio; troublesome points to watch out for; and a review of useful escape hatches.",John Belmonte
-203,寺嶋 哲（Terajima Satoshi）,Pythonで始めてみよう関数型プログラミング,関数型言語の機能を提供するPythonパッケージを用いて、関数型言語の便利な機能を紹介し、どのようにPythonコードを改善する事ができるかを解説します。Pythonから関数型言語の世界に踏み入ってみましょう。,Talk (45 minutes),45min,Web系Pythonエンジニア at 株式会社SQUEEZE。Meguro.LYAHFGG（すごいHaskell本を原書で読む会）を主催中。,Convention Hall UME,2,1,1003,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Python libraries,"Pythonでは、関数型言語の機能は積極的には採用されていませんが、複雑な処理を簡潔に書けることから、関数型言語の機能を提供してくれるパッケージが多くあります。
+203,寺嶋 哲（Terajima Satoshi）,Pythonで始めてみよう関数型プログラミング,関数型言語の機能を提供するPythonパッケージを用いて、関数型言語の便利な機能を紹介し、どのようにPythonコードを改善する事ができるかを解説します。Pythonから関数型言語の世界に踏み入ってみましょう。,Talk (45 minutes),45min,Web系Pythonエンジニア at 株式会社SQUEEZE。Meguro.LYAHFGG（すごいHaskell本を原書で読む会）を主催中。,Convention Hall UME,2,1,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Python libraries,"Pythonでは、関数型言語の機能は積極的には採用されていませんが、複雑な処理を簡潔に書けることから、関数型言語の機能を提供してくれるパッケージが多くあります。
 
 このトークでは、そのようなパッケージをいくつか（fn.py, Pyrsistent, Pampy, PyMonad）取り上げ、Pythonで関数型言語スタイルでのプログラミングする方法を解説します。
 
@@ -590,7 +590,7 @@ Covered items will include: an overview of Trio's *structured concurrency* and w
 
 - Python標準の関数型機能
     - itertools / functools",Terajima Satoshi
-204,石田 光一,KubernetesとJupyterHubで構築する機械学習eラーニングサイト,JupyterHubはユーザごとにJupyter notebookを提供するシステムです。eラーニングサイトのKubernetes上でJupyterHubを運用するノウハウをお届けします。,Talk (45 minutes),45min,10Xでタベリーの開発をしているエンジニアです。業務委託で他の会社のサービスをよくするための技術相談や実装もやってます。,Convention Hall UGUISU,2,1,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Python in education(including science and maths),"### eラーニングサイトの紹介
+204,石田 光一,KubernetesとJupyterHubで構築する機械学習eラーニングサイト,JupyterHubはユーザごとにJupyter notebookを提供するシステムです。eラーニングサイトのKubernetes上でJupyterHubを運用するノウハウをお届けします。,Talk (45 minutes),45min,10Xでタベリーの開発をしているエンジニアです。業務委託で他の会社のサービスをよくするための技術相談や実装もやってます。,Convention Hall UGUISU,2,1,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python in education(including science and maths),"### eラーニングサイトの紹介
 
 eラーニングサイトをデモして、「機械学習のコンテンツ」と、そのコンテンツを写経するためにユーザごとに「Jupyter Notebook」がブラウザで実行できることを紹介します。サイトを紹介することによってこれから説明するアーキテクチャと運用がなぜ必要かが理解しやすくなります。
 
@@ -615,7 +615,7 @@ JupyterHubのみで使うにはデフォルトの設定でかまいませんがe
 * 監視: 何をどのように監視すれば安定して運用できるのかを紹介します
 * その他の細かいカスタマイズを紹介します
 ",Koichi Ishida
-205,寺田　学,Python Webフレームワーク比較,Webフレームワークが持つべき機能を紹介し、各Webフレームワークが提供し ている範囲を比較します。フレームワーク選択の一つの指標になることを目指し、目的別にフレームワークを選択できるようになります。,Talk (45 minutes),45min,(株)CMSコミュニケーションズ代表取締役 Python Web関係の業務を中心にコンサルティングや構築を手がけている。,Room D,2,1,1005,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,All,Web programming(including web frameworks) ,"このトークでは、以下の4つのパートに分けて説明をします。
+205,寺田　学,Python Webフレームワーク比較,Webフレームワークが持つべき機能を紹介し、各Webフレームワークが提供し ている範囲を比較します。フレームワーク選択の一つの指標になることを目指し、目的別にフレームワークを選択できるようになります。,Talk (45 minutes),45min,(株)CMSコミュニケーションズ代表取締役 Python Web関係の業務を中心にコンサルティングや構築を手がけている。,Room D,2,1,1005,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,Web programming(including web frameworks) ,"このトークでは、以下の4つのパートに分けて説明をします。
 
 - Webフレームワークとは　(フレームワークの定義)
 - Webフレームワークが持つ機能
@@ -639,7 +639,7 @@ Several key points that we have learned from our development process includes:
 - Utilizing memory profiler and pdb properly will help you in pinpointing application bottleneck
 - Python for-loops vs generators
 - And several other common pitfalls",Iskandar Setiadi
-207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
+207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
 Dineでは最適なマッチングを実現するために日々改善が続けられており、本トークではそこで得られた経験や知見についてお伝えします。
 具体的にはGoogle Cloud Dataflow (Apache Beam Python SDK)を使ったデータプロセッシング、Cloud Machine Learningを使った機械学習の活用を中心にお話する予定です。
 
@@ -654,7 +654,7 @@ Dineでは最適なマッチングを実現するために日々改善が続け�
 This talk is going to cover `mighty_patcher`, a library that supports automatic hot reloading of Python. This lets you avoid classic ""auto-reload"" tricks that force you to restart your entire program. 
 
 I will go over the basics of what this does, how it can be used (quicker testing, live coding, interactive art), and how it's implemented. Walking through the details of how this tool works should help people to rethink what is possible in Python once you become aware of how the internals work.",Raphael Gaschignard
-209,田中 慎太郎,Pythonでライブをしよう -FoxDotを使った新時代のPython活用法-,本セッションではライブコーディングを実演しつつ、FoxDotというライブラリについてお話します。ここでいうライブコーディングとは、「生でプログラミングしながら、演奏すること」を指します。,Talk (30 minutes),30min,長野県長野市の会社、日本システム技研所属のプログラマ バックエンド開発からフロントエンド開発まで手掛けます,Convention Hall UGUISU,2,2,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Python libraries,"本セッションでは実際にライブコーディングを交えつつ、[FoxDot](https://foxdot681713046.wordpress.com/)というライブラリについてお話しようと思います。
+209,田中 慎太郎,Pythonでライブをしよう -FoxDotを使った新時代のPython活用法-,本セッションではライブコーディングを実演しつつ、FoxDotというライブラリについてお話します。ここでいうライブコーディングとは、「生でプログラミングしながら、演奏すること」を指します。,Talk (30 minutes),30min,長野県長野市の会社、日本システム技研所属のプログラマ バックエンド開発からフロントエンド開発まで手掛けます,Convention Hall UGUISU,2,2,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python libraries,"本セッションでは実際にライブコーディングを交えつつ、[FoxDot](https://foxdot681713046.wordpress.com/)というライブラリについてお話しようと思います。
 
 ## 話すこと
 - ライブコーディングについて
@@ -669,7 +669,7 @@ I will go over the basics of what this does, how it can be used (quicker testing
 ## 話さないこと
 - 音楽の基礎的な話
 - メディアアートのこと",Shintaro Tanaka
-210,深谷亮祐,PyQt5で自分のためのIDEを作っちゃおう！,統合開発環境を使うとき、「こんな機能がほしい」「この挙動はやや気に入らない」と思うことはありませんか？ このセッションでは、あなたが望む統合開発環境をPythonやPyQtで自作する方法を紹介します。,Talk (30 minutes),30min,自動運転ぽい仕事してます。競技プログラミングにはまっており、自作統合開発環境で戦いの日々。最近青コーダーになりました。,Room D,2,2,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,GUI and games,"# 目的
+210,深谷亮祐,PyQt5で自分のためのIDEを作っちゃおう！,統合開発環境を使うとき、「こんな機能がほしい」「この挙動はやや気に入らない」と思うことはありませんか？ このセッションでは、あなたが望む統合開発環境をPythonやPyQtで自作する方法を紹介します。,Talk (30 minutes),30min,自動運転ぽい仕事してます。競技プログラミングにはまっており、自作統合開発環境で戦いの日々。最近青コーダーになりました。,Room D,2,2,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,GUI and games,"# 目的
 PyQt5をベースとして、自分が欲する機能を詰め込んだ自分だけのための統合開発環境を自作する方法を紹介します。
 題材は私が作ったRust言語向け競技プログラミング向け統合開発環境です。(Python製ですが、Rust向けIDE、ややこしい。)
 
@@ -688,7 +688,7 @@ pexpectを使って対話型デバッグ機能を実装して統合開発環境�
 
 # アウトプット
 https://github.com/fukatani/rujaion のように競技プログラミングなどの現場で実用に耐える統合開発環境が作れるようになります。",fukatani
-211,ryo kato,入門 自作検索エンジン,普段Elasticsearchを使っているエンジニアが全文検索技術を学ぶためにpythonで全文検索エンジンの自作に入門しました。その経験から得られた知見や全文検索エンジンの作り方について発表します。,Talk (30 minutes),30min,twitter: @_ryook  新聞社でサーバーサイドの開発をしています。,Room A+B,2,3,1001,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Project case studies,"# はじめに
+211,ryo kato,入門 自作検索エンジン,普段Elasticsearchを使っているエンジニアが全文検索技術を学ぶためにpythonで全文検索エンジンの自作に入門しました。その経験から得られた知見や全文検索エンジンの作り方について発表します。,Talk (30 minutes),30min,twitter: @_ryook  新聞社でサーバーサイドの開発をしています。,Room A+B,2,3,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"# はじめに
 昨年の磯さんの発表を見て、以前から興味のあった全文検索エンジンを自作してみました。
 検索エンジンの仕組みは知っていたけど、実際に自分で作ってみると当初思っていた以上に勉強になることが多かったです。
 発表を通じて検索エンジンの技術的な面白さと、既にあるものを自作する楽しさについて触れていきます。
@@ -735,7 +735,7 @@ https://github.com/fukatani/rujaion のように競技プログラミングな�
 **Deep learning** We use VGG-16(16-layer network) in Keras with Tensorflow backend as our CNN model. Using GPU to accelerate, we have trained 10 epochs and 1000 steps per epoch. The MSE of the model is 1.3066. Besides, the valuation MSE is 1.1721. Overall, the result is robust enough to predict a new palm. (You can find our code here.)
 
 **Chatbot** compared with App and Web, is more accessible to mobile users, and it is also easier to spread on social media. Therefore, we used Chatfuel to create an AI chatbot on Facebook Messenger. Below you can see the user flow of Handbot. The smooth UX we designed help us achieve 80% user retention rate. ",徐愷
-213,Rei Suyama,unittestで始めるユニットテスト入門,標準ライブラリにあるunittestを使ったユニットテストの始め方を紹介します。また、テストフレームワークであるpytestとの比較、unittestからpytestへの以降についても解説します。,Talk (30 minutes),30min,尾道の向島で暮らすプログラマ。学生時代からずっとPython好き。シンプルなコード、シンプルな設計を目指してます。,Convention Hall UME,2,3,1003,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Best practices,"# unittestで始めるユニットテスト入門
+213,Rei Suyama,unittestで始めるユニットテスト入門,標準ライブラリにあるunittestを使ったユニットテストの始め方を紹介します。また、テストフレームワークであるpytestとの比較、unittestからpytestへの以降についても解説します。,Talk (30 minutes),30min,尾道の向島で暮らすプログラマ。学生時代からずっとPython好き。シンプルなコード、シンプルな設計を目指してます。,Convention Hall UME,2,3,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"# unittestで始めるユニットテスト入門
 
 ## 概要
 プログラムの品質を向上させるためにはユニットテストが不可欠です。
@@ -762,7 +762,7 @@ unittestを使いこなすためにこれらの機能も紹介します。
 最後に人気のあるユニットテストパッケージであるpytestについても紹介します。
 unittestを使っておくと、プロジェクトの規模拡大に伴ったpytestの導入も難しくありません。
 unittestにはないpytestの優れた点を紹介し、実例をまじえてunittestを使ったプロジェクトへのpytestの導入を行います。",Rei Suyama
-214,森野　慎也,高速量子ゲートシミュレータ Qgate,Qgateは、Pythonをベースに、CPU、GPUを演算エンジンとして持つ高速量子ゲートシミュレータです。コンセプト、内部で使われている技法の紹介に加え、他のSDKと組み合わせて、デモを行います。,Talk (30 minutes),30min,PythonとGPUを用いた量子ゲート、量子アニーリングのオープンソースプロジェクトを主宰しています。,Convention Hall UGUISU,2,3,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Intermediate,Programming tools,"* 量子ゲートコンピューティングの基本概念
+214,森野　慎也,高速量子ゲートシミュレータ Qgate,Qgateは、Pythonをベースに、CPU、GPUを演算エンジンとして持つ高速量子ゲートシミュレータです。コンセプト、内部で使われている技法の紹介に加え、他のSDKと組み合わせて、デモを行います。,Talk (30 minutes),30min,PythonとGPUを用いた量子ゲート、量子アニーリングのオープンソースプロジェクトを主宰しています。,Convention Hall UGUISU,2,3,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Programming tools,"* 量子ゲートコンピューティングの基本概念
 
 * Qgateの設計コンセプト
 
@@ -774,7 +774,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 
 * Blueqatを用いたデモンストレーション
 ",Shinya Morino
-215,thinkAmi,知ろう！使おう！HDF5ファイル！,HDF5ファイルは機械学習だけでなく、データベースやファイルシステムとしても使えます。このトークでは、HDF5ファイルの概念、Pythonで扱うためのライブラリを利用例とともに紹介します。,Talk (30 minutes),30min,株式会社日本システム技研所属。Python/Webアプリケーションエンジニア。,Room D,2,3,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Python libraries,"HDF5ファイルについて、知る・見る・作る・探すと段階を追って紹介します。
+215,thinkAmi,知ろう！使おう！HDF5ファイル！,HDF5ファイルは機械学習だけでなく、データベースやファイルシステムとしても使えます。このトークでは、HDF5ファイルの概念、Pythonで扱うためのライブラリを利用例とともに紹介します。,Talk (30 minutes),30min,株式会社日本システム技研所属。Python/Webアプリケーションエンジニア。,Room D,2,3,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Python libraries,"HDF5ファイルについて、知る・見る・作る・探すと段階を追って紹介します。
 
 また、HDF5ファイルにはバージョンもあるため、公開されている資料から今後のバージョンアップ情報もお伝えします。
 
@@ -823,7 +823,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
   - クラウド対応
   - Unicodeサポート
 - AndroidやiOSでは、使えるの？",thinkAmi
-216,松田直樹,新米Pythonistaが贈るAirflow入門 & 活用事例紹介,Pythonでワークフローを定義してジョブのスケジューリング＆モニタリングを実現できるAirflowについて、その概要と業務でどのように活用し課題をクリアしたかを交えてお話しします。,Talk (15 minutes),15min,電通デジタルのエンジニア,Room A+B,2,4,1001,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Business efficiency solution,"デジタル広告の計測データを広告施策やPDCAに活かすためのプロダクトをつくる上で、利用しやすいデータへの加工、レポーティングが必要になります。
+216,松田直樹,新米Pythonistaが贈るAirflow入門 & 活用事例紹介,Pythonでワークフローを定義してジョブのスケジューリング＆モニタリングを実現できるAirflowについて、その概要と業務でどのように活用し課題をクリアしたかを交えてお話しします。,Talk (15 minutes),15min,電通デジタルのエンジニア,Room A+B,2,4,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Business efficiency solution,"デジタル広告の計測データを広告施策やPDCAに活かすためのプロダクトをつくる上で、利用しやすいデータへの加工、レポーティングが必要になります。
 本トークセッションでは、そのデータパイプラインを構築するにあたってPythonとAirflowを調べながら分析レポートを作成するパイプライン、分析しやすい環境を実際に構築した事例においてつまづいた点やそれらをどのように解決したかを交えご紹介します。
 
 ## 話すこと
@@ -837,7 +837,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 ## 話さないこと
 機械学習、統計
 ",Naoki Matsuda
-217,加藤皓也（Hiroya Kato）,メディアが運用すべき持続可能なVTuberをつくる技術,VTuberは運用コストの高いコンテンツです。今回は、Pythonによる声質変換や文章要約を用いて運用コストを抑えたVTuber像を２案紹介します。併せて、声質変換モデルの構築方法も詳しく解説します。,Talk (15 minutes),15min,日経でフロント／バック／DevOpsを担うWebエンジニア。機械学習とVTuberとゲーム実況が好き。,Small Exhibition Hall,2,4,1002,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Project case studies,"一般にVTuber運用には、動画投稿やタレント活動など、定期的な活動が必要です。しかし、動画企画・制作のコストや""中の人""の属人性の高さから、VTuber運用の長期継続は困難です。
+217,加藤皓也（Hiroya Kato）,メディアが運用すべき持続可能なVTuberをつくる技術,VTuberは運用コストの高いコンテンツです。今回は、Pythonによる声質変換や文章要約を用いて運用コストを抑えたVTuber像を２案紹介します。併せて、声質変換モデルの構築方法も詳しく解説します。,Talk (15 minutes),15min,日経でフロント／バック／DevOpsを担うWebエンジニア。機械学習とVTuberとゲーム実況が好き。,Small Exhibition Hall,2,4,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"一般にVTuber運用には、動画投稿やタレント活動など、定期的な活動が必要です。しかし、動画企画・制作のコストや""中の人""の属人性の高さから、VTuber運用の長期継続は困難です。
 そんなVTuber運用の課題に対し、メディアが持つリソースを用いた以下２つのVTuber像を提案します。
 
 - 自動生成型VTuber
@@ -849,7 +849,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 
 本セッションでは、これら２つのVTuber像を構成する技術について紹介します。
 今回は特に、後者の""多重人格型VTuber""を構成する声質変換について、初心者にも分かりやすいように詳しく解説する予定です。",加藤皓也
-218,山入端孝浩,機械学習ライブラリのPython API作成方法,Jupyter Notebook上で機械学習ライブラリを実行するためには、Python APIの作成が必要です。本発表では完成までの作業内容や注意点などを実体験に基づいてお話しします。,Talk (15 minutes),15min,NECソリューションイノベータ株式会社にて分析プラットフォームの開発に従事。最近はシステムテストを担当。,Convention Hall UME,2,4,1003,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Machine learning and data science,"Jupyter Notebookはデータサイエンスの分野で広く利用されるようになっております。
+218,山入端孝浩,機械学習ライブラリのPython API作成方法,Jupyter Notebook上で機械学習ライブラリを実行するためには、Python APIの作成が必要です。本発表では完成までの作業内容や注意点などを実体験に基づいてお話しします。,Talk (15 minutes),15min,NECソリューションイノベータ株式会社にて分析プラットフォームの開発に従事。最近はシステムテストを担当。,Convention Hall UME,2,4,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Machine learning and data science,"Jupyter Notebookはデータサイエンスの分野で広く利用されるようになっております。
 しかし、Jupyter Notebook上では基本的にPython APIでライブラリを実行するため、
 Python APIを持たない機械学習ライブラリは扱いにくく敬遠されがちという問題があります。
 
@@ -872,7 +872,7 @@ Python API完成までの作業内容の説明と併せ、注意した(すべき
 ",山入端孝浩
 219,Enzo Calamia,Getting Started with Asynchronous Python Web Development,"A few years ago, Python provided great tools for asynchronous programming since version 3.4 (asyncio) and version 3.5 (async/await syntax). As of 2019, the ecosystem around those new features has matured enough to launch your new backend using the asynchronous capabilities of Python.",Talk (15 minutes),15min,"My name is Enzo. I come from France, where I was working as a software engineer in different startups using Python. Now, I live in Tokyo, and I work as an independent software consultant on several projects, which include Python. ",Convention Hall UGUISU,2,4,1004,English Only,英語/English,en,en,Intermediate,Web programming(including web frameworks) ,"In this short talk, I would like to present how to use the `aiohttp` library and `asyncpg` to implement a fully asynchronous typical Web service in Python. We'll see why asynchronous code can be a great fit for most Web services and how it compares with more traditional Web services in some real-world use-cases. At the end of the talk, I wish that the audience consider implementing their next project using the power of Python's `async` ecosystem, which grows day after day. 
 The audience is supposed to be familiar with Python's async/await syntax and Web backend development in general.",Enzo Calamia
-220,nikkie,Anaconda環境運用TIPS 〜Anacondaの環境構築について知る・質問に答えられるようになる〜,初学者にAnacondaユーザが増えていますが、Anacondaで発生した問題の解決に自信のあるPython使いは少ないと思います。初学者にも初学者の質問に答える方にも拠り所となる情報を共有します,Talk (15 minutes),15min,「にっきー」と読むハンドルネームで活動するPython使い（歴は約2年）。初学者にPythonを教える経験が多め,Room D,2,4,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Best practices,"### 問題意識
+220,nikkie,Anaconda環境運用TIPS 〜Anacondaの環境構築について知る・質問に答えられるようになる〜,初学者にAnacondaユーザが増えていますが、Anacondaで発生した問題の解決に自信のあるPython使いは少ないと思います。初学者にも初学者の質問に答える方にも拠り所となる情報を共有します,Talk (15 minutes),15min,「にっきー」と読むハンドルネームで活動するPython使い（歴は約2年）。初学者にPythonを教える経験が多め,Room D,2,4,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Best practices,"### 問題意識
 
 - 初心者はAnacondaでの環境構築に触れる機会が多い
 - それに対して、Pythonista全員がAnacondaの知識があるわけではない（そのため初心者からのAnacondaの質問に答えられないこともある）
@@ -908,7 +908,7 @@ Anacondaという題材については、全Pythonistaが知るべきと考え�
 221,Kazuya Takei, Ansibleを通じて「べき等性」を理解してみよう,"構成管理ツールでは「べき等性」という概念が重要視されています。 
 Python製構成管理ツールのAnsibleを読んだり書いたりしながら、
 「べき等性っていいな」という気分にぜひなってみませんか？",Talk (15 minutes),15min,"ニジボックス所属のインフラ寄りバックエンド系スタックフルエンジニア。
-プライベートではよくErrbotと戯れています。",Room A+B,2,5,1001,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,System administration,"すっかりInfrastructure as Code(IaC)がコモディティ化しつつありますが、このIaCな世界で重要視されている概念が「冪等(べきとう)性」です。
+プライベートではよくErrbotと戯れています。",Room A+B,2,5,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,System administration,"すっかりInfrastructure as Code(IaC)がコモディティ化しつつありますが、このIaCな世界で重要視されている概念が「冪等(べきとう)性」です。
 
 IaCを実現するための構成管理ツールは、セットアップ処理一つ一つ冪等性を持つように設計されています。
 そのため、サーバー・インフラの構成内容を宣言的に記述することが可能となっています。
@@ -917,7 +917,7 @@ IaCを実現するための構成管理ツールは、セットアップ処理�
 
 
 このトークでは、Python製の構成管理ツールであるAnsibleを通じて、べき等性の概念と利点を理解しつつ、どう実現してるのかを紹介します。",kAZUYA tAKEI
-222,熊谷　拓也,DjangoとJupyterで始めるPyData,DjangoやJupyterを用いたデータ分析はPython界隈で最近よく流行してますが、Djangoの拡張ライブラリを利用することでJupyterを導入でき、相互の強みを活かした利用が出来ます。本トークでは、Django×Jupyterな環境を作った話と、その環境で出来ることをお話しします。,Talk (15 minutes),15min,PythonとJavaScriptと野球をこよなく愛するWeb系エンジニア。都内のPythonもくもく会によく出没する。,Small Exhibition Hall,2,5,1002,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Web programming(including web frameworks) ,"## 概要
+222,熊谷　拓也,DjangoとJupyterで始めるPyData,DjangoやJupyterを用いたデータ分析はPython界隈で最近よく流行してますが、Djangoの拡張ライブラリを利用することでJupyterを導入でき、相互の強みを活かした利用が出来ます。本トークでは、Django×Jupyterな環境を作った話と、その環境で出来ることをお話しします。,Talk (15 minutes),15min,PythonとJavaScriptと野球をこよなく愛するWeb系エンジニア。都内のPythonもくもく会によく出没する。,Small Exhibition Hall,2,5,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Web programming(including web frameworks) ,"## 概要
 DjangoにJupyterNotebookを導入することで、DjangoのモデルをJupyter上で利用することが出来ます。
 これにより、Djangoの強力なORMをJupyterによるデータの操作、可視化に活かすことが出来ます。
 またDjango×Jupyterの環境を作ることで軽い確認をJupyter、完成したものはDjangoによってバックエンドAPI化などの使い分けを同一環境で出来るようになります。
@@ -941,7 +941,7 @@ The required wall-topology of the scaffolds is dependent on the fluidic behaviou
 To our knowledge, this is the first time that this approach has been taken. At PyCon JP, we foresee to present our model in form of a talk. The model is simulated using Python and the Gauss-Seidel algorithm. This model further demonstrates a novel combination of the field of medicine and fluid dynamics, where Python—as an open source language—acts as a viable bridge. We believe this will showcase the limitless possibilities of Python and enable us to connect with similarly motivated Python enthusiasts.
 
 Attendees will get an idea of how Python can be used in medicine, in this case running simulations of drug release profile in 3D-printed scaffold design. First, the attendees will be presented with real-world medical challenges where Python can help solve these. Second, a solution will be presented and implementation will be discussed. The talk will also provide the opportunity for an interactive discussion with the speakers and give the attendees the scope of collaboration to our open source approach with Python.","Py_Health_Squad: Hassan Sami Adnan, Hassan Saad Ifti, Samara Sharmeen, Haque Ishfaq, Atia Amin"
-224,ku-mu,チームメイトのためにdocstringを書こう,自分が昔書いたコード、チームメイトが書いたコードがなにしているのかわからない…そんなことってよくありますよね。 そんな悩みを少しでも解決するため、コード内に簡単にドキュメントを書けるdocstringの書き方やドキュメントの自動生成方法を紹介していきます。,Talk (15 minutes),15min,ゲームプログラマから機械学習専門インフラ(MLOps)エンジニアにジョブチェンしました,Convention Hall UGUISU,2,5,1004,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,Programming tools,"docstringとは、コード内に書くドキュメントです。
+224,ku-mu,チームメイトのためにdocstringを書こう,自分が昔書いたコード、チームメイトが書いたコードがなにしているのかわからない…そんなことってよくありますよね。 そんな悩みを少しでも解決するため、コード内に簡単にドキュメントを書けるdocstringの書き方やドキュメントの自動生成方法を紹介していきます。,Talk (15 minutes),15min,ゲームプログラマから機械学習専門インフラ(MLOps)エンジニアにジョブチェンしました,Convention Hall UGUISU,2,5,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Programming tools,"docstringとは、コード内に書くドキュメントです。
 docstringを書いておくことによってクラスや関数の役割を伝えることができます。
 
 初心者の方や、分析でPythonを使ってる方たちにはあまり馴染みがないかもしれません。
@@ -955,8 +955,8 @@ docstringを書いておくことによってクラスや関数の役割を伝�
 
 ということをお話したいと思います。
 ",ku-mu
-225,あべんべん, pytestによるCIレボリューション,Pythonは非常に扱いやすい言語です。しかし、しっかりテストしないとプロダクトが台無しになるかもしれませんので、テストの方法としてpytestを使ったクラウドベースのCIの有用性について紹介します。,Talk (15 minutes),15min,金融機関の研究所で技術調査や研究業務支援をしながら、6つのITコミュニティの運営、技術書の執筆・査読をしてます。,Room D,2,5,1005,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Programming tools,皆さんはPythonでユニットテストやCIツールを使いこなせているでしょうか？そういった悩みへの参考としてユニットテストやCIツールの概要や種類について解説をしてから、その中でもPytestを使った場合のメリットや開発プロセス全体への波及効果について発表します。,あべんべん
-151,Atsushi Odagiri,Python開発を円滑に進めるためのツール設定,実際の開発ではただ動かすだけでなく、品質をあげるためにレビューやコーディング規約のチェックなどが行われます。 Pythonでの開発で利用できる規約や静的解析を行うflake8をはじめとしたツールを活用して開発を円滑に進められる環境づくりを行います。,Talk (45 minutes),45min,株式会社オープンコレクター所属,Large Exhibition Hall,1,1,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,Beginner,Beginner Session,"- flake8
+225,あべんべん, pytestによるCIレボリューション,Pythonは非常に扱いやすい言語です。しかし、しっかりテストしないとプロダクトが台無しになるかもしれませんので、テストの方法としてpytestを使ったクラウドベースのCIの有用性について紹介します。,Talk (15 minutes),15min,金融機関の研究所で技術調査や研究業務支援をしながら、6つのITコミュニティの運営、技術書の執筆・査読をしてます。,Room D,2,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Programming tools,皆さんはPythonでユニットテストやCIツールを使いこなせているでしょうか？そういった悩みへの参考としてユニットテストやCIツールの概要や種類について解説をしてから、その中でもPytestを使った場合のメリットや開発プロセス全体への波及効果について発表します。,あべんべん
+151,Atsushi Odagiri,Python開発を円滑に進めるためのツール設定,実際の開発ではただ動かすだけでなく、品質をあげるためにレビューやコーディング規約のチェックなどが行われます。 Pythonでの開発で利用できる規約や静的解析を行うflake8をはじめとしたツールを活用して開発を円滑に進められる環境づくりを行います。,Beginner Session (45 minutes),begginer session,株式会社オープンコレクター所属,Large Exhibition Hall,1,1,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Beginner Session,"- flake8
 - black
 - mypy
 - pytestにいれておいてほしいアドオン randomly coverage
@@ -976,7 +976,7 @@ In five minutes, we will go through the following thing:
 * What we tried (and failed) and our best-so-far solution
 
 Note that audiences need to know basic Python syntax since we always prefer to use Python to solve problems!",petertc
-132,栗田真,Pythonで始めるオレオレブラウザ,ソフトやOSにといった開発環境に強い制限を受ける職場は未だ存在するが、Pythonなら導入が許可される。今回、Pythonを利用して自分が使いやすいブラウザを作るまでの取り組みについて紹介する。,Lightning Talks,lt,フューチャー株式会社所属。人工衛星開発と工場制御系システムに従事した後、現職。制御系の他、LinuxやNWが好き。,Large Exhibition Hall,1,6,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,,"エンジニアとしては自分好みの環境を構築し、効率的に業務をこなしたいと考えるが、必ずしもそれは叶うものではない。
+132,栗田真,Pythonで始めるオレオレブラウザ,ソフトやOSにといった開発環境に強い制限を受ける職場は未だ存在するが、Pythonなら導入が許可される。今回、Pythonを利用して自分が使いやすいブラウザを作るまでの取り組みについて紹介する。,Lightning Talks,lt,フューチャー株式会社所属。人工衛星開発と工場制御系システムに従事した後、現職。制御系の他、LinuxやNWが好き。,Large Exhibition Hall,1,6,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,"エンジニアとしては自分好みの環境を構築し、効率的に業務をこなしたいと考えるが、必ずしもそれは叶うものではない。
 会社PCのOSといえばWindowsが根強く、Win10とEdgeが2015年にリリースされた一方で、未だWin7以前の環境でIEのみが許可された職場が存在する。
 業務に必要なソフトであればインストールが認められるが、昨今データ解析などにより世間一般で知名度と市民権を獲得したPythonはインストールしやすいソフトの筆頭であり、モジュールと組み合わせることによってブラウザエンジンを利用することができる。
 
@@ -992,7 +992,7 @@ When I went to PyCon US this May, I found the people are not just for the talks.
 Recent years, PyCon TW puts much effort into making it a better place for Pythonists to interact.  
 In this talk, I will share my thought on how to get the most of a PyCon and how PyCon TW thrive on cultivating a better conference culture.
 ",Wei Lee
-231,Shunsuke Kawai,Python製シェル xonshの紹介,Pythonで書かれたPythonが実行可能なShell「xonsh」の紹介をします。Shell Scriptと実際の使用感を比較しながら、Shellの深い世界にPythonから入り込みましょう。,Lightning Talks,lt,"M3, Inc. ML engineer. ptkやjupyter、xonsh等Python周辺ツールのコミッタが趣味.",Large Exhibition Hall,2,6,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,,"# Abstract
+231,Shunsuke Kawai,Python製シェル xonshの紹介,Pythonで書かれたPythonが実行可能なShell「xonsh」の紹介をします。Shell Scriptと実際の使用感を比較しながら、Shellの深い世界にPythonから入り込みましょう。,Lightning Talks,lt,"M3, Inc. ML engineer. ptkやjupyter、xonsh等Python周辺ツールのコミッタが趣味.",Large Exhibition Hall,2,6,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,"# Abstract
 [xonsh](https://github.com/xonsh/xonsh)は、Pythonで作られたクロスプラットフォーム、Unixライクなシェル言語とコマンドプロンプトです。拡張されたSyntaxによって、sh + Pythonインタプリタのような取扱が可能です。  
 以下のようにPythonの変数空間を参照する事もできれば、サブプロセスを利用してshell scriptの結果を得る事もできます。  
   
@@ -1015,7 +1015,7 @@ bash、fishと比較しながら、Pythonでシェルを扱える事のメリッ
      - xonshの拡張パッケージであるxontribを複数作成
      - [Xonsh Advent Calendar 2017](https://qiita.com/advent-calendar/2017/xonsh)、[Xonsh Advent Calendar 2018](https://qiita.com/advent-calendar/2018/xonsh)を企画、xonshの様々な機能について20記事以上を執筆",河合俊典
 232,Huang Kunxian,Python in the Belle II experiment,"This lightning talk gives audience that how python have influence in particle physics experiment, and outreach of our experiment. I hope that python society can have some interest on the physics experiment. Science society and python society can develop more packages to solve science problem.",Lightning Talks,lt,"I am a postdoc in Taiwan University, and graduated from Kyoto University. Now, I still work on Japan experiment– Belle II experiment. I am a Python lover and finished my PhD thesis work by Python packages. However, I have never contacted in Japan Python society. Hope I can meet some python-lovers interested in physics.",Large Exhibition Hall,2,6,1006,English Only,英語/English,en,en,All,,"At present, the complex of high energy physics experiment produce ""Big data"" that has scale larger than 10 PB of per year. The Belle II experiment is using electron-positron accelerator to produce mass B meson in Tsukuba city, Japan. The pixel number of the Belle II detector is O(10^6), and we expect the maximum data rate is about 30 kHz. This talk shows the brief description that how python is used in online monitoring, grid computing, numerical data analysis, and graphical plot in the Belle II experiment. This lightning talk will give an introduction of the belle II software which is build by python and C++14. There are future open source plan and open data plan of the Belle II experiment, and this talk also gives a short description about these plans. ",b89202027@gmail.com
-233,長谷川大耀,pythonで、処理をより効率化するためのTips集,弊社の広告配信では、大量のログを少しでも速く省メモリで処理が実行できるように、日々工夫をしております。その中から、コードのちょっとした工夫で処理をより効率化できた例を紹介できればと思います。,Lightning Talks,lt,生命物理学を研究した後、Fringe81に入社。現在はデータサイエンティストとして開発に携わってます,Large Exhibition Hall,2,6,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,All,,"弊社の広告配信では、膨大な量のリクエストにより生じたログを、機械学習システムでより有益に新鮮なうちに活用するため、塵も積もればの精神で、少しずつ処理をより効率的に行うための改善をしてきました。一つ一つの工夫はは微々たるものかもしれませんが、積み上げていくと、如実に効果を発揮します。内容自体は基本的なものも、ニッチなものもありますが、どれも難易度的には高くなく、頭の隅においておくとどこかで役立つかもしれません。
+233,長谷川大耀,pythonで、処理をより効率化するためのTips集,弊社の広告配信では、大量のログを少しでも速く省メモリで処理が実行できるように、日々工夫をしております。その中から、コードのちょっとした工夫で処理をより効率化できた例を紹介できればと思います。,Lightning Talks,lt,生命物理学を研究した後、Fringe81に入社。現在はデータサイエンティストとして開発に携わってます,Large Exhibition Hall,2,6,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,"弊社の広告配信では、膨大な量のリクエストにより生じたログを、機械学習システムでより有益に新鮮なうちに活用するため、塵も積もればの精神で、少しずつ処理をより効率的に行うための改善をしてきました。一つ一つの工夫はは微々たるものかもしれませんが、積み上げていくと、如実に効果を発揮します。内容自体は基本的なものも、ニッチなものもありますが、どれも難易度的には高くなく、頭の隅においておくとどこかで役立つかもしれません。
 
 想定している聴講者としては、
 
@@ -1039,51 +1039,51 @@ bash、fishと比較しながら、Pythonでシェルを扱える事のメリッ
 	- subprocessを使うことを検討する
 
 あくまで一例であり、場合によっては変更、追加するかもしれません。",Hiroaki Hasegawa
-301,Iosif Takakura,Django製CMS WagtailでBlogを作ってみる,自分のブログをリニューアルする際にDjango製CMSであるWagtailを選び、GatsbyJSで静的HTML化しつつさらにはサーバーレスにも手を出すというあくなき挑戦の記録。,Poster Session(Individuals),pt_i,アパレル系子会社ではたらく雑食系ITエンジニア。主に.NET、Ruby、Python、JavaScript界隈に出没。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-302,tax_free,PythonとtwitterでWord-cloud,PythonとTwitter APIを使用してWordCloudを作ります!,Poster Session(Individuals),pt_i,沖縄の普通の高校生。PythonBeginners沖縄でオーガナイザーやってます。PyCon Kyushu 2019 実行委員(企画)。Twitter_ID = @taxfree_python,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
-303,S治 (Shinji Kitagawa),Pythonで実現する4コマ漫画の分析・評論 2019(Poster),近年、アニメや舞台等のメディアミックスで存在感を高める4コマ漫画ですが、本セッションでは、Pythonと周辺ライブラリを用いてデータ収集から分析・評論までを一気通貫に行う手法を紹介します。,Poster Session(Individuals),pt_i,株式会社Stroly所属。仕事ではWEB、4コマ漫画プロジェクトでは画像処理、機械学習、データ分析等でPythonを使う,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-304,榎本真美,Geo+Python JP,公的機関からオープンデータとして地理空間情報（Geoデータ）が公開され、誰でもそのデータを手軽に利用できるようになりました。PythonとGeoデータによる様々な可視化や解析方法の一端をご紹介します。,Poster Session(Individuals),pt_i,"Geoマニアのゆかいな仲間たち（古川泰人, 小俣博司, 三好邦彦, 榎本真美）",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
+301,Iosif Takakura,Django製CMS WagtailでBlogを作ってみる,自分のブログをリニューアルする際にDjango製CMSであるWagtailを選び、GatsbyJSで静的HTML化しつつさらにはサーバーレスにも手を出すというあくなき挑戦の記録。,Poster Session(Individuals),pt_i,アパレル系子会社ではたらく雑食系ITエンジニア。主に.NET、Ruby、Python、JavaScript界隈に出没。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+302,tax_free,PythonとtwitterでWord-cloud,PythonとTwitter APIを使用してWordCloudを作ります!,Poster Session(Individuals),pt_i,沖縄の普通の高校生。PythonBeginners沖縄でオーガナイザーやってます。PyCon Kyushu 2019 実行委員(企画)。Twitter_ID = @taxfree_python,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
+303,S治 (Shinji Kitagawa),Pythonで実現する4コマ漫画の分析・評論 2019(Poster),近年、アニメや舞台等のメディアミックスで存在感を高める4コマ漫画ですが、本セッションでは、Pythonと周辺ライブラリを用いてデータ収集から分析・評論までを一気通貫に行う手法を紹介します。,Poster Session(Individuals),pt_i,株式会社Stroly所属。仕事ではWEB、4コマ漫画プロジェクトでは画像処理、機械学習、データ分析等でPythonを使う,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+304,榎本真美,Geo+Python JP,公的機関からオープンデータとして地理空間情報（Geoデータ）が公開され、誰でもそのデータを手軽に利用できるようになりました。PythonとGeoデータによる様々な可視化や解析方法の一端をご紹介します。,Poster Session(Individuals),pt_i,"Geoマニアのゆかいな仲間たち（古川泰人, 小俣博司, 三好邦彦, 榎本真美）",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
 305,Tetsuya Hirata,Hybrid Keyword Extraction Automated by Python With Cloud Speech To Text API and Video API,"The poster will introduce the case study of keyword extraction automated by python with Cloud Speech To Text API and Video API provided by Google, focusing on how python could automate the extraction and results. The data is stored in 'Classi', which is an educational platform used by more than half of the high schools in Japan.",Poster Session(Individuals),pt_i,"Tetsuya is a software engineer working at Classi Corp., which is the leading EdTech company in Tokyo. He has been developing a recommender system which can optimize appropriate learning materials according to learner's abilities, and also involved with cloud infrastructure construction. Prior to this, he used to research the relationships between online learning behaviors and learning outcomes at the UCL Institute of Education (IOE) in the UK. His interest is in how to bridge the gap between data science and engineering.",Large Exhibition Hall,,,1006,English Only,英語/English,en,en,,,,
-306,竹林　暁,学習用GUIライブラリTentoApp（仮）について,PythonのGUIライブラリのうち比較的扱いやすいと思われるTkinterでも、書き方がTclの文法を引きずっています。初学者がわかりやすいように、Tkinterを改造した、よりPythonらしい文法でアプリを作成できるライブラリを開発しました。,Poster Session(Individuals),pt_i,子供向けプログラミングスクール講師。2011年にTENTOを共同創業して以来プログラミング教育を生業としてきました。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-307,川崎拳人,PythonによるAIスピーカーアプリ開発の紹介,PythonとAIスピーカーを用いて、職場における業務効率化や労働者の働き方を見直すことを目的とした勤怠管理アプリを開発しました。アプリの内容や開発を通して得られた知見について紹介します。,Poster Session(Individuals),pt_i,株式会社リーディングエッジ社所属、データサイエンティスト、現在は人材マッチングシステムの開発に取り組んでいます。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
+306,竹林　暁,学習用GUIライブラリTentoApp（仮）について,PythonのGUIライブラリのうち比較的扱いやすいと思われるTkinterでも、書き方がTclの文法を引きずっています。初学者がわかりやすいように、Tkinterを改造した、よりPythonらしい文法でアプリを作成できるライブラリを開発しました。,Poster Session(Individuals),pt_i,子供向けプログラミングスクール講師。2011年にTENTOを共同創業して以来プログラミング教育を生業としてきました。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+307,川崎拳人,PythonによるAIスピーカーアプリ開発の紹介,PythonとAIスピーカーを用いて、職場における業務効率化や労働者の働き方を見直すことを目的とした勤怠管理アプリを開発しました。アプリの内容や開発を通して得られた知見について紹介します。,Poster Session(Individuals),pt_i,株式会社リーディングエッジ社所属、データサイエンティスト、現在は人材マッチングシステムの開発に取り組んでいます。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
 308,ヤマシタタカマサ,pythonでPDFの翻訳LINEbotを作ってみた,　PDF形式の文章は翻訳が必要な場合にコピペ出来ないので翻訳が難しいです。この問題を解決すべく、会話形式で翻訳を行うチャットボットをLINEmessagingAPIとpythonを使って作成しました。,Poster Session(Individuals),pt_i,"株式会社リーディング・エッジ社 所属
-一言：健康のためにリンゴ酢を飲み始めました。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-309,齋藤大輔,小学生を対象としたPythonを用いたものづくり教育の実践報告,本ポスターは2018年度に実施した小学生を対象としたPythonとRaspberry Piを活用したものづくり教育活動について実践報告をする。,Poster Session(Individuals),pt_i,博士(工学)。現在、早稲田大学基幹理工学部情報理工学科講師(任期付)。プログラミング学習などの研究に従事。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-310,斉藤勝也,Djangoで業務改善 〜子どもの福祉･教育に関わるNPOでの挑戦〜,ボランティア・関わる子どもがそれぞれ100名以上を常勤職員1名で運営していた子どもの福祉･教育に関わるNPO法人Kacotamで、内部用ポータルシステム（Django製）を作って業務改善に挑戦した話。,Poster Session(Individuals),pt_i,認定NPO法人Kacotam学び支援事業ディレクター/システム開発室室長。教員、サーバー技術者を経て、現職。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-311,Tomoko FURUKI,Let's Explore PEPs with NetworkX!,"I will share how to analyze the citation network of PEPs and some interesting insights, e.g. the number of citation, visualization, clustering results",Poster Session(Individuals),pt_i,I love 🐍! I’m interested in the philosophies of programming languages. Twitter: @komo_fr,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
+一言：健康のためにリンゴ酢を飲み始めました。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+309,齋藤大輔,小学生を対象としたPythonを用いたものづくり教育の実践報告,本ポスターは2018年度に実施した小学生を対象としたPythonとRaspberry Piを活用したものづくり教育活動について実践報告をする。,Poster Session(Individuals),pt_i,博士(工学)。現在、早稲田大学基幹理工学部情報理工学科講師(任期付)。プログラミング学習などの研究に従事。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+310,斉藤勝也,Djangoで業務改善 〜子どもの福祉･教育に関わるNPOでの挑戦〜,ボランティア・関わる子どもがそれぞれ100名以上を常勤職員1名で運営していた子どもの福祉･教育に関わるNPO法人Kacotamで、内部用ポータルシステム（Django製）を作って業務改善に挑戦した話。,Poster Session(Individuals),pt_i,認定NPO法人Kacotam学び支援事業ディレクター/システム開発室室長。教員、サーバー技術者を経て、現職。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+311,Tomoko FURUKI,Let's Explore PEPs with NetworkX!,"I will share how to analyze the citation network of PEPs and some interesting insights, e.g. the number of citation, visualization, clustering results",Poster Session(Individuals),pt_i,I love 🐍! I’m interested in the philosophies of programming languages. Twitter: @komo_fr,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
 312,Keith Yang,"Implement GraphQL with Graphene and Django, laughter and tear","I’ll show the best practice learned from the past years in iCHEF, from REST to GraphQL, for laughter and tears.",Poster Session(Individuals),pt_i,"Co-founder of Taipei.py, Lead Software Engineer at iCHEF, Chairperson of PyCon APAC 2015",Large Exhibition Hall,,,1006,English Only,英語/English,en,en,,,,
 313,北神雄太,Pythonを使ったハードウェア開発について　2019版,"Pythonを使ったハードウェア開発について　2019版をポスターで展示したいと思います。IoTに関わる話、組込ディープラーニング、産業用機器などなど。
-Pythonは最強だよ♪",Poster Session(Individuals),pt_i,IoTや産業用機器を開発するハードウェアハッカー。PythonもC言語と同じくらい長い歴開発をしている人。博士号はない。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
+Pythonは最強だよ♪",Poster Session(Individuals),pt_i,IoTや産業用機器を開発するハードウェアハッカー。PythonもC言語と同じくらい長い歴開発をしている人。博士号はない。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
 314,Motoki Hirao,Reclassify the PyConJP proposal categories.,"I analyze the talks on PyConJP in the past years to become a guide for those people, and analyze and visualize what words can be in that category.",Poster Session(Individuals),pt_i,"I work in Web application development. The language is, of course, Python.",Large Exhibition Hall,,,1006,English Only,英語/English,en,en,,,,
-315,akiyoko（横瀬明仁）,技術同人誌「現場で使える Django の教科書」の気になる情報を大公開,あなたの知らない技術同人誌の世界 ──「執筆は大変なの？」「執筆環境は？」「技術同人誌って儲かるの？」など、いろんな情報や執筆裏話を大公開します。,Poster Session(Individuals),pt_i,技術同人誌『現場で使える Django の教科書』シリーズの著者です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-316,小林瑞紀,Dataclassを使うと幸せになれる,Python3.7から使えるようになったdataclassについて、機械学習の実装における私の実際の活用パターンを用いて具体的な活用方法を紹介したいと思います。dataclassは書く人だけでなく見る側にとっても嬉しいのでもっと使う人が増えて欲しいと思っています。 ,Poster Session(Individuals),pt_i,株式会社エウレカBIチーム。機械学習やおもしろ分析をやってます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
+315,akiyoko（横瀬明仁）,技術同人誌「現場で使える Django の教科書」の気になる情報を大公開,あなたの知らない技術同人誌の世界 ──「執筆は大変なの？」「執筆環境は？」「技術同人誌って儲かるの？」など、いろんな情報や執筆裏話を大公開します。,Poster Session(Individuals),pt_i,技術同人誌『現場で使える Django の教科書』シリーズの著者です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+316,小林瑞紀,Dataclassを使うと幸せになれる,Python3.7から使えるようになったdataclassについて、機械学習の実装における私の実際の活用パターンを用いて具体的な活用方法を紹介したいと思います。dataclassは書く人だけでなく見る側にとっても嬉しいのでもっと使う人が増えて欲しいと思っています。 ,Poster Session(Individuals),pt_i,株式会社エウレカBIチーム。機械学習やおもしろ分析をやってます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
 317,Joji KOIKE,PySparkだけで頑張らないApache Sparkによる分散処理実装,"Apache Sparkによる分散処理実装において勃発した、
 実装言語選定にまつわるPythonistaとの対立と、
 その平和的解決に至るまでを余す所無くお話し致します。",Poster Session(Individuals),pt_i,"# 所属：株式会社スカラコミュニケーションズ
 # 仕事：ビッグなデータの分析基盤構築
-# 好物：フルマネージドサービス",Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
-318,Yuto Mizutani,VS CodeとPYRIGHTで始める型のある生活,microsoftが公開したPYRIGHTとVS codeを用いた型がある生活の手軽な始め方とその恩恵について,Poster Session(Individuals),pt_i,物理学出身野球大好きデータサイエンティスト,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-319,池田雄太郎,人間のためのHTML Parseライブラリ『Requests-HTML』で楽しくデータクローリング,『Requests-HTML』が今まであった問題を解決した方法と、作者のKenneth Reitzについて紹介します。,Poster Session(Individuals),pt_i,Kaizen Platform ,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
+# 好物：フルマネージドサービス",Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
+318,Yuto Mizutani,VS CodeとPYRIGHTで始める型のある生活,microsoftが公開したPYRIGHTとVS codeを用いた型がある生活の手軽な始め方とその恩恵について,Poster Session(Individuals),pt_i,物理学出身野球大好きデータサイエンティスト,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+319,池田雄太郎,人間のためのHTML Parseライブラリ『Requests-HTML』で楽しくデータクローリング,『Requests-HTML』が今まであった問題を解決した方法と、作者のKenneth Reitzについて紹介します。,Poster Session(Individuals),pt_i,Kaizen Platform ,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
 320,Marc-Andre Lemburg,Building the MUFG Investor Services Portal on Python,Python in Finance: Learn how Python facilitates data access for MUFG Investor Services to increase efficiency for both MUFG service teams and their clients.,Poster Session(Individuals),pt_i,"Marc-Andre is a Python Core Developer, PSF Founding Fellow, EuroPython Society Board Member and has been involved with Python and the community since 1994. He runs his own consulting business as CEO of eGenix.com and is CTO of the fintech company Point Nine.",Large Exhibition Hall,,,1006,English Only,英語/English,en,en,,,,
 401,takagi,ITイベント不毛の地で我々はいかにして「信玄パイ」を立ち上げたか,「信玄パイ」は山梨のPythonコミュニティです。1か月に一度の勉強会と不定期オンライン読書会を開催しています。IT勉強会不毛の地で勉強会を定期開催して盛り上げるために私たちが行った工夫を発表します。,Poster Session(Community),pt_c,"株式会社アイティードゥでインフラエンジニアをしています。
-山梨県のPythonコミュニティ「信玄パイ」の運営メンバーです。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-402,塚本佳康,Unagi.pyとPython駿河と機械学習浜名湖の活動紹介,静岡県浜松市・藤枝市でのPython Boot Campの開催がきっかけとなり、これら3コミュニティが誕生しました。毎月欠かさず継続的に行っている勉強会等の活動について紹介します。,Poster Session(Community),pt_c,静岡県のPythonコミュニティ「Unagi.py」と「Python駿河」、機械学習に特化した「機械学習浜名湖」です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-403,Tatsuya Koshiba,SciPy Japan 2020 (Scientific Computing with Python),"This poster will highlight information on the SciPy Japan 2020 conference in Tokyo. SciPy is a community dedicated to the advancement of scientific computing through open source Python software for mathematics, science, and engineering.The poster will provide information on the SciPy tool stack (which includes libraries such as NumPy, Pandas, Scikit-learn, Scikit-image etc.), the growing SciPy community in Japan and the key components of the conference.",Poster Session(Community),pt_c,I work in Business Administration and Development at Enthought and co-chairing the logistics for the SciPy Japan 2020 conference  (Scientific Computing with Python).,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
+山梨県のPythonコミュニティ「信玄パイ」の運営メンバーです。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+402,塚本佳康,Unagi.pyとPython駿河と機械学習浜名湖の活動紹介,静岡県浜松市・藤枝市でのPython Boot Campの開催がきっかけとなり、これら3コミュニティが誕生しました。毎月欠かさず継続的に行っている勉強会等の活動について紹介します。,Poster Session(Community),pt_c,静岡県のPythonコミュニティ「Unagi.py」と「Python駿河」、機械学習に特化した「機械学習浜名湖」です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+403,Tatsuya Koshiba,SciPy Japan 2020 (Scientific Computing with Python),"This poster will highlight information on the SciPy Japan 2020 conference in Tokyo. SciPy is a community dedicated to the advancement of scientific computing through open source Python software for mathematics, science, and engineering.The poster will provide information on the SciPy tool stack (which includes libraries such as NumPy, Pandas, Scikit-learn, Scikit-image etc.), the growing SciPy community in Japan and the key components of the conference.",Poster Session(Community),pt_c,I work in Business Administration and Development at Enthought and co-chairing the logistics for the SciPy Japan 2020 conference  (Scientific Computing with Python).,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
 404,満田 遼,すごい広島 with Python,「すごい広島」は広島で毎週水曜日に開催されているIT系のもくもく会です。 月の最終水曜日は「すごい広島 with Python」としてPythonに興味がある人が集まり、LTや情報交換の交流の場として活動してます。 また、広島のPythonコミュニティとして「PyCon mini Hiroshima 2019」のイベントを主催しています。 今回はこれまでの広島のPythonコミュニティとしての活動報告と、2019年10月12日(土)に開催予定の「PyCon mini Hiroshima 2019 -AI だけじゃない? Python を知ろう!-」の内容をお伝えしていきます。,Poster Session(Community),pt_c,"広島のITコミュニティで広く活動しています。
-また、毎週水曜日に「すごい広島」というもくもく会を主催しています。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-405,西本卓也,スクリーンリーダーNVDAの開発と Python 3 移行,NVDAは、Pythonで実装されたオープンソースのWindows用スクリーンリーダーで、世界中の視覚障害を持つ人たちが使うだけでなく、アクセシビリティの検証ツールでもあります。NVDA の概要や最近の開発状況などを紹介します。,Poster Session(Community),pt_c,NVDA日本語チーム代表。2010年 PyCon mini JP 登壇。2012年 PyCon JP 併催イベント開催。2018年より株式会社シュアルタ代表。PyCon mini Hiroshima実行委員長。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,英語/English,jaen,en,,,,
-406,PyCon Taiwan,Introducing PyCon Taiwan,これまでに開催されたPyCon Taiwanの模様や、今年の開催情報を日本の皆様にご紹介します。また、今年のPyCon Taiwanに参加予定の方のために、会場までの交通案内もあります。,Poster Session(Community),pt_c,PyCon Taiwanは、2012年から続いている台湾最大のPythonコミュニティの国際カンファレンスで、毎年国内外から大勢のPythonistaが集まって開催されます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
+また、毎週水曜日に「すごい広島」というもくもく会を主催しています。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+405,西本卓也,スクリーンリーダーNVDAの開発と Python 3 移行,NVDAは、Pythonで実装されたオープンソースのWindows用スクリーンリーダーで、世界中の視覚障害を持つ人たちが使うだけでなく、アクセシビリティの検証ツールでもあります。NVDA の概要や最近の開発状況などを紹介します。,Poster Session(Community),pt_c,NVDA日本語チーム代表。2010年 PyCon mini JP 登壇。2012年 PyCon JP 併催イベント開催。2018年より株式会社シュアルタ代表。PyCon mini Hiroshima実行委員長。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,英語/English,jpen,en,,,,
+406,PyCon Taiwan,Introducing PyCon Taiwan,これまでに開催されたPyCon Taiwanの模様や、今年の開催情報を日本の皆様にご紹介します。また、今年のPyCon Taiwanに参加予定の方のために、会場までの交通案内もあります。,Poster Session(Community),pt_c,PyCon Taiwanは、2012年から続いている台湾最大のPythonコミュニティの国際カンファレンスで、毎年国内外から大勢のPythonistaが集まって開催されます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
 407,今村かずき,Django Girls,"Django Girlsの成り立ちやミッション、日本での活動の報告を掲載します。
-2019年のDjango Girls Workshopは11/16です。それに向けてコーチ・メンターを募集します。",Poster Session(Community),pt_c,Django Girls Japan スタッフ,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-408,清水川貴之,Sphinxの紹介: Python製ドキュメンテーションツール,SphinxはPythonのデファクトスタンダードなドキュメンテーションツールです。 体裁の整ったドキュメントを簡単に作成することができるドキュメンテーションツールを探している方へ Sphinx を紹介します。,Poster Session(Community),pt_c,「Sphinxをはじめよう第2版」執筆メンバーです。Sphinx-users.jp からの参加です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-409,PyCon JP 2019 コンテンツチーム,PyCon JP 2019 Program Committee,PyCon JP 2019 コンテンツチームの活動内容を共有します。,Poster Session(Community),pt_c,PyCon JP 2019 コンテンツチーム。キーノート、トーク、チュートリアルなどの企画を中心に活動しているチームです。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jaen,ja,,,,
-410,PyLadies Japan, PyLadies Japan活動報告2019,日本にあるPyLadiesコミュニティーの紹介、PyLadies Caravanの紹介、2019年度活動報告、スタッフ紹介などをポスターにします。 9月以降のイベントの紹介もします。 ,Poster Session(Community),pt_c,PyLadiesは、Pythonが好きな女性を結ぶ国際的なコミュニティです。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-411,Takeshi Akutsu,Start Python Club,「Pythonと技術を楽しく学ぶ場を提供する」ことをミッションとして、毎月、東京で勉強会を開催しています。ライブ中継もやっていますので、地方の方でもご覧になれます。ご関心のある方はポスターまで。,Poster Session(Community),pt_c,"Start Python Club, Co-founder & Director",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-412,メッシュ農業気象データ管理者チーム 片柳薫子,1kmメッシュ農業気象データ提供システム,"メッシュ農業気象データシステム（The Agro-Meteorological Grid Square Data, NARO）は、気象情報が農業現場で有効に活用されることを目指して農研機構が開発・運用する気象データサービスシステムであり、現在約500名の利用者がいます。データの取得と可視化を容易にするPythonライブラリを提供し、その利活用のために講習会を開催しています。また、Slackによる技術相談も受け付けています。",Poster Session(Community),pt_c,気象情報が農業現場で有効に活用されることを目指して気象データサービスシステムを開発・運営する国立研究開発法人農業・食品産業技術総合研究機構(農研機構)のチーム,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
+2019年のDjango Girls Workshopは11/16です。それに向けてコーチ・メンターを募集します。",Poster Session(Community),pt_c,Django Girls Japan スタッフ,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+408,清水川貴之,Sphinxの紹介: Python製ドキュメンテーションツール,SphinxはPythonのデファクトスタンダードなドキュメンテーションツールです。 体裁の整ったドキュメントを簡単に作成することができるドキュメンテーションツールを探している方へ Sphinx を紹介します。,Poster Session(Community),pt_c,「Sphinxをはじめよう第2版」執筆メンバーです。Sphinx-users.jp からの参加です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+409,PyCon JP 2019 コンテンツチーム,PyCon JP 2019 Program Committee,PyCon JP 2019 コンテンツチームの活動内容を共有します。,Poster Session(Community),pt_c,PyCon JP 2019 コンテンツチーム。キーノート、トーク、チュートリアルなどの企画を中心に活動しているチームです。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,,,,
+410,PyLadies Japan, PyLadies Japan活動報告2019,日本にあるPyLadiesコミュニティーの紹介、PyLadies Caravanの紹介、2019年度活動報告、スタッフ紹介などをポスターにします。 9月以降のイベントの紹介もします。 ,Poster Session(Community),pt_c,PyLadiesは、Pythonが好きな女性を結ぶ国際的なコミュニティです。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+411,Takeshi Akutsu,Start Python Club,「Pythonと技術を楽しく学ぶ場を提供する」ことをミッションとして、毎月、東京で勉強会を開催しています。ライブ中継もやっていますので、地方の方でもご覧になれます。ご関心のある方はポスターまで。,Poster Session(Community),pt_c,"Start Python Club, Co-founder & Director",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+412,メッシュ農業気象データ管理者チーム 片柳薫子,1kmメッシュ農業気象データ提供システム,"メッシュ農業気象データシステム（The Agro-Meteorological Grid Square Data, NARO）は、気象情報が農業現場で有効に活用されることを目指して農研機構が開発・運用する気象データサービスシステムであり、現在約500名の利用者がいます。データの取得と可視化を容易にするPythonライブラリを提供し、その利活用のために講習会を開催しています。また、Slackによる技術相談も受け付けています。",Poster Session(Community),pt_c,気象情報が農業現場で有効に活用されることを目指して気象データサービスシステムを開発・運営する国立研究開発法人農業・食品産業技術総合研究機構(農研機構)のチーム,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
 413,Ryuji Tsutsui,Python Boot Campで全国にPythonの環を広げよう！（2019年版）,"一般社団法人PyCon JPが主催するPythonの初心者向けチュートリアル「Python Boot Camp（略称: PyCamp）」を紹介します。 Python Boot Campは2016年から活動を始め、多くの参加者から好評の声をいただいています。 このポスターセッションを通して、今までの活動実績・開催方法などについてみなさんにお伝えしたいと思います。
 
 「Pythonに興味はあるけど何から始めればいいか分からない」人、「地元にPythonコミュニティを作りたい」人は、ぜひいらしてください！",Poster Session(Community),pt_c,"Python Boot Camp(https://www.pycon.jp/support/bootcamp.html)コアスタッフ。
 Shonan.py(https://shonan-py.connpass.com/)というPython勉強会を定期的に開催しています。
-普段はクレジットエンジン株式会社(https://www.creditengine.jp/)という会社でDjangoを使ったウェブサービスの開発・運用をやっています。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
-414,Fumikazu Kiyota,PyCon Kyushu の活動報告,九州では、福岡、沖縄とPyConイベントを成功させてきました。来年は、熊本で行います。その報告を行います。,Poster Session(Community),pt_c,PyCon Kyushu 実行委員メンバー,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,ja,ja,,,,
+普段はクレジットエンジン株式会社(https://www.creditengine.jp/)という会社でDjangoを使ったウェブサービスの開発・運用をやっています。",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
+414,Fumikazu Kiyota,PyCon Kyushu の活動報告,九州では、福岡、沖縄とPyConイベントを成功させてきました。来年は、熊本で行います。その報告を行います。,Poster Session(Community),pt_c,PyCon Kyushu 実行委員メンバー,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,,,,
 415,PyCon JP 2019 システムチーム,#N/A,#N/A,Poster Session(Community),pt_c,#N/A,Large Exhibition Hall,,,1006,#N/A,,,,,,,

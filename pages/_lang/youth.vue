@@ -1,7 +1,9 @@
 <template lang="pug">
 #conference
     page-header(:ja="$t('header.menu.events.child-workshop')" en="Youth Coder Workshop" color="themeColor4" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
-    event-header(day16 day16Time="10:00 - 15:00" :image="require('@/assets/images/youth.png')" applyLink="https://pyconjp.connpass.com/event/139133/" :place="$t('basic.pio')")
+    //- :image="require('@/assets/images/youth.png')" の画像がないためsprintの画像を使う
+    event-header(day16 day16Time="10:00 - 15:00" :image="require('@/assets/images/sprint.png')" applyLink="https://pyconjp.connpass.com/event/139133/" :place="$t('basic.pio')")
+    .py-3
     section.abstract
         v-container.py-0
             p {{ $t('youth.abstract') }}
@@ -15,7 +17,7 @@
                     template(#day16-detail) {{ $t('events.lunch_oyatsu_party') }}
             .summary__place
                 h3 {{ $t('basic.access') }}
-                p.font-weight-bold {{ $t('basic.pio') }} {{ $t('youth.place') }}
+                p.font-weight-bold {{ $t('basic.pio') }} {{ $t('rooms.e') }}
                 p {{ $t('basic.address.pio') }}
             iframe.google-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.7950378596533!2d139.7219626156352!3d35.55876384428529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601860f87f5da4e3%3A0x8a0493a2f4accfb0!2z5aSn55Sw5Yy655Sj5qWt44OX44Op44K2UGlP!5e0!3m2!1sja!2sjp!4v1566138857137!5m2!1sja!2sjp" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
     section.workshop-content
@@ -50,6 +52,7 @@
             p {{ $t('youth.supporters') }}
             ul.supporters__list
                 li {{ $t('youth.tanaka') }}
+                li {{ $t('youth.doi') }}
                 li {{ $t('youth.togazono') }}
                 li {{ $t('youth.masuzawa') }}
                 li {{ $t('youth.sakata') }}
@@ -78,6 +81,11 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports
+  },
+  head() {
+    return {
+      title: this.$t("youth.title")
+    }
   },
   data() {
     return {

@@ -1,13 +1,14 @@
 <template lang="pug">
 #conference
     page-header(ja="カンファレンス" en="Conference" color="themeColor3" enColor="white" jaColor="white" barColor="white" barOpacity="0.5")
-    event-header(day16 day17 :image="require('@/assets/images/photo_image2.png')" :applyLink="$t('links.conference')" place="大田区産業プラザPiO")
+    event-header(day16 day17 :image="require('@/assets/images/photo_image2.png')" :applyDisable="true" :applyLink="$t('links.conference')" place="大田区産業プラザPiO")
+    .py-3
     section.abstract
         v-container.py-0
-            p {{ $t("home.conference.main") }}
-            .text-xs-center.text-sm-left
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.session_list')") {{ $t("home.conference.sessions") }}
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.timetable_list')") {{ $t("home.conference.timetables") }}
+            p(v-html="$t('home.conference.main')")
+            .text-xs-center.text-sm-left.py-2
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href="this.$router.history.base + '/schedule'" ) {{ $t("home.conference.timetables") }}
+                button-with-arrow(color="themeColor1" outline :disabled="true" :block="false" :href="$t('links.timetable_list')") {{ $t("home.conference.sessions") }}
     event-page-index(:indexes="pageIndexes")
     section.summary
         v-container.py-0
@@ -27,8 +28,8 @@
             hs(:sub="$t('conference.sections.keynote')") Keynote
             two-columns-layout
                 template(#left)
-                    schedule-table(day16 day16Time="00:00 - 00:00")
-                    p {{ $t('events.place') }} {{ $t('conference.place.keynote_day16') }}
+                    schedule-table(day16 day16Time="10:10 - 11:10")
+                    p {{ $t('events.place') }} {{ $t('rooms.large') }}
                     talk-card(
                         profileImg="cory_althoff.png"
                         speakerName="Cory Althoff"
@@ -36,8 +37,8 @@
                         :profile="$t('home.conference.cory_profile')"
                     )
                 template(#right)
-                    schedule-table(day17 day17Time="00:00 - 00:00")
-                    p {{ $t('events.place') }} {{ $t('conference.place.keynote_day17') }}
+                    schedule-table(day17 day17Time="10:00 - 11:00")
+                    p {{ $t('events.place') }} {{ $t('rooms.large') }}
                     talk-card(
                         profileImg="koike.png"
                         speakerName="小池 誠"
@@ -46,13 +47,13 @@
                     )
     section.invited-lecture
         v-container.py-0
-            hs(:sub="$t('conference.sections.invited_lecture')") Invited Lecture
-            schedule-table(day17 day17Time="00:00 - 00:00")
-            p {{ $t('events.place') }} {{ $t('conference.place.invited_lecture') }}
+            hs(:sub="$t('conference.sections.invited_lecture')") Invited Talk
+            schedule-table(day17 day17Time="13:45 - 14:25")
+            p {{ $t('events.place') }} {{ $t('rooms.small') }}
             talk-card(
             profileImg="lyu.png"
             speakerName="Renyuan Lyu"
-            sessionTheme="TBD"
+            sessionTheme="Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot"
             :profile="$t('home.conference.lyu_profile')"
             )
     section.talk-session
@@ -63,44 +64,44 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/Photo5.png')")
                 template(#right)
                     p {{ $t('conference.talk_session') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.talk_session_list')") {{ $t('conference.talk_session_list') }}
-    section.lightning-talk
-        v-container.py-0
-            hs(:sub="$t('conference.sections.lightning_talk')") Lightning Talk
-            two-columns-layout(sm-reverse)
-                template(#left)
-                    p {{ $t('conference.lightning_talk') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.lightning_talk_list')") {{ $t('conference.lightning_talk_list') }}
-                template(#right)
-                    v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
-            .event-detail.mt-5.pa-5
-                h3 {{ $t('basic.access_schedule') }}
-                schedule-table(day16 day17 day16Time="00:00 - 00:00 （n分間）　枠数：n枠" day17Time="00:00 - 00:00 （n分間）　枠数：n枠")
-                p {{ $t('events.place') }} {{ $t('conference.place.lightning_talk') }}
-                h3 {{ $t('conference.for_LTer') }}
-                p {{ $t('conference.for_LTer_main') }}
-                p.text2--text {{ $t('conference.for_LTer_sub') }}
-    section.beginners-session
-        v-container.py-0
-            hs(:sub="$t('conference.sections.beginners_session')") Beginner's Session
-            two-columns-layout
-                template(#left)
-                    v-img(max-height="20vh" :src="require('@/assets/images/beginners-session.png')")
-                template(#right)
-                    p {{ $t('conference.begginer_session') }}
-            .event-detail.pa-5
-                h3 {{ $t('basic.access_schedule') }}
-                schedule-table(day16 day16Time="00:00 - 00:00 （n分間）")
-                p {{ $t('events.place') }} {{ $t('conference.place.begginers_session') }}
-                h3 {{ $t('events.target') }}
-                p {{ $t('conference.begginer_session_target') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.talk_session_list')") {{ $t('conference.talk_session_list') }}
+    //- section.lightning-talk
+    //-     v-container.py-0
+    //-         hs(:sub="$t('conference.sections.lightning_talk')") Lightning Talk
+    //-         two-columns-layout(sm-reverse)
+    //-             template(#left)
+    //-                 p(v-html="$t('conference.lightning_talk')")
+    //-                 button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.lightning_talk_list')") {{ $t('conference.lightning_talk_list') }}
+    //-             template(#right)
+    //-                 v-img(max-height="20vh" :src="require('@/assets/images/lightning-talk.png')")
+    //-         .event-detail.mt-5.pa-5
+    //-             h3 {{ $t('basic.access_schedule') }}
+    //-             schedule-table(day16 day17 day16Time="17:00 - 17:20" day17Time="16:45 - 17:05")
+    //-             p {{ $t('events.place') }}: {{ $t('rooms.large') }}
+    //-             h3 {{ $t('conference.for_LTer') }}
+    //-             p {{ $t('conference.for_LTer_main') }}
+    //-             p.text2--text {{ $t('conference.for_LTer_sub') }}
+    //- section.beginners-session
+    //-     v-container.py-0
+    //-         hs(:sub="$t('conference.sections.beginners_session')") Beginner's Session
+    //-         two-columns-layout
+    //-             template(#left)
+    //-                 v-img(max-height="20vh" :src="require('@/assets/images/beginners-session.png')")
+    //-             template(#right)
+    //-                 p {{ $t('conference.begginer_session') }}
+    //-         .event-detail.pa-5
+    //-             h3 {{ $t('basic.access_schedule') }}
+    //-             schedule-table(day16 day16Time="00:00 - 00:00 （n分間）")
+    //-             p {{ $t('events.place') }} {{ $t('conference.place.begginers_session') }}
+    //-             h3 {{ $t('events.target') }}
+    //-             p {{ $t('conference.begginer_session_target') }}
     section.poster-indivisual
         v-container.py-0
             hs(:sub="$t('conference.sections.poster_indivisual')" tail="Indivisual") Poster Session
             two-columns-layout(sm-reverse)
                 template(#left)
                     p {{ $t('conference.poster_indivisual') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_indivisual_list')") {{ $t('conference.posters') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_indivisual_list')") {{ $t('conference.posters') }}
                 template(#right)
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-indivisual.png')")
     section.poster-community
@@ -111,19 +112,19 @@
                     v-img(max-height="20vh" :src="require('@/assets/images/poster-community.png')")
                 template(#right)
                     p {{ $t('conference.poster_community') }}
-                    button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_community_list')") {{ $t('conference.posters') }}
+                    //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false"  :href="$t('links.poster_community_list')") {{ $t('conference.posters') }}
     supports
-    section.after-party
-        v-container.py-0
-            hs(:sub="$t('conference.sections.after_party')") After Party
-            two-columns-layout(sm-reverse)
-                template(#left)
-                    p {{ $t('conference.after_party') }}
-                    h3 {{ $t('basic.access_schedule') }}
-                    schedule-table(day16 day16Time="00:00 - 00:00")
-                    p {{ $t('events.place') }} {{ $t('conference.place.after_party') }}
-                template(#right)
-                    v-img(:src="require('@/assets/images/after-party.png')")
+    //- section.after-party
+    //-     v-container.py-0
+    //-         hs(:sub="$t('conference.sections.after_party')") Conference Party
+    //-         two-columns-layout(sm-reverse)
+    //-             template(#left)
+    //-                 p {{ $t('conference.after_party') }}
+    //-                 h3 {{ $t('basic.access_schedule') }}
+    //-                 schedule-table(day16 day16Time="18:30 - 20:30 ")
+    //-                 p {{ $t('events.place') }} {{ $t('conference.place.after_party') }}
+    //-             template(#right)
+    //-                 v-img(:src="require('@/assets/images/after-party.png')")
 
 </template>
 
@@ -149,6 +150,11 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports
+  },
+  head() {
+      return {
+          title: this.$t("conference.title")
+      }
   },
   data() {
     return {

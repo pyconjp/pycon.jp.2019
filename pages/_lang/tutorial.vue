@@ -25,40 +25,42 @@
                 span.text1.white--text.px-3.mr-3 Course1
                 | {{ $t('tutorial.section.course1') }}
             h3 {{ $t('tutorial.course.goal') }}
-            p {{ $t('tutorial.course1.goal') }}
+            p(v-html="$t('tutorial.course1.goal')")
             h3 {{ $t('tutorial.course.capacity') }}
-            p 20人
-            h3 {{ $t('tutorial.course.target') }}
-            ul.list
-                li {{ $t('tutorial.course1.target.1') }}
-                li {{ $t('tutorial.course1.target.2') }}
-                li {{ $t('tutorial.course1.target.3') }}
-            h3 {{ $t('tutorial.course.environment') }}
-                span.tail.font-weight-light {{ $t('tutorial.course.do_your_self') }}
-            p {{ $t('tutorial.course1.environment.note_pc') }}
-            ul.list
-                li {{ $t('tutorial.course1.environment.1') }}
-                    br
-                    a(href="https://www.python.org/downloads/release/python-374/") https://www.python.org/downloads/release/python-374/
-                li {{ $t('tutorial.course1.environment.2') }}
-                li {{ $t('tutorial.course1.environment.3') }}
-            h3 {{ $t('tutorial.course.contents') }}
-            ul.list
-                li {{ $t('tutorial.course1.contents.1') }}
-                    ul.list
-                        li {{ $t('tutorial.course1.contents.1_1') }}
-                        li {{ $t('tutorial.course1.contents.1_2') }}
-                li {{ $t('tutorial.course1.contents.2') }}
-                    ul.list
-                        li {{ $t('tutorial.course1.contents.2_1') }}
-                        li {{ $t('tutorial.course1.contents.2_2') }}
-                li {{ $t('tutorial.course1.contents.3') }}
-                    ul.list
-                        li {{ $t('tutorial.course1.contents.3_1') }}
-                        li {{ $t('tutorial.course1.contents.3_2') }}
+            p {{ $t('tutorial.course1.capacity') }}
+            h3 {{ $t('tutorial.course.detail') }}
+            p
+                a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+            //- ul.list
+            //-     li {{ $t('tutorial.course1.target.1') }}
+            //-     li {{ $t('tutorial.course1.target.2') }}
+            //-     li {{ $t('tutorial.course1.target.3') }}
+            //- h3 {{ $t('tutorial.course.environment') }}
+            //-     span.tail.font-weight-light {{ $t('tutorial.course.do_your_self') }}
+            //- p {{ $t('tutorial.course1.environment.note_pc') }}
+            //- ul.list
+            //-     li {{ $t('tutorial.course1.environment.1') }}
+            //-         br
+            //-         a(href="https://www.python.org/downloads/release/python-374/") https://www.python.org/downloads/release/python-374/
+            //-     li {{ $t('tutorial.course1.environment.2') }}
+            //-     li {{ $t('tutorial.course1.environment.3') }}
+            //- h3 {{ $t('tutorial.course.contents') }}
+            //- ul.list
+            //-     li {{ $t('tutorial.course1.contents.1') }}
+            //-         ul.list
+            //-             li {{ $t('tutorial.course1.contents.1_1') }}
+            //-             li {{ $t('tutorial.course1.contents.1_2') }}
+            //-     li {{ $t('tutorial.course1.contents.2') }}
+            //-         ul.list
+            //-             li {{ $t('tutorial.course1.contents.2_1') }}
+            //-             li {{ $t('tutorial.course1.contents.2_2') }}
+            //-     li {{ $t('tutorial.course1.contents.3') }}
+            //-         ul.list
+            //-             li {{ $t('tutorial.course1.contents.3_1') }}
+            //-             li {{ $t('tutorial.course1.contents.3_2') }}
 
-            h3 {{ $t('tutorial.course.produced_by') }}
-            p {{ $t('tutorial.course1.produced_by') }}
+            //- h3 {{ $t('tutorial.course.produced_by') }}
+            //- p {{ $t('tutorial.course1.produced_by') }}
     section.course2
         v-container.py-0
             hs(color="themeColor2")
@@ -71,7 +73,10 @@
                 li {{ $t('tutorial.course2.goal.3') }}
             h3 {{ $t('tutorial.course.capacity') }}
             p {{ $t('tutorial.course2.capacity') }}
-            h3 {{ $t('tutorial.course.target') }}
+            h3 {{ $t('tutorial.course.detail') }}
+            p
+                a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+
     section.course3
         v-container.py-0
             hs(color="themeColor2")
@@ -84,14 +89,18 @@
                 p {{ $t('tutorial.course3_1.goal') }}
                 h3 {{ $t('tutorial.course.capacity') }}
                 p {{ $t('tutorial.course3_1.capacity') }}
-                h3 {{ $t('tutorial.course.target') }}
+                h3 {{ $t('tutorial.course.detail') }}
+                p
+                    a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
             h3.themeColor3--text {{ $t('tutorial.course3_2.title') }}
             .event-detail
                 h3 {{ $t('tutorial.course.goal') }}
                 p {{ $t('tutorial.course3_1.goal') }}
                 h3 {{ $t('tutorial.course.capacity') }}
                 p {{ $t('tutorial.course3_1.capacity') }}
-                h3 {{ $t('tutorial.course.target') }}
+                h3 {{ $t('tutorial.course.detail') }}
+                p
+                    a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
     supports
 </template>
 
@@ -117,6 +126,11 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports
+  },
+  head() {
+    return  {
+        title: this.$t('tutorial.title')
+    }
   },
   data() {
     return {

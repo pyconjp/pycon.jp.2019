@@ -4,20 +4,28 @@
     v-container
       v-layout.my-4
         v-flex.text-md-left.font-weight-bold {{ $t("timetable.note") }}
-      v-layout.tabs.timetable
-        v-flex.text-md-center.tab(:class="activeDay === 1 ? 'active' : ''")
+
+      v-layout.tabs.timetable.wrap
+        v-flex.xs6.text-md-center.tab(:class="activeDay === 1 ? 'active' : ''")
           v-btn(block flat @click="activeDay = 1")
-            .headline 1日目 09.16 （月・祝）
-        v-flex.text-md-center.tab(:class="activeDay === 2 ? 'active' : ''")
-          v-btn(block flat @click="activeDay = 2")
-            .headline 2日目 09.17 （火）
+            tab-button(:day="$t('days.day1' )" date="09/16" :weekday="$t('weekday.mon' )" :holiday="true" :isMobile="$vuetify.breakpoint.smAndDown")
+        v-flex.xs6.text-md-center.tab(:class="activeDay === 2 ? 'active' : ''")
+          v-btn(block flat @click="activeDay = 2").font-weight-bold
+            tab-button(:day="$t('days.day2' )" date="09/17" :weekday="$t('weekday.tue' )" :holiday="false" :isMobile="$vuetify.breakpoint.smAndDown")
+
       v-layout.tab-item
-        v-flex.mt-5
-          time-table(:sessions="activeSessions")
+        v-flex.mt-2(v-if="activeDay === 1" :class="{'mt-5': $vuetify.breakpoint.mdAndUp}")
+          time-table-day-1(:sessions="day1Sessions")
+        v-flex.mt-2(v-if="activeDay === 2" :class="{'mt-5': $vuetify.breakpoint.mdAndUp}")
+          time-table-day-2(:sessions="day2Sessions")
 </template>
 
 <script>
 import sessions from '@/assets/sessions.json'
+
+import TimeTableDay1 from "@/components/pages/schedule/TimeTableDay1"
+import TimeTableDay2 from "@/components/pages/schedule/TimeTableDay2"
+import TabButton from "@/components/pages/schedule/TabButton"
 
 import PageHeader from '@/components/partials/PageHeader'
 import TwoColumnsLayout from '@/components/partials/TwoColumnsLayout'
@@ -28,7 +36,6 @@ import ScheduleTable from '@/components/parts/ScheduleTable'
 import EventHeader from '@/components/parts/EventHeader'
 import EventPageIndex from '@/components/parts/EventPageIndex'
 import Supports from '@/components/parts/Supports'
-import TimeTable from "@/components/pages/schedule/TimeTable"
 
 export default {
   components: {
@@ -41,7 +48,14 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports,
-    TimeTable
+    TimeTableDay1,
+    TimeTableDay2,
+    TabButton
+  },
+  head(){
+    return {
+      title: this.$t("timetable.title")
+    }
   },
   data() {
     return {
@@ -53,8 +67,11 @@ export default {
     // console.log(sessions)
   },
   computed: {
-    activeSessions() {
-      return sessions.filter(s => s.day == this.activeDay)
+    day1Sessions() {
+      return sessions.filter(s => s.day == 1)
+    },
+    day2Sessions() {
+      return sessions.filter(s => s.day == 2)
     }
   }
 }
@@ -70,12 +87,18 @@ export default {
 @import '@/assets/style/variables.scss'
 
 .tab
-  border-bottom: solid $blueGrey2 1px
+  border-bottom: solid $blueGrey2 2px
+
 .tab.active
-  border-right: solid $blueGrey2 1px
-  border-left: solid $blueGrey2 1px
-  border-top: solid $blueGrey2 1px
+  border-right: solid $blueGrey2 2px
+  border-left: solid $blueGrey2 2px
+  border-top: solid $blueGrey2 2px
   border-bottom: none
+
 .v-btn:before
   display: none
+
+@media only screen and (max-width: 959px)
+  .container
+      padding: 16px 8px
 </style>

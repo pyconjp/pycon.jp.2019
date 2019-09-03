@@ -5,7 +5,7 @@
                 v-flex.md6.xs12.sm12
                     v-layout.column
                         v-flex.px-5.text-xs-center(:class="{'right-border': $vuetify.breakpoint.mdAndUp}")
-                            img(:src="require('@/assets/images/square_logo.png')" :width="$vuetify.breakpoint.sm ? '50%' : '100%'")
+                            img(:src="require('@/assets/images/rectangle_color.svg')" :width="$vuetify.breakpoint.sm ? '50%' : '100%'")
                         v-flex.my-4.text-xs-left.text-xs-center
                             span.headline
                                 span.themeColor3--text
@@ -34,13 +34,14 @@
                             a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank").text1--text
                                 v-layout.align-center
                                     v-flex.shrink
-                                        // TODO: (ikedaosushi) outlinedにしたい
                                         v-icon(large) location_on
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.mt-2.pa-2
-                            button-with-arrow.title(color="apply" :disabled="true" target="_blank" customStyle="height: 60px;" :href="$t('links.conference')") {{ $t("basic.apply-soldout") }}
-                        v-flex.text-md-center.my-2.body-2.grey--text
+                            button-with-arrow.title(color="apply" customStyle="height: 60px;" :outline="true" :href="this.$router.history.base + '/schedule'") {{ $t("home.keyvisual.timetable") }}
+                        v-flex.text-md-center.py-0.px-2
+                            v-btn(disabled block round).subheading {{ $t("basic.apply-soldout") }}
+                        v-flex.text-md-center.py-3.body-2.grey--text
                             span {{ $t('home.keyvisual.soldout-desc') }}
                         v-flex.text-md-left.mb-2.subheading
                             v-layout.align-center
