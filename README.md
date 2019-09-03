@@ -5,8 +5,6 @@ PyCon JP 2019 Web Site
 - Dev: https://pyconjp/dev-2019/
 - Prd: https://pyconjp/2019/
 
-# Development
-
 ## Setup
 
 ``` bash
