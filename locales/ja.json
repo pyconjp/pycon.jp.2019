@@ -204,6 +204,7 @@
             "talk_session": "トークセッション",
             "lightning_talk": "ライトニングトーク",
             "beginners_session": "ビギナーズセッション",
+            "poster_session": "ポスターセッション",
             "poster_indivisual": "ポスターセッション(個人)",
             "poster_community": "ポスターセッション(コミュニティ)",
             "after_party": "アフターパーティ"
@@ -323,5 +324,18 @@
         "opening": "開場",
         "level": "レベル",
         "detail": "詳細"
+    },
+    "sessions": {
+        "level": "レベル",
+        "lang_of_talk": "発表言語",
+        "lang_of_slide": "資料言語",
+        "speaker": "発表者",
+        "detail": "詳細",
+        "detail_of_session": "発表詳細",
+        "session_category": {
+            "talk_session": "トークセッション",
+            "lightning_talk": "ライトニングトーク",
+            "poster_session": "ポスターセッション"
+        }
     }
 }
