@@ -98,7 +98,8 @@
         "keyvisual": {
             "child-workshop": "子供向けワークショップも同時開催！",
             "soldout-desc": "PyCon JP 通常チケットは完売しました。PyCon JP はチケットの譲渡について関与しません。 キャンセルされた場合、参加費用の払い戻しは出来ません。 お勧めはキャンセル操作をせずに、ご自身でconnpass受付票を参加希望者に渡し権利を譲ってください｡ ",
-            "timetable": "タイムテーブルを見る"
+            "timetable": "タイムテーブル",
+            "sessions": "セッション一覧"
         },
         "session": {
             "dev-spr": {
@@ -207,6 +208,7 @@
             "talk_session": "トークセッション",
             "lightning_talk": "ライトニングトーク",
             "beginners_session": "ビギナーズセッション",
+            "poster_session": "ポスターセッション",
             "poster_indivisual": "ポスターセッション(個人)",
             "poster_community": "ポスターセッション(コミュニティ)",
             "after_party": "カンファレンスパーティ"
@@ -367,5 +369,18 @@
         "smlt": "Same Day LT",
         "closing": "クロージング",
         "party": "パーティ"
+    },
+    "sessions": {
+        "level": "レベル",
+        "lang_of_talk": "発表言語",
+        "lang_of_slide": "資料言語",
+        "speaker": "発表者",
+        "detail": "詳細",
+        "detail_of_session": "発表詳細",
+        "session_category": {
+            "talk_session": "トークセッション",
+            "lightning_talk": "ライトニングトーク",
+            "poster_session": "ポスターセッション"
+        }
     }
 }

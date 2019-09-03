@@ -2,22 +2,17 @@ PyCon JP 2019 Web Site
 
 ## Hosting
 
-- Dev: https://pyconjp-2019-dev.firebaseapp.com 
-- Prd: https://pyconjp/2019/ (Not deployed yet)
+- Dev: https://pycon.jp/dev-2019/
+- Prd: https://pycon.jp/2019/
 
-## Build Setup
+## Setup
 
 ``` bash
-# install dependencies
 $ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
 ```
+
+## Branch運用
+
+masterにPRを出してください。masterは常にデプロイ可能な状態を保ってください。
+
+本番にデプロイしたい場合はproductionにPRを切ってmergeしてください。(CircleCIでデプロイされます。)

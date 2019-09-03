@@ -16,15 +16,14 @@
             v-flex.shrink.caption.font-weight-thin.grey--text
                 span {{ $t('timetable.level') }} :
                 span.ml-1.px-1.level(:class="ClassForLevel(session.audience_level)") {{ session.audience_level }}
-        //- .pt-3.pb-3
-        //- .bottom.py-1(style="width: 95%")
-        //-     v-divider
-        //-     v-dialog(v-model="dialog" width="500")
-        //-         template(#activator="{ on }")
-        //-             a(v-on="on")
-        //-                 .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
-        //-         v-card
-        //-             p {{ session.title }}
+        .pt-3.pb-3
+        .bottom.py-1(style="width: 95%")
+            v-divider
+            v-dialog(v-model="dialog")
+                template(#activator="{ on }")
+                    a(v-on="on")
+                        .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
+                SessionModalWindow(:session="session" @close="dialog = false")
 </template>
 
 <style lang="sass" scoped>
@@ -53,9 +52,12 @@
 <script>
 import { roomsMaster } from "@/plugins/constants"
 
+import SessionModalWindow from '@/components/parts/SessionModalWindow'
+
 export default {
     name: "timetable-card",
     props: ["session"],
+    components: {SessionModalWindow},
     methods: {
         ClassForLevel(level) {
             switch (level) {

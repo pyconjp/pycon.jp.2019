@@ -8,6 +8,18 @@
         "norm": "Norm",
         "recruit": "Recruit"
     },
+    "rooms": {
+        "large": "Large Exhibition Hall",
+        "ab": "meeting room A+B",
+        "small": "small exhibition hall",
+        "ume": "Convention Hall UME",
+        "uguisu": "Convention Hall UGUISU",
+        "d": "meeting room D"
+    },
+    "days": {
+        "day1": "Day 1",
+        "day2": "Day 2"
+    },
     "weekday": {
         "mon": "Mon",
         "tue": "Tue",
