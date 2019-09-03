@@ -2,8 +2,8 @@ PyCon JP 2019 Web Site
 
 ## Hosting
 
-- Dev: https://pyconjp/dev-2019/
-- Prd: https://pyconjp/2019/
+- Dev: https://pycon.jp/dev-2019/
+- Prd: https://pycon.jp/2019/
 
 ## Setup
 
