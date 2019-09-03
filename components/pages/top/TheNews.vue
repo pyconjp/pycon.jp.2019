@@ -25,7 +25,7 @@
                                 v-card(depressed flat).themeColor3.white--text.pa-1 {{item.date}}
                             v-flex.md10.xs8.sm9.ml-3 {{item.title}}
             // スタッフ募集
-            a(href="" target="_blank")
+            a(href="https://pyconjp.blogspot.com/2019/08/2019-conf-day-staff.html" target="_blank")
                 v-layout.staff(:class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}").my-3.py-3.align-center.wrap
                     v-flex.xs12.md4.text-md-center.pa-3.right-border
                         v-layout.justify-center
