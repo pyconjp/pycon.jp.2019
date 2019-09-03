@@ -1,54 +1,54 @@
 <template lang="pug">
-v-dialog(v-model="modalOpened")
-  template(v-slot:activator="{ on }")
-    .session-modal__wrapper(v-on="on")
-      slot
-  v-card(flat).session-card.pa-5
+  v-card.session-card.pa-3
     .corner-left-top
     .corner-right-bottom
-    v-card-title.session-card__head.pa-0
-      v-layout
+    v-btn(small absolute icon style="top: 5px; right: 5px;" @click="$emit('close')")
+      v-icon.text1--text clear
+    .session-card__head.pa-0
+      v-layout.wrap.justify-start
         template(v-if="!isPoster")
           v-flex.shrink.mr-3
             span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
           v-flex.shrink.mr-3
             span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
             span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-          v-flex.shrink.mr-3
-            span {{ time }}
+          //- v-flex.shrink.mr-3
+          //-   span {{ time }}
         v-flex.shrink.mr-3
-          span.talk-format {{ session.talk_format_origin }}
-      v-layout.my-2.session-card__head--property
-        v-flex.shrink.mr-3
+          span.talk-format {{ session.talk_format }}
+      v-layout.wrap.justify-left.session-card__head--property.pt-2(:class="{'justify-center': $vuetify.breakpoint.smAndDown}")
+        v-flex.shrink.mr-3.my-1
           span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
         template(v-if="!isPoster")
-          v-flex.shrink.mr-3
+          v-flex.shrink.mr-3.my-1
             span.mr-2 {{ $t('sessions.level') }}:
             span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
-        v-flex.shrink.mr-3
+        v-flex.shrink.mr-3.my-1
           span.mr-2 {{ $t('sessions.lang_of_talk') }}:
           span.lang-tag.px-3.font-weight-bold(:class="session.lang_of_talk") {{ session.lang_of_talk | langTag }}
-        v-flex.shrink.mr-3
+        v-flex.shrink.mr-3.my-1
           span.mr-2 {{ $t('sessions.lang_of_slide') }}:
           span.lang-tag.mr-1.px-3.font-weight-bold(v-for="lang_of_slide in langOfSlideArray" :class="lang_of_slide") {{ lang_of_slide | langTag }}
+
       v-layout.my-3.session-card__head--title
         h1.title.font-weight-bold {{ session.title }}
       v-layout.mb-4.session-card__head--abstract
-        h2.subheading {{ session.abstract }}
-    v-card-text(style="height: 80%;").pa-0.pb-5.session-card__content
+        h2.body-2 {{ session.abstract }}
+
+    .pa-0.pb-5.session-card__content
       v-layout.my-4
         v-flex
-          h3.session-card__content--head {{ $t('sessions.speaker') }}
+          h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.speaker') }}
       v-layout.my-3
         v-flex
-          h4 {{ session.name }}
+          h4.body-2 {{ session.name }}
       v-layout
         v-flex
           p {{ session.profile }}
       template(v-if="session.description !== ''")
         v-layout.my-4
           v-flex
-            h3.session-card__content--head {{ $t('sessions.detail_of_session') }}
+            h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.detail_of_session') }}
         v-layout.my-1
           v-flex
             p {{ session.description }}
@@ -67,8 +67,7 @@ export default {
   data() {
     return {
       time: '00:00 - 00:00',
-      roomsMaster: roomsMaster,
-      modalOpened: false
+      roomsMaster: roomsMaster
     }
   },
   props: {
@@ -98,8 +97,8 @@ export default {
 </script>
 
 <style lang="sass">
-.v-dialog__container
-  display: none !important
+// .v-dialog__container
+//   display: none !important
 </style>
 
 <style lang="scss" scoped>
@@ -122,15 +121,15 @@ $green: hsl(143, 100%, 59%);
 .corner-left-top {
   top: -2px;
   left: -2px;
-  border-left: solid 4px $themeColor2;
-  border-top: solid 4px $themeColor2;
+  border-left: solid 3px $themeColor2;
+  border-top: solid 3px $themeColor2;
 }
 
 .corner-right-bottom {
   right: -2px;
   bottom: -2px;
-  border-right: solid 4px $themeColor2;
-  border-bottom: solid 4px $themeColor2;
+  border-right: solid 3px $themeColor2;
+  border-bottom: solid 3px $themeColor2;
 }
 
 .session-card {
@@ -150,16 +149,16 @@ $green: hsl(143, 100%, 59%);
     }
     .level-tag {
       &.All {
-        @include level-tag($twitter);
+        @include level-tag(#76b3f2);
       }
       &.Beginner {
-        @include level-tag($green);
+        @include level-tag(#6ab26a);
       }
       &.Intermediate {
-        @include level-tag($yellow);
+        @include level-tag(#f0980c);
       }
       &.Advanced {
-        @include level-tag($themeRed);
+        @include level-tag(#ea4d6b);
       }
     }
     .room-tag {

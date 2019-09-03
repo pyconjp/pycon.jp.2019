@@ -1,39 +1,42 @@
 <template lang="pug">
-SessionModalWindow(:session="session")
-  v-layout.session-card
-    v-flex.xs11.pr-1
-      .session-card__head
-        v-layout.my-1
-          template(v-if="!isPoster")
-            v-flex.shrink.mr-3
-              span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
-            v-flex.shrink.mr-3
-              span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
-              span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-            v-flex.shrink.mr-3
-              span {{ time }}
-          v-flex.shrink.mr-3
-            span.talk-format {{ session.talk_format_origin }}
-        v-layout.my-1.session-card__head--property
-          v-flex.shrink.mr-3
-            span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
-          template(v-if="!isPoster")
-            v-flex.shrink.mr-3
-              span.mr-2 {{ $t('sessions.level') }}:
-              span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
-          v-flex.shrink.mr-3
-            span.mr-2 {{ $t('sessions.lang_of_talk') }}:
-            span.lang-tag.px-3.font-weight-bold(:class="session.lang_of_talk") {{ session.lang_of_talk | langTag }}
-          v-flex.shrink.mr-3
-            span.mr-2 {{ $t('sessions.lang_of_slide') }}:
-            span.lang-tag.mr-1.px-3.font-weight-bold(v-for="lang_of_slide in langOfSlideArray" :class="lang_of_slide") {{ lang_of_slide | langTag }}
-      .session-card__content.my-2
-        v-layout
-          v-flex.my-1.title.font-weight-black.session-card__content--title {{ session.title }}
-        v-layout
-          v-flex.my-1.speaker {{ session.name }}
-    v-flex.session-card__button
-      v-btn.my-0(block flat) {{ $t('sessions.detail') }}
+v-dialog(v-model="modalOpened")
+  template(#activator="{ on }")
+    .session-modal__wrapper(v-on="on")
+      v-layout.session-card
+        v-flex.xs11.pr-1
+          .session-card__head
+            v-layout.my-1
+              template(v-if="!isPoster")
+                v-flex.shrink.mr-3
+                  span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
+                v-flex.shrink.mr-3
+                  span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
+                  span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
+                v-flex.shrink.mr-3
+                  span {{ time }}
+              v-flex.shrink.mr-3
+                span.talk-format {{ session.talk_format_origin }}
+            v-layout.my-1.session-card__head--property
+              v-flex.shrink.mr-3
+                span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
+              template(v-if="!isPoster")
+                v-flex.shrink.mr-3
+                  span.mr-2 {{ $t('sessions.level') }}:
+                  span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
+              v-flex.shrink.mr-3
+                span.mr-2 {{ $t('sessions.lang_of_talk') }}:
+                span.lang-tag.px-3.font-weight-bold(:class="session.lang_of_talk") {{ session.lang_of_talk | langTag }}
+              v-flex.shrink.mr-3
+                span.mr-2 {{ $t('sessions.lang_of_slide') }}:
+                span.lang-tag.mr-1.px-3.font-weight-bold(v-for="lang_of_slide in langOfSlideArray" :class="lang_of_slide") {{ lang_of_slide | langTag }}
+          .session-card__content.my-2
+            v-layout
+              v-flex.my-1.title.font-weight-black.session-card__content--title {{ session.title }}
+            v-layout
+              v-flex.my-1.speaker {{ session.name }}
+        v-flex.session-card__button
+          v-btn.my-0(block flat) {{ $t('sessions.detail') }}
+  session-modal-window(:session="session")
 </template>
 
 <script>
