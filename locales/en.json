@@ -37,28 +37,28 @@
     },
     "header": {
         "menu": {
-            "home": "ホーム",
+            "home": "Home",
             "about": {
-                "parent": "概要",
-                "about-event": "開催概要",
-                "coc": "行動規範"
+                "parent": "About",
+                "about-event": "Event",
+                "coc": "Code Of Conduct"
             },
             "events": {
-                "parent": "イベント一覧",
+                "parent": "Events",
                 "conference": {
-                    "parent": "カンファレンス",
-                    "timetable": "タイムテーブル",
-                    "sessions": "セッション一覧"
+                    "parent": "Conference",
+                    "timetable": "Timetable",
+                    "sessions": "Sessions"
                 },
-                "child-workshop": "子供向けワークショップ",
-                "dev-spr": "開発スプリント",
-                "tutorial": "チュートリアル"
+                "child-workshop": "Workshop for Children",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
             },
-            "news": "お知らせ",
-            "access": "会場",
-            "support": "サポート",
-            "sponsor": "スポンサー",
-            "staff": "スタッフ",
+            "news": "News",
+            "access": "Access",
+            "support": "Support",
+            "sponsor": "Sponsor",
+            "staff": "Staff",
             "faq": "FAQ"
         },
         "apply": {
