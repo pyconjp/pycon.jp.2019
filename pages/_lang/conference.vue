@@ -8,7 +8,7 @@
             p(v-html="$t('home.conference.main')")
             .text-xs-center.text-sm-left.py-2
                 button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href="this.$router.history.base + '/schedule'" ) {{ $t("home.conference.timetables") }}
-                button-with-arrow(color="themeColor1" outline :disabled="true" :block="false" :href="$t('links.timetable_list')") {{ $t("home.conference.sessions") }}
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href="this.$router.history.base + '/sessions'") {{ $t("home.conference.sessions") }}
     event-page-index(:indexes="pageIndexes")
     section.summary
         v-container.py-0

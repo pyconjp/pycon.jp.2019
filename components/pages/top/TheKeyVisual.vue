@@ -39,10 +39,10 @@
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.mt-2.pa-2
                             v-layout
-                                v-flex.pa-1
-                                    button-with-arrow.title(color="apply" :outline="true" :href="this.$router.history.base + '/schedule'") {{ $t("home.keyvisual.timetable") }}
-                                //- v-flex.pa-1
-                                //-     button-with-arrow(color="apply" :outline="true" :href="this.$router.history.base + '/sessions'") {{ $t("home.keyvisual.sessions") }}
+                                v-flex.xs6.pa-1
+                                    button-with-arrow(color="apply" :outline="true" :href="this.$router.history.base + '/schedule'") {{ $t("home.keyvisual.timetable") }}
+                                v-flex.xs6.pa-1
+                                    button-with-arrow(color="apply" :outline="true" :href="this.$router.history.base + '/sessions'") {{ $t("home.keyvisual.sessions") }}
                         v-flex.text-md-center.py-0.px-2
                             v-btn(disabled block round).subheading {{ $t("basic.apply-soldout") }}
                         v-flex.text-md-center.py-3.body-2.grey--text

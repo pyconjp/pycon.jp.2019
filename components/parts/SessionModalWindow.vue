@@ -1,11 +1,11 @@
 <template lang="pug">
-  v-card.session-card.pa-3
+  v-card.session-card.pa-4
     .corner-left-top
     .corner-right-bottom
     v-btn(small absolute icon style="top: 5px; right: 5px;" @click="$emit('close')")
       v-icon.text1--text clear
     .session-card__head.pa-0
-      v-layout.wrap.justify-start
+      v-layout.wrap.justify-start.align-center
         template(v-if="!isPoster")
           v-flex.shrink.mr-3
             span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
@@ -16,44 +16,48 @@
           //-   span {{ time }}
         v-flex.shrink.mr-3
           span.talk-format {{ session.talk_format }}
-      v-layout.wrap.justify-left.session-card__head--property.pt-2(:class="{'justify-center': $vuetify.breakpoint.smAndDown}")
-        v-flex.shrink.mr-3.my-1
+      v-layout.align-center.wrap.justify-start.session-card__head--property(:class="{'justify-center': $vuetify.breakpoint.smAndDown}")
+        v-flex.pt-2.shrink.mr-3.my-1
           span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
         template(v-if="!isPoster")
-          v-flex.shrink.mr-3.my-1
+          v-flex.pt-2.shrink.mr-3.my-1
             span.mr-2 {{ $t('sessions.level') }}:
             span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
-        v-flex.shrink.mr-3.my-1
+        v-flex.pt-2.shrink.mr-3
           span.mr-2 {{ $t('sessions.lang_of_talk') }}:
-          span.lang-tag.px-3.font-weight-bold(:class="session.lang_of_talk") {{ session.lang_of_talk | langTag }}
-        v-flex.shrink.mr-3.my-1
+          span.lang-tag.px-3.font-weight-bold.text-uppercase(
+            :class="session.lang_of_talk === 'en' ? 'themeBlue' : 'themeRed'"
+          ) {{ session.lang_of_talk  }}
+        v-flex.pt-2.shrink.mr-3
           span.mr-2 {{ $t('sessions.lang_of_slide') }}:
-          span.lang-tag.mr-1.px-3.font-weight-bold(v-for="lang_of_slide in langOfSlideArray" :class="lang_of_slide") {{ lang_of_slide | langTag }}
+          span.lang-tag.mr-1.px-3.font-weight-bold.text-uppercase(
+            v-for="lang_of_slide in langOfSlideArray"
+            :class="lang_of_slide === 'en' ? 'themeBlue' : 'themeRed'"
+          ) {{ lang_of_slide }}
 
       v-layout.my-3.session-card__head--title
         h1.title.font-weight-bold {{ session.title }}
       v-layout.mb-4.session-card__head--abstract
         h2.body-2 {{ session.abstract }}
-
-    .pa-0.pb-5.session-card__content
-      v-layout.my-4
-        v-flex
-          h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.speaker') }}
+    .pb-3.session-card__content
       v-layout.my-3
         v-flex
-          h4.body-2 {{ session.name }}
+          h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.speaker') }}
+      v-layout.my-2
+        v-flex
+          h4.body-2.font-weight-bold {{ session.name }}
       v-layout
         v-flex
           p {{ session.profile }}
       template(v-if="session.description !== ''")
-        v-layout.my-4
+        v-layout.my-3
           v-flex
             h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.detail_of_session') }}
         v-layout.my-1
           v-flex
             p {{ session.description }}
     .session-card__foot(v-if="session.tags !== ''")
-      v-layout.mt-4
+      v-layout.mt-3
         v-flex.shrink.mr-3
           p.font-weight-black keywords:
         v-flex.shrink.mr-3
@@ -81,10 +85,10 @@ export default {
       return roomsMaster[this.session.room_id]
     },
     langOfSlideArray() {
-      return this.session.lang_of_slide === 'jaen' ? ['ja', 'en'] : [this.session.lang_of_slide]
+      return this.session.lang_of_slide === 'jpen' ? ['jp', 'en'] : [this.session.lang_of_slide]
     },
     isPoster() {
-      return this.session.talk_format_origin.match(/^Poster/)
+      return this.session.talk_format_origin && this.session.talk_format_origin.match(/^Poster/)
     }
   },
   filters: {

@@ -10,14 +10,14 @@
                 template(v-if="menu.submenus.length === 0")
                     a(:href="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
                         v-btn(flat).text-xs-center.menu-btn
-                            span.subheading.font-weight-bold.textColor--text {{ menu.name }}
+                            span.subheading.font-weight-bold.textColor1--text {{ menu.name }}
                 template(v-else)
                     v-menu(:nudge-width="100" offset-y)
                         template(#activator="{ on }")
                             .btn(v-on="on")
                                 v-btn(flat).text-xs-center.menu-btn
-                                    span.subheading.font-weight-bold.textColor--text {{ menu.name }}
-                                    v-icon.textColor--text arrow_drop_down
+                                    span.subheading.font-weight-bold.textColor1--text {{ menu.name }}
+                                    v-icon.textColor1--text arrow_drop_down
                         v-card(depressed color="themeColor0")
                             v-layout.column.py-3.px-4
                                 v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
@@ -36,7 +36,7 @@
             nuxt-link(:to="toLocale")
                 v-btn(outline round)
                     v-icon(small).tertiary--text fas fa-globe
-                    span.ml-2.textColor--text {{ toLang }}
+                    span.ml-2.textColor1--text {{ toLang }}
             // 「参加申込み」
             v-toolbar-items.ml-2
                 //- v-btn(large color="apply" href="https://pyconjp.connpass.com/event/135734/" target="_blank").depressed.subheading

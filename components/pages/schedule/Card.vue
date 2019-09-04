@@ -23,7 +23,7 @@
                 template(#activator="{ on }")
                     a(v-on="on")
                         .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
-                SessionModalWindow(:session="session" @close="dialog = false")
+                SessionModalWindow(:session="session" @close="")
 </template>
 
 <style lang="sass" scoped>
@@ -57,7 +57,7 @@ import SessionModalWindow from '@/components/parts/SessionModalWindow'
 export default {
     name: "timetable-card",
     props: ["session"],
-    components: {SessionModalWindow},
+    components: { SessionModalWindow },
     methods: {
         ClassForLevel(level) {
             switch (level) {

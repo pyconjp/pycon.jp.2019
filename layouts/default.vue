@@ -61,11 +61,11 @@ export default {
                   id: 0,
                   name: this.$t('header.menu.events.conference.timetable'),
                   to: this.$router.history.base + "/schedule",
+                },
+                {
+                  id: 1,
+                  name: this.$t('header.menu.events.conference.sessions')
                 }
-                // {
-                //   id: 1,
-                //   name: this.$t('header.menu.events.conference.sessions')
-                // }
               ]
             },
             {
