@@ -26,14 +26,14 @@
         "e": "meeting room E"
     }, 
     "days": {
-        "day1": "1日目",
-        "day2": "2日目"
+        "day1": "Day 1",
+        "day2": "Day 2"
     },
     "weekday": {
-        "mon": "月・祝",
-        "tue": "火",
-        "sat": "土",
-        "sun": "日"
+        "mon": "Mon",
+        "tue": "Tue",
+        "sat": "Sat",
+        "sun": "Sun"
     },
     "header": {
         "menu": {
