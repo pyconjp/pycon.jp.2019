@@ -80,26 +80,26 @@
         }
     },
     "home": {
-        "title": "トップページ",
+        "title": "Top page",
         "keyvisual": {
-            "child-workshop": "子供向けワークショップも同時開催！",
-            "soldout-desc": "PyCon JP 通常チケットは完売しました。PyCon JP はチケットの譲渡について関与しません。 キャンセルされた場合、参加費用の払い戻しは出来ません。 お勧めはキャンセル操作をせずに、ご自身でconnpass受付票を参加希望者に渡し権利を譲ってください｡ ",
-            "timetable": "タイムテーブル",
-            "sessions": "セッション一覧"
+            "child-workshop": "We will also hold a workshop for children",
+            "soldout-desc": "PyCon JP Regular tickets are sold out. PyCon JP is not involved in ticket transfers. If canceled, the participation fee cannot be refunded. We recommend that you don't cancel and hand over the connpass receipt to the applicant. ",
+            "timetable": "See timetables",
+            "sessions": "Sessions"
         },
         "session": {
             "dev-spr": {
-                "desc": "短期集中型のソフトウェア開発イベントです。"
+                "desc": "This event is a short-term intensive software development event."
             },
             "tutorial": {
-                "desc": "初心者向けのイベントです。"
+                "desc": "This is an event for beginners."
             }
         },
         "news": {
-            "list": "お知らせ一覧",
-            "staff": "スタッフ募集中！",
-            "staff_desc": "PyCon JP 2019開催を積極的に進められる当日スタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
-            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> から「にぎやかし」で参加してみてください。"
+            "list": "News",
+            "staff": "Looking for Staff!",
+            "staff_desc": "We are looking for staff on the day to actively hold PyCon JP 2019. We look forward to applications for those who want to boost the Python community or want to work as conference staff.",
+            "staff_note": "※If you would like to see what the PyCon JP staff is doing, please join us <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> at “Lively”."
         },
         "overview": {
             "about": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyCon JPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。",
