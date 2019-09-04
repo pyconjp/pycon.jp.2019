@@ -17,28 +17,14 @@
         }
     },
     "rooms": {
-        "large": "大展示ホール",
-        "ab": "A+B会議室",
-        "small": "小展示ホール",
-        "ume": "コンベンションホール梅",
-        "uguisu": "コンベンションホール鶯",
-        "d": "D会議室",
-        "e": "E会議室"
+        "large": "Large Exhibition Hall",
+        "ab": "meeting room A+B",
+        "small": "small exhibition hall",
+        "ume": "Convention Hall UME",
+        "uguisu": "Convention Hall UGUISU",
+        "d": "meeting room D",
+        "e": "meeting room E"
     }, 
-    "links": {
-        "conference": "https://pyconjp.connpass.com/event/135734/",
-        "session_list": "",
-        "timetable_list": "",
-        "talk_session_list": "",
-        "lightning_talk_list": "",
-        "poster_indivisual_list": "",
-        "poster_community_list": "",
-        "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
-        "sprint_themes": "",
-        "tutorial": "https://pyconjp.connpass.com/event/136606/",
-        "child-workshop": "https://pyconjp.connpass.com/event/139133/",
-        "nursery": "https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et"
-    },
     "days": {
         "day1": "1日目",
         "day2": "2日目"
