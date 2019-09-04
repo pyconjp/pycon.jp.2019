@@ -1,110 +1,386 @@
 {
     "basic": {
-        "access": "Venue",
-        "pio": "Ota Cty Industrial Plaza (PiO) Reservation Center",
+        "access": "会場",
+        "schedule": "日程",
+        "access_schedule": "日時・場所",
+        "pio": "大田区産業プラザ PiO",
         "hennge": "HENNGE",
-        "detail": "Detail",
-        "apply": "Apply",
-        "norm": "Norm",
-        "recruit": "Recruit"
+        "detail": "詳細情報",
+        "apply": "参加申し込み",
+        "apply-soldout": "参加申し込み(完売しました)",
+        "norm": "行動規範",
+        "recruit": "採用について",
+        "company-desc": "企業概要",
+        "address": {
+            "pio": "〒144-0035　東京都大田区南蒲田一丁目20番20号",
+            "hennge": "〒150-0036　東京都渋谷区南平台町16番28号 グラスシティ渋谷5F"
+        }
     },
     "rooms": {
-        "large": "Large Exhibition Hall",
-        "ab": "meeting room A+B",
-        "small": "small exhibition hall",
-        "ume": "Convention Hall UME",
-        "uguisu": "Convention Hall UGUISU",
-        "d": "meeting room D"
+        "large": "大展示ホール",
+        "ab": "A+B会議室",
+        "small": "小展示ホール",
+        "ume": "コンベンションホール梅",
+        "uguisu": "コンベンションホール鶯",
+        "d": "D会議室",
+        "e": "E会議室"
+    }, 
+    "links": {
+        "conference": "https://pyconjp.connpass.com/event/135734/",
+        "session_list": "",
+        "timetable_list": "",
+        "talk_session_list": "",
+        "lightning_talk_list": "",
+        "poster_indivisual_list": "",
+        "poster_community_list": "",
+        "dev-sprint": "https://pyconjp.connpass.com/event/136558/",
+        "sprint_themes": "",
+        "tutorial": "https://pyconjp.connpass.com/event/136606/",
+        "child-workshop": "https://pyconjp.connpass.com/event/139133/",
+        "nursery": "https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et"
     },
     "days": {
-        "day1": "Day 1",
-        "day2": "Day 2"
+        "day1": "1日目",
+        "day2": "2日目"
     },
     "weekday": {
-        "mon": "Mon",
-        "tue": "Tue",
-        "sat": "Sat",
-        "sun": "Sun"
+        "mon": "月・祝",
+        "tue": "火",
+        "sat": "土",
+        "sun": "日"
     },
     "header": {
         "menu": {
+            "home": "ホーム",
             "about": {
-                "parent": "About",
-                "about-event": "Event",
-                "coc": "Code Of Conduct"
+                "parent": "概要",
+                "about-event": "開催概要",
+                "coc": "行動規範"
             },
             "events": {
-                "parent": "Events",
+                "parent": "イベント一覧",
                 "conference": {
-                    "parent": "Conference",
-                    "timetable": "Timetable",
-                    "sessions": "Sessions"
+                    "parent": "カンファレンス",
+                    "timetable": "タイムテーブル",
+                    "sessions": "セッション一覧"
                 },
-                "child-workshop": "Child Workshop",
-                "dev-spr": "Development Sprint",
-                "tutorial": "Tutorial"
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
             },
-            "news": "News",
-            "access": "Access",
-            "support": "Support",
-            "sponsor": "Sponsor",
-            "staff": "Staff",
+            "news": "お知らせ",
+            "access": "会場",
+            "support": "サポート",
+            "sponsor": "スポンサー",
+            "staff": "スタッフ",
             "faq": "FAQ"
         },
-        "apply": "Apply"
+        "apply": {
+            "parent": "各種申込み",
+            "event": {
+                "parent": "イベント参加申し込み",
+                "conference": "カンファレンス",
+                "child-workshop": "子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "nursery": {
+                "parent": "託児所の申請",
+                "conf-child": "カンファレンス/子供向けワークショップ",
+                "dev-spr": "開発スプリント",
+                "tutorial": "チュートリアル"
+            },
+            "distant-support": "遠方支援の申請"
+        }
     },
     "home": {
-        "title": "Top Page",
+        "title": "トップページ",
         "keyvisual": {
-            "child-workshop": "We will also hold a workshop for children",
-            "timetable": "See timetables"
+            "child-workshop": "子供向けワークショップも同時開催！",
+            "soldout-desc": "PyCon JP 通常チケットは完売しました。PyCon JP はチケットの譲渡について関与しません。 キャンセルされた場合、参加費用の払い戻しは出来ません。 お勧めはキャンセル操作をせずに、ご自身でconnpass受付票を参加希望者に渡し権利を譲ってください｡ ",
+            "timetable": "タイムテーブル",
+            "sessions": "セッション一覧"
         },
         "session": {
             "dev-spr": {
-                "desc": "Development Session description"
+                "desc": "短期集中型のソフトウェア開発イベントです。"
             },
             "tutorial": {
-                "desc": "Tutorial Day"
+                "desc": "初心者向けのイベントです。"
             }
         },
         "news": {
-            "list": "News",
-            "staff": "Looking for Staff！",
-            "staff_desc": "PyCon JP 2019開催を積極的に進められるコアスタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
-            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は https://pyconjp-staff.connpass.com/ から「にぎやかし」で参加してみてください。"
+            "list": "お知らせ一覧",
+            "staff": "スタッフ募集中！",
+            "staff_desc": "PyCon JP 2019開催を積極的に進められる当日スタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
+            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> から「にぎやかし」で参加してみてください。"
+        },
+        "overview": {
+            "about": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyCon JPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。",
+            "theme": "今年のテーマについて"
         },
         "conference": {
-            "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.",
-            "sessions": "Sessions",
-            "timetables": "Time Tables"
+            "main": "私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。<br><br> PyCon JPを素晴らしいカンファレンスとして維持していくには、ただ自分たちの会を毎年同じ時期に同じ場所で開催するだけでは足りないと、私たちは考えます。国内外で行われるカンファレンスとの連携や、ユーザー間の交流の促進、Pythonや関連するソフトウェアの普及・啓蒙をお手伝いしていくことで、Pythonにもっと多くの関心が集まり、沢山のユーザやソフトウェアが生まれていくことが、私たちの原動力となると信じています。<br><br> PyCon JP 2019 今年のテーマはPython New Era です。日本で元号が新しくなった事。Python も 2 から3 へ新しい時代へ移っていく事をコンセプトとしています。<br><br> PyCon JP 2019は参加する皆さんが新しい繋がりや知識を得て楽しめるカンファレンスを目標に開催します。",
+            "sessions": "セッション一覧",
+            "timetables": "タイムテーブル一覧",
+            "cory_profile": "コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。",
+            "koike_profile": "静岡県にある太平洋に面したのどかな町で農業を営んでいます。<br> 6年前までは組込みエンジニアとしてC言語を使った開発に携わっていましたが、退職を期にPythonを独学で学ぶことを始めました。",
+            "lyu_profile": "Renyuan Lyuは、20代で台湾国立大学大学院電気工学研究科で博士号を取得。その後、台湾の桃園にある長庚大学にてオーディオ、スピーチ、言語、およびパターン処理を専門とする教員になりました。<br><br> 最初の数年間、彼はC / C ++、Matlab、Perlを使って学術研究と教育活動を行い、表準中国語と台湾語の音声認識システムを作成しました。<br><br>  また、彼は2015年から2017年にてPyCon JP で登壇しました。<br><br>  現在、彼は大学の准教授で、確率統計、信号処理、パターン認識、および音声認識を教え、台湾の言語（台湾および北京語）の処理に関するトピックをすべてPython言語を使用して研究しています。",
+            "talk_session": "Pythonに関する様々なテーマの発表を行うセッションです。 ４５分、３０分、１５分の発表があります。 ",
+            "begginer_session": "Pythonの初心者が次のステップに踏み出すきっかけづくりを提供するセッションです。",
+            "poster_indivisual": "発表者がポスターの前で発表を行う形式のセッションです。 発表者と聴講者が直接、意見交換や議論を行えます。",
+            "poster_community": "Pythonに関するコミュニティの活動報告などを行うセッションです。",
+            "lightning_talk": "Pythonに関する様々なテーマを５分間の発表で行うセッションです。"
         },
         "support": {
             "food": {
-                "title": "Food",
-                "desc": "Food description"
+                "title": "食事",
+                "desc": "各日程で食事が付きます。ベジタリアン向けやハラル対応のメニューも用意いたします。"
             },
             "nursery": {
-                "title": "Nursery",
-                "desc": "Nursery description"
+                "title": "託児所",
+                "desc": "各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。"
             },
             "distant-support": {
-                "title": "Distant Support",
-                "desc": "Distant Support description"
+                "title": "遠方支援",
+                "desc": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。"
             }
         },
         "sponsor": {
-            "list": "Sponsors",
-            "hiring": "Hiring sponsor"
+            "list": "スポンサーリスト",
+            "hiring": "スポンサー募集中"
         }
     },
     "contact": {
-        "desc1": "Please check <a href='/' style='color: white;'>FAQ</a> in advance.",
-        "desc2": "We members are all volunteer staff. It might take a week to reply for your message."
+        "desc1": "事前に<a href='/' style='color: white;'>FAQ</a>をご確認いただけますようにお願いします。",
+        "desc2": "ボランティアによる運営ですので、回答には1週間程度を要します。<br>何卒お待ちいただけますようにお願いします。"
     },
     "sponsor": {
-        "title": "Sponsors"
+        "title": "スポンサー"
+    },
+    "events": {
+        "place": "開催場所",
+        "target": "参加対象",
+        "lunch_oyatsu_party": "※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。",
+        "lunch_oyatsu": "※昼食はお弁当が出ます。またおやつの提供があります。",
+        "oyatsu": "おやつの提供があります",
+        "hennge_dinner": "※夕食がつきます（HENNGE株式会社様よりご提供）",
+        "supports": {
+            "food": {
+                "title": "食事",
+                "day1": "朝食（限定数）、ランチ、おやつ、夕食（アフターパーティー）",
+                "day2": "朝食（限定数）、ランチ、おやつ"
+            },
+            "nursery": {
+                "title": "託児所",
+                "content": "各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。",
+                "to_apply": "申し込みへ"
+            },
+            "distant": {
+                "title": "遠方支援",
+                "content": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。",
+                "to_apply": "申し込みへ"
+            }
+        },
+        "section": {
+            "support": "サポート：食事、託児所、遠方支援"
+        }
+    },
+    "conference": {
+        "title": "カンファレンス",
+        "posters": "ポスターセッション一覧",
+        "lightning_talk": "5分間で行う発表（プレゼンテーション）のことです。「Lightning Talk（稲妻トーク）」を略して「LT」とも呼びます。\n楽しくても5分、つまらなくても5分。より多くの人に発表する機会をもってもらうための企画です。Pythonに関係あっても無くてもOKです！<br><br>クロージングLTは、カンファレンス最後に参加者全員が、メイン会場に集まって行っています。発表者は全員の前で発表ができ、聞く人も含めた全ての参加者が一緒に、イベントを盛り上げます。今年は、どんなLTが発表されるのか楽しみですね。みんなで盛り上げましょう！",
+        "talk_session": "Pythonに関する様々なテーマの発表を行うセッションです。 45分、30分、15分の発表があります。",
+        "begginer_session": "このハンズオンでは、PDFファイルを扱うPythonライブラリ Pikepdf を使って、PDFファイルの連結や分割、パスワード解除などを行うツールを作成します。このハンズオンを通して、コマンドラインアプリケーションの作り方、ライブラリの使い方、デバッグのしかた、などを学び、Pythonで実用的なツールを作る方法を身に付けましょう。",
+        "begginer_session_target": "!!!ダミーテキスト",
+        "poster_indivisual": "ポスターセッションとは、ポスターを掲示し、その前で発表するセッションです。 こういった技術カンファレンスでは、トークセッションが主役のように感じますが、 ポスターセッションの存在を忘れてはいけません。",
+        "poster_community": "さまざまなPythonコミュニティが集まり、ポスター発表形式でコミュニティの紹介を行う場です。昨年のPyCon JP 2018では北は北海道、南は九州まで合計6つのコミュニティがそれぞれの活動を参加者に伝えていました。",
+        "after_party": "!!!アフターパーティのダミーテキスト",
+        "for_LTer": "LT発表希望者の方へ",
+        "for_LTer_main": "当日朝に写真のような形でホワイトボードに名前を書いてもらう方式で募集します。早い者勝ちで行うので、LTやるぞ！という方は早目に会場入りをしてください。LTの時間は5分で、枠数は1日目8枠、2日目7枠を予定してます。",
+        "for_LTer_sub": "※日本語がわからない人もある程度楽しめるように、スライドは英語で作ってください。",
+        "talk_session_list": "トークセッション一覧",
+        "lightning_talk_list": "ライトニングトーク一覧",
+        "sections": {
+            "summary": "カンファレンスの開催概要",
+            "keynote": "基調講演",
+            "invited_lecture": "招待講演",
+            "talk_session": "トークセッション",
+            "lightning_talk": "ライトニングトーク",
+            "beginners_session": "ビギナーズセッション",
+            "poster_session": "ポスターセッション",
+            "poster_indivisual": "ポスターセッション(個人)",
+            "poster_community": "ポスターセッション(コミュニティ)",
+            "after_party": "カンファレンスパーティ"
+        },
+        "place": {
+            "after_party": "PiO 内 小展示ホール (+ 大展示ホール) "
+        }
+    },
+    "tutorial": {
+        "title": "チュートリアル",
+        "abstract": "Python初心者～中級者向けのイベントです。講師の方がわかりやすく丁寧に教えて下さいます。\nまた講師の他にチューターがつくのでしっかりと身につけられるようになっていますので、是非この機会にチャレンジしてみて下さい！",
+        "unneed_ticket": "※チュートリアル参加にあたってPyCon JP 2019カンファレンスのチケットは必要ありません。",
+        "course": {
+            "goal": "概要と設定するゴール",
+            "capacity": "募集人数",
+            "target": "参加者の前提",
+            "environment": "各種環境",
+            "do_your_self": "(各自ご用意ください)",
+            "contents": "当日の進め方",
+            "produced_by": "提供",
+            "detail": "詳細",
+            "detail_text": "connpassを確認してください"
+        },
+        "course1": {
+            "goal": "Pythonでできることの1つにWebアプリケーション開発があります。\n本チュートリアルではフルスタックのWebアプリケーションフレームワークであるDjangoを使用して、Webアプリケーション作成について学びます。<br><br>具体的には、Webアプリケーションの基礎、データベース入門を学びます。 次に、Djangoを使用して商品ページ、ショッピングカート、商品検索フォームといった機能を持った簡易ECサイトを作成します。\nこのチュートリアルで学んだことを応用すると、ECサイトだけでなく様々な入出力を持ったWebアプリケーションを作れるようになります。",
+            "capacity": "20人",
+            "target": {
+                "1": "Pythonでプログラムを書ける人",
+                "2": "HTML、CSSについてもある程度知っている人",
+                "3": "PythonでWebアプリケーションを作成してみたい人"
+            },
+            "environment": {
+                "note_pc": "以下がインストールされた無線LANに対応したノートPC",
+                "1": "Python 3.7以上（Anacondaではなく、www.python.orgからダウンロードした公式バイナリーをインストール）",
+                "2": "Webブラウザー（Chrome、Firefox推奨）",
+                "3": "テキストエディター（PyCharm、VSCode推奨）"
+            },
+            "contents": {
+                "1": "Webアプリケーション入門",
+                "1_1": "WebアプリケーションとHTTP",
+                "1_2": "Webアプリケーションの動作",
+                "2": "データベース入門",
+                "2_1": "データベース利用イメージ",
+                "2_2": "Sqlite3を使ったSQL入門",
+                "3": "Djangoアプリケーション開発",
+                "3_1": "Djangoとは",
+                "3_2": "Djangoのインストール"
+            },
+            "produced_by": "ビープラウド"
+        },
+        "course2": {
+            "goal": {
+                "1": "サーバーレスの基本構成について知る",
+                "2": "Lambdaの利用に十分な基本的な構成を知る",
+                "3": "AWSの基本的なツールセットを使って、サーバーレスなAPIの構成と作成手順を知る"
+            },
+            "capacity": "60人",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "course3": {
+            "notice": "こちらのチュートリアルは前半と後半があります。前半と後半の「参加者の前提」を確認したうえで申し込み下さい。\nまた、「各種環境（各自ご用意下さい）」もご確認下さい。"
+        },
+        "course3_1": {
+            "title": "前半（13:00～16:00） 「RAPIDSを用いた機械学習のハンズオン」",
+            "goal": "データ分析において、一回の分析サイクルにかかる時間を短くすることは、実用上重要なポイントとなります。\nこのチュートリアルでは、GPUで高速化されたオープンソースライブラリ群であるRAPIDSのcuDFとcuMLを取り上げ、データ処理から機械学習アルゴリズムの適用までを一連の流れとして体験していただきます。\ncuDFとcuMLはそれぞれ、Pandasとscikit-learnライクなAPIを提供するGPUライブラリであり、このチュートリアルを受講することで、データ処理および機械学習のワークフローをGPUで高速化することができるようになります。",
+            "capacity": "60人",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "course3_2": {
+            "title": "後半（16:30～18:30） 「TensorFlowを使用した機械学習のハンズオン」",
+            "goal": "未定   ※決まり次第更新します",
+            "capacity": "60人",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "section": {
+            "summary": "チュートリアルの開催概要",
+            "course1": "DjangoによるWebアプリケーション開発入門",
+            "course2": "Lambda(Python)を使用したサーバレスのハンズオン",
+            "course3": "TensorFlow/RAPIDSを使用した機械学習ハンズオン",
+            "supports": "サポート：食事、託児所、遠方支援"
+        }
+    },
+    "sprints": {
+        "title": "開発スプリント",
+        "abstract": "短期集中型のソフトウェア開発イベントです。開発テーマを提案する人と、そのテーマに興味を持った人が集まり交流する機会になります。\nどなたでも無料でご参加いただけます！ 開発スプリント参加にあたってPyCon JP 2019のチケットは必要ありません。",
+        "theme_list": "テーマの一覧",
+        "what_is_sprint": "多くのオープンソースソフトウェアの開発は、通常、ウェブ上でオンラインのコミュニケーションを通じて行われています。\nほとんどの場合はこれで問題ないのですが、時には直接集まってオフラインで共同開発を行うことが、開発を大きく前に進めるために有効なことがあります。<br><br>この特定のプロジェクトに興味がある開発者同士がオフラインで集まって、短時間で素早く進捗を出す開発ミートアップを実現するために、スプリントやハッカソンと呼ばれる方法が生まれました（Pythonコミュニティ以外では、このようなミートアップはよくハッカソンと呼ばれています）。<br><br>そして、開発者が一同に集まるカンファレンスは、このスプリントを実現するのに最適な場であるため、カンファレンスの一部としてスプリントが開かれることがよくあります。<br><br>PyCon JP 2019では、スプリントを行うにあたって必要な環境（Wi-Fi, 電源、テーブル、椅子、そしてコーヒー）を用意いたします。\nスプリント参加者の皆さんには、ご自分のPC、スキル、そして開発への情熱を会場に持ってきていただければと思います！",
+        "sprint_leader": "スプリントリーダーは、スプリントで扱うプロジェクトを決めて、スプリントの中で開発の案内や相談への対応をする人のことです。<br><br>リーダーは、開発を進めるプロジェクトのメンテナである必要はありません。\nリーダーは、自分が開発を進めたいと思う特定のプロジェクトを選んでいただき、スプリント内で達成したいゴールを設定いただくだけで構いません。\n他のスプリント参加者が選んだプロジェクトに参加してみたい場合には、スプリントリーダーの皆さんには、まず参加者の皆さんへ選んだプロジェクトの紹介や開発の進め方の案内を行っていただき、開発中は適宜開発の手助けを行っていただければと思います。<br><br>このスプリントリーダーの仕組みは、完全に非公式なものなので、参加者の皆さんが実際に開発を行うプロジェクトはどのようなものでも構いません。",
+        "as_a_sprint_leader": "スプリントリーダーでの参加",
+        "as_a_sprint_leader_content": "スプリントリーダーとして参加したいという場合は、connpassページからの申込時にスプリントリーダーとして登録をお願いいたします。\nその際にフォームに回答してスプリントで取り組みたいテーマを提出してください。フォームへの回答は日本語または英語でお願いします。\nスプリント参加者が閲覧できるように、応募されたテーマを後ほど一覧にして公開します。",
+        "submitted_theme_list": "→応募されたテーマの一覧",
+        "be_public": "を公開しました。（8/10）",
+        "every_Sat": "※今後、毎週土曜日に更新予定",
+        "is_based_on_answer": "※一覧の内容はリーダーの入力内容に基づきます",
+        "section": {
+            "summary": "開発スプリントの開催概要",
+            "what_is_sprint": "スプリントとは？",
+            "sprint_leader": "スプリントリーダー",
+            "supports": "サポート：食事、託児所、遠方支援"
+        }
+    },
+    "youth": {
+        "title": "子供向けワークショップ",
+        "abstract": "Circuit Playground ExpressでPythonを学ぼう!! 当ワークショップは、PyCon JP 2019の1日目に開催されます。ワークショップの参加者および同伴者は、カンファレンス1日目に限り本会場に入場可能です。また、カンファレンス1日目はパーティを除くイベントに参加できます。この機会にPyCon JPをお楽しみください。",
+        "workshop_content": "Circuit Playground Expressと呼ばれる小さなコンピュータを使ってPythonを学びます。\nPythonとCircuit Playground Expressを使ってNeo Pixel LEDを光らせたり、音を鳴らしたり、IR（赤外線）通信をしたりしてみましょう！！",
+        "about_workbook": "教材について",
+        "summary_of_CPE": "Circuit Playground Expressの概要",
+        "capacity": "募集人数",
+        "capacity_volume": "20人（同伴の保護者を除く）",
+        "can_take_home_CPE": "※Circuit Playground Expressはお持ち帰りできます。",
+        "target": "本ワークショップの対象は小学生から中学生くらいまでを想定しています。\nまた、アルファベットの大文字小文字の違いがわかることが望ましいです。",
+        "about_pc": "当日のパソコンについてはお貸し出し致します。\n\nOSはWindows 10の予定です。",
+        "about_ticket": "参加チケット（同伴あり）と参加チケット（同伴なし）の2種類があります。\n\n参加チケット（同伴なし）は、お子様1名が入場可能です。\n参加チケット（同伴あり）は、お子様1名と保護者様1名が入場可能です。保護者様がPyCon JP 2019の本会議への参加チケットを持っている際は参加チケット（同伴なし）をご購入ください。\n\nそれぞれ人数分のお弁当を用意しております。\nなお、ワークショップ参加者の定員が20名ですので、募集チケット数は売れ行きによって随時調整します。",
+        "supporters": "本ワークショップは以下の方々の協力にて実施します。（敬称略）",
+        "tanaka": "田中 真輔（所属 CoderDojo 大船）",
+        "doi": "土井 敬司（所属 CoderDojo 大船）",
+        "togazono": "とがぞの（所属 CoderDojo 小平）",
+        "masuzawa": "増澤 智将（所属 CoderDojo 船橋）",
+        "sakata": "坂田 健一（所属 CoderDojo 南柏）",
+        "in_conference": "カンファレンス内",
+        "section": {
+            "summary": "子供向けワークショップの開催概要",
+            "workshop_content": "ワークショップの学習内容",
+            "target_member": "参加対象・人数",
+            "about_pc": "パソコンについて",
+            "about_ticket": "チケットについて",
+            "supporters": "ワークショップ協力"
+        },
+        "place": "◯◯ホール"
     },
     "code-of-conduct": {
-        "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.<br><br>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.<br><br>Participants asked to stop any harassing behavior are expected to comply immediately.<br><br>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.<br><br>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.<br><br>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded t-shirts.<br><br>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.<br><br>We expect participants to follow these rules at conference and workshop venues and conference-related social events."
+        "main": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyConJPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。<br><br>ハラスメント行為には、言葉による性別、性的指向、障碍の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント、公的空間での性的な映像表現、意図的な威力行為、ストーキング、つきまとい、写真撮影や録音によるいやがらせ、トークやその他の会議イベントに対して繰り返して中断しようとする行為、不適切な身体接触、そして望まれない性的な注意を引きつける行為を含みます。<br><br>参加者は、これらのハラスメント行為を止めるように求められた場合、すぐに従わなければなりません。<br><br>スポンサーもまた反ハラスメント行為ポリシーに従わなければなりません。特に、スポンサーは性的な関心を引き起こす映像表現、活動、あるいはその他の物品を使うべきではありません。ボランティアを含め、ブースのスタッフは、性的な関心を引き起こすような服装/制服/コスチュームを使うべきではありませんし、その他の手段で性的な関心を引き起こすような環境を作ることもすべきではありません。<br><br>もしあなたがハラスメントに遭った場合、他の人がハラスメントに遭っている場合、あるいは他に気になることがあった時は、すぐに会議スタッフの誰かに連絡していただくようお願いします。会議スタッフは会議のブランドを付けたTシャツを着ています。<br><br>会議スタッフは、ハラスメントを経験した人が、会議期間中安全かつ安心と感じられるように、参加者がホテル/会場の警備や近隣の警察に連絡すること、付き添い者の提供、およびその他の支援を行います。私達にとってあなたが参加しているのは大事なことなのです。<br><br>私達は参加者が会議場とワークショップ会場、また会議に関連したソーシャルイベントにて、このルールに従うことを望みます。"
+    },
+    "timetable": {
+        "title": "タイムテーブル",
+        "note": "※イベントについては開催当日まで内容が変更される可能性があります。都度最新の情報をご確認ください。",
+        "open": "開場",
+        "opening": "オープニング",
+        "keynote": "基調講演",
+        "level": "レベル",
+        "detail": "詳細",
+        "lunch": "ランチ",
+        "jobfair": "ジョブフェア",
+        "poster": "ポスターセッション",
+        "coffee": "コーヒーブレイク",
+        "lt": "ライトニングトーク",
+        "photo": "フォトセッション",
+        "photo2": "フォトセッション2",
+        "smlt": "Same Day LT",
+        "closing": "クロージング",
+        "party": "パーティ"
+    },
+    "sessions": {
+        "level": "レベル",
+        "lang_of_talk": "発表言語",
+        "lang_of_slide": "資料言語",
+        "speaker": "発表者",
+        "detail": "詳細",
+        "detail_of_session": "発表詳細",
+        "session_category": {
+            "talk_session": "トークセッション",
+            "lightning_talk": "ライトニングトーク",
+            "poster_session": "ポスターセッション"
+        }
     }
 }
