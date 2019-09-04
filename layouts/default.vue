@@ -64,7 +64,8 @@ export default {
                 },
                 {
                   id: 1,
-                  name: this.$t('header.menu.events.conference.sessions')
+                  name: this.$t('header.menu.events.conference.sessions'),
+                  to: this.$router.history.base + "/sessions",
                 }
               ]
             },
