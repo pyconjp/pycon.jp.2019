@@ -62,21 +62,21 @@
             "faq": "FAQ"
         },
         "apply": {
-            "parent": "各種申込み",
+            "parent": "Events",
             "event": {
-                "parent": "イベント参加申し込み",
-                "conference": "カンファレンス",
-                "child-workshop": "子供向けワークショップ",
-                "dev-spr": "開発スプリント",
-                "tutorial": "チュートリアル"
+                "parent": "Registration",
+                "conference": "Conference",
+                "child-workshop": "Workshop for Children",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
             },
             "nursery": {
-                "parent": "託児所の申請",
-                "conf-child": "カンファレンス/子供向けワークショップ",
-                "dev-spr": "開発スプリント",
-                "tutorial": "チュートリアル"
+                "parent": "Application for Nursery",
+                "conf-child": "Conference/Workshop for Children",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
             },
-            "distant-support": "遠方支援の申請"
+            "distant-support": "Application for distant support"
         }
     },
     "home": {
