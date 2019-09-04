@@ -1,19 +1,19 @@
 {
     "basic": {
-        "access": "会場",
-        "schedule": "日程",
-        "access_schedule": "日時・場所",
-        "pio": "大田区産業プラザ PiO",
+        "access": "Venue",
+        "schedule": "Schedule",
+        "access_schedule": "Date・Place",
+        "pio": "Ota Cty Industrial Plaza (PiO) Reservation Center",
         "hennge": "HENNGE",
-        "detail": "詳細情報",
-        "apply": "参加申し込み",
-        "apply-soldout": "参加申し込み(完売しました)",
-        "norm": "行動規範",
-        "recruit": "採用について",
-        "company-desc": "企業概要",
+        "detail": "Detail",
+        "apply": "Registration",
+        "apply-soldout": "Registration(Sold Out)",
+        "norm": "Code of conduct",
+        "recruit": "Recruit",
+        "company-desc": "Company Overview",
         "address": {
-            "pio": "〒144-0035　東京都大田区南蒲田一丁目20番20号",
-            "hennge": "〒150-0036　東京都渋谷区南平台町16番28号 グラスシティ渋谷5F"
+            "pio": "1-20-20 Minami Kamata, Ota-ku, Tokyo 144-0035, Japan",
+            "hennge": "Glass City Shibuya 5F, 16-28 Minamihiradaimachi, Shibuya-ku, Tokyo 150-0036, Japan"
         }
     },
     "rooms": {
