@@ -15,7 +15,8 @@
           //- v-flex.shrink.mr-3
           //-   span {{ time }}
         v-flex.shrink.mr-3
-          span.talk-format {{ session.talk_format }}
+          span.talk-format {{ $t('sessions.' + session.talk_format) }}
+
       v-layout.align-center.wrap.justify-start.session-card__head--property(:class="{'justify-center': $vuetify.breakpoint.smAndDown}")
         v-flex.pt-2.shrink.mr-3.my-1
           span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
