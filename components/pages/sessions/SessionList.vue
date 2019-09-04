@@ -1,6 +1,12 @@
 <template lang="pug">
-ul.pl-0.mt-4.mb-5
-  li.py-4(v-for="session in sessions")
+v-layout(
+  :class="{'my-4': $vuetify.breakpoint.smAndUp}"
+).column
+  v-flex.session(
+    v-for="(session, idx) in sessions"
+    :key="idx"
+    :class="{' pt-3 pb-1': $vuetify.breakpoint.smAndUp}"
+  )
     SessionCard(:session="session")
 </template>
 
@@ -23,10 +29,8 @@ ul.pl-0.mt-4.mb-5
 <style lang="scss">
 @import '@/assets/style/variables.scss';
 
-ul {
-  list-style: none;
-  li {
-    border-bottom: 1px solid $themeColor3Transparent;
-  }
+.session {
+  border-bottom: 1px solid $blueGrey2;
 }
+
 </style>

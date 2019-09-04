@@ -27,7 +27,8 @@
             v-flex.xs12.sm12.md4.pa-2
                 simple-card(:roomIds="[1006, 1001]") {{ $t("timetable.lunch") }}
             v-flex.xs12.sm12.md2.pa-2
-                simple-card(:roomIds="[1002]") {{ $t("timetable.jobfair") }}
+                simple-card(:roomIds="[1002]" :session="jobfairSeseion" :seeDetail="true") {{ $t("timetable.jobfair") }}
+                    template(#detail)  {{ $t("timetable.jobfair_desc") }}
             v-flex.xs12.sm12.md6.pa-2
                 simple-card(:roomIds="[1003, 1004, 1005]") {{ $t("timetable.lunch") }}
     row(time="13:40")
@@ -100,7 +101,13 @@ export default Vue.extend({
             roomsMaster: roomsMaster
         }
     },
+    computed: {
+        jobfairSeseion() {
+            return this.sessions.filter(s => s.id == 501)[0]
+        }
+    },
     created() {
+        // console.log(this.sessions)
     },
     methods: {
         matchSession(roomId, no) {

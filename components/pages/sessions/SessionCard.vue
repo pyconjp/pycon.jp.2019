@@ -1,42 +1,47 @@
 <template lang="pug">
-v-dialog(v-model="modalOpened")
+v-dialog(v-model="dialog")
   template(#activator="{ on }")
-    .session-modal__wrapper(v-on="on")
-      v-layout.session-card
-        v-flex.xs11.pr-1
+    v-card(:flat="$vuetify.breakpoint.mdAndUp").pa-2
+      v-layout.wrap.align-center.session-card
+        v-flex.xs12.sm11.md11.pr-1.session-card__left
           .session-card__head
-            v-layout.my-1
-              template(v-if="!isPoster")
-                v-flex.shrink.mr-3
-                  span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
-                v-flex.shrink.mr-3
-                  span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
-                  span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-                v-flex.shrink.mr-3
-                  span {{ time }}
-              v-flex.shrink.mr-3
-                span.talk-format {{ session.talk_format_origin }}
-            v-layout.my-1.session-card__head--property
-              v-flex.shrink.mr-3
-                span.room-tag.px-3 {{ $t(`rooms.${roomTag}`) }}
-              template(v-if="!isPoster")
-                v-flex.shrink.mr-3
-                  span.mr-2 {{ $t('sessions.level') }}:
-                  span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
-              v-flex.shrink.mr-3
+            v-layout.wrap.row
+              v-flex.pt-1.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown}")
+                span.day.font-weight-bold {{ $t(`days.day${session.day}`) }}
+              v-flex.pt-1.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+                span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
+                span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
+              //- v-flex.shrink.mr-3.text-xs-center
+              //-   span {{ time }}
+              v-flex.pt-1.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+                span.talk-format {{ $t('sessions.' + session.talk_format) }}
+            v-layout.wrap.justify-start.session-card__head--property
+              v-flex.pt-2.shrink.text-xs-center.font-weight-bold.textColor1--text(:class="{'xs12': $vuetify.breakpoint.smAndDown}")
+                span.room-tag.px-3.blueGrey1Lighten {{ $t(`rooms.${roomTag}`) }}
+              v-flex.pt-2.shrink.text-xs-center(v-if="!isPoster" :class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+                span.mr-2 {{ $t('sessions.level') }}:
+                span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
+              v-flex.pt-2.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.mr-2 {{ $t('sessions.lang_of_talk') }}:
-                span.lang-tag.px-3.font-weight-bold(:class="session.lang_of_talk") {{ session.lang_of_talk | langTag }}
-              v-flex.shrink.mr-3
+                span.lang-tag.px-3.font-weight-bold.text-uppercase(
+                  :class="session.lang_of_talk === 'en' ? 'themeBlue' : 'themeRed'"
+                ) {{ session.lang_of_talk  }}
+              v-flex.pt-2.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.mr-2 {{ $t('sessions.lang_of_slide') }}:
-                span.lang-tag.mr-1.px-3.font-weight-bold(v-for="lang_of_slide in langOfSlideArray" :class="lang_of_slide") {{ lang_of_slide | langTag }}
-          .session-card__content.my-2
+                span.lang-tag.mr-1.px-3.font-weight-bold.text-uppercase(
+                  v-for="lang_of_slide in langOfSlideArray"
+                  :class="lang_of_slide === 'en' ? 'themeBlue' : 'themeRed'"
+                ) {{ lang_of_slide }}
+          .session-card__content.py-2
             v-layout
               v-flex.my-1.title.font-weight-black.session-card__content--title {{ session.title }}
             v-layout
               v-flex.my-1.speaker {{ session.name }}
-        v-flex.session-card__button
-          v-btn.my-0(block flat) {{ $t('sessions.detail') }}
-  session-modal-window(:session="session")
+        v-flex.sm1.md1.px-1.subheading.text-xs-center.clickable(v-on="on")
+          v-btn(v-if="$vuetify.breakpoint.smAndDown" round outline flat).themeColor3.themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
+          span(v-else).themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
+
+  session-modal-window(:session="session" @close="dialog = false")
 </template>
 
 <script>
@@ -56,6 +61,7 @@ export default {
   data() {
     return {
       time: '00:00 - 00:00',
+      dialog: false,
       roomsMaster: roomsMaster
     }
   },
@@ -64,17 +70,11 @@ export default {
       return this.roomsMaster[this.session.room_id]
     },
     langOfSlideArray() {
-      return this.session.lang_of_slide === 'jaen' ? ['ja', 'en'] : [this.session.lang_of_slide]
+      return this.session.lang_of_slide === 'jpen' ? ['jp', 'en'] : [this.session.lang_of_slide]
     },
     isPoster() {
       return this.session.talk_format_origin.match(/^Poster/)
     }
-  },
-  filters: {
-    langTag: (lang) => {
-      const languages = { 'en': 'EN', 'ja': 'JP' }
-      return languages[lang]
-    },
   }
 }
 </script>
@@ -89,14 +89,17 @@ $green: hsl(143, 100%, 59%);
   color: $color;
   border: 1px solid $color;
 }
+.clickable {
+  cursor: pointer;
+}
 
 .session-card {
+  &__left {
+    border-right: 1px solid $blueGrey2;
+  }
   &__head {
     .day {
       color: $themeColor3;
-    }
-    .talk-format {
-      color: $text2;
     }
     &--property {
       color: $text2;
@@ -115,18 +118,8 @@ $green: hsl(143, 100%, 59%);
         @include level-tag($themeRed);
       }
     }
-    .room-tag {
-      color: $themeBlack;
-      background-color: $blueGrey1Lighten;
-    }
     .lang-tag {
       color: #fff;
-      &.ja {
-        background-color: $themeRed;
-      }
-      &.en {
-        background-color: $themeBlue;
-      }
     }
   }
   &__content {
@@ -135,14 +128,6 @@ $green: hsl(143, 100%, 59%);
     }
     .speaker {
       color: $text2;
-    }
-  }
-  &__button {
-    border-left: 1px solid $themeColor3Transparent;
-    button {
-      width: 100%;
-      height: 100%;
-      color: $themeColor3;
     }
   }
 }
