@@ -42,9 +42,7 @@ id,name,title,abstract,talk_format_origin,talk_format,profile,room,day,no,room_i
     1. AutoML Tables
     1. AutoML Vision
     1. AutoML Natural Language",Masashi SHIBATA
-104,Takanori Suzuki,Automate the Boring Stuff with Slackbot,"I created a chatbot to automate various boring tasks. In this talk, I will explain how to create and extend a bot and work with a libs and APIs.",Talk (45 minutes),45min,Takanori(@takanory) is a Vice Chair of PyCon JP Committee. He is also a Director of BeProud Inc.,Convention Hall UGUISU,1,1,1004,English Only,英語/English,en,en,Intermediate,Project case studies,"日本語でも英語でも発表可能です。また、時間も30分に調整可能です。
-If you like 30 minutes, I can reduce case studies and adjust the time.
-The outline of my presentation is below:
+104,Takanori Suzuki,Automate the Boring Stuff with Slackbot,"I created a chatbot to automate various boring tasks. In this talk, I will explain how to create and extend a bot and work with a libs and APIs.",Talk (45 minutes),45min,Takanori(@takanory) is a Vice Chair of PyCon JP Committee. He is also a Director of BeProud Inc.,Convention Hall UGUISU,1,1,1004,English Only,英語/English,en,en,Intermediate,Project case studies,"The outline of my presentation is below:
 
 - Who am I (1m)
 - Back ground, motivation (2m)
