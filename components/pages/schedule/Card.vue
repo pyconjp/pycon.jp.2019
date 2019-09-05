@@ -23,7 +23,7 @@
                 template(#activator="{ on }")
                     a(v-on="on")
                         .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
-                SessionModalWindow(:session="session" @close="")
+                SessionModalWindow(:session="session" @close="dialog = false")
 </template>
 
 <style lang="sass" scoped>

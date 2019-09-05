@@ -56,7 +56,7 @@
             h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.detail_of_session') }}
         v-layout.my-1
           v-flex
-            p {{ session.description }}
+            p(style="white-space: pre-wrap;") {{ session.description }}
     .session-card__foot(v-if="session.tags !== ''")
       v-layout.mt-3
         v-flex.shrink.mr-3

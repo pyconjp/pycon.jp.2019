@@ -37,9 +37,8 @@ v-dialog(v-model="dialog")
               v-flex.my-1.title.font-weight-black.session-card__content--title {{ session.title }}
             v-layout
               v-flex.my-1.speaker {{ session.name }}
-        v-flex.sm1.md1.px-1.subheading.text-xs-center.clickable(v-on="on")
-          v-btn(v-if="$vuetify.breakpoint.smAndDown" round outline flat).themeColor3.themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
-          span(v-else).themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
+        v-flex.sm1.md1.py-2.px-1.subheading.text-xs-center.clickable.detail(v-on="on")
+          span.themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
 
   session-modal-window(:session="session" @close="dialog = false")
 </template>
@@ -91,6 +90,12 @@ $green: hsl(143, 100%, 59%);
 }
 .clickable {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 960px){
+  .detail {
+    border-top: 1px solid $blueGrey2;
+  }
 }
 
 .session-card {
