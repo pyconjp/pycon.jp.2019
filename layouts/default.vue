@@ -40,9 +40,9 @@ export default {
           name: this.$t('header.menu.about.parent'),
           to: this.$router.history.base + '/about',
           submenus: [
-            { 
-              id: 0, name: this.$t('header.menu.about.about-event'), to: this.$router.history.base + "/#overview" 
-            },
+            // { 
+            //   id: 0, name: this.$t('header.menu.about.about-event'), to: this.$router.history.base + "/#overview" 
+            // },
             { 
               id: 1, name: this.$t('header.menu.about.coc'), pageTrans: false, to: this.$router.history.base + "/code-of-conduct" 
             }
