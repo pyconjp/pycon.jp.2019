@@ -120,21 +120,21 @@
         },
         "support": {
             "food": {
-                "title": "食事",
-                "desc": "各日程で食事が付きます。ベジタリアン向けやハラル対応のメニューも用意いたします。"
+                "title": "Meal",
+                "desc": "Meal are included with each schedule. Menus for vegetarians and halal are also available."
             },
             "nursery": {
-                "title": "託児所",
-                "desc": "各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。"
+                "title": "Nursery",
+                "desc": "A nursery will be opened in the venue for each schedule. Application is required in advance."
             },
             "distant-support": {
-                "title": "遠方支援",
-                "desc": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。"
+                "title": "Distant support",
+                "desc": "This is a support in which PyCon JP pays all or part of transportation expenses mainly for distant people."
             }
         },
         "sponsor": {
-            "list": "スポンサーリスト",
-            "hiring": "スポンサー募集中"
+            "list": "List of Sponsor",
+            "hiring": "Looking for Sponsors"
         }
     },
     "contact": {
