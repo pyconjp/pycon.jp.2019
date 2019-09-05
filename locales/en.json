@@ -138,15 +138,15 @@
         }
     },
     "contact": {
-        "desc1": "事前に<a href='/' style='color: white;'>FAQ</a>をご確認いただけますようにお願いします。",
-        "desc2": "ボランティアによる運営ですので、回答には1週間程度を要します。<br>何卒お待ちいただけますようにお願いします。"
+        "desc1": "Please check the <a href='/' style='color: white;'> FAQ </a> in advance.",
+        "desc2": "It is run by volunteers. It takes about a week to answer. <br> Thank you for your patience."
     },
     "sponsor": {
-        "title": "スポンサー"
+        "title": "Sponsor"
     },
     "events": {
-        "place": "開催場所",
-        "target": "参加対象",
+        "place": "Venue",
+        "target": "Participation Target",
         "lunch_oyatsu_party": "※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。",
         "lunch_oyatsu": "※昼食はお弁当が出ます。またおやつの提供があります。",
         "oyatsu": "おやつの提供があります",
