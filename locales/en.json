@@ -102,21 +102,21 @@
             "staff_note": "※If you would like to see what the PyCon JP staff is doing, please join us <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> at “Lively”."
         },
         "overview": {
-            "about": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyCon JPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。",
-            "theme": "今年のテーマについて"
+            "about": "PyCon is a conference for Python users to gather, exchange information and interact with Python and software using Python. Through PyCon JP, the goal is to gather Python users together, exchange knowledge and information on various fields related to Python, connect with new friends and communities, and increase work and business opportunities.",
+            "theme": "About this year's theme"
         },
         "conference": {
-            "main": "私たちは、Pythonユーザーが一堂に会し、互いに交流を深め、知識を分けあい、新たな可能性を見つけられる場所として、PyCon JPの企画と運営に取り組んできました。とりわけ、PyCon JPを広く世界のPythonユーザにも開かれた場と位置づけ、国内外のユーザにとって魅力的なカンファレンスとなるよう努力をつづけています。<br><br> PyCon JPを素晴らしいカンファレンスとして維持していくには、ただ自分たちの会を毎年同じ時期に同じ場所で開催するだけでは足りないと、私たちは考えます。国内外で行われるカンファレンスとの連携や、ユーザー間の交流の促進、Pythonや関連するソフトウェアの普及・啓蒙をお手伝いしていくことで、Pythonにもっと多くの関心が集まり、沢山のユーザやソフトウェアが生まれていくことが、私たちの原動力となると信じています。<br><br> PyCon JP 2019 今年のテーマはPython New Era です。日本で元号が新しくなった事。Python も 2 から3 へ新しい時代へ移っていく事をコンセプトとしています。<br><br> PyCon JP 2019は参加する皆さんが新しい繋がりや知識を得て楽しめるカンファレンスを目標に開催します。",
-            "sessions": "セッション一覧",
-            "timetables": "タイムテーブル一覧",
-            "cory_profile": "コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。",
-            "koike_profile": "静岡県にある太平洋に面したのどかな町で農業を営んでいます。<br> 6年前までは組込みエンジニアとしてC言語を使った開発に携わっていましたが、退職を期にPythonを独学で学ぶことを始めました。",
-            "lyu_profile": "Renyuan Lyuは、20代で台湾国立大学大学院電気工学研究科で博士号を取得。その後、台湾の桃園にある長庚大学にてオーディオ、スピーチ、言語、およびパターン処理を専門とする教員になりました。<br><br> 最初の数年間、彼はC / C ++、Matlab、Perlを使って学術研究と教育活動を行い、表準中国語と台湾語の音声認識システムを作成しました。<br><br>  また、彼は2015年から2017年にてPyCon JP で登壇しました。<br><br>  現在、彼は大学の准教授で、確率統計、信号処理、パターン認識、および音声認識を教え、台湾の言語（台湾および北京語）の処理に関するトピックをすべてPython言語を使用して研究しています。",
-            "talk_session": "Pythonに関する様々なテーマの発表を行うセッションです。 ４５分、３０分、１５分の発表があります。 ",
-            "begginer_session": "Pythonの初心者が次のステップに踏み出すきっかけづくりを提供するセッションです。",
-            "poster_indivisual": "発表者がポスターの前で発表を行う形式のセッションです。 発表者と聴講者が直接、意見交換や議論を行えます。",
-            "poster_community": "Pythonに関するコミュニティの活動報告などを行うセッションです。",
-            "lightning_talk": "Pythonに関する様々なテーマを５分間の発表で行うセッションです。"
+            "main": "We have been working on the planning and operation of PyCon JP as a place where Python users can come together, deepen exchanges, share knowledge, and find new possibilities. In particular, we have positioned PyCon JP as a place that is widely open to Python users around the world, and we are striving to become an attractive conference for users in Japan and overseas. <br> <br> To maintain PyCon JP as a great conference, we think it's not enough to hold our meeting every year at the same place at the same time. By coordinating with conferences held in Japan and overseas, facilitating exchanges between users, and helping to spread and enlighten Python and related software, more interest has been gathered in Python, and many users and software have been attracted. I believe that being born will be our driving force. <br> <br> PyCon JP 2019 The theme for this year is Python New Era. The new era in Japan. Python also has the concept of moving from 2 to 3 into a new era. <br> <br> PyCon JP 2019 will be held with the goal of a conference where everyone can enjoy new connections and knowledge.",
+            "sessions": "List of sessions",
+            "timetables": "Timetable",
+            "cory_profile": "Corey Alsov learned Python for the first time after graduating from college and studying programming. After studying Python,He joined eBay as a software engineer.",
+            "koike_profile": "Farming in a peaceful town facing the Pacific Ocean in Shizuoka Prefecture. <br> Until 6 years ago, I was involved in development using the C language as an embedded engineer, but I started learning Python on my own when I retired.",
+            "lyu_profile": "Renyuan Lyu received his Ph.D. from Taiwan National University Graduate School of Electrical Engineering in his 20s. Later, he became a teacher specializing in audio, speech, language, and pattern processing at Changting University in Taoyuan, Taiwan. <br> <br> During the first few years, he conducted academic research and educational activities using C / C ++, Matlab, and Perl to create a speech recognition system for table Chinese and Taiwanese. <br> <br> He also took part in PyCon JP from 2015 to 2017. <br> <br> Currently he is an associate professor at the university, teaching probability statistics, signal processing, pattern recognition, and speech recognition, and using all the Python language topics on processing Taiwanese languages (Taiwan and Mandarin) And research.",
+            "talk_session": "A session to announce various themes related to Python. There are 45 minutes, 30 minutes and 15 minutes of announcements.",
+            "begginer_session": "This session provides an opportunity for beginners of Python to take the next step.",
+            "poster_indivisual": "A session in which the presenter makes a presentation in front of a poster. Presenters and listeners can exchange opinions and discuss directly.",
+            "poster_community": "A session for reporting on community activities about Python.",
+            "lightning_talk": "This is a 5 minute presentation on various themes about Python."
         },
         "support": {
             "food": {
