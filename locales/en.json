@@ -147,29 +147,29 @@
     "events": {
         "place": "Venue",
         "target": "Participation Target",
-        "lunch_oyatsu_party": "※昼食はお弁当が出ます。またおやつの提供と、18:00よりアフターパーティがあります。",
-        "lunch_oyatsu": "※昼食はお弁当が出ます。またおやつの提供があります。",
-        "oyatsu": "おやつの提供があります",
-        "hennge_dinner": "※夕食がつきます（HENNGE株式会社様よりご提供）",
+        "lunch_oyatsu_party": "",
+        "lunch_oyatsu": "※ Lunch is served for lunch. There is also a snack and an after party from 18:00.",
+        "oyatsu": "Offer a snack.",
+        "hennge_dinner": "※Dinner is provided (provided by HENNGE Co., Ltd.)",
         "supports": {
             "food": {
-                "title": "食事",
-                "day1": "朝食（限定数）、ランチ、おやつ、夕食（アフターパーティー）",
-                "day2": "朝食（限定数）、ランチ、おやつ"
+                "title": "Meal",
+                "day1": "Breakfast (Limited quantity),Lunch, Snack, Dinner (After Party)",
+                "day2": "Breakfast (Limited quantity),Lunch, Snack"
             },
             "nursery": {
-                "title": "託児所",
-                "content": "各日程とも会場内に託児所を開設します。ご利用には事前に申し込みが必要です。",
-                "to_apply": "申し込みへ"
+                "title": "Nursery",
+                "content": "A daycare center will be opened in the venue for each schedule. Application is required in advance.",
+                "to_apply": "to Apply"
             },
             "distant": {
-                "title": "遠方支援",
-                "content": "主に遠方者を対象に、交通費の全額または一部をPyCon JPが負担する制度です。",
-                "to_apply": "申し込みへ"
+                "title": "Distant Support",
+                "content": "This is a system in which PyCon JP pays all or part of transportation expenses mainly for distant people.",
+                "to_apply": "to Apply"
             }
         },
         "section": {
-            "support": "サポート：食事、託児所、遠方支援"
+            "support": "Support: Meals, Nursery, Distant Support"
         }
     },
     "conference": {
