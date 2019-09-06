@@ -55,8 +55,7 @@
           v-flex
             h3.subheading.font-weight-bold.session-card__content--head {{ $t('sessions.detail_of_session') }}
         v-layout.my-1
-          v-flex
-            p(style="white-space: pre-wrap;") {{ session.description }}
+          markdown-to-HTML(:markdown="session.description")
     .session-card__foot(v-if="session.tags !== ''")
       v-layout.mt-3
         v-flex.shrink.mr-3
@@ -67,6 +66,7 @@
 
 <script>
 import { roomsMaster } from '@/plugins/constants'
+import MarkdownToHTML from '@/components/parts/MarkdownToHTML'
 
 export default {
   data() {
@@ -80,6 +80,9 @@ export default {
       type: Object,
       required: true
     },
+  },
+  components: {
+    MarkdownToHTML
   },
   computed: {
     roomTag() {

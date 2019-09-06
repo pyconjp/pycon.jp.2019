@@ -21,6 +21,7 @@
     "core-js": "3",
     "csv2json": "./scripts/csv2json",
     "lodash": "^4.17.11",
+    "marked": "^0.7.0",
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
