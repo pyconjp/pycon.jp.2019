@@ -59,12 +59,11 @@ export default {
   },
   data() {
     return {
-      activeDay: 1,
+      activeDay: new Date() < new Date(2019, 8, 16, 18, 0, 0) ? 1 : 2, // 1日目の18時に2日目に切り替わる
       sessions: sessions
     }
   },
   created() {
-    // console.log(sessions)
   },
   computed: {
     day1Sessions() {
