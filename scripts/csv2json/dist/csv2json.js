@@ -60,8 +60,27 @@ var parse = function (input, options) {
         return resolve(output);
     }); });
 };
+var sessionHours = function (day, no) {
+    var day1Schedules = [
+        '11:25 - 12:10',
+        '13:40 - 14:25',
+        '14:40 - 15:10',
+        '16:00 - 16:15',
+        '16:30 - 16:45'
+    ];
+    var day2Schedules = [
+        '11:15 - 12:00',
+        '13:30 - 14:00',
+        '14:15 - 14:45',
+        '15:45 - 16:00',
+        '16:15 - 16:30'
+    ];
+    var schedules = [day1Schedules, day2Schedules];
+    // session.day, session.noは1始まり
+    return schedules[parseInt(day) - 1][parseInt(no) - 1];
+};
 var csv2json = function () { return __awaiter(_this, void 0, void 0, function () {
-    var inputPath, outputDir, buf, data, from_line, obj, outputPath;
+    var inputPath, outputDir, buf, data, from_line, obj, objWithHours, outputPath;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -79,6 +98,13 @@ var csv2json = function () { return __awaiter(_this, void 0, void 0, function ()
                 return [4 /*yield*/, parse(buf.toString(), { columns: true, from_line: from_line })];
             case 2:
                 obj = _a.sent();
+                objWithHours = !inputPath.match(/sessions/) ? obj : obj.map(function (session) {
+                    if (session.day) {
+                        var hoursObj = { hours: sessionHours(session.day, session.no) };
+                        return Object.assign(session, hoursObj);
+                    }
+                    return session;
+                });
                 outputPath = path_1.default.parse(inputPath).name + '.json';
                 // 出力ディレクトリが指定されていればそこに書き出し
                 if (outputDir !== undefined) {
@@ -88,7 +114,7 @@ var csv2json = function () { return __awaiter(_this, void 0, void 0, function ()
                     outputPath = path_1.default.join(outputDir, outputPath);
                 }
                 // 書き出し
-                writeFile(outputPath, JSON.stringify(obj)).catch(function (err) {
+                writeFile(outputPath, JSON.stringify(objWithHours)).catch(function (err) {
                     console.error(err);
                 });
                 return [2 /*return*/];

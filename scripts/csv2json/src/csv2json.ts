@@ -23,6 +23,26 @@ const parse = (input: string, options?: csvparse.Options): Promise<any> => {
     }));
 };
 
+const sessionHours = (day: string, no: string): string => {
+    const day1Schedules = [
+        '11:25 - 12:10',
+        '13:40 - 14:25',
+        '14:40 - 15:10',
+        '16:00 - 16:15',
+        '16:30 - 16:45'
+    ];
+    const day2Schedules = [
+        '11:15 - 12:00',
+        '13:30 - 14:00',
+        '14:15 - 14:45',
+        '15:45 - 16:00',
+        '16:15 - 16:30'
+    ];
+    const schedules = [day1Schedules, day2Schedules];
+    // session.day, session.noは1始まり
+    return schedules[parseInt(day) - 1][parseInt(no) - 1];
+};
+
 const csv2json = async (): Promise<void> => {
 
     // csvファイルの読み込み
@@ -40,6 +60,15 @@ const csv2json = async (): Promise<void> => {
 
     // JSON化
     const obj = await parse(buf.toString(), { columns: true, from_line });
+
+    // sessions.jsonを出力するときhoursを付与
+    const objWithHours = !inputPath.match(/sessions/) ? obj : obj.map((session: any): object => {
+        if (session.day) {
+            const hoursObj = { hours: sessionHours(session.day, session.no) };
+            return Object.assign(session, hoursObj);
+        }
+        return session;
+    });
     let outputPath: string = path.parse(inputPath).name + '.json';
 
     // 出力ディレクトリが指定されていればそこに書き出し
@@ -50,7 +79,7 @@ const csv2json = async (): Promise<void> => {
     }
 
     // 書き出し
-    writeFile(outputPath, JSON.stringify(obj)).catch(err => {
+    writeFile(outputPath, JSON.stringify(objWithHours)).catch(err => {
         console.error(err);
     });
 }

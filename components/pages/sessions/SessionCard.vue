@@ -8,11 +8,11 @@ v-dialog(v-model="dialog")
             v-layout.wrap.row
               v-flex.pt-1.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown}")
                 span.day.font-weight-bold {{ $t(`days.day${session.day}`) }}
-              v-flex.pt-1.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+              v-flex.pt-1.shrink.text-xs-center.mr-1(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
                 span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-              //- v-flex.shrink.mr-3.text-xs-center
-              //-   span {{ time }}
+              v-flex.pt-1.shrink.text-xs-center(v-if="session.hours")
+                span {{ session.hours }}
               v-flex.pt-1.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.talk-format {{ $t('sessions.' + session.talk_format) }}
             v-layout.wrap.justify-start.session-card__head--property
