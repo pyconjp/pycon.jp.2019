@@ -1,29 +1,36 @@
 <template lang="pug">
-v-layout(
-  :class="{'my-4': $vuetify.breakpoint.smAndUp}"
-).column
-  v-flex.session(
-    v-for="(session, idx) in sessions"
-    :key="idx"
-    :class="{' pt-3 pb-1': $vuetify.breakpoint.smAndUp}"
-  )
-    SessionCard(:session="session")
+.session-list
+  v-layout.column
+    v-flex.session(
+      v-for="(session, idx) in sessions"
+      :key="idx"
+    ).py-1
+      SessionCard(:session="session")
 </template>
 
 <script>
-  import SessionCard from '@/components/pages/sessions/SessionCard'
+import SessionCard from '@/components/pages/sessions/SessionCard'
 
-  export default {
-    props: {
-      sessions: {
-        type: Array,
-        required: true
-      },
+export default {
+  props: {
+    sessions: {
+      type: Array,
+      required: true
     },
-    components: {
-      SessionCard,
+  },
+  data() {
+    return {
+
     }
-  }
+  },
+  components: {
+    SessionCard 
+  },
+  created() {
+    console.log(this.sessions)
+  },
+
+}
 </script>
 
 <style lang="scss">

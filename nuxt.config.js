@@ -56,6 +56,7 @@ export default {
   */
   plugins: [
     "@/plugins/googleMap.js",
+    "@/plugins/sticky.js",
     "@/plugins/i18n.js"
   ],
   /*
@@ -63,12 +64,9 @@ export default {
   */
   modules: [
     '@nuxtjs/vuetify',
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
-    [
-      '@nuxtjs/dotenv', { filename: dotenvFile }
-    ],
+    ['@nuxtjs/dotenv', { filename: dotenvFile }]
   ],
   /*
   ** Axios module configuration
@@ -79,26 +77,19 @@ export default {
   },
   router: {
     middleware: 'i18n',
-    base: routerBase
+    base: routerBase,
+    scrollBehavior (to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          selector: to.hash
+        }
+      }
+    }
   },
   generate: {
     routes: ['/en/code-of-conduct', '/en/sponsors', '/en/schedule', '/en/conference', '/en/sessions', '/en/youth', '/en/tutorial', '/en/sprint']
   },
   render: {
-    csp: {
-      hashArgorism: 'sha256',
-      policies: {
-        'script-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ],
-        'style-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ],
-        'default-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ]
-      }
-    }
   },
   /*
   ** vuetify module configuration

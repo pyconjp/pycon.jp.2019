@@ -2,7 +2,14 @@
 #sessions
     page-header(ja="セッションリスト" en="Sessions")
     v-container
-      v-layout(v-if="$vuetify.breakpoint.smAndUp").mt-4.mb-3.tabs.sessions
+      v-layout.py-3.justify-center.wrap
+        v-flex.xs12.sm12.md4.px-1
+          v-text-field(:value="selectedText" @change="val => selectedText = val" :placeholder="$t('sessions.search.text')" solo hide-details)
+        v-flex.xs12.sm12.md4.px-1(v-if="$vuetify.breakpoint.mdAndUp")
+          session-select(@change="val => selectedRooms = val" :items="rooms" :placeholder="$t('sessions.search.room')")
+        v-flex.xs12.sm12.md4.px-1(v-if="$vuetify.breakpoint.mdAndUp")
+          session-select(@change="val => selectedLevels = val" :items="levels" :placeholder="$t('sessions.search.level')")
+      v-layout(v-if="$vuetify.breakpoint.smAndUp").mt-4.mb-1.tabs.sessions
         v-flex.text-md-center.tab(:class="activeTab === 0 ? 'active' : ''")
           v-btn(block flat @click="activeTab = 0")
             .title {{ $t('sessions.session_category.talk_session') }}
@@ -14,16 +21,7 @@
             .title {{ $t('sessions.session_category.poster_session') }}
       v-layout(v-else).mt-2
         v-flex
-          v-select(
-            outline
-            single-line
-            :items="items"
-            item-text="text"
-            item-value="value"
-            v-model="activeTab"
-            :value="0"
-          )
-        
+          v-select(outline single-line :items="items" item-text="text" item-value="value" v-model="activeTab" :value="0")
       v-layout.tab-item(v-if="activeTab === 0")
         v-flex
           SessionList(:sessions="talkSessions")
@@ -49,6 +47,9 @@ import EventPageIndex from '@/components/parts/EventPageIndex'
 import Supports from '@/components/parts/Supports'
 
 import SessionList from '@/components/pages/sessions/SessionList'
+import SessionSelect from '@/components/pages/sessions/SessionSelect'
+
+import { roomsMaster } from "@/plugins/constants"
 
 export default {
   components: {
@@ -61,7 +62,8 @@ export default {
     EventHeader,
     EventPageIndex,
     Supports,
-    SessionList
+    SessionList,
+    SessionSelect
   },
   data() {
     return {
@@ -71,22 +73,54 @@ export default {
         { text: this.$t('sessions.session_category.talk_session'), value: 0 },
         { text: this.$t('sessions.session_category.lightning_talk'), value: 1 },
         { text: this.$t('sessions.session_category.poster_session'), value: 2 }
-      ]
+      ],
+      selectedText: null,
+      selectedRooms: [],
+      selectedLevels: [],
     }
   },
   computed: {
+    filterSessions() {
+      let filtered = this.sessions
+      if(this.selectedText) filtered = filtered.filter(session =>  {
+        return session.title.toLowerCase().indexOf(this.selectedText.toLowerCase()) > -1 || session.name.toLowerCase().indexOf(this.selectedText.toLowerCase()) > -1
+      })
+      if(this.selectedRooms.length > 0) filtered = filtered.filter(session =>  this.selectedRooms.includes(session.room_id))
+      if(this.selectedLevels.length > 0) filtered = filtered.filter(session => this.selectedLevels.includes(session.audience_level))
+      return filtered
+    },
     talkSessions() {
-      return this.sessions.filter(session => session.talk_format_origin.match(/^Talk/))
+      return this.filterSessions.filter(session => session.talk_format_origin.match(/^Talk/))
     },
     lightningTalks() {
-      return this.sessions.filter(session => session.talk_format_origin.match(/^Lightning/))
+      return this.filterSessions.filter(session => session.talk_format_origin.match(/^Lightning/))
     },
     posterSessions() {
-      return this.sessions.filter(session => session.talk_format_origin.match(/^Poster/))
+      return this.filterSessions.filter(session => session.talk_format_origin.match(/^Poster/))
     },
+    rooms() {
+      return Array.from(
+        new Set(
+          this.sessions.map(
+            session =>  { return { value: session.room_id, text: this.$t("rooms." + roomsMaster[session.room_id]) } }
+          )
+        )
+      )
+    },
+    levels() {
+      return Array.from(
+        new Set(
+          this.sessions.map(session => { return { value: session.audience_level, text: session.audience_level} })
+        )
+      ).filter(e => !!e.text)
+    }
   },
   created() {
-    console.log(sessions)
+  },
+  methods: {
+    debug(val) {
+      // console.log(val)
+    }
   }
 }
 </script>

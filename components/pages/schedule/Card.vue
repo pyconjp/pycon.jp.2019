@@ -9,7 +9,7 @@
                     v-flex(v-if="$vuetify.breakpoint.smAndDown")
                         .caption.blueGrey1--text {{ $t("rooms." + roomsMaster[session.room_id]) }}
                     v-flex
-                        .caption.blueGrey1--text {{ session.talk_format }}
+                        .caption.blueGrey1--text {{ $t("sessions." +  session.talk_format) }}
         .py-1.caption.font-weight-bold {{ session.title }}
         .py-1.caption.font-weight-thin.grey--text {{ session.name }}
         v-layout.justify-end.py-2(v-if="session.audience_level")

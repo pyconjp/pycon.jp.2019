@@ -7,11 +7,11 @@
 
       v-layout.tabs.timetable.wrap
         v-flex.xs6.text-md-center.tab(:class="activeDay === 1 ? 'active' : ''")
-          v-btn(block flat @click="activeDay = 1")
-            tab-button(:day="$t('days.day1' )" date="09/16" :weekday="$t('weekday.mon' )" :holiday="true" :isMobile="$vuetify.breakpoint.smAndDown")
+          v-btn(block flat @click="activeDay = 1" :class="activeDay === 1 ? 'themeColor3--text' : ''")
+            tab-button(:day="$t('days.day1' )" date="09/16" :weekday="$t('weekday.mon' )" :isMobile="$vuetify.breakpoint.smAndDown")
         v-flex.xs6.text-md-center.tab(:class="activeDay === 2 ? 'active' : ''")
-          v-btn(block flat @click="activeDay = 2").font-weight-bold
-            tab-button(:day="$t('days.day2' )" date="09/17" :weekday="$t('weekday.tue' )" :holiday="false" :isMobile="$vuetify.breakpoint.smAndDown")
+          v-btn(block flat @click="activeDay = 2" :class="activeDay === 2 ? 'themeColor3--text' : ''")
+            tab-button(:day="$t('days.day2' )" date="09/17" :weekday="$t('weekday.tue' )" :isMobile="$vuetify.breakpoint.smAndDown")
 
       v-layout.tab-item
         v-flex.mt-2(v-if="activeDay === 1" :class="{'mt-5': $vuetify.breakpoint.mdAndUp}")
@@ -59,12 +59,11 @@ export default {
   },
   data() {
     return {
-      activeDay: 1,
+      activeDay: new Date() < new Date(2019, 8, 16, 18, 0, 0) ? 1 : 2, // 1日目の18時に2日目に切り替わる
       sessions: sessions
     }
   },
   created() {
-    // console.log(sessions)
   },
   computed: {
     day1Sessions() {

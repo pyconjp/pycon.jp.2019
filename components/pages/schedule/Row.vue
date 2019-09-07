@@ -1,14 +1,23 @@
 <template lang="pug">
-.parent(:class="noBorder ? '' : 'bottom-border'")
+.parent(:class="noBorder ? '' : 'bottom-border'" sticky-container)
     .time-caption.subheading.text-xs-center(
+        v-sticky="$vuetify.breakpoint.smAndDown"
         v-if="time"
-        :class="{'font-weight-bold': $vuetify.breakpoint.mdAndDown}"
-    ) {{ time }}
+        :class="{'font-weight-bold': $vuetify.breakpoint.smAndDown}"
+    ) 
+        span.caption.grey--text.day.pr-2 {{ day }}
+        span {{ time }}
     slot
 </template>
 
 <style lang="sass" scoped>
 @import '@/assets/style/variables.scss';
+.day 
+    display: none
+.top-sticky
+    .day 
+        display: inline
+
 @media only screen and (min-width: 1200px)
     .bottom-border
         border-bottom: 1px $blueGrey1 solid
@@ -31,7 +40,8 @@ export default {
     name: "timetable-row",
     props: {
         "time": { default: null },
-        "no-border": { default: false }
+        "no-border": { default: false },
+        "day": { type: String }
     }
 }
 </script>

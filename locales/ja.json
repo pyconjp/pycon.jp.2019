@@ -372,9 +372,15 @@
         "party": "パーティ"
     },
     "sessions": {
+        "search": {
+            "text": "セッション名/スピーカー名で検索",
+            "room": "部屋で絞り込む",
+            "level": "レベルで絞り込む"
+        },
+        "search_placeholder": "セッション名で検索",
         "level": "レベル",
-        "lang_of_talk": "発表言語",
-        "lang_of_slide": "資料言語",
+        "lang_of_talk": "発表",
+        "lang_of_slide": "資料",
         "speaker": "発表者",
         "detail": "詳細",
         "detail_of_session": "発表詳細",
@@ -383,9 +389,11 @@
             "lightning_talk": "ライトニングトーク",
             "poster_session": "ポスターセッション"
         },
-        "15min": "15分トーク",
-        "30min": "30分トーク",
-        "45min": "45分トーク",
+        "15min": "15分",
+        "30min": "30分",
+        "45min": "45分",
+        "begginer_session": "ビギナーズセッション",
+        "invited_talk": "招待講演",
         "lt": "ライトニングトーク",
         "pt_i": "ポスター(個人)",
         "pt_c": "ポスター(コミュニティ)",

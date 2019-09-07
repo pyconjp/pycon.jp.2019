@@ -11,22 +11,22 @@ v-dialog(v-model="dialog")
               v-flex.pt-1.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
                 span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-              //- v-flex.shrink.mr-3.text-xs-center
-              //-   span {{ time }}
-              v-flex.pt-1.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+              v-flex.pl-1.pt-1.shrink.text-xs-center(v-if="session.hours" :class="{'xs6': $vuetify.breakpoint.smAndDown}")
+                span {{ session.hours }}
+              v-flex.pt-1.shrink.text-xs-center(:class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.talk-format {{ $t('sessions.' + session.talk_format) }}
             v-layout.wrap.justify-start.session-card__head--property
-              v-flex.pt-2.shrink.text-xs-center.font-weight-bold.textColor1--text(:class="{'xs12': $vuetify.breakpoint.smAndDown}")
+              v-flex.pt-2.shrink.text-xs-center.font-weight-bold.textColor1--text(:class="{'xs6': $vuetify.breakpoint.smAndDown}")
                 span.room-tag.px-3.blueGrey1Lighten {{ $t(`rooms.${roomTag}`) }}
-              v-flex.pt-2.shrink.text-xs-center(v-if="!isPoster" :class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
-                span.mr-2 {{ $t('sessions.level') }}:
+              v-flex.pt-2.shrink.text-xs-center(v-if="!isPoster" :class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+                span.mr-2(v-if="$vuetify.breakpoint.mdAndUp") {{ $t('sessions.level') }}:
                 span.level-tag.px-3(:class="session.audience_level") {{ session.audience_level }}
-              v-flex.pt-2.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+              v-flex.pt-2.shrink.text-xs-center(:class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.mr-2 {{ $t('sessions.lang_of_talk') }}:
                 span.lang-tag.px-3.font-weight-bold.text-uppercase(
                   :class="session.lang_of_talk === 'en' ? 'themeBlue' : 'themeRed'"
                 ) {{ session.lang_of_talk  }}
-              v-flex.pt-2.shrink.text-xs-center(:class="{'xs12': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
+              v-flex.pt-2.shrink.text-xs-center(:class="{'xs6': $vuetify.breakpoint.smAndDown, 'pl-3': $vuetify.breakpoint.mdAndUp}")
                 span.mr-2 {{ $t('sessions.lang_of_slide') }}:
                 span.lang-tag.mr-1.px-3.font-weight-bold.text-uppercase(
                   v-for="lang_of_slide in langOfSlideArray"

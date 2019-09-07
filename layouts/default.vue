@@ -7,6 +7,13 @@ v-app(
   v-content
     navigation-drawer(v-if="$vuetify.breakpoint.smAndDown" :navigations="navigations" :applies="applies")
     nuxt
+    v-btn(
+      :style="'opacity: ' + opacity + ';'"
+      transition="slide-y-reverse-transition"
+      absolute dark fab bottom fixed right color="themeColor3" style="bottom: 16px;"
+      @click="$vuetify.goTo('#pyconjp-header')"
+    )
+      v-icon keyboard_arrow_up
   contact
   pyconjp-footer
 </template>
@@ -30,8 +37,6 @@ export default {
     'pyconjp-footer': Footer,
     'navigation-drawer': NavigationDrawer
   },
-  created(){
-  },
   data() {
     return {
       navigations: [
@@ -40,11 +45,17 @@ export default {
           name: this.$t('header.menu.about.parent'),
           to: this.$router.history.base + '/about',
           submenus: [
-            // { 
-            //   id: 0, name: this.$t('header.menu.about.about-event'), to: this.$router.history.base + "/#overview" 
-            // },
             { 
-              id: 1, name: this.$t('header.menu.about.coc'), pageTrans: false, to: this.$router.history.base + "/code-of-conduct" 
+              id: 0,
+              name: this.$t('header.menu.about.about-event'), 
+              scroll: "#overview",
+              onlyTop: true
+            },
+            { 
+              id: 1, 
+              name: this.$t('header.menu.about.coc'), 
+              pageTrans: false, 
+              to: this.$router.history.base + "/code-of-conduct" 
             }
           ]
         },
@@ -98,13 +109,15 @@ export default {
         {
           id: 4,
           name: this.$t('header.menu.access'),
-          to: this.$router.history.base + '/#access',
+          scroll: "#access",
+          onlyTop: true,
           submenus: []
         },
         {
           id: 5,
           name: this.$t('header.menu.support'),
-          to: this.$router.history.base + '/#support',
+          scroll: "#support",
+          onlyTop: true,
           submenus: []
         },
         {
@@ -161,7 +174,31 @@ export default {
         //   id: 2,
         //   name: this.$t('header.apply.distant-support')
         // }
-      ]
+      ],
+      windowTop: window.top.scrollY
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll)
+    // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      this.windowTop = window.top.scrollY
+    },
+    // scrollFix(hashbang) {
+    //   this.$vuetify.goTo(hashbang)
+    // }
+  },
+  computed: {
+    showScrollTop() {
+      return this.windowTop > 1000
+    },
+    opacity() {
+      return this.windowTop / 1200
     }
   }
 }

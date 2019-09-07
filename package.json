@@ -26,6 +26,7 @@
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.12.7",
     "vue-i18n": "^8.11.2",
+    "vue-sticky-directive": "^0.0.10",
     "vue2-google-maps": "^0.10.6"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "babel-polyfill": "^6.26.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "eslint-utils": "^1.4.2",
     "jest": "^24.1.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
