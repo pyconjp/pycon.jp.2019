@@ -1,12 +1,20 @@
 {
     "basic": {
         "access": "Venue",
+        "schedule": "Schedule",
+        "access_schedule": "Date・Place",
         "pio": "Ota Cty Industrial Plaza (PiO) Reservation Center",
         "hennge": "HENNGE",
         "detail": "Detail",
-        "apply": "Apply",
-        "norm": "Norm",
-        "recruit": "Recruit"
+        "apply": "Registration",
+        "apply-soldout": "Registration(Sold Out)",
+        "norm": "Code of conduct",
+        "recruit": "Recruit",
+        "company-desc": "Company Overview",
+        "address": {
+            "pio": "1-20-20 Minami Kamata, Ota-ku, Tokyo 144-0035, Japan",
+            "hennge": "Glass City Shibuya 5F, 16-28 Minamihiradaimachi, Shibuya-ku, Tokyo 150-0036, Japan"
+        }
     },
     "rooms": {
         "large": "Large Exhibition Hall",
@@ -14,8 +22,9 @@
         "small": "small exhibition hall",
         "ume": "Convention Hall UME",
         "uguisu": "Convention Hall UGUISU",
-        "d": "meeting room D"
-    },
+        "d": "meeting room D",
+        "e": "meeting room E"
+    }, 
     "days": {
         "day1": "Day 1",
         "day2": "Day 2"
@@ -28,6 +37,7 @@
     },
     "header": {
         "menu": {
+            "home": "Home",
             "about": {
                 "parent": "About",
                 "about-event": "Event",
@@ -40,7 +50,7 @@
                     "timetable": "Timetable",
                     "sessions": "Sessions"
                 },
-                "child-workshop": "Child Workshop",
+                "child-workshop": "Workshop for Children",
                 "dev-spr": "Development Sprint",
                 "tutorial": "Tutorial"
             },
@@ -51,60 +61,312 @@
             "staff": "Staff",
             "faq": "FAQ"
         },
-        "apply": "Apply"
+        "apply": {
+            "parent": "Events",
+            "event": {
+                "parent": "Registration",
+                "conference": "Conference",
+                "child-workshop": "Workshop for Children",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
+            },
+            "nursery": {
+                "parent": "Application for Nursery",
+                "conf-child": "Conference/Workshop for Children",
+                "dev-spr": "Development Sprint",
+                "tutorial": "Tutorial"
+            },
+            "distant-support": "Application for distant support"
+        }
     },
     "home": {
-        "title": "Top Page",
+        "title": "Top page",
         "keyvisual": {
             "child-workshop": "We will also hold a workshop for children",
-            "timetable": "See timetables"
+            "soldout-desc": "PyCon JP Regular tickets are sold out. PyCon JP is not involved in ticket transfers. If canceled, the participation fee cannot be refunded. We recommend that you don't cancel and hand over the connpass receipt to the applicant. ",
+            "timetable": "See timetables",
+            "sessions": "Sessions"
         },
         "session": {
             "dev-spr": {
-                "desc": "Development Session description"
+                "desc": "This event is a short-term intensive software development event."
             },
             "tutorial": {
-                "desc": "Tutorial Day"
+                "desc": "This is an event for beginners."
             }
         },
         "news": {
             "list": "News",
-            "staff": "Looking for Staff！",
-            "staff_desc": "PyCon JP 2019開催を積極的に進められるコアスタッフを募集しています。 Pythonコミュニティを盛り上げたい方やカンファレンススタッフをやってみたい方の 応募をお待ちしています。",
-            "staff_note": "※PyCon JPスタッフがどんな活動をしているか、見てみたい方は https://pyconjp-staff.connpass.com/ から「にぎやかし」で参加してみてください。"
+            "staff": "Looking for Staff!",
+            "staff_desc": "We are looking for staff on the day to actively hold PyCon JP 2019. We look forward to applications for those who want to boost the Python community or want to work as conference staff.",
+            "staff_note": "*If you would like to see what the PyCon JP staff is doing, please join us <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> at “Lively”."
+        },
+        "overview": {
+            "about": "PyCon is a conference for Python users to gather, exchange information and interact with Python and software using Python. Through PyCon JP, the goal is to gather Python users together, exchange knowledge and information on various fields related to Python, connect with new friends and communities, and increase work and business opportunities.",
+            "theme": "About this year's theme"
         },
         "conference": {
-            "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.",
-            "sessions": "Sessions",
-            "timetables": "Time Tables"
+            "main": "We have been working on the planning and operation of PyCon JP as a place where Python users can come together, deepen exchanges, share knowledge, and find new possibilities. In particular, we have positioned PyCon JP as a place that is widely open to Python users around the world, and we are striving to become an attractive conference for users in Japan and overseas. <br> <br> To maintain PyCon JP as a great conference, we think it's not enough to hold our meeting every year at the same place at the same time. By coordinating with conferences held in Japan and overseas, facilitating exchanges between users, and helping to spread and enlighten Python and related software, more interest has been gathered in Python, and many users and software have been attracted. I believe that being born will be our driving force. <br> <br> PyCon JP 2019 The theme for this year is Python New Era. The new era in Japan. Python also has the concept of moving from 2 to 3 into a new era. <br> <br> PyCon JP 2019 will be held with the goal of a conference where everyone can enjoy new connections and knowledge.",
+            "sessions": "List of sessions",
+            "timetables": "Timetable",
+            "cory_profile": "Corey Alsov learned Python for the first time after graduating from college and studying programming. After studying Python,He joined eBay as a software engineer.",
+            "koike_profile": "Farming in a peaceful town facing the Pacific Ocean in Shizuoka Prefecture. <br> Until 6 years ago, I was involved in development using the C language as an embedded engineer, but I started learning Python on my own when I retired.",
+            "lyu_profile": "Renyuan Lyu received his Ph.D. from Taiwan National University Graduate School of Electrical Engineering in his 20s. Later, he became a teacher specializing in audio, speech, language, and pattern processing at Changting University in Taoyuan, Taiwan. <br> <br> During the first few years, he conducted academic research and educational activities using C / C ++, Matlab, and Perl to create a speech recognition system for table Chinese and Taiwanese. <br> <br> He also took part in PyCon JP from 2015 to 2017. <br> <br> Currently he is an associate professor at the university, teaching probability statistics, signal processing, pattern recognition, and speech recognition, and using all the Python language topics on processing Taiwanese languages (Taiwan and Mandarin) And research.",
+            "talk_session": "A session to announce various themes related to Python. There are 45 minutes, 30 minutes and 15 minutes of announcements.",
+            "begginer_session": "This session provides an opportunity for beginners of Python to take the next step.",
+            "poster_indivisual": "A session in which the presenter makes a presentation in front of a poster. Presenters and listeners can exchange opinions and discuss directly.",
+            "poster_community": "A session for reporting on community activities about Python.",
+            "lightning_talk": "This is a 5 minute presentation on various themes about Python."
         },
         "support": {
             "food": {
-                "title": "Food",
-                "desc": "Food description"
+                "title": "Meal",
+                "desc": "Meal are included with each schedule. Menus for vegetarians and halal are also available."
             },
             "nursery": {
                 "title": "Nursery",
-                "desc": "Nursery description"
+                "desc": "A nursery will be opened in the venue for each schedule. Application is required in advance."
             },
             "distant-support": {
-                "title": "Distant Support",
-                "desc": "Distant Support description"
+                "title": "Distant support",
+                "desc": "This is a support in which PyCon JP pays all or part of transportation expenses mainly for distant people."
             }
         },
         "sponsor": {
-            "list": "Sponsors",
-            "hiring": "Hiring sponsor"
+            "list": "List of Sponsor",
+            "hiring": "Looking for Sponsors"
         }
     },
     "contact": {
-        "desc1": "Please check <a href='/' style='color: white;'>FAQ</a> in advance.",
-        "desc2": "We members are all volunteer staff. It might take a week to reply for your message."
+        "desc1": "Please check the <a href='/' style='color: white;'> FAQ </a> in advance.",
+        "desc2": "It is run by volunteers. It takes about a week to answer. <br> Thank you for your patience."
     },
     "sponsor": {
-        "title": "Sponsors"
+        "title": "Sponsor"
+    },
+    "events": {
+        "place": "Venue",
+        "target": "Participation Target",
+        "lunch_oyatsu_party": "",
+        "lunch_oyatsu": "* Lunch is served for lunch. There is also a snack and an after party from 18:00.",
+        "oyatsu": "Offer a snack.",
+        "hennge_dinner": "*Dinner is provided (provided by HENNGE Co., Ltd.)",
+        "supports": {
+            "food": {
+                "title": "Meal",
+                "day1": "Breakfast (Limited quantity),Lunch, Snack, Dinner (After Party)",
+                "day2": "Breakfast (Limited quantity),Lunch, Snack"
+            },
+            "nursery": {
+                "title": "Nursery",
+                "content": "A daycare center will be opened in the venue for each schedule. Application is required in advance.",
+                "to_apply": "to Apply"
+            },
+            "distant": {
+                "title": "Distant Support",
+                "content": "This is a system in which PyCon JP pays all or part of transportation expenses mainly for distant people.",
+                "to_apply": "to Apply"
+            }
+        },
+        "section": {
+            "support": "Support: Meals, Nursery, Distant Support"
+        }
+    },
+    "conference": {
+        "title": "Conference",
+        "posters": "List of poster sessions",
+        "lightning_talk": "This is a presentation that takes 5 minutes. “Lightning Talk” is also abbreviated as “LT”. <br> 5 minutes for fun or 5 minutes for fun. It is a plan to have more people have the opportunity to present. It is OK whether or not it is related to Python! <br> <br> Closing LT is attended by all participants at the end of the conference. The presenter can make a presentation in front of everyone, and all the participants, including those who hear, will excite the event together. I'm looking forward to seeing what LTs will be announced this year. Let's liven up together!",
+        "talk_session": "A session to announce various themes related to Python. There are 45-minute, 30-minute and 15-minute announcements.",
+        "begginer_session": "In this hands-on, using Python library Pikepdf that handles PDF files, we will create a tool to concatenate and split PDF files, unlock passwords, etc. Through this hands-on, learn how to create command-line applications, how to use libraries, how to debug, etc., and learn how to create practical tools in Python.",
+        "begginer_session_target": "!!!ダミーテキスト",
+        "poster_indivisual": "A poster session is a session in which posters are posted and presented before that. At these technical conferences, the talk session feels like a protagonist, but don't forget the poster session.",
+        "poster_community": "It is a place where various Python communities gather and introduce the community in a poster presentation format. Last year at PyCon JP 2018, a total of six communities communicated their activities to the participants, from Hokkaido in the north to Kyushu in the south.",
+        "after_party": "!!!アフターパーティのダミーテキスト",
+        "for_LTer": "For LTer",
+        "for_LTer_main": "It recruits in the form of having a name written on the whiteboard in the form of a photograph on the morning of the day. I ’ll do it first, so I ’ll do LT! Please enter the venue as soon as possible. The LT time is 5 minutes and the number of slots is scheduled to be 8 slots on the first day and 7 slots on the second day.",
+        "for_LTer_sub": "* Please make slides in English so that people who do not understand Japanese can enjoy it to some extent.",
+        "talk_session_list": "List of talk sessions",
+        "lightning_talk_list": "List of Lightning Talk",
+        "sections": {
+            "summary": "Conference overview",
+            "keynote": "Keynote",
+            "invited_lecture": "Invited lecture",
+            "talk_session": "Talk session",
+            "lightning_talk": "Lightning talk",
+            "beginners_session": "Beginners Session",
+            "poster_session": "Poster session",
+            "poster_indivisual": "Poster session (individual)",
+            "poster_community": "Poster session (community)",
+            "after_party": "Conference party"
+        },
+        "place": {
+            "after_party": "PiO Small Exhibition Hall (+ Large Exhibition Hall)"
+        }
+    },
+    "tutorial": {
+        "title": "Tutorial",
+        "abstract": "This event is for beginners and intermediates of Python. The instructor will teach you in an easy-to-understand manner. <br> In addition to the instructor, there is a tutor so you can wear it firmly, so please take this opportunity to challenge!",
+        "unneed_ticket": "*Tickets for the PyCon JP 2019 conference are not required to participate in the tutorial.",
+        "course": {
+            "goal": "Overview and goals to set",
+            "capacity": "Number of participants",
+            "target": "Target participants",
+            "environment": "Various environments",
+            "do_your_self": "(Please prepare by yourself)",
+            "contents": "How to proceed on the day",
+            "produced_by": "Offer",
+            "detail": "Detail",
+            "detail_text": "please check connpass!"
+        },
+        "course1": {
+            "goal": "One of the things you can do with Python is web application development. <br> In this tutorial, you will learn how to create a web application using Django, a full-stack web application framework. <br> <br> Specifically, you will learn the basics of Web application and database introduction. Next, use Django to create a simple EC site with functions such as a product page, shopping cart, and product search form. <br> By applying what you have learned in this tutorial, you will be able to create Web applications with various inputs and outputs as well as EC sites.",
+            "capacity": "20 people",
+            "target": {
+                "1": "Those who can write programs in Python",
+                "2": "Those who know HTML and CSS to some extent",
+                "3": "Those who want to create web applications with Python"
+            },
+            "environment": {
+                "note_pc": "A laptop that supports wireless LAN with the following installed",
+                "1": "Python 3.7 or higher (Install official binaries downloaded from www.python.org, not Anaconda)",
+                "2": "Web browser (Chrome, Firefox recommended)",
+                "3": "Text editor (PyCharm, VSCode recommended)"
+            },
+            "contents": {
+                "1": "Introduction to web applications",
+                "1_1": "Web application and HTTP",
+                "1_2": "Web application behavior",
+                "2": "Introduction to the database",
+                "2_1": "Database usage image",
+                "2_2": "Introduction to SQL using Sqlite3",
+                "3": "Django application development",
+                "3_1": "What is Django",
+                "3_2": "Install Django"
+            },
+            "produced_by": "BeProud Inc."
+        },
+        "course2": {
+            "goal": {
+                "1": "Learn about serverless basic configurations",
+                "2": "Know the basic configuration enough to use Lambda",
+                "3": "Use the basic AWS toolset to learn how to configure and create serverless APIs"
+            },
+            "capacity": "60 people",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "course3": {
+            "notice": "This tutorial has a first half and a second half. Please apply after confirming the “Participant Premises” in the first and second half. <br> Please check \"Environments (please prepare your own)\"."
+        },
+        "course3_1": {
+            "title": "first half（13:00～16:00） 「Machine learning hands-on using RAPIDS」",
+            "goal": "In data analysis, reducing the time required for one analysis cycle is an important practical point. <br> In this tutorial, you will experience the CUDF and cuML of RAPIDS, which are open source libraries accelerated by GPU, and experience from data processing to the application of machine learning algorithms as a series of flows. <br> cuDF and cuML are GPU libraries that provide Pandas and scikit-learn-like APIs, respectively. By taking this tutorial, data processing and machine learning workflows can be accelerated on the GPU. It becomes.",
+            "capacity": "60 people",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "course3_2": {
+            "title": "Latter half（16:30～18:30） 「Machine learning hands-on with TensorFlow」",
+            "goal": "TBD * Updated as soon as it is decided",
+            "capacity": "60 people",
+            "target": "",
+            "environment": "",
+            "contents": "",
+            "produced_by": ""
+        },
+        "section": {
+            "summary": "Overview of the tutorial",
+            "course1": "Introduction to web application development with Django",
+            "course2": "Serverless hands-on using Lambda (Python)",
+            "course3": "Machine learning hands-on using TensorFlow / RAPIDS",
+            "supports": "Support: meals, daycare, remote support"
+        }
+    },
+    "sprints": {
+        "title": "Development sprint",
+        "abstract": "A short-term intensive software development event. It will be an opportunity for people who propose development themes and people who are interested in those themes to gather and interact. <br> Anyone can participate for free! Tickets for PyCon JP 2019 are not required to participate in the development sprint.",
+        "theme_list": "List of themes",
+        "what_is_sprint": "Many open source software development is usually done through online communication on the web. <br> In most cases, this is fine, but sometimes it's sometimes useful to get together and collaborate offline to make development a lot easier. <br> <br> Developers called sprints and hackathons have been born to enable developers who are interested in this particular project to gather offline and make progress in a short time. Outside the Python community, such meetups are often called hackathons). <br> <br> And conferences where developers come together are the best places to achieve this sprint, so sprints are often held as part of conferences. <br> <br> PyCon JP 2019 provides the necessary environment (Wi-Fi, power, table, chair, and coffee) for sprinting. <br> I hope Sprint participants will bring their PC, skills, and development passion to the venue!",
+        "sprint_leader": "A sprint leader is a person who decides on a project to be handled by Sprint and handles development guidance and consultation within Sprint. <br> <br> Leaders don't have to be the maintainers of a project to be developed. <br> Leaders simply choose the specific project they want to develop and set the goals they want to achieve in the sprint. <br> If you want to participate in a project selected by other Sprint participants, Sprint leaders will first introduce the selected project to the participants and guide them on how to proceed with the development. I hope you can help with development as appropriate. <br> <br> The mechanism of this Sprint Leader is completely informal, so you can do whatever project your participants are actually developing.",
+        "as_a_sprint_leader": "Participation as a sprint leader",
+        "as_a_sprint_leader_content": "If you want to participate as a sprint leader, please register as a sprint leader when applying from the connpass page. <br> Please answer the form and submit the theme you would like to work on in the sprint. Please respond to the form in Japanese or English. <br> The submitted themes will be published in a list later so that Sprint participants can view them.",
+        "submitted_theme_list": "→List of submitted themes",
+        "be_public": "has been released.（8/10）",
+        "every_Sat": "*Scheduled to be updated every Saturday",
+        "is_based_on_answer": "*The contents of the list are based on what the reader has entered",
+        "section": {
+            "summary": "Outline of development sprint",
+            "what_is_sprint": "What is a sprint?",
+            "sprint_leader": "Sprint Reader",
+            "supports": "Support: meals, daycare, remote support"
+        }
+    },
+    "youth": {
+        "title": "Workshop for children",
+        "abstract": "Learn Python with Circuit Playground Express !! This workshop will be held on the first day of PyCon JP 2019. Workshop participants and companions can enter the venue only on the first day of the conference. On the first day of the conference, you can participate in events other than parties. Please enjoy PyCon JP at this opportunity.",
+        "workshop_content": "Learn Python using a small computer called Circuit Playground Express. <br> Let's shine Neo Pixel LED, sound and IR (infrared) communication using Python and Circuit Playground Express!!",
+        "about_workbook": "About teaching materials",
+        "summary_of_CPE": "Circuit Playground Express overview",
+        "capacity": "Number of applicants",
+        "capacity_volume": "20 people (excluding accompanying guardians)",
+        "can_take_home_CPE": "* Circuit Playground Express can be taken home.",
+        "target": "This workshop is intended for elementary to junior high school students. <br> It is also desirable to understand the difference between uppercase and lowercase letters.",
+        "about_pc": "We will lend you a personal computer on the day. <br> <br> The OS will be Windows 10.",
+        "about_ticket": "There are two types of tickets (with companion) and participation tickets (without companion). <br> <br> Participation tickets (not accompanied) are for one child. <br> Participation tickets (with companion) can enter 1 child and 1 guardian. If you have a ticket for the PyCon JP 2019 main conference, please purchase a ticket (not accompanied). <br> <br> We have lunch boxes for each person. <br> In addition, the number of participants in the workshop is 20 people, so the number of tickets to be recruited will be adjusted as needed depending on sales.",
+        "supporters": "This workshop will be held with the cooperation of the following people. (Titles omitted)",
+        "tanaka": "Shinsuke Tanaka (Affiliation CoderDojo Ofuna)",
+        "doi": "Keiji Doi (Affiliation CoderDojo Ofuna)",
+        "togazono": "Togano (Affiliation CoderDojo Kodaira)",
+        "masuzawa": "Tomomasa Masuzawa (Affiliation CoderDojo Funabashi)",
+        "sakata": "Kenichi Sakata (affiliation CoderDojo Nanjo)",
+        "in_conference": "Inside the conference",
+        "section": {
+            "summary": "Overview of workshop for children",
+            "workshop_content": "Workshop contents",
+            "target_member": "Participation target, number of people",
+            "about_pc": "About PC",
+            "about_ticket": "About tickets",
+            "supporters": "Workshop cooperation"
+        },
+        "place": "◯◯Hall"
     },
     "code-of-conduct": {
-        "main": "PyCon JP is a conference organized and run by volunteers in the Japanese Python community that is dedicated to advancing and promoting the Python programming language. Through holding the PyCon JP conference, Python users can gather and exchange information with other deveopers from a wide variety of fields. It is our aim to create new relationships between the different communities and businesses using Python.<br><br>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.<br><br>Participants asked to stop any harassing behavior are expected to comply immediately.<br><br>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Booth staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.<br><br>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.<br><br>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded t-shirts.<br><br>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.<br><br>We expect participants to follow these rules at conference and workshop venues and conference-related social events."
+        "main": "PyCon is a conference for Python users to gather, exchange information and interact with Python and software using Python. Through PyConJP, the goal is to gather Python users together, exchange knowledge and information on various fields related to Python, connect with new friends and communities, and increase work and business opportunities. <br> <br> For harassment behavior, verbal gender, sexual orientation, presence or absence of disability, appearance, body size, race, aggressive comments on religion, sexual expression in public space , Intentional power acts, stalking, drowsiness, harassment through photography and recording, repeated attempts to interrupt talks and other meeting events, inappropriate physical contact, and unwanted sexual attention Includes the act of attracting. <br> <br> Participants must follow immediately when asked to stop these harassment practices. <br> <br> Sponsors must also follow the anti-harassment policy. In particular, sponsors should not use visual expressions, activities, or other materials that create sexual interest. Booth staff, including volunteers, should not use clothes / uniforms / costumes that create sexual interest, nor should they create an environment that causes sexual interest through other means. . <br> <br> If you are experiencing harassment, if someone else is experiencing harassment, or if you are concerned about anything else, immediately contact someone on the meeting. Thank you. The conference staff wears a T-shirt with the conference brand. <br> <br> Meeting staff should contact the hotel / venue guards and local police to ensure that those who have experienced harassment feel safe and secure during the meeting, and provide an attendant , And other support. It's important for us that you are participating. <br> <br> We want participants to follow this rule at conference and workshop venues and at social events related to the conference."
+    },
+    "timetable": {
+        "title": "Timetable",
+        "note": "*The contents of the event are subject to change until the day of the event. Please check the latest information each time.",
+        "open": "Time to enter the venue",
+        "opening": "Opening",
+        "keynote": "Keynote",
+        "level": "Level",
+        "detail": "Detail",
+        "lunch": "Lunch",
+        "jobfair": "Jobfair",
+        "poster": "PosterSession",
+        "coffee": "Coffee Break",
+        "lt": "LightningTalk",
+        "photo": "Photo Session",
+        "photo2": "Photo Session2",
+        "smlt": "Same Day LT",
+        "closing": "Closing",
+        "party": "Party"
+    },
+    "sessions": {
+        "level": "Level",
+        "lang_of_talk": "Language of Talk",
+        "lang_of_slide": "Language of Slide",
+        "speaker": "Speaker",
+        "detail": "Detail",
+        "detail_of_session": "Details of the announcement",
+        "session_category": {
+            "talk_session": "Talk Session",
+            "lightning_talk": "Lightning Talk",
+            "poster_session": "Poster Session"
+        }
     }
 }
