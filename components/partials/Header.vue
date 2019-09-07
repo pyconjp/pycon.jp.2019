@@ -6,10 +6,14 @@
                 v-toolbar-title.ml-4.pa-2
                     img(src="@/assets/images/horizontal_color.svg" width="180px").mt-2
             v-toolbar-title.grey--text.text--lighten-4.display-1 |
-            .menu(v-for="menu in navigations" :key="menu.id")
+            .menu(v-for="menu in navigations" :key="menu.id" v-if="!(menu.onlyTop && $route.path !== '/')")
                 template(v-if="menu.submenus.length === 0")
-                    a(:href="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
-                        v-btn(flat).text-xs-center.menu-btn
+                    template(v-if="!menu.scroll")
+                        a(:href="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
+                            v-btn(flat).text-xs-center.menu-btn
+                                span.subheading.font-weight-bold.textColor1--text {{ menu.name }}
+                    template(v-else)
+                        v-btn(flat @click="goToOnTop(menu.scroll)").text-xs-center.menu-btn
                             span.subheading.font-weight-bold.textColor1--text {{ menu.name }}
                 template(v-else)
                     v-menu(:nudge-width="100" offset-y)
@@ -20,13 +24,16 @@
                                     v-icon.textColor1--text arrow_drop_down
                         v-card(depressed color="themeColor0")
                             v-layout.column.py-3.px-4
-                                v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
-                                    a(:href="submenu.to" :target="submenu.pageTrans ? '_blank' : '_self'")
-                                        v-layout.align-top
-                                            v-flex.shrink
-                                                span.white--text.subheading {{ submenu.name }}
-                                            v-flex.ml-4
-                                                v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
+                                v-flex(v-for='submenu in menu.submenus' :key="submenu.id" v-if="!(submenu.onlyTop && $route.path !== '/')").pa-2
+                                    template(v-if="!submenu.scroll")
+                                        a(:href="submenu.to" :target="submenu.pageTrans ? '_blank' : '_self'")
+                                            v-layout.align-top
+                                                v-flex.shrink
+                                                    span.white--text.subheading {{ submenu.name }}
+                                                v-flex.ml-4
+                                                    v-icon(v-if="submenu.pageTrans" medium color="white") keyboard_arrow_right
+                                    template(v-else)
+                                        a(flat @click="$vuetify.goTo(submenu.scroll)").white--text.subheading {{ submenu.name }}
                                     .subsubmenus(v-if="submenu.subsubmenus").pt-2
                                         .subsubmenu(v-for="ssmenu in submenu.subsubmenus" :key="ssmenu.id").py-2
                                             a(:href="ssmenu.to" :target="ssmenu.pageTrans ? '_blank' : '_self'")
@@ -95,6 +102,7 @@
 
 <script>
 import { mapState, mapActions, mapMutations } from 'vuex';
+import { setTimeout } from 'timers';
 
 export default {
     name: "pycon-header",
@@ -123,6 +131,13 @@ export default {
     methods: {
         ...mapActions(["switchLang"]),
         ...mapMutations(["toggleDrawer"]),
+        goToOnTop(target) {
+            if(this.$route.path !== "/") {
+                this.$router.push({ path: "/" + target })
+            } else {
+                this.$vuetify.goTo(target)
+            }
+        }
     }
 }
 </script>

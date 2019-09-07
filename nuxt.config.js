@@ -77,26 +77,19 @@ export default {
   },
   router: {
     middleware: 'i18n',
-    base: routerBase
+    base: routerBase,
+    scrollBehavior (to, from, savedPosition) {
+      if (to.hash) {
+        return {
+          selector: to.hash
+        }
+      }
+    }
   },
   generate: {
     routes: ['/en/code-of-conduct', '/en/sponsors', '/en/schedule', '/en/conference', '/en/sessions', '/en/youth', '/en/tutorial', '/en/sprint']
   },
   render: {
-    csp: {
-      hashArgorism: 'sha256',
-      policies: {
-        'script-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ],
-        'style-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ],
-        'default-src': [
-          "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='"
-        ]
-      }
-    }
   },
   /*
   ** vuetify module configuration

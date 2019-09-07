@@ -37,21 +37,27 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
         // Navigations
         v-layout.column.justify-start.py-2
           v-expansion-panel
-            v-expansion-panel-content(v-for="(menu, idx) in navigations" :key="menu.id" expand-icon="arrow_drop_down" :hide-actions="menu.submenus.length === 0")
+            v-expansion-panel-content(
+              v-for="(menu, idx) in navigations" :key="menu.id" expand-icon="arrow_drop_down" :hide-actions="menu.submenus.length === 0"
+              v-if="!(menu.onlyTop && $route.path !== '/')"
+            )
               template(#header)
                 template(v-if="menu.submenus.length === 0")
+                  template(v-if="!menu.scroll")
                     a(:href="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
                       v-layout.align-center
                         v-flex.shrink
                           span.subheading.font-weight-bold {{ menu.name }}
                         v-flex
                           v-icon(v-if="menu.pageTrans" color="text1").ml-2 keyboard_arrow_right
+                  template(v-else)
+                    a(@click="$vuetify.goTo(menu.scroll);drawer = false").subheading.font-weight-bold {{ menu.name }}
                 template(v-else)
                   span.subheading.font-weight-bold {{ menu.name }}
 
               v-card(flat)
                 v-layout.column.py-1.px-3(v-if="menu.submenus.length !== 0")
-                    v-flex(v-for='submenu in menu.submenus' :key="submenu.id").pa-2
+                    v-flex(v-for='submenu in menu.submenus' :key="submenu.id" v-if="!(submenu.onlyTop && $route.path !== '/')").pa-2
                       template(v-if="submenu.subsubmenus").pt-2
                         a(
                           :href="submenu.to"
@@ -64,11 +70,15 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
                               span.body-1.ml-2 {{ ssmenu.name }}
                               v-icon(v-if="ssmenu.pageTrans" color="text1").ml-2 keyboard_arrow_right
                       template(v-else).pt-2
-                        a(
-                          :href="submenu.to"
-                          :target="submenu.pageTrans ? '_blank' : '_self'"
-                        ).body-1 {{ submenu.name }}
-                        v-icon(v-if="submenu.pageTrans" small color="text1").ml-2 keyboard_arrow_right
+                        template(v-if="!submenu.scroll")
+                          a(
+                            :href="submenu.to"
+                            :target="submenu.pageTrans ? '_blank' : '_self'"
+                          ).body-1 
+                            span {{ submenu.name }}
+                            v-icon(v-if="submenu.pageTrans" small color="text1").ml-2 keyboard_arrow_right
+                        template(v-else)
+                          a(@click="$vuetify.goTo(submenu.scroll);drawer = false").body-1  {{ submenu.name }}
 </template>
 
 <style lang="sass" scoped>
