@@ -66,9 +66,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
-    [
-      '@nuxtjs/dotenv', { filename: dotenvFile }
-    ],
+    ['@nuxtjs/dotenv', { filename: dotenvFile }]
   ],
   /*
   ** Axios module configuration

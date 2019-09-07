@@ -7,6 +7,13 @@ v-app(
   v-content
     navigation-drawer(v-if="$vuetify.breakpoint.smAndDown" :navigations="navigations" :applies="applies")
     nuxt
+    v-btn(
+      :style="'opacity: ' + opacity + ';'"
+      transition="slide-y-reverse-transition"
+      absolute dark fab bottom fixed right color="themeColor3" style="bottom: 16px;"
+      @click="$vuetify.goTo('#pyconjp-header', {})"
+    )
+      v-icon keyboard_arrow_up
   contact
   pyconjp-footer
 </template>
@@ -161,7 +168,27 @@ export default {
         //   id: 2,
         //   name: this.$t('header.apply.distant-support')
         // }
-      ]
+      ],
+      windowTop: window.top.scrollY
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      this.windowTop = window.top.scrollY
+    }
+  },
+  computed: {
+    showScrollTop() {
+      return this.windowTop > 1000
+    },
+    opacity() {
+      return this.windowTop / 1200
     }
   }
 }
