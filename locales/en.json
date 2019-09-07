@@ -99,7 +99,7 @@
             "list": "News",
             "staff": "Looking for Staff!",
             "staff_desc": "We are looking for staff on the day to actively hold PyCon JP 2019. We look forward to applications for those who want to boost the Python community or want to work as conference staff.",
-            "staff_note": "※If you would like to see what the PyCon JP staff is doing, please join us <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> at “Lively”."
+            "staff_note": "*If you would like to see what the PyCon JP staff is doing, please join us <a href='https://pyconjp-staff.connpass.com/'> https://pyconjp-staff.connpass.com </a> at “Lively”."
         },
         "overview": {
             "about": "PyCon is a conference for Python users to gather, exchange information and interact with Python and software using Python. Through PyCon JP, the goal is to gather Python users together, exchange knowledge and information on various fields related to Python, connect with new friends and communities, and increase work and business opportunities.",
@@ -148,9 +148,9 @@
         "place": "Venue",
         "target": "Participation Target",
         "lunch_oyatsu_party": "",
-        "lunch_oyatsu": "※ Lunch is served for lunch. There is also a snack and an after party from 18:00.",
+        "lunch_oyatsu": "* Lunch is served for lunch. There is also a snack and an after party from 18:00.",
         "oyatsu": "Offer a snack.",
-        "hennge_dinner": "※Dinner is provided (provided by HENNGE Co., Ltd.)",
+        "hennge_dinner": "*Dinner is provided (provided by HENNGE Co., Ltd.)",
         "supports": {
             "food": {
                 "title": "Meal",
@@ -173,200 +173,200 @@
         }
     },
     "conference": {
-        "title": "カンファレンス",
-        "posters": "ポスターセッション一覧",
-        "lightning_talk": "5分間で行う発表（プレゼンテーション）のことです。「Lightning Talk（稲妻トーク）」を略して「LT」とも呼びます。<br>楽しくても5分、つまらなくても5分。より多くの人に発表する機会をもってもらうための企画です。Pythonに関係あっても無くてもOKです！<br><br>クロージングLTは、カンファレンス最後に参加者全員が、メイン会場に集まって行っています。発表者は全員の前で発表ができ、聞く人も含めた全ての参加者が一緒に、イベントを盛り上げます。今年は、どんなLTが発表されるのか楽しみですね。みんなで盛り上げましょう！",
-        "talk_session": "Pythonに関する様々なテーマの発表を行うセッションです。 45分、30分、15分の発表があります。",
-        "begginer_session": "このハンズオンでは、PDFファイルを扱うPythonライブラリ Pikepdf を使って、PDFファイルの連結や分割、パスワード解除などを行うツールを作成します。このハンズオンを通して、コマンドラインアプリケーションの作り方、ライブラリの使い方、デバッグのしかた、などを学び、Pythonで実用的なツールを作る方法を身に付けましょう。",
+        "title": "Conference",
+        "posters": "List of poster sessions",
+        "lightning_talk": "This is a presentation that takes 5 minutes. “Lightning Talk” is also abbreviated as “LT”. <br> 5 minutes for fun or 5 minutes for fun. It is a plan to have more people have the opportunity to present. It is OK whether or not it is related to Python! <br> <br> Closing LT is attended by all participants at the end of the conference. The presenter can make a presentation in front of everyone, and all the participants, including those who hear, will excite the event together. I'm looking forward to seeing what LTs will be announced this year. Let's liven up together!",
+        "talk_session": "A session to announce various themes related to Python. There are 45-minute, 30-minute and 15-minute announcements.",
+        "begginer_session": "In this hands-on, using Python library Pikepdf that handles PDF files, we will create a tool to concatenate and split PDF files, unlock passwords, etc. Through this hands-on, learn how to create command-line applications, how to use libraries, how to debug, etc., and learn how to create practical tools in Python.",
         "begginer_session_target": "!!!ダミーテキスト",
-        "poster_indivisual": "ポスターセッションとは、ポスターを掲示し、その前で発表するセッションです。 こういった技術カンファレンスでは、トークセッションが主役のように感じますが、 ポスターセッションの存在を忘れてはいけません。",
-        "poster_community": "さまざまなPythonコミュニティが集まり、ポスター発表形式でコミュニティの紹介を行う場です。昨年のPyCon JP 2018では北は北海道、南は九州まで合計6つのコミュニティがそれぞれの活動を参加者に伝えていました。",
+        "poster_indivisual": "A poster session is a session in which posters are posted and presented before that. At these technical conferences, the talk session feels like a protagonist, but don't forget the poster session.",
+        "poster_community": "It is a place where various Python communities gather and introduce the community in a poster presentation format. Last year at PyCon JP 2018, a total of six communities communicated their activities to the participants, from Hokkaido in the north to Kyushu in the south.",
         "after_party": "!!!アフターパーティのダミーテキスト",
-        "for_LTer": "LT発表希望者の方へ",
-        "for_LTer_main": "当日朝に写真のような形でホワイトボードに名前を書いてもらう方式で募集します。早い者勝ちで行うので、LTやるぞ！という方は早目に会場入りをしてください。LTの時間は5分で、枠数は1日目8枠、2日目7枠を予定してます。",
-        "for_LTer_sub": "※日本語がわからない人もある程度楽しめるように、スライドは英語で作ってください。",
-        "talk_session_list": "トークセッション一覧",
-        "lightning_talk_list": "ライトニングトーク一覧",
+        "for_LTer": "For LTer",
+        "for_LTer_main": "It recruits in the form of having a name written on the whiteboard in the form of a photograph on the morning of the day. I ’ll do it first, so I ’ll do LT! Please enter the venue as soon as possible. The LT time is 5 minutes and the number of slots is scheduled to be 8 slots on the first day and 7 slots on the second day.",
+        "for_LTer_sub": "* Please make slides in English so that people who do not understand Japanese can enjoy it to some extent.",
+        "talk_session_list": "List of talk sessions",
+        "lightning_talk_list": "List of Lightning Talk",
         "sections": {
-            "summary": "カンファレンスの開催概要",
-            "keynote": "基調講演",
-            "invited_lecture": "招待講演",
-            "talk_session": "トークセッション",
-            "lightning_talk": "ライトニングトーク",
-            "beginners_session": "ビギナーズセッション",
-            "poster_session": "ポスターセッション",
-            "poster_indivisual": "ポスターセッション(個人)",
-            "poster_community": "ポスターセッション(コミュニティ)",
-            "after_party": "カンファレンスパーティ"
+            "summary": "Conference overview",
+            "keynote": "Keynote",
+            "invited_lecture": "Invited lecture",
+            "talk_session": "Talk session",
+            "lightning_talk": "Lightning talk",
+            "beginners_session": "Beginners Session",
+            "poster_session": "Poster session",
+            "poster_indivisual": "Poster session (individual)",
+            "poster_community": "Poster session (community)",
+            "after_party": "Conference party"
         },
         "place": {
-            "after_party": "PiO 内 小展示ホール (+ 大展示ホール) "
+            "after_party": "PiO Small Exhibition Hall (+ Large Exhibition Hall)"
         }
     },
     "tutorial": {
-        "title": "チュートリアル",
-        "abstract": "Python初心者～中級者向けのイベントです。講師の方がわかりやすく丁寧に教えて下さいます。<br>また講師の他にチューターがつくのでしっかりと身につけられるようになっていますので、是非この機会にチャレンジしてみて下さい！",
-        "unneed_ticket": "※チュートリアル参加にあたってPyCon JP 2019カンファレンスのチケットは必要ありません。",
+        "title": "Tutorial",
+        "abstract": "This event is for beginners and intermediates of Python. The instructor will teach you in an easy-to-understand manner. <br> In addition to the instructor, there is a tutor so you can wear it firmly, so please take this opportunity to challenge!",
+        "unneed_ticket": "*Tickets for the PyCon JP 2019 conference are not required to participate in the tutorial.",
         "course": {
-            "goal": "概要と設定するゴール",
-            "capacity": "募集人数",
-            "target": "参加者の前提",
-            "environment": "各種環境",
-            "do_your_self": "(各自ご用意ください)",
-            "contents": "当日の進め方",
-            "produced_by": "提供",
-            "detail": "詳細",
-            "detail_text": "connpassを確認してください"
+            "goal": "Overview and goals to set",
+            "capacity": "Number of participants",
+            "target": "Target participants",
+            "environment": "Various environments",
+            "do_your_self": "(Please prepare by yourself)",
+            "contents": "How to proceed on the day",
+            "produced_by": "Offer",
+            "detail": "Detail",
+            "detail_text": "please check connpass!"
         },
         "course1": {
-            "goal": "Pythonでできることの1つにWebアプリケーション開発があります。<br>本チュートリアルではフルスタックのWebアプリケーションフレームワークであるDjangoを使用して、Webアプリケーション作成について学びます。<br><br>具体的には、Webアプリケーションの基礎、データベース入門を学びます。 次に、Djangoを使用して商品ページ、ショッピングカート、商品検索フォームといった機能を持った簡易ECサイトを作成します。<br>このチュートリアルで学んだことを応用すると、ECサイトだけでなく様々な入出力を持ったWebアプリケーションを作れるようになります。",
-            "capacity": "20人",
+            "goal": "One of the things you can do with Python is web application development. <br> In this tutorial, you will learn how to create a web application using Django, a full-stack web application framework. <br> <br> Specifically, you will learn the basics of Web application and database introduction. Next, use Django to create a simple EC site with functions such as a product page, shopping cart, and product search form. <br> By applying what you have learned in this tutorial, you will be able to create Web applications with various inputs and outputs as well as EC sites.",
+            "capacity": "20 people",
             "target": {
-                "1": "Pythonでプログラムを書ける人",
-                "2": "HTML、CSSについてもある程度知っている人",
-                "3": "PythonでWebアプリケーションを作成してみたい人"
+                "1": "Those who can write programs in Python",
+                "2": "Those who know HTML and CSS to some extent",
+                "3": "Those who want to create web applications with Python"
             },
             "environment": {
-                "note_pc": "以下がインストールされた無線LANに対応したノートPC",
-                "1": "Python 3.7以上（Anacondaではなく、www.python.orgからダウンロードした公式バイナリーをインストール）",
-                "2": "Webブラウザー（Chrome、Firefox推奨）",
-                "3": "テキストエディター（PyCharm、VSCode推奨）"
+                "note_pc": "A laptop that supports wireless LAN with the following installed",
+                "1": "Python 3.7 or higher (Install official binaries downloaded from www.python.org, not Anaconda)",
+                "2": "Web browser (Chrome, Firefox recommended)",
+                "3": "Text editor (PyCharm, VSCode recommended)"
             },
             "contents": {
-                "1": "Webアプリケーション入門",
-                "1_1": "WebアプリケーションとHTTP",
-                "1_2": "Webアプリケーションの動作",
-                "2": "データベース入門",
-                "2_1": "データベース利用イメージ",
-                "2_2": "Sqlite3を使ったSQL入門",
-                "3": "Djangoアプリケーション開発",
-                "3_1": "Djangoとは",
-                "3_2": "Djangoのインストール"
+                "1": "Introduction to web applications",
+                "1_1": "Web application and HTTP",
+                "1_2": "Web application behavior",
+                "2": "Introduction to the database",
+                "2_1": "Database usage image",
+                "2_2": "Introduction to SQL using Sqlite3",
+                "3": "Django application development",
+                "3_1": "What is Django",
+                "3_2": "Install Django"
             },
-            "produced_by": "ビープラウド"
+            "produced_by": "BeProud Inc."
         },
         "course2": {
             "goal": {
-                "1": "サーバーレスの基本構成について知る",
-                "2": "Lambdaの利用に十分な基本的な構成を知る",
-                "3": "AWSの基本的なツールセットを使って、サーバーレスなAPIの構成と作成手順を知る"
+                "1": "Learn about serverless basic configurations",
+                "2": "Know the basic configuration enough to use Lambda",
+                "3": "Use the basic AWS toolset to learn how to configure and create serverless APIs"
             },
-            "capacity": "60人",
+            "capacity": "60 people",
             "target": "",
             "environment": "",
             "contents": "",
             "produced_by": ""
         },
         "course3": {
-            "notice": "こちらのチュートリアルは前半と後半があります。前半と後半の「参加者の前提」を確認したうえで申し込み下さい。<br>また、「各種環境（各自ご用意下さい）」もご確認下さい。"
+            "notice": "This tutorial has a first half and a second half. Please apply after confirming the “Participant Premises” in the first and second half. <br> Please check \"Environments (please prepare your own)\"."
         },
         "course3_1": {
-            "title": "前半（13:00～16:00） 「RAPIDSを用いた機械学習のハンズオン」",
-            "goal": "データ分析において、一回の分析サイクルにかかる時間を短くすることは、実用上重要なポイントとなります。<br>このチュートリアルでは、GPUで高速化されたオープンソースライブラリ群であるRAPIDSのcuDFとcuMLを取り上げ、データ処理から機械学習アルゴリズムの適用までを一連の流れとして体験していただきます。<br>cuDFとcuMLはそれぞれ、Pandasとscikit-learnライクなAPIを提供するGPUライブラリであり、このチュートリアルを受講することで、データ処理および機械学習のワークフローをGPUで高速化することができるようになります。",
-            "capacity": "60人",
+            "title": "first half（13:00～16:00） 「Machine learning hands-on using RAPIDS」",
+            "goal": "In data analysis, reducing the time required for one analysis cycle is an important practical point. <br> In this tutorial, you will experience the CUDF and cuML of RAPIDS, which are open source libraries accelerated by GPU, and experience from data processing to the application of machine learning algorithms as a series of flows. <br> cuDF and cuML are GPU libraries that provide Pandas and scikit-learn-like APIs, respectively. By taking this tutorial, data processing and machine learning workflows can be accelerated on the GPU. It becomes.",
+            "capacity": "60 people",
             "target": "",
             "environment": "",
             "contents": "",
             "produced_by": ""
         },
         "course3_2": {
-            "title": "後半（16:30～18:30） 「TensorFlowを使用した機械学習のハンズオン」",
-            "goal": "未定   ※決まり次第更新します",
-            "capacity": "60人",
+            "title": "Latter half（16:30～18:30） 「Machine learning hands-on with TensorFlow」",
+            "goal": "TBD * Updated as soon as it is decided",
+            "capacity": "60 people",
             "target": "",
             "environment": "",
             "contents": "",
             "produced_by": ""
         },
         "section": {
-            "summary": "チュートリアルの開催概要",
-            "course1": "DjangoによるWebアプリケーション開発入門",
-            "course2": "Lambda(Python)を使用したサーバレスのハンズオン",
-            "course3": "TensorFlow/RAPIDSを使用した機械学習ハンズオン",
-            "supports": "サポート：食事、託児所、遠方支援"
+            "summary": "Overview of the tutorial",
+            "course1": "Introduction to web application development with Django",
+            "course2": "Serverless hands-on using Lambda (Python)",
+            "course3": "Machine learning hands-on using TensorFlow / RAPIDS",
+            "supports": "Support: meals, daycare, remote support"
         }
     },
     "sprints": {
-        "title": "開発スプリント",
-        "abstract": "短期集中型のソフトウェア開発イベントです。開発テーマを提案する人と、そのテーマに興味を持った人が集まり交流する機会になります。<br>どなたでも無料でご参加いただけます！ 開発スプリント参加にあたってPyCon JP 2019のチケットは必要ありません。",
-        "theme_list": "テーマの一覧",
-        "what_is_sprint": "多くのオープンソースソフトウェアの開発は、通常、ウェブ上でオンラインのコミュニケーションを通じて行われています。<br>ほとんどの場合はこれで問題ないのですが、時には直接集まってオフラインで共同開発を行うことが、開発を大きく前に進めるために有効なことがあります。<br><br>この特定のプロジェクトに興味がある開発者同士がオフラインで集まって、短時間で素早く進捗を出す開発ミートアップを実現するために、スプリントやハッカソンと呼ばれる方法が生まれました（Pythonコミュニティ以外では、このようなミートアップはよくハッカソンと呼ばれています）。<br><br>そして、開発者が一同に集まるカンファレンスは、このスプリントを実現するのに最適な場であるため、カンファレンスの一部としてスプリントが開かれることがよくあります。<br><br>PyCon JP 2019では、スプリントを行うにあたって必要な環境（Wi-Fi, 電源、テーブル、椅子、そしてコーヒー）を用意いたします。<br>スプリント参加者の皆さんには、ご自分のPC、スキル、そして開発への情熱を会場に持ってきていただければと思います！",
-        "sprint_leader": "スプリントリーダーは、スプリントで扱うプロジェクトを決めて、スプリントの中で開発の案内や相談への対応をする人のことです。<br><br>リーダーは、開発を進めるプロジェクトのメンテナである必要はありません。<br>リーダーは、自分が開発を進めたいと思う特定のプロジェクトを選んでいただき、スプリント内で達成したいゴールを設定いただくだけで構いません。<br>他のスプリント参加者が選んだプロジェクトに参加してみたい場合には、スプリントリーダーの皆さんには、まず参加者の皆さんへ選んだプロジェクトの紹介や開発の進め方の案内を行っていただき、開発中は適宜開発の手助けを行っていただければと思います。<br><br>このスプリントリーダーの仕組みは、完全に非公式なものなので、参加者の皆さんが実際に開発を行うプロジェクトはどのようなものでも構いません。",
-        "as_a_sprint_leader": "スプリントリーダーでの参加",
-        "as_a_sprint_leader_content": "スプリントリーダーとして参加したいという場合は、connpassページからの申込時にスプリントリーダーとして登録をお願いいたします。<br>その際にフォームに回答してスプリントで取り組みたいテーマを提出してください。フォームへの回答は日本語または英語でお願いします。<br>スプリント参加者が閲覧できるように、応募されたテーマを後ほど一覧にして公開します。",
-        "submitted_theme_list": "→応募されたテーマの一覧",
-        "be_public": "を公開しました。（8/10）",
-        "every_Sat": "※今後、毎週土曜日に更新予定",
-        "is_based_on_answer": "※一覧の内容はリーダーの入力内容に基づきます",
+        "title": "Development sprint",
+        "abstract": "A short-term intensive software development event. It will be an opportunity for people who propose development themes and people who are interested in those themes to gather and interact. <br> Anyone can participate for free! Tickets for PyCon JP 2019 are not required to participate in the development sprint.",
+        "theme_list": "List of themes",
+        "what_is_sprint": "Many open source software development is usually done through online communication on the web. <br> In most cases, this is fine, but sometimes it's sometimes useful to get together and collaborate offline to make development a lot easier. <br> <br> Developers called sprints and hackathons have been born to enable developers who are interested in this particular project to gather offline and make progress in a short time. Outside the Python community, such meetups are often called hackathons). <br> <br> And conferences where developers come together are the best places to achieve this sprint, so sprints are often held as part of conferences. <br> <br> PyCon JP 2019 provides the necessary environment (Wi-Fi, power, table, chair, and coffee) for sprinting. <br> I hope Sprint participants will bring their PC, skills, and development passion to the venue!",
+        "sprint_leader": "A sprint leader is a person who decides on a project to be handled by Sprint and handles development guidance and consultation within Sprint. <br> <br> Leaders don't have to be the maintainers of a project to be developed. <br> Leaders simply choose the specific project they want to develop and set the goals they want to achieve in the sprint. <br> If you want to participate in a project selected by other Sprint participants, Sprint leaders will first introduce the selected project to the participants and guide them on how to proceed with the development. I hope you can help with development as appropriate. <br> <br> The mechanism of this Sprint Leader is completely informal, so you can do whatever project your participants are actually developing.",
+        "as_a_sprint_leader": "Participation as a sprint leader",
+        "as_a_sprint_leader_content": "If you want to participate as a sprint leader, please register as a sprint leader when applying from the connpass page. <br> Please answer the form and submit the theme you would like to work on in the sprint. Please respond to the form in Japanese or English. <br> The submitted themes will be published in a list later so that Sprint participants can view them.",
+        "submitted_theme_list": "→List of submitted themes",
+        "be_public": "has been released.（8/10）",
+        "every_Sat": "*Scheduled to be updated every Saturday",
+        "is_based_on_answer": "*The contents of the list are based on what the reader has entered",
         "section": {
-            "summary": "開発スプリントの開催概要",
-            "what_is_sprint": "スプリントとは？",
-            "sprint_leader": "スプリントリーダー",
-            "supports": "サポート：食事、託児所、遠方支援"
+            "summary": "Outline of development sprint",
+            "what_is_sprint": "What is a sprint?",
+            "sprint_leader": "Sprint Reader",
+            "supports": "Support: meals, daycare, remote support"
         }
     },
     "youth": {
-        "title": "子供向けワークショップ",
-        "abstract": "Circuit Playground ExpressでPythonを学ぼう!! 当ワークショップは、PyCon JP 2019の1日目に開催されます。ワークショップの参加者および同伴者は、カンファレンス1日目に限り本会場に入場可能です。また、カンファレンス1日目はパーティを除くイベントに参加できます。この機会にPyCon JPをお楽しみください。",
-        "workshop_content": "Circuit Playground Expressと呼ばれる小さなコンピュータを使ってPythonを学びます。<br>PythonとCircuit Playground Expressを使ってNeo Pixel LEDを光らせたり、音を鳴らしたり、IR（赤外線）通信をしたりしてみましょう！！",
-        "about_workbook": "教材について",
-        "summary_of_CPE": "Circuit Playground Expressの概要",
-        "capacity": "募集人数",
-        "capacity_volume": "20人（同伴の保護者を除く）",
-        "can_take_home_CPE": "※Circuit Playground Expressはお持ち帰りできます。",
-        "target": "本ワークショップの対象は小学生から中学生くらいまでを想定しています。<br>また、アルファベットの大文字小文字の違いがわかることが望ましいです。",
-        "about_pc": "当日のパソコンについてはお貸し出し致します。<br><br>OSはWindows 10の予定です。",
-        "about_ticket": "参加チケット（同伴あり）と参加チケット（同伴なし）の2種類があります。<br><br>参加チケット（同伴なし）は、お子様1名が入場可能です。<br>参加チケット（同伴あり）は、お子様1名と保護者様1名が入場可能です。保護者様がPyCon JP 2019の本会議への参加チケットを持っている際は参加チケット（同伴なし）をご購入ください。<br><br>それぞれ人数分のお弁当を用意しております。<br>なお、ワークショップ参加者の定員が20名ですので、募集チケット数は売れ行きによって随時調整します。",
-        "supporters": "本ワークショップは以下の方々の協力にて実施します。（敬称略）",
-        "tanaka": "田中 真輔（所属 CoderDojo 大船）",
-        "doi": "土井 敬司（所属 CoderDojo 大船）",
-        "togazono": "とがぞの（所属 CoderDojo 小平）",
-        "masuzawa": "増澤 智将（所属 CoderDojo 船橋）",
-        "sakata": "坂田 健一（所属 CoderDojo 南柏）",
-        "in_conference": "カンファレンス内",
+        "title": "Workshop for children",
+        "abstract": "Learn Python with Circuit Playground Express !! This workshop will be held on the first day of PyCon JP 2019. Workshop participants and companions can enter the venue only on the first day of the conference. On the first day of the conference, you can participate in events other than parties. Please enjoy PyCon JP at this opportunity.",
+        "workshop_content": "Learn Python using a small computer called Circuit Playground Express. <br> Let's shine Neo Pixel LED, sound and IR (infrared) communication using Python and Circuit Playground Express!!",
+        "about_workbook": "About teaching materials",
+        "summary_of_CPE": "Circuit Playground Express overview",
+        "capacity": "Number of applicants",
+        "capacity_volume": "20 people (excluding accompanying guardians)",
+        "can_take_home_CPE": "* Circuit Playground Express can be taken home.",
+        "target": "This workshop is intended for elementary to junior high school students. <br> It is also desirable to understand the difference between uppercase and lowercase letters.",
+        "about_pc": "We will lend you a personal computer on the day. <br> <br> The OS will be Windows 10.",
+        "about_ticket": "There are two types of tickets (with companion) and participation tickets (without companion). <br> <br> Participation tickets (not accompanied) are for one child. <br> Participation tickets (with companion) can enter 1 child and 1 guardian. If you have a ticket for the PyCon JP 2019 main conference, please purchase a ticket (not accompanied). <br> <br> We have lunch boxes for each person. <br> In addition, the number of participants in the workshop is 20 people, so the number of tickets to be recruited will be adjusted as needed depending on sales.",
+        "supporters": "This workshop will be held with the cooperation of the following people. (Titles omitted)",
+        "tanaka": "Shinsuke Tanaka (Affiliation CoderDojo Ofuna)",
+        "doi": "Keiji Doi (Affiliation CoderDojo Ofuna)",
+        "togazono": "Togano (Affiliation CoderDojo Kodaira)",
+        "masuzawa": "Tomomasa Masuzawa (Affiliation CoderDojo Funabashi)",
+        "sakata": "Kenichi Sakata (affiliation CoderDojo Nanjo)",
+        "in_conference": "Inside the conference",
         "section": {
-            "summary": "子供向けワークショップの開催概要",
-            "workshop_content": "ワークショップの学習内容",
-            "target_member": "参加対象・人数",
-            "about_pc": "パソコンについて",
-            "about_ticket": "チケットについて",
-            "supporters": "ワークショップ協力"
+            "summary": "Overview of workshop for children",
+            "workshop_content": "Workshop contents",
+            "target_member": "Participation target, number of people",
+            "about_pc": "About PC",
+            "about_ticket": "About tickets",
+            "supporters": "Workshop cooperation"
         },
-        "place": "◯◯ホール"
+        "place": "◯◯Hall"
     },
     "code-of-conduct": {
-        "main": "PyConは、Pythonユーザが集まり、PythonやPythonを使ったソフトウェアについて情報交換、交流をするためのカンファレンスです。 PyConJPの開催を通じて、Pythonの使い手が一堂に集まり、Pythonにまつわる様々な分野の知識や情報を交換し、新たな友達やコミュニティとのつながり、仕事やビジネスチャンスを増やせる場所とすることが目標です。<br><br>ハラスメント行為には、言葉による性別、性的指向、障碍の有無、外見、身体の大きさ、人種、宗教に関する攻撃的なコメント、公的空間での性的な映像表現、意図的な威力行為、ストーキング、つきまとい、写真撮影や録音によるいやがらせ、トークやその他の会議イベントに対して繰り返して中断しようとする行為、不適切な身体接触、そして望まれない性的な注意を引きつける行為を含みます。<br><br>参加者は、これらのハラスメント行為を止めるように求められた場合、すぐに従わなければなりません。<br><br>スポンサーもまた反ハラスメント行為ポリシーに従わなければなりません。特に、スポンサーは性的な関心を引き起こす映像表現、活動、あるいはその他の物品を使うべきではありません。ボランティアを含め、ブースのスタッフは、性的な関心を引き起こすような服装/制服/コスチュームを使うべきではありませんし、その他の手段で性的な関心を引き起こすような環境を作ることもすべきではありません。<br><br>もしあなたがハラスメントに遭った場合、他の人がハラスメントに遭っている場合、あるいは他に気になることがあった時は、すぐに会議スタッフの誰かに連絡していただくようお願いします。会議スタッフは会議のブランドを付けたTシャツを着ています。<br><br>会議スタッフは、ハラスメントを経験した人が、会議期間中安全かつ安心と感じられるように、参加者がホテル/会場の警備や近隣の警察に連絡すること、付き添い者の提供、およびその他の支援を行います。私達にとってあなたが参加しているのは大事なことなのです。<br><br>私達は参加者が会議場とワークショップ会場、また会議に関連したソーシャルイベントにて、このルールに従うことを望みます。"
+        "main": "PyCon is a conference for Python users to gather, exchange information and interact with Python and software using Python. Through PyConJP, the goal is to gather Python users together, exchange knowledge and information on various fields related to Python, connect with new friends and communities, and increase work and business opportunities. <br> <br> For harassment behavior, verbal gender, sexual orientation, presence or absence of disability, appearance, body size, race, aggressive comments on religion, sexual expression in public space , Intentional power acts, stalking, drowsiness, harassment through photography and recording, repeated attempts to interrupt talks and other meeting events, inappropriate physical contact, and unwanted sexual attention Includes the act of attracting. <br> <br> Participants must follow immediately when asked to stop these harassment practices. <br> <br> Sponsors must also follow the anti-harassment policy. In particular, sponsors should not use visual expressions, activities, or other materials that create sexual interest. Booth staff, including volunteers, should not use clothes / uniforms / costumes that create sexual interest, nor should they create an environment that causes sexual interest through other means. . <br> <br> If you are experiencing harassment, if someone else is experiencing harassment, or if you are concerned about anything else, immediately contact someone on the meeting. Thank you. The conference staff wears a T-shirt with the conference brand. <br> <br> Meeting staff should contact the hotel / venue guards and local police to ensure that those who have experienced harassment feel safe and secure during the meeting, and provide an attendant , And other support. It's important for us that you are participating. <br> <br> We want participants to follow this rule at conference and workshop venues and at social events related to the conference."
     },
     "timetable": {
-        "title": "タイムテーブル",
-        "note": "※イベントについては開催当日まで内容が変更される可能性があります。都度最新の情報をご確認ください。",
-        "open": "開場",
-        "opening": "オープニング",
-        "keynote": "基調講演",
-        "level": "レベル",
-        "detail": "詳細",
-        "lunch": "ランチ",
-        "jobfair": "ジョブフェア",
-        "poster": "ポスターセッション",
-        "coffee": "コーヒーブレイク",
-        "lt": "ライトニングトーク",
-        "photo": "フォトセッション",
-        "photo2": "フォトセッション2",
+        "title": "Timetable",
+        "note": "*The contents of the event are subject to change until the day of the event. Please check the latest information each time.",
+        "open": "Time to enter the venue",
+        "opening": "Opening",
+        "keynote": "Keynote",
+        "level": "Level",
+        "detail": "Detail",
+        "lunch": "Lunch",
+        "jobfair": "Jobfair",
+        "poster": "PosterSession",
+        "coffee": "Coffee Break",
+        "lt": "LightningTalk",
+        "photo": "Photo Session",
+        "photo2": "Photo Session2",
         "smlt": "Same Day LT",
-        "closing": "クロージング",
-        "party": "パーティ"
+        "closing": "Closing",
+        "party": "Party"
     },
     "sessions": {
-        "level": "レベル",
-        "lang_of_talk": "発表言語",
-        "lang_of_slide": "資料言語",
-        "speaker": "発表者",
-        "detail": "詳細",
-        "detail_of_session": "発表詳細",
+        "level": "Level",
+        "lang_of_talk": "Language of Talk",
+        "lang_of_slide": "Language of Slide",
+        "speaker": "Speaker",
+        "detail": "Detail",
+        "detail_of_session": "Details of the announcement",
         "session_category": {
-            "talk_session": "トークセッション",
-            "lightning_talk": "ライトニングトーク",
-            "poster_session": "ポスターセッション"
+            "talk_session": "Talk Session",
+            "lightning_talk": "Lightning Talk",
+            "poster_session": "Poster Session"
         }
     }
 }
