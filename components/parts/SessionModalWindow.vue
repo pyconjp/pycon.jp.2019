@@ -9,11 +9,11 @@
         template(v-if="!isPoster")
           v-flex.shrink.mr-3
             span.day.font-weight-black {{ $t(`days.day${session.day}`) }}
-          v-flex.shrink.mr-3
+          v-flex.shrink.mr-1
             span(v-if="session.day === '1'") 09.16({{ $t('weekday.mon') }})
             span(v-if="session.day === '2'") 09.17({{ $t('weekday.tue') }})
-          //- v-flex.shrink.mr-3
-          //-   span {{ time }}
+          v-flex.shrink.mr-3(v-if="session.hours")
+            span {{ session.hours }}
         v-flex.shrink.mr-3
           span.talk-format {{ $t('sessions.' + session.talk_format) }}
 
