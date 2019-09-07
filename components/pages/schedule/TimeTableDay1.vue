@@ -1,7 +1,7 @@
 <template lang="pug">
 .schedule-table(:class="{'pl-4': $vuetify.breakpoint.mdAndUp}")
     // header
-    row(v-if="$vuetify.breakpoint.smAndUp")
+    row(v-if="$vuetify.breakpoint.mdAndUp")
         v-layout.wrap
             v-flex.xs12.sm12.md2.text-md-center(v-for="(room, idx) in rooms" :key="idx")
                 p.body-2.font-weight-bold {{ $t('rooms.' + roomsMaster[room]) }}
