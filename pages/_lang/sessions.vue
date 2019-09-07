@@ -119,7 +119,7 @@ export default {
   },
   methods: {
     debug(val) {
-      console.log(val)
+      // console.log(val)
     }
   }
 }
