@@ -2,9 +2,7 @@
   "hosting": {
     "public": "public",
     "headers": [{
-      "source":"**",
-      "headers": [
-      ]
+      "source":"**"
     }],
     "rewrites": [
       {
