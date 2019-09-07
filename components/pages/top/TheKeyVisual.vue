@@ -38,10 +38,10 @@
                                     v-flex
                                         span.title.ml-2 {{ $t("basic.pio") }}
                         v-flex.text-md-center.mt-2.pa-2
-                            v-layout.wrap
-                                v-flex.xs12.sm12.md6.pa-1
+                            v-layout.wrap.py-1
+                                v-flex.xs12.sm12.md6.px-1
                                     button-with-arrow(color="apply" :outline="true" :href="this.$router.history.base + '/schedule'") {{ $t("home.keyvisual.timetable") }}
-                                v-flex.xs12.sm12.md6.pa-1
+                                v-flex.xs12.sm12.md6.px-1
                                     button-with-arrow(color="apply" :outline="true" :href="this.$router.history.base + '/sessions'") {{ $t("home.keyvisual.sessions") }}
                         v-flex.text-md-center.py-0.px-2
                             v-btn(disabled block round).subheading {{ $t("basic.apply-soldout") }}
