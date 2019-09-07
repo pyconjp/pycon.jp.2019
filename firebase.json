@@ -4,9 +4,6 @@
     "headers": [{
       "source":"**",
       "headers": [
-        {
-          "key": "Content-Security-Policy", "value": "default-src *; img-src *; style-src *; script-src *"
-        }
       ]
     }],
     "rewrites": [
