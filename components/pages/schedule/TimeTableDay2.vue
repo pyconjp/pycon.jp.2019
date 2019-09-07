@@ -1,3 +1,7 @@
+
+
+
+
 <template lang="pug">
 .schedule-table(:class="{'pl-4': $vuetify.breakpoint.mdAndUp}")
     // header
@@ -5,62 +9,62 @@
         v-layout.wrap
             v-flex.xs12.sm12.md2.text-md-center(v-for="(room, idx) in rooms" :key="idx")
                 p.body-2.font-weight-bold {{ $t('rooms.' + roomsMaster[room]) }}
-    row(time="09:30")
+    row(time="09:30" :day="day")
         v-layout.wrap
             v-flex.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.open") }}
-    row(time="10:00")
+    row(time="10:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.keynote") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="11:15")
+    row(time="11:15" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 1)" :session="matchSession(room, 1)")
-    row(time="12:00")
+    row(time="12:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md12.pa-2.blueGrey2
                 simple-card(:roomIds="[1006, 1001, 1002, 1003, 1004, 1005]") {{ $t("timetable.lunch") }}
-    row(time="13:30")
+    row(time="13:30" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 2)" :session="matchSession(room, 2)")
-    row(time="14:15")
+    row(time="14:15" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 3)" :session="matchSession(room, 3)")
-    row(time="14:45")
+    row(time="14:45" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.poster") }} / {{ $t("timetable.coffee") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="15:45")
+    row(time="15:45" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 4)" :session="matchSession(room, 4)")
-    row(time="16:15")
+    row(time="16:15" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 5)" :session="matchSession(room, 5)")
-    row(time="16:45")
+    row(time="16:45" :day="day")
         v-layout
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.lt") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="17:20")
+    row(time="17:20" :day="day")
         v-layout
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.smlt") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="17:40")
+    row(time="17:40" :day="day")
         v-layout
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.photo2") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="17:50" :no-border="true")
+    row(time="17:50" :no-border="true" :day="day")
         v-layout
             v-flex.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.closing") }}
-    row(time="18:20")
+    row(time="18:20" :day="day")
 
 </template>
 
@@ -88,7 +92,8 @@ export default Vue.extend({
     data()  {
         return {
             rooms: [1006, 1001, 1002, 1003, 1004, 1005],
-            roomsMaster: roomsMaster
+            roomsMaster: roomsMaster,
+            day: this.$t('days.day2' ) + '09/17' + this.$t('weekday.tue' )
         }
     },
     created() {

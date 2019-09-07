@@ -345,12 +345,12 @@ Pythonによるクロスプラットフォーム開発フレームワークで�
 
 また、本トークを通じて、[PyCon2018のポスター発表](https://qiita.com/taishi-i/items/bb8e279e0feb5dc3dfb0 ""pycon2018"")では、ポスタースペースの都合上発表することができなかった下記の項目についてもご紹介します。
 
-##ニューラルネットワークを Python ライブラリ化するために組み込んだノウハウ
+## ニューラルネットワークを Python ライブラリ化するために組み込んだノウハウ
 - 前処理技術：日本語言語処理のための前処理 Tips
 - CPUでの高速化：DyNet を採用した理由
 - モデル圧縮方法：単語分割モデルと系列ラベリングモデルの共有方法
 
-##ライブラリーの特徴
+## ライブラリーの特徴
 - 他の形態素解析器との差異：既存の形態素解析器（GiNZA、 janome、Stanford NLP）の説明と本ツールとの比較
 - nagisaの導入事例： Used by リポジトリの分析",池田 大志
 116,Yusuke Miyazaki,Python ウェブアプリケーションのためのプロファイラの実装,Pythonウェブアプリのためのラインプロファイラwsgi_lineprofのデザインと内部実装について紹介します．Python処理系の仕組みや低レイヤーを扱うライブラリ開発への理解を深めてみましょう!,Talk (15 minutes),15min,Site Reliability Engineer / ymyzk.com,Room A+B,1,4,1001,English Only,日本語/Japanese,en,jp,Intermediate,Web programming(including web frameworks) ,"はじめに，このトークで取り上げる [wsgi_lineprof](https://github.com/ymyzk/wsgi_lineprof) の機能やデザイン，設計思想などを簡単に紹介します．次にプロファイラの実装に利用している様々な技術や仕組みについて紹介します．最後に今後の展望についてまとめます．
