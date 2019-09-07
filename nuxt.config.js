@@ -56,6 +56,7 @@ export default {
   */
   plugins: [
     "@/plugins/googleMap.js",
+    "@/plugins/sticky.js",
     "@/plugins/i18n.js"
   ],
   /*
@@ -63,7 +64,6 @@ export default {
   */
   modules: [
     '@nuxtjs/vuetify',
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
     [

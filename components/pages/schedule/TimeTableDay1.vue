@@ -5,24 +5,24 @@
         v-layout.wrap
             v-flex.xs12.sm12.md2.text-md-center(v-for="(room, idx) in rooms" :key="idx")
                 p.body-2.font-weight-bold {{ $t('rooms.' + roomsMaster[room]) }}
-    row(time="09:30")
+    row(time="09:30" :day="day")
         v-layout.wrap
             v-flex.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.open") }}
-    row(time="09:45")
+    row(time="09:45" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.opening") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="10:10")
+    row(time="10:10" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.keynote") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="11:25")
+    row(time="11:25" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 1)" :session="matchSession(room, 1)")
-    row(time="12:10")
+    row(time="12:10" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md4.pa-2
                 simple-card(:roomIds="[1006, 1001]") {{ $t("timetable.lunch") }}
@@ -31,43 +31,43 @@
                     template(#detail)  {{ $t("timetable.jobfair_desc") }}
             v-flex.xs12.sm12.md6.pa-2
                 simple-card(:roomIds="[1003, 1004, 1005]") {{ $t("timetable.lunch") }}
-    row(time="13:40")
+    row(time="13:40" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 2)" :session="matchSession(room, 2)")
-    row(time="14:40")
+    row(time="14:40" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 3)" :session="matchSession(room, 3)")
-    row(time="15:10")
+    row(time="15:10" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.poster") }} / {{ $t("timetable.coffee") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="16:00")
+    row(time="16:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 4)" :session="matchSession(room, 4)")
-    row(time="16:30")
+    row(time="16:30" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
                 card(v-if="matchSession(room, 5)" :session="matchSession(room, 5)")
-    row(time="17:00")
+    row(time="17:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.lt") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="17:20")
+    row(time="17:20" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.photo") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="17:30")
+    row(time="17:30" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.smlt") }} ＆ {{ $t("timetable.closing") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
-    row(time="18:00" :no-border="true")
+    row(time="18:00" :no-border="true" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.party") }}
     row(time="20:00")
@@ -98,7 +98,8 @@ export default Vue.extend({
     data()  {
         return {
             rooms: [1006, 1001, 1002, 1003, 1004, 1005],
-            roomsMaster: roomsMaster
+            roomsMaster: roomsMaster,
+            day: this.$t('days.day1' ) + ' 09/16'
         }
     },
     computed: {
