@@ -1,6 +1,12 @@
 {
   "hosting": {
     "public": "public",
+    "headers": [{
+      "source":"**",
+      "headers": [
+        {"key":"Content-Security-Policy", "value":""}
+      ]
+    }],
     "rewrites": [
       {
           "source": "api/**",
@@ -18,9 +24,6 @@
     ]
   },
   "functions": {
-    "source": "functions",
-    "//": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
-    ]
+    "source": "functions"
   }
 }
