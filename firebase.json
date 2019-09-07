@@ -1,9 +1,6 @@
 {
   "hosting": {
     "public": "public",
-    "headers": [{
-      "source":"**"
-    }],
     "rewrites": [
       {
           "source": "api/**",
