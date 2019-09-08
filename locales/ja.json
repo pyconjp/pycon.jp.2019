@@ -398,5 +398,17 @@
         "pt_i": "ポスター(個人)",
         "pt_c": "ポスター(コミュニティ)",
         "job_fair": "ジョブフェア"
+    },
+    "staffs":{
+        "title": "スタッフ一覧",
+        "teams": {
+            "conbu": "CONBU",
+            "contents": "コンテンツ",
+            "cxo": "座長",
+            "design": "デザイン",
+            "sponsor": "スポンサー",
+            "system": "システム",
+            "venue": "会場"
+        }
     }
 }
