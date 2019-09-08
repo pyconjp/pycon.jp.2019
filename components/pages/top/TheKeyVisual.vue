@@ -11,7 +11,7 @@
                                 span.themeColor3--text
                                     span(v-show="$vuetify.breakpoint.mdAndUp").mr-1 ────
                                     span 2019.09.14 - 17
-                                a(href="https://twitter.com/search?q=%23pyconjp" target="_blank")
+                                configurable-link(:path="'https://twitter.com/search?q=%23pyconjp'" :target="'_blank'")
                                     span.ml-4.text-no-wrap
                                         v-icon(color="twitter") fab fa-twitter
                                     span.ml-2.twitter--text #pyconjp
@@ -31,7 +31,7 @@
                                     span.display-2.heading-font 09.17
                                     span.title.ml-2  {{ $t("weekday.tue") }}
                         v-flex
-                            a(href="https://goo.gl/maps/sdVaaUHgYaptafBs5" target="_blank").text1--text
+                            configurable-link(:path="'https://goo.gl/maps/sdVaaUHgYaptafBs5'" :target="'_blank'").text1--text
                                 v-layout.align-center
                                     v-flex.shrink
                                         v-icon(large) location_on
@@ -73,12 +73,14 @@
 
 
 <script>
-import ButtonWithArrow from "@/components/parts/ButtonWithArrow"
+import ButtonWithArrow from "@/components/parts/ButtonWithArrow";
+import ConfigurableLink from "@/components/parts/ConfigurableLink";
 
 export default {
    name: "TheKeyVisual",
    components: {
-        "button-with-arrow": ButtonWithArrow
+        "button-with-arrow": ButtonWithArrow,
+        "configurable-link": ConfigurableLink
    }
 }
 </script>
