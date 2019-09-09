@@ -156,7 +156,7 @@ export default {
         {
           id: 7,
           name: this.$t('header.menu.staff'),
-          to:  '/staffs',
+          to:  '/staff',
           submenus: []
         }
       ]

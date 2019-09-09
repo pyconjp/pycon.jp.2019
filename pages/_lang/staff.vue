@@ -1,22 +1,22 @@
 <template lang="pug">
 #staff-page
-  page-header(en="Staffs" ja="スタッフ")
+  page-header(en="Staff" ja="スタッフ")
   .container.pt-4
     .staffs
-      second-heading(:name="$t('staffs.title')")
+      second-heading(:name="$t('staff.title')")
       section.team-section(
         v-for="team in teams" :key="team.id"
         :class="{'px-5 my-5': $vuetify.breakpoint.mdAndUp}"
       )
-        h2.headline.font-weight-bold.mt-5.mb-3.text-xs-center.text-md-left {{ $t(`staffs.teams.${team.name}`) }}
+        h2.headline.font-weight-bold.mt-5.mb-3.text-xs-center.text-md-left {{ $t(`staff.teams.${team.name}`) }}
         v-layout(row wrap)
           v-flex(v-for="staff in filteredStaffs(team.name)" :key="staff.id" md4 sm6 xs12)
             staff-card(:staff="staff")
     .recruitment
-      second-heading(:name="$t('staffs.recruitment.title')")
+      second-heading(:name="$t('staff.recruitment.title')")
       .recruit-box(
         :class="{'px-5 my-5': $vuetify.breakpoint.mdAndUp}"
-      ) {{ $t('staffs.recruitment.abstract') }}
+      ) {{ $t('staff.recruitment.abstract') }}
         a(href="https://pyconjp.blogspot.com/2019/08/2019-conf-day-staff.html" target="_blank")
           v-layout.staff(:class="{'mx-0': $vuetify.breakpoint.smAndDown}").my-3.py-3.align-center.wrap
             v-flex.xs12.md4.text-md-center.pa-3.right-border
@@ -107,7 +107,7 @@ export default {
     }
   },
   head () {
-    return { title: this.$t('staffs.title') }
+    return { title: this.$t('staff.title') }
   },
 }
 </script>
