@@ -48,7 +48,7 @@
     section.invited-lecture
         v-container.py-0
             hs(:sub="$t('conference.sections.invited_lecture')") Invited Talk
-            schedule-table(day17 day17Time="13:45 - 14:25")
+            schedule-table(day16 day16Time="13:45 - 14:25")
             p {{ $t('events.place') }} {{ $t('rooms.small') }}
             talk-card(
             profileImg="lyu.png"
