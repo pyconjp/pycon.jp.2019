@@ -1,12 +1,13 @@
 <template lang="pug">
-v-btn(
-     :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle" :href="href" :target="target"
-     :disabled="disabled" :dark="dark" :flat="flat" @click="$emit('click')"
-).parent
-    span.font-weight-bold(:class="{'is-not-block': !block}")
-        slot
-    v-icon(v-if="right" :[size]="true").child-right keyboard_arrow_right
-    v-icon(v-else :[size]="true").child-left keyboard_arrow_left
+configurable-link(:path="href" :target="target")
+    v-btn(
+         :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle"
+         :disabled="disabled" :dark="dark" :flat="flat" @click="$emit('click')"
+    ).parent
+        span.font-weight-bold(:class="{'is-not-block': !block}")
+            slot
+        v-icon(v-if="right" :[size]="true").child-right keyboard_arrow_right
+        v-icon(v-else :[size]="true").child-left keyboard_arrow_left
 </template>
 
 <style lang="sass" scoped>
@@ -31,10 +32,15 @@ v-btn(
 
 
 <script>
+import ConfigurableLink from '@/components/parts/ConfigurableLink';
+
 export default {
   name: 'button-with-arrow',
+  components: {
+    ConfigurableLink
+  },
   props: {
-    color: { tyep: String },
+    color: { type: String },
     size: { type: String, default: 'large' },
     customStyle: { type: String },
     href: { type: String },
