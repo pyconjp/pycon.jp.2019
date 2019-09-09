@@ -1,0 +1,50 @@
+id,name,title,team,name_en,title_en,photo,twitter,facebook
+1,吉田 俊輔,座長,cxo,Yoshida Shunsuke,Chair,,https://twitter.com/koedoyoshida,https://www.facebook.com/koedoyoshida
+2,西村 ヨシロウ,副座長・事務局長,cxo,Yoshiro NIshimura,Vice-Chair,,,https://www.facebook.com/yoshiro.nishimura.9
+3,寺田 学,全般、トークサポート,cxo,Manabu TERADA,,"https://www.dropbox.com/s/r7wwy2364tqeubt/terada1.png",https://twitter.com/terapyon,https://www.facebook.com/terapyon
+4,齋藤 大輔,全般、Youth Coder Workshop,contents,Daisuke Saito,,,https://twitter.com/PCShop_kabu,https://www.facebook.com/ds110.sai
+5,高倉 佑輔,Tutorial,contents,Iosif Takakura,,,https://twitter.com/huideyeren,https://www.facebook.com/iosif.takakura.yusuke
+6,新井 正貴,LT,contents,Masataka Arai,,https://squeeze-inc.s3.amazonaws.com/members/arai.jpg,https://twitter.com/massa142,https://www.facebook.com/mstk214
+7,横山 直敬,コミュニティブース,contents,Naotaka Yokoyama,,,https://twitter.com/NaoY_py,
+8,野登谷 昭子,Keynote,contents,Akiko Notoya,,,,
+9,オブリスト ヨナス,Sprint,contents,Jonas Obrist,,,,
+10,ペンコフ ミハイル,,contents,Michael Penkov,,,https://twitter.com/mpenkov,
+11,鈴木 祥真,,contents,Shoma Suzuki,,https://pbs.twimg.com/profile_images/2609793245/uer1418owqpwyhj0lb7f_400x400.jpeg,https://twitter.com/shoma,https://www.facebook.com/shomas
+12,伊藤 正宏,,contents,,,,,
+13,陶山 嶺,メディアスポンサー対応,sponsor,Rei Suyama,Media,http://www.rhoboro.net/rhoboro_small.jpg,https://twitter.com/rhoboro,https://www.facebook.com/rei.suyama
+14,大堀 優,メディアスポンサー対応,sponsor,Yu Ohori,,,https://twitter.com/Y_oHr_N,
+15,二宮 健,メディアスポンサー対応,sponsor,Takeshi Ninomiya,,,,https://www.facebook.com/takeshi.ninomiya.94
+16,花井 宏行,メディアスポンサー対応,sponsor,HANAI HIROYUKI,,,https://twitter.com/hanahiro_aze,
+17,矢野 真一,,sponsor,Shinichi Yano,,,https://twitter.com/fz400_r,
+18,安炳祚,,sponsor,Ahn ByungJo,,,,
+19,塚本英成,,design,,,,,
+20,木下文史,,design,Fumichika Kinoshita,,,https://twitter.com/kinofumi,https://www.facebook.com/fumichika.kinoshita
+21,新村絵美,,design,Emi Niimura,,,https://twitter.com/e_niimura,https://www.facebook.com/emi.niimura.77
+22,山下　加奈恵,,design,Kanae Yamashita,,,https://twitter.com/Addition_quince,
+23,中島 克典,受付,system,Katsunori Nakajima,,,,
+24,北村 壮大,受付,system,Masahiro Kitamura,,https://pbs.twimg.com/profile_images/462794945816842240/OCB2V_Vn_400x400.jpeg,https://twitter.com/nasa9084,https://www.facebook.com/nasa9084
+25,松田 櫻子,Web,system,Matsuda Sakurako,,,,
+26,池田 雄太郎,Web,system,IkedaYutaro,SoftwareEngineer,,https://twitter.com/ikedaosushi,https://www.facebook.com/ikedaosushi
+27,松浦 麻奈未,Web,system,ManamiMatsuura,Product Designer,,https://twitter.com/matsumana07384,https://www.facebook.com/manami.matsuura.227
+28,橋本 安司,,system,,,,,
+29,原田　淳弘,,system,Harada Atsuhiro,Server Engineer,,https://twitter.com/at_raiton,
+30,新井 正貴,Web,system,Masataka Arai,,https://squeeze-inc.s3.amazonaws.com/members/arai.jpg,https://twitter.com/massa142,https://www.facebook.com/mstk214
+31,大村 尚弘,,system,Hisahiro Ohmura,Server Engineer,,https://twitter.com/hisa_x,https://www.facebook.com/hisahiro.omura
+32,満足 亮,リーダー,venue,Ryo Manzoku,Lead,,https://twitter.com/rmanzoku,https://www.facebook.com/ryo.manzoku
+33,入澤 賢,,venue,Masaru Irisawa,,,,https://www.facebook.com/irisawa.masaru
+34,natsu,,venue,natsu,,,,
+35,新宮 隆太,,venue,Ryuta Shingu,,,https://twitter.com/h0mirun_deux,
+36,Noah Chen,FOSSASIA Volunteer,venue,Noah Chen,FOSSASIA Volunteer,https://pbs.twimg.com/profile_images/906584277093015553/xRgniBFw_400x400.jpg,https://twitter.com/noahcse,
+37,高沖 佑輔,,venue,Yusuke Takaoki,,,,https://www.facebook.com/yusuke.takaoki.7
+38,森川 直緒,,venue,,,,,
+39,大村尚弘,Network Operations Center,venue,Hisahiro Ohmura,Network Operations Center,https://init.tw/icon201709.jpg,https://twitter.com/hisa_x,https://www.facebook.com/hisahiro.omura
+40,武田 桃花,NOC,venue,Momoka TAKEDA,NOC,https://pbs.twimg.com/profile_images/2217774092/CIMG2310_400x400.JPG,https://twitter.com/wahho,
+41,海老原 由夫樹,NOC,venue,Yuuki Ebihara,Noc,,https://twitter.com/silverskyvicto,
+42,小山智之,NOC,venue,Tomoyuki Koyama,NOC,,https://twitter.com/tmyk_kym,https://www.facebook.com/tomoyuki.kym
+43,熊田 樹央,NOC,venue,Juo Kumada,NOC,,https://twitter.com/8787kuma8787,https://www.facebook.com/panakuma8787
+44,細野英朋,NOC,venue,Hidetomo Hosono,NOC,https://www.dropbox.com/s/lpr4wifxs4ka5rr/Hidetomo%20Hosono.jpg?dl=0,https://twitter.com/h12o,https://www.facebook.com/h12oblessedgeeks
+45,外山 隆司,CONBU,conbu,Ryuzi Toyama,,,,
+46,中川 淳,CONBU,conbu,Jun NAKAGAWA,,,,
+47,Naoya Kaneko,CONBU,conbu,Naoya Kaneko,,,,
+48,佐々木 健,CONBU,conbu,SASAKI Ken,,,,
+49,佐藤 秀樹,CONBU,conbu,,,,,
