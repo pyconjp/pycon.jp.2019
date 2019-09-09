@@ -43,7 +43,6 @@ export default {
         {
           id: 0,
           name: this.$t('header.menu.about.parent'),
-          to: this.$i18n.locale + '/about',
           submenus: [
             { 
               id: 0,
@@ -55,7 +54,7 @@ export default {
               id: 1, 
               name: this.$t('header.menu.about.coc'), 
               pageTrans: false, 
-              to: this.$i18n.locale + "/code-of-conduct" 
+              to: this.$router.history.base + this.$i18n.locale + "/code-of-conduct" 
             }
           ]
         },
@@ -66,17 +65,17 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: this.$i18n.locale + "/conference",
+              to: this.$router.history.base + this.$i18n.locale + "/conference",
               subsubmenus: [
                 {
                   id: 0,
                   name: this.$t('header.menu.events.conference.timetable'),
-                  to: this.$i18n.locale + "/schedule",
+                  to: this.$router.history.base + this.$i18n.locale + "/schedule",
                 },
                 {
                   id: 1,
                   name: this.$t('header.menu.events.conference.sessions'),
-                  to: this.$i18n.locale + "/sessions",
+                  to: this.$router.history.base + this.$i18n.locale + "/sessions",
                 }
               ]
             },
@@ -84,18 +83,18 @@ export default {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
               // pageTrans: true,
-              to: this.$i18n.locale + "/youth",
+              to: this.$router.history.base + this.$i18n.locale + "/youth",
               // to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: this.$i18n.locale + "/sprint"
+              to: this.$router.history.base + this.$i18n.locale + "/sprint"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: this.$i18n.locale + "/tutorial"
+              to: this.$router.history.base + this.$i18n.locale + "/tutorial"
             }
           ]
         },
@@ -123,13 +122,13 @@ export default {
         {
           id: 6,
           name: this.$t('header.menu.sponsor'),
-          to: this.$i18n.locale + '/sponsors',
+          to: this.$router.history.base + this.$i18n.locale + '/sponsors',
           submenus: []
         },
         {
-          id: 6,
+          id: 7,
           name: this.$t('header.menu.staff'),
-          to: this.$i18n.locale + '/staffs',
+          to: this.$router.history.base + this.$i18n.locale + '/staffs',
           submenus: []
         }
       ],
