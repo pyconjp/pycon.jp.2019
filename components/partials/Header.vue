@@ -67,7 +67,6 @@
                                     v-layout(v-else).align-top.pr-1
                                         v-flex.shrink
                                             span.white--text.subheading.font-weight-bold {{ menu.name }}
-                                    
                                     .subsubmenus(v-if="menu.submenus").pt-2
                                         .subsubmenu(v-for="submenu in menu.submenus" :key="submenu.id").py-1
                                             configurable-link(:path="submenu.link" :target="menu.pageTrans ? '_blank' : '_self'")

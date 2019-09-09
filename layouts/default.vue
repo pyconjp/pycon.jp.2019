@@ -43,7 +43,7 @@ export default {
         {
           id: 0,
           name: this.$t('header.menu.about.parent'),
-          to: this.$router.history.base + '/about',
+          to: this.$i18n.locale + '/about',
           submenus: [
             { 
               id: 0,
@@ -55,7 +55,7 @@ export default {
               id: 1, 
               name: this.$t('header.menu.about.coc'), 
               pageTrans: false, 
-              to: this.$router.history.base + "/code-of-conduct" 
+              to: this.$i18n.locale + "/code-of-conduct" 
             }
           ]
         },
@@ -66,17 +66,17 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: this.$router.history.base + "/conference",
+              to: this.$i18n.locale + "/conference",
               subsubmenus: [
                 {
                   id: 0,
                   name: this.$t('header.menu.events.conference.timetable'),
-                  to: this.$router.history.base + "/schedule",
+                  to: this.$i18n.locale + "/schedule",
                 },
                 {
                   id: 1,
                   name: this.$t('header.menu.events.conference.sessions'),
-                  to: this.$router.history.base + "/sessions",
+                  to: this.$i18n.locale + "/sessions",
                 }
               ]
             },
@@ -84,18 +84,18 @@ export default {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
               // pageTrans: true,
-              to: this.$router.history.base + "/youth",
+              to: this.$i18n.locale + "/youth",
               // to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: this.$router.history.base + "/sprint"
+              to: this.$i18n.locale + "/sprint"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: this.$router.history.base + "/tutorial"
+              to: this.$i18n.locale + "/tutorial"
             }
           ]
         },
@@ -123,7 +123,7 @@ export default {
         {
           id: 6,
           name: this.$t('header.menu.sponsor'),
-          to: this.$router.history.base + '/sponsors',
+          to: this.$i18n.locale + '/sponsors',
           submenus: []
         }
       ],
@@ -179,6 +179,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this)
     window.addEventListener("scroll", this.onScroll)
     // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
   },
