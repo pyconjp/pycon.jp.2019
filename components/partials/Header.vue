@@ -40,7 +40,7 @@
                                                 span.subheading.apply--text.font-weight-bold ─
                                                 span.subheading.ml-2.white--text {{ ssmenu.name }}
             v-spacer
-            configurable-link(:path="toLocale")
+            nuxt-link(:to="toLocale")
                 v-btn(outline round)
                     v-icon(small).tertiary--text fas fa-globe
                     span.ml-2.textColor1--text {{ toLang }}

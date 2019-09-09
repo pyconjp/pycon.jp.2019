@@ -39,7 +39,35 @@ export default {
   },
   data() {
     return {
-      navigations: [
+
+      windowTop: window.top.scrollY
+    }
+  },
+  mounted() {
+    console.log(this)
+    window.addEventListener("scroll", this.onScroll)
+    // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      this.windowTop = window.top.scrollY
+    },
+    // scrollFix(hashbang) {
+    //   this.$vuetify.goTo(hashbang)
+    // }
+  },
+  computed: {
+    showScrollTop() {
+      return this.windowTop > 1000
+    },
+    opacity() {
+      return this.windowTop / 1200
+    },
+    navigations() {
+      return [
         {
           id: 0,
           name: this.$t('header.menu.about.parent'),
@@ -54,7 +82,7 @@ export default {
               id: 1, 
               name: this.$t('header.menu.about.coc'), 
               pageTrans: false, 
-              to: this.$router.history.base + this.$i18n.locale + "/code-of-conduct" 
+              to:  "/code-of-conduct" 
             }
           ]
         },
@@ -65,17 +93,17 @@ export default {
             {
               id: 1,
               name: this.$t('header.menu.events.conference.parent'),
-              to: this.$router.history.base + this.$i18n.locale + "/conference",
+              to:  "/conference",
               subsubmenus: [
                 {
                   id: 0,
                   name: this.$t('header.menu.events.conference.timetable'),
-                  to: this.$router.history.base + this.$i18n.locale + "/schedule",
+                  to:  "/schedule",
                 },
                 {
                   id: 1,
                   name: this.$t('header.menu.events.conference.sessions'),
-                  to: this.$router.history.base + this.$i18n.locale + "/sessions",
+                  to:  "/sessions",
                 }
               ]
             },
@@ -83,18 +111,18 @@ export default {
               id: 2,
               name: this.$t('header.menu.events.child-workshop'),
               // pageTrans: true,
-              to: this.$router.history.base + this.$i18n.locale + "/youth",
+              to:  "/youth",
               // to: "https://pyconjp.connpass.com/event/139133/"
             },
             {
               id: 3,
               name: this.$t('header.menu.events.dev-spr'),
-              to: this.$router.history.base + this.$i18n.locale + "/sprint"
+              to:  "/sprint"
             },
             {
               id: 4,
               name: this.$t('header.menu.events.tutorial'),
-              to: this.$router.history.base + this.$i18n.locale + "/tutorial"
+              to:  "/tutorial"
             }
           ]
         },
@@ -122,17 +150,19 @@ export default {
         {
           id: 6,
           name: this.$t('header.menu.sponsor'),
-          to: this.$router.history.base + this.$i18n.locale + '/sponsors',
+          to:  '/sponsors',
           submenus: []
         },
         {
           id: 7,
           name: this.$t('header.menu.staff'),
-          to: this.$router.history.base + this.$i18n.locale + '/staffs',
+          to:  '/staffs',
           submenus: []
         }
-      ],
-      applies: [
+      ]
+    },
+    applies() {
+      return [
         {
           id: 0,
           name: this.$t('header.apply.event.parent'),
@@ -179,32 +209,7 @@ export default {
         //   id: 2,
         //   name: this.$t('header.apply.distant-support')
         // }
-      ],
-      windowTop: window.top.scrollY
-    }
-  },
-  mounted() {
-    console.log(this)
-    window.addEventListener("scroll", this.onScroll)
-    // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll)
-  },
-  methods: {
-    onScroll() {
-      this.windowTop = window.top.scrollY
-    },
-    // scrollFix(hashbang) {
-    //   this.$vuetify.goTo(hashbang)
-    // }
-  },
-  computed: {
-    showScrollTop() {
-      return this.windowTop > 1000
-    },
-    opacity() {
-      return this.windowTop / 1200
+      ]
     }
   }
 }

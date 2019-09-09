@@ -1,7 +1,7 @@
 <template lang="pug">
 .link
   template(v-if="path")
-    nuxt-link(v-if="!isExternalLink" :to="path")
+    nuxt-link(v-if="!isExternalLink" :to="to")
       slot
     a(v-if="isExternalLink" :href="path" :target="target" :rel="rel")
       slot
@@ -31,6 +31,9 @@ export default {
         return this.path.match(/^http/) ? true : false;
       }
       return false;
+    },
+    to() {
+      return "/" + this.$i18n.locale + this.path
     }
   }
 }
