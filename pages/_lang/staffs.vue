@@ -73,7 +73,7 @@ export default {
         },
         {
           id: 2,
-          name: 'sponsor'
+          name: 'jimukyoku'
         },
         {
           id: 3,
@@ -89,7 +89,7 @@ export default {
         },
         {
           id: 6,
-          name: 'conbu'
+          name: 'noc'
         }
       ]
     }

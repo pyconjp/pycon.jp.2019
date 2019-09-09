@@ -5,10 +5,10 @@ v-card(flat tile).staff-card.my-2.mx-3.px-4.pt-3.pb-5
     v-flex.shrink
       v-layout
         v-flex(v-if="staff.twitter")
-          a(:href="staff.twitter")
+          a(:href="'https://twitter.com/' + staff.twitter" target="_blank")
             v-icon(color="twitter").subheading fab fa-twitter
         v-flex.ml-2(v-if="staff.facebook")
-          a(:href="staff.facebook")
+          a(:href="'https://facebook.com/' + staff.facebook" target="_blank")
             v-icon(color="facebook").subheading fab fa-facebook
   v-layout.mt-2
     v-flex

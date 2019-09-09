@@ -125,6 +125,12 @@ export default {
           name: this.$t('header.menu.sponsor'),
           to: this.$i18n.locale + '/sponsors',
           submenus: []
+        },
+        {
+          id: 6,
+          name: this.$t('header.menu.staff'),
+          to: this.$i18n.locale + '/staffs',
+          submenus: []
         }
       ],
       applies: [
