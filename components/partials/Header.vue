@@ -6,7 +6,7 @@
                 v-toolbar-title.ml-4.pa-2
                     img(src="@/assets/images/horizontal_color.svg" width="180px").mt-2
             v-toolbar-title.grey--text.text--lighten-4.display-1 |
-            .menu(v-for="menu in navigations" :key="menu.id" v-if="!(menu.onlyTop && $route.path !== '/')")
+            .menu(v-for="menu in navigations" :key="menu.id" v-if="!(menu.onlyTop && $route.path !== '/' && $route.path !== '/en/')")
                 template(v-if="menu.submenus.length === 0")
                     template(v-if="!menu.scroll")
                         configurable-link(:path="menu.to" :target="menu.pageTrans ? '_blank' : '_self'")
@@ -24,7 +24,7 @@
                                     v-icon.textColor1--text arrow_drop_down
                         v-card(depressed color="themeColor0")
                             v-layout.column.py-3.px-4
-                                v-flex(v-for='submenu in menu.submenus' :key="submenu.id" v-if="!(submenu.onlyTop && $route.path !== '/')").pa-2
+                                v-flex(v-for='submenu in menu.submenus' :key="submenu.id" v-if="!(submenu.onlyTop && $route.path !== '/' && $route.path !== '/en/')").pa-2
                                     template(v-if="!submenu.scroll")
                                         configurable-link(:path="submenu.to" :target="submenu.pageTrans ? '_blank' : '_self'")
                                             v-layout.align-top

@@ -26,7 +26,6 @@ export default {
   computed: {
     isExternalLink() {
       if(this.path) {
-        console.log(this.path)
         // matchすればtrue, しなければfalse
         return this.path.match(/^http/) ? true : false;
       }
