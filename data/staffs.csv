@@ -1,0 +1,60 @@
+id,name,title,name_en,title_en,team,photo,twitter,facebook
+1,吉田　俊輔,座長,Shunsuke Yoshida,PyCon JP 2019 Chair,cxo,,koedoyoshida,koedoyoshida
+2,満足亮,副座長,Ryo Manzoku,PyCon JP 2019 Vice-Chair,cxo,,rmanzoku,ryo.manzoku
+3,寺田　学,一般社団法人PyCon JP 代表理事,Manabu TERADA,Board Chair,cxo,https://www.dropbox.com/s/r8r34b6rcbkjbzw/terada1-256.png?dl=0,@terapyon,terapyon
+4,齋藤　大輔,コンテンツチーム リーダー,Daisuke Saito,PyCon JP 2019 Program Committee Chair,contents,,"
+@PCShop_kabu",ds110.sai
+5,高倉 佑輔,,Iosif Takakura,,contents,,@huideyeren,iosif.takakura.yusuke
+6,野登谷昭子,,Akiko Notoya,,contents,,@kikonot,
+7,横山 直敬,,Naotaka Yokoyama,,contents,,@NaoY_py,
+8,平尾 元紀,,Motoki Hirao,,contents,,@__yumechi,motoki.hirao.3
+9,道下環久,,Waku Michishita,,contents,,@wkwk_soprano,Waku Michishita
+10,nikkie,,nikkie,,contents,,@ftnext,
+11,桂井俊朗,,Toshio Katsurai,,contents,,,
+12,小林 慶亮,,Keisuke Kobayashi,,contents,,@koby4ksk,kobaboooy
+13,熊谷 拓也,,Takuya Kumagai,,contents,,@kumappp27,takuya27.kumagai
+14,土居 俊也,,,,contents,,,
+15,花井 宏行,,Hiroyuki Hanai,,jimukyoku,https://drive.google.com/open?id=15JB1VrKJbeLILeiHIKjqeCGdN-5JcZbu,@hanahiro_aze,hiroyuki.hanai.71
+16,新井 正貴,,Masataka Arai,,jimukyoku,https://squeeze-inc.s3.amazonaws.com/members/arai.jpg,@massa142,mstk214
+17,葉山 明寛,,Akihiro Hayama,,jimukyoku,,@akhrhym,
+18,家治 亮,,Ryo KAJI,,jimukyoku,,,ryo.kaji.9
+19,加藤 典子,,Noriko Kato,,jimukyoku,,@noricokt,norico.kato.3
+20,菅原 健人,,Kento Sugahara,,jimukyoku,,@ksugaharaa,
+21,渡辺 竣介,,Shunsuke Watanabe,,jimukyoku,,@shunsukw,shunsuke.wata
+22,柳 佳音,,Kain Yanagi,,jimukyoku,,@kain-jy,kain-jy
+23,神谷 敏樹,,Toshiki Kamiya,,jimukyoku,,@kamitoshi227,
+24,森川 直緒,,Nao Morikawa,,jimukyoku,,@morin_river,
+25,牛窪　翔,,Sho Ushikubo,,jimukyoku,,@shoushi12,Sho Ushikubo
+26,大崎有依,,Yui Ohsaki,,design,,yui_bpyy,yui.ohsaki
+27,石崎 由美,,,,design,,,
+28,松浦麻奈未,,Manami Matsuura,,system,https://drive.google.com/file/d/1DsehGi3nhzKRpf65NzHP0J2g3g-0eAgd/view?usp=sharing,mtmn07384,manami.matsuura.227
+29,野口 洋明,,,,system,,bringer1092,
+30,箱守由,,Yu Hakomori,,system,,cl0wn65536,
+31,池田 雄太郎,,Yutaro Ikeda,,system,,ikedaosushi,ikedaosushi
+32,矢野真一,,Shinichi Yano,,venue,,,
+33,入澤 賢,,Masaru Irisawa,,venue,,,
+34,川村愛美,,Ami Kawamura,,venue,,,
+35,Noah Chen,,Noah Chen,,venue,,@noahcse,
+36,金淵悠太郎,,Yutaro Kanabuchi,,venue,,,
+37,海老原 由夫樹,,,,venue,,,
+38,中島 克典,,,,venue,,,
+39,大村尚弘,Network Operations Center,Hisahiro Ohmura,,noc,https://init.tw/icon201709.jpg,@hisa_x,hisahiro.omura
+40,熊田 樹央,,Juo Kumada,,noc,https://pbs.twimg.com/profile_images/1058213709036773376/sz6D1HyN_400x400.jpg,@pana_pana_kuma,panakuma8787
+41,小山 智之,,Tomoyuki Koyama,,noc,,tmyk_kym,tomoyuki.kym
+42,宮脇一晃,,Kazuaki Miyawaki,,noc,,,
+43,武田桃花,,Momoka Takeda,,noc,https://drive.google.com/open?id=1DK-1tuoQnMj1o4ElWutokICqvhLzpvaT,@wahho,なし
+44,板谷郷司,conbu,Satoshi Itatani,,noc,https://pbs.twimg.com/profile_images/1157821832260546562/HUg5tLM__400x400.jpg,@H_Shinonome,hiyou.shinonome
+45,板谷藍子,conbu,Aiko Itatani,,noc,,@mary_tuba,aiko.miyairi
+46,森本康介,,Morimoto Kosuke,,noc,,,
+47,岡田和久,,Kazuhisa Okada,,noc,,,
+48,中川淳,conbu,Jun Nakagawa,,noc,https://pbs.twimg.com/profile_images/510104203834822657/ktBtdceY.jpeg,@62jun26,
+49,佐藤秀樹,conbu,Hideki Sato,,noc,https://www.facebook.com/photo.php?fbid=2498080620243&set=a.1605352182590&type=3&theater,@hideki_sato,hideki.sato123456
+50,金子直矢,conbu,Naoya Kaneko,,noc,https://pbs.twimg.com/profile_images/1230500221/a9f9ded2-4fec-4d25-9b37-bdf925bed715_400x400.png,@n_kane,enukane
+51,佐々木 健,conbu,Ken Sasaki,,noc,https://pbs.twimg.com/profile_images/1152907904116068352/FHg88HjF_200x200.jpg,@sasakipochi,sasakipochi
+53,吉田 健太,,Kenta Yoshida,,noc,https://avatars3.githubusercontent.com/u/7807989?s=460&v=4,@yoshiken_tut,
+54,外山隆司,conbu,Ryuji Toyama,,noc,,,
+55,川上けんと,,Kento Kawakami,,noc,https://pbs.twimg.com/profile_images/1023409069355282432/APOriZEL_400x400.jpg,,
+56,能登健,,Takeshi Noto,,noc,https://pbs.twimg.com/profile_images/1112719911581708288/fYzgv0wH_400x400.png,@exp_noto,
+57,大橋隼人,,Hayato Ohashi,,noc,https://pbs.twimg.com/profile_images/1150974774979379201/dbopKrur_400x400.jpg,@hashy0917,https://www.facebook.com/profile.php?id=100002163900227
+58,稲森　景,,Akira Inamori,,noc,https://pbs.twimg.com/profile_images/1153932534553534464/hYEHwLc8_400x400.jpg,@ainamori,ainamori01
+59,大本 貴,conbu,Takashi Ohmoto,,noc,,@taxiJPN,takashi.ohmoto.3

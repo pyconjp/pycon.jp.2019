@@ -7,8 +7,8 @@
         v-container.py-0
             p(v-html="$t('home.conference.main')")
             .text-xs-center.text-sm-left.py-2
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href="this.$router.history.base + '/schedule'" ) {{ $t("home.conference.timetables") }}
-                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href="this.$router.history.base + '/sessions'") {{ $t("home.conference.sessions") }}
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href=" '/schedule'" ) {{ $t("home.conference.timetables") }}
+                button-with-arrow(color="themeColor1" outline :dark="true" :block="false" :href=" '/sessions'") {{ $t("home.conference.sessions") }}
     event-page-index(:indexes="pageIndexes")
     section.summary
         v-container.py-0
@@ -48,7 +48,7 @@
     section.invited-lecture
         v-container.py-0
             hs(:sub="$t('conference.sections.invited_lecture')") Invited Talk
-            schedule-table(day17 day17Time="13:45 - 14:25")
+            schedule-table(day16 day16Time="13:45 - 14:25")
             p {{ $t('events.place') }} {{ $t('rooms.small') }}
             talk-card(
             profileImg="lyu.png"

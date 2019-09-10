@@ -30,7 +30,7 @@
             p {{ $t('tutorial.course1.capacity') }}
             h3 {{ $t('tutorial.course.detail') }}
             p
-                a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+                configurable-link(:path="$t('links.tutorial')" :target="'_blank'") {{ $t('tutorial.course.detail_text') }}
             //- ul.list
             //-     li {{ $t('tutorial.course1.target.1') }}
             //-     li {{ $t('tutorial.course1.target.2') }}
@@ -75,7 +75,7 @@
             p {{ $t('tutorial.course2.capacity') }}
             h3 {{ $t('tutorial.course.detail') }}
             p
-                a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+                configurable-link(:path="$t('links.tutorial')" :target="'_blank'") {{ $t('tutorial.course.detail_text') }}
 
     section.course3
         v-container.py-0
@@ -91,7 +91,7 @@
                 p {{ $t('tutorial.course3_1.capacity') }}
                 h3 {{ $t('tutorial.course.detail') }}
                 p
-                    a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+                    configurable-link(:path="$t('links.tutorial')" :target="'_blank'") {{ $t('tutorial.course.detail_text') }}
             h3.themeColor3--text {{ $t('tutorial.course3_2.title') }}
             .event-detail
                 h3 {{ $t('tutorial.course.goal') }}
@@ -100,7 +100,7 @@
                 p {{ $t('tutorial.course3_1.capacity') }}
                 h3 {{ $t('tutorial.course.detail') }}
                 p
-                    a(:href="$t('links.tutorial')" target="_blank") {{ $t('tutorial.course.detail_text') }}
+                    configurable-link(:path="$t('links.tutorial')" :target="'_blank'") {{ $t('tutorial.course.detail_text') }}
     supports
 </template>
 
@@ -114,6 +114,7 @@ import ScheduleTable from '@/components/parts/ScheduleTable'
 import EventHeader from '@/components/parts/EventHeader'
 import EventPageIndex from '@/components/parts/EventPageIndex'
 import Supports from '@/components/parts/Supports'
+import ConfigurableLink from '@/components/parts/ConfigurableLink'
 
 export default {
   components: {
@@ -125,7 +126,8 @@ export default {
     ScheduleTable,
     EventHeader,
     EventPageIndex,
-    Supports
+    Supports,
+    ConfigurableLink
   },
   head() {
     return  {

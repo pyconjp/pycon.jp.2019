@@ -8,7 +8,7 @@
                         secondary-heading(name="News" description="お知らせ" :right="true")
                             template(#additional)
                                 v-flex.md11
-                                    a(href="https://pyconjp.blogspot.com/search/label/pyconjp2019" target="_blank")
+                                    configurable-link(:path="'https://pyconjp.blogspot.com/search/label/pyconjp2019'" target="'_blank'")
                                         v-layout.align-top.justify-start
                                             v-flex.shrink
                                                 span.subheading.pl-4 {{ $t("home.news.list") }}
@@ -19,13 +19,13 @@
                 :class="{'px-0': $vuetify.breakpoint.smAndDown, 'px-5': $vuetify.breakpoint.mdAndUp}"
             )
                 template(v-for="item in items")
-                    a(:href="item.link" target="_blank" rel="noreferrer noopener")
+                    configurable-link(:path="item.link" target="'_blank'" :rel="'noreferrer noopener'")
                         v-layout.align-center.subheading.my-4
                             v-flex.md2.xs4.sm3.text-xs-center
                                 v-card(depressed flat).themeColor3.white--text.pa-1 {{item.date}}
                             v-flex.md10.xs8.sm9.ml-3 {{item.title}}
             // スタッフ募集
-            a(href="https://pyconjp.blogspot.com/2019/08/2019-conf-day-staff.html" target="_blank")
+            configurable-link(:path="'https://pyconjp.blogspot.com/2019/08/2019-conf-day-staff.html'" :target="'_blank'")
                 v-layout.staff(:class="{'mx-0': $vuetify.breakpoint.smAndDown, 'mx-5': $vuetify.breakpoint.mdAndUp}").my-3.py-3.align-center.wrap
                     v-flex.xs12.md4.text-md-center.pa-3.right-border
                         v-layout.justify-center
@@ -56,6 +56,7 @@
 
 <script>
 import SecondaryHeading from "@/components/parts/SecondHeading"
+import ConfigurableLink from "@/components/parts/ConfigurableLink"
 import moment from "moment"
 
 import { apiBase } from "@/plugins/env"
@@ -69,7 +70,7 @@ export default {
             return {
                 title: theItem.title[0],
                 date: moment(new Date(theItem.pubDate)).format("YYYY.MM.DD"),
-                link: theItem.link,
+                link: theItem.link[0],
             }
         })
         // slice
@@ -79,6 +80,7 @@ export default {
     name: "TheNews",
     components: {
         "secondary-heading": SecondaryHeading,
+        "configurable-link": ConfigurableLink
     },
     data() {
         return {
