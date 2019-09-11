@@ -5,7 +5,7 @@ v-card(height="100%").pa-1
             .caption.blueGrey1--text {{ roomText }}
     .text-md-center.text-xs-center.font-weight-bold.body-2
         slot
-    .text-md-left.text-xs-left.caption.grey--text
+    .text-md-left.text-xs-left.caption.grey--text(style="white-space: pre-line;")
         slot(name="detail")
     template(v-if="seeDetail")
         .detail.py-1

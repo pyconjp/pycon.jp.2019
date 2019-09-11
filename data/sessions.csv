@@ -1,6 +1,5 @@
 id,name,title,abstract,talk_format_origin,talk_format,profile,room,day,no,room_id,lang_of_slide_origin,lang_of_talk_origin,lang_of_slide,lang_of_talk,audience_level,tags,description,papercall_name
-101,鈴木　庸氏,PythonとGoogle Optimization Toolsの最適化ライブラリで、「人と人の相性を考慮したシフトスケジューラ」を作ってみた。,Pythonを使って店舗施設や工場のシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成者への負荷を減らし、人と人との相性考慮により施設全体の生産性向上に繋げます。,Talk (45 minutes),45min,物流や生産計画の最適化＆シミュレーション、分析に携わっています。リーディングエッジ社所属。,Room A+B,1,1,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"工場や店舗施設における業務効率向上のため、Pythonによるシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成は施設管理者の負担となる一方で、最適なスケジュールを作成することは、従業員のモチベーションを高め、施設全体の業務効率向上に繋がると考えられます。今後スタンダードとなる可能性のある数理最適化ソルバーGoogle Optimization Toolsを使用し、人と人の相性による生産性を数値化したデータから、シフトスケジューリング問題を解く2次計画アルゴリズムを開発しました。本発表では、Google Optimization Toolsに含まれる最適化ライブラリ群とそれらの概念、Pythonプログラムの実装、結果の評価、今後の目標であるシステム公開方法について紹介いたします。また、最近人気のあるメタヒューリスティック解法をPythonで実装した結果と、ソルバーによる厳密解法の結果との比較結果を紹介し、計算速度や解の最適性、高速化の方法、対応できる問題規模の差を知見として発表し、現実的な問題に対応するためのノウハウをご紹介いたします。
-",鈴木庸氏
+101,鈴木　庸氏,PythonとGoogle Optimization Toolsの最適化ライブラリで、「人と人の相性を考慮したシフトスケジューラ」を作ってみた。,Pythonを使って店舗施設や工場のシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成者への負荷を減らし、人と人との相性考慮により施設全体の生産性向上に繋げます。,Talk (45 minutes),45min,物流や生産計画の最適化＆シミュレーション、分析に携わっています。リーディングエッジ社所属。,Room A+B,1,1,1001,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,工場や店舗施設における業務効率向上のため、Pythonによるシフトスケジュール作成の高度化に取り組んでみました。スケジュール作成は施設管理者の負担となる一方で、最適なスケジュールを作成することは、従業員のモチベーションを高め、施設全体の業務効率向上に繋がると考えられます。今後スタンダードとなる可能性のある数理最適化ソルバーGoogle Optimization Toolsを使用し、人と人の相性による生産性を数値化したデータから、シフトスケジューリング問題を解く2次計画アルゴリズムを開発しました。本発表では、Google Optimization Toolsに含まれる最適化ライブラリ群とそれらの概念、Pythonプログラムの実装、結果の評価、今後の目標であるシステム公開方法について紹介いたします。また、最近人気のあるメタヒューリスティック解法をPythonで実装した結果と、ソルバーによる厳密解法の結果との比較結果を紹介し、計算速度や解の最適性、高速化の方法、対応できる問題規模の差を知見として発表し、現実的な問題に対応するためのノウハウをご紹介いたします。,鈴木庸氏
 102,知野 雄二/Yuji Chino,Pythonと便利ガジェット、サービス、ツールを使ってセンシング〜見る化してみよう,Pythonと便利ガジェット／サービス／ツールを使って、まかせるところはまかせて、「つくらない」「やらない」をテーマに、センシング〜Webで見える化までを目指します。,Talk (45 minutes),45min,日本システム技研所属。Webエンジニア。主はバックエンド。ハードは苦手なので便利ガジェットを使ってIoTやってます！,Small Exhibition Hall,1,1,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,extending and embedding python in hardware,"センシング、クラウド、Webにわけて紹介していきます。
 いくつかのサービス、ライブラリを使用するので、正直、最初は使い方で時間がかかってしまったり、覚えるのが大変かもしれません。
 それでも、使うことにより「作らなくてよい」「やらなくてよい」「任せられる」部分もたくさんあります。
@@ -421,8 +420,7 @@ WHERE TRUE
   AND token_transfers.block_timestamp <= '2019-05-31'
 GROUP BY name
 ORDER BY count DESC
-```
-",喜多智也
+```",喜多智也
 119,Higashiguchi Kazuki,Pythonを使ったAPIサーバー開発を始める際に整備したCIとテスト機構,Pythonアプリケーションを開発し始める際のCIでのコード検査とユニットテストの整備について取り上げます。CIについては、スタイルチェックやエラー解析の自動化、ユニットテストについては、実DBを利用するケース等事前の設計・機構等の必要な工夫を紹介します。,Talk (15 minutes),15min,"BASE BANK, Inc.在籍。業務ではWebアプリケーション開発の全般業務を行う。",Room D,1,4,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Project case studies,"このトークでは、私自身がPythonを業務で活用しはじめた際に準備しておいてよかったという経験について話すものです。具体的には、CIとユニットテスト機構の準備について紹介します。
 
 ## CIについて
@@ -623,8 +621,7 @@ JupyterHubのみで使うにはデフォルトの設定でかまいませんがe
 機能の説明では、テンプレート層、URLディスパッチ、リクエストオブジェクトの扱い、cookieの扱い、ストレージ層などの簡単な説明を行います。
 紹介するフレームワークは、Django、Flask、Pyramid、Zope、Tornado、aiohttp、Guillotina、Bottle、responderの9種類の予定です。
 それぞれのフレームワーク毎に、各機能がどのように提供されているのかを比較検討していきます。
-最後に、いくつかのケーススタディとして、目的別にフレームワークを選択していく流れを確認します。
-",Manabu TERADA
+最後に、いくつかのケーススタディとして、目的別にフレームワークを選択していく流れを確認します。",Manabu TERADA
 206,Iskandar Setiadi,Python Website is Slow? Think Again!,"In this talk, we will briefly explore how we achieved 60% cost savings and improved our Python website response time from 400 ms to 150 ms with various techniques.",Talk (30 minutes),30min,"I am an Indonesian software engineer working for HENNGE, K.K. in Tokyo, Japan.",Room A+B,2,2,1001,English Only,英語/English,en,en,Intermediate,Web programming(including web frameworks) ,"As a Python avid user, we read a lot of articles that describe Python as a slow, interpreted language. At a certain point, some people start to blame the language itself for performance problems and consider to migrate their codebase to other languages. However, the success story of Instagram in handling four hundred million users has shown us that Python is not the bottleneck, but our codebase is.
 
 In this talk, the speaker will share a tale of improving Python website performances in medium-sized enterprise (serving million users) that I’m currently working at. In a year, we finally achieved speed improvement from the average response time of 400 ms to 150 ms per request and we could save around $100k per year in AWS EC2 instance provisioning, which is around 60% of total cost.
@@ -732,7 +729,7 @@ https://github.com/fukatani/rujaion のように競技プログラミングな�
 
 **Deep learning** We use VGG-16(16-layer network) in Keras with Tensorflow backend as our CNN model. Using GPU to accelerate, we have trained 10 epochs and 1000 steps per epoch. The MSE of the model is 1.3066. Besides, the valuation MSE is 1.1721. Overall, the result is robust enough to predict a new palm. (You can find our code here.)
 
-**Chatbot** compared with App and Web, is more accessible to mobile users, and it is also easier to spread on social media. Therefore, we used Chatfuel to create an AI chatbot on Facebook Messenger. Below you can see the user flow of Handbot. The smooth UX we designed help us achieve 80% user retention rate. ",徐愷
+**Chatbot** compared with App and Web, is more accessible to mobile users, and it is also easier to spread on social media. Therefore, we used Chatfuel to create an AI chatbot on Facebook Messenger. Below you can see the user flow of Handbot. The smooth UX we designed help us achieve 80% user retention rate.",徐愷
 213,Rei Suyama,unittestで始めるユニットテスト入門,標準ライブラリにあるunittestを使ったユニットテストの始め方を紹介します。また、テストフレームワークであるpytestとの比較、unittestからpytestへの以降についても解説します。,Talk (30 minutes),30min,尾道の向島で暮らすプログラマ。学生時代からずっとPython好き。シンプルなコード、シンプルな設計を目指してます。,Convention Hall UME,2,3,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"# unittestで始めるユニットテスト入門
 
 ## 概要
@@ -833,8 +830,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 3. まとめ
 
 ## 話さないこと
-機械学習、統計
-",Naoki Matsuda
+機械学習、統計",Naoki Matsuda
 217,加藤皓也（Hiroya Kato）,メディアが運用すべき持続可能なVTuberをつくる技術,VTuberは運用コストの高いコンテンツです。今回は、Pythonによる声質変換や文章要約を用いて運用コストを抑えたVTuber像を２案紹介します。併せて、声質変換モデルの構築方法も詳しく解説します。,Talk (15 minutes),15min,日経でフロント／バック／DevOpsを担うWebエンジニア。機械学習とVTuberとゲーム実況が好き。,Small Exhibition Hall,2,4,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"一般にVTuber運用には、動画投稿やタレント活動など、定期的な活動が必要です。しかし、動画企画・制作のコストや""中の人""の属人性の高さから、VTuber運用の長期継続は困難です。
 そんなVTuber運用の課題に対し、メディアが持つリソースを用いた以下２つのVTuber像を提案します。
 
@@ -951,8 +947,7 @@ docstringを書いておくことによってクラスや関数の役割を伝�
 - どんな書き方があるのか
 - どんな情報を埋め込めるのか
 
-ということをお話したいと思います。
-",ku-mu
+ということをお話したいと思います。",ku-mu
 225,あべんべん, pytestによるCIレボリューション,Pythonは非常に扱いやすい言語です。しかし、しっかりテストしないとプロダクトが台無しになるかもしれませんので、テストの方法としてpytestを使ったクラウドベースのCIの有用性について紹介します。,Talk (15 minutes),15min,金融機関の研究所で技術調査や研究業務支援をしながら、6つのITコミュニティの運営、技術書の執筆・査読をしてます。,Room D,2,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Programming tools,皆さんはPythonでユニットテストやCIツールを使いこなせているでしょうか？そういった悩みへの参考としてユニットテストやCIツールの概要や種類について解説をしてから、その中でもPytestを使った場合のメリットや開発プロセス全体への波及効果について発表します。,あべんべん
 151,Atsushi Odagiri,Python開発を円滑に進めるためのツール設定,実際の開発ではただ動かすだけでなく、品質をあげるためにレビューやコーディング規約のチェックなどが行われます。 Pythonでの開発で利用できる規約や静的解析を行うflake8をはじめとしたツールを活用して開発を円滑に進められる環境づくりを行います。,Beginner Session (45 minutes),begginer_session,株式会社オープンコレクター所属,Large Exhibition Hall,1,1,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Beginner Session,"- flake8
 - black
@@ -1012,7 +1007,7 @@ bash、fishと比較しながら、Pythonでシェルを扱える事のメリッ
      - xonsh contributor
      - xonshの拡張パッケージであるxontribを複数作成
      - [Xonsh Advent Calendar 2017](https://qiita.com/advent-calendar/2017/xonsh)、[Xonsh Advent Calendar 2018](https://qiita.com/advent-calendar/2018/xonsh)を企画、xonshの様々な機能について20記事以上を執筆",河合俊典
-232,Huang Kunxian,Python in the Belle II experiment,"This lightning talk gives audience that how python have influence in particle physics experiment, and outreach of our experiment. I hope that python society can have some interest on the physics experiment. Science society and python society can develop more packages to solve science problem.",Lightning Talks,lt,"I am a postdoc in Taiwan University, and graduated from Kyoto University. Now, I still work on Japan experiment– Belle II experiment. I am a Python lover and finished my PhD thesis work by Python packages. However, I have never contacted in Japan Python society. Hope I can meet some python-lovers interested in physics.",Large Exhibition Hall,2,6,1006,English Only,英語/English,en,en,All,,"At present, the complex of high energy physics experiment produce ""Big data"" that has scale larger than 10 PB of per year. The Belle II experiment is using electron-positron accelerator to produce mass B meson in Tsukuba city, Japan. The pixel number of the Belle II detector is O(10^6), and we expect the maximum data rate is about 30 kHz. This talk shows the brief description that how python is used in online monitoring, grid computing, numerical data analysis, and graphical plot in the Belle II experiment. This lightning talk will give an introduction of the belle II software which is build by python and C++14. There are future open source plan and open data plan of the Belle II experiment, and this talk also gives a short description about these plans. ",b89202027@gmail.com
+232,Huang Kunxian,Python in the Belle II experiment,"This lightning talk gives audience that how python have influence in particle physics experiment, and outreach of our experiment. I hope that python society can have some interest on the physics experiment. Science society and python society can develop more packages to solve science problem.",Lightning Talks,lt,"I am a postdoc in Taiwan University, and graduated from Kyoto University. Now, I still work on Japan experiment– Belle II experiment. I am a Python lover and finished my PhD thesis work by Python packages. However, I have never contacted in Japan Python society. Hope I can meet some python-lovers interested in physics.",Large Exhibition Hall,2,6,1006,English Only,英語/English,en,en,All,,"At present, the complex of high energy physics experiment produce ""Big data"" that has scale larger than 10 PB of per year. The Belle II experiment is using electron-positron accelerator to produce mass B meson in Tsukuba city, Japan. The pixel number of the Belle II detector is O(10^6), and we expect the maximum data rate is about 30 kHz. This talk shows the brief description that how python is used in online monitoring, grid computing, numerical data analysis, and graphical plot in the Belle II experiment. This lightning talk will give an introduction of the belle II software which is build by python and C++14. There are future open source plan and open data plan of the Belle II experiment, and this talk also gives a short description about these plans.",b89202027@gmail.com
 233,長谷川大耀,pythonで、処理をより効率化するためのTips集,弊社の広告配信では、大量のログを少しでも速く省メモリで処理が実行できるように、日々工夫をしております。その中から、コードのちょっとした工夫で処理をより効率化できた例を紹介できればと思います。,Lightning Talks,lt,生命物理学を研究した後、Fringe81に入社。現在はデータサイエンティストとして開発に携わってます,Large Exhibition Hall,2,6,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,"弊社の広告配信では、膨大な量のリクエストにより生じたログを、機械学習システムでより有益に新鮮なうちに活用するため、塵も積もればの精神で、少しずつ処理をより効率的に行うための改善をしてきました。一つ一つの工夫はは微々たるものかもしれませんが、積み上げていくと、如実に効果を発揮します。内容自体は基本的なものも、ニッチなものもありますが、どれも難易度的には高くなく、頭の隅においておくとどこかで役立つかもしれません。
 
 想定している聴講者としては、
@@ -1054,7 +1049,7 @@ bash、fishと比較しながら、Pythonでシェルを扱える事のメリッ
 Pythonは最強だよ♪",Poster Session(Individuals),pt_i,IoTや産業用機器を開発するハードウェアハッカー。PythonもC言語と同じくらい長い歴開発をしている人。博士号はない。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,,,
 314,Motoki Hirao,Reclassify the PyConJP proposal categories.,"I analyze the talks on PyConJP in the past years to become a guide for those people, and analyze and visualize what words can be in that category.",Poster Session(Individuals),pt_i,"I work in Web application development. The language is, of course, Python.",Large Exhibition Hall,,,1006,English Only,英語/English,en,en,All,,,
 315,akiyoko（横瀬明仁）,技術同人誌「現場で使える Django の教科書」の気になる情報を大公開,あなたの知らない技術同人誌の世界 ──「執筆は大変なの？」「執筆環境は？」「技術同人誌って儲かるの？」など、いろんな情報や執筆裏話を大公開します。,Poster Session(Individuals),pt_i,技術同人誌『現場で使える Django の教科書』シリーズの著者です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
-316,小林瑞紀,Dataclassを使うと幸せになれる,Python3.7から使えるようになったdataclassについて、機械学習の実装における私の実際の活用パターンを用いて具体的な活用方法を紹介したいと思います。dataclassは書く人だけでなく見る側にとっても嬉しいのでもっと使う人が増えて欲しいと思っています。 ,Poster Session(Individuals),pt_i,株式会社エウレカBIチーム。機械学習やおもしろ分析をやってます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,,,
+316,小林瑞紀,Dataclassを使うと幸せになれる,Python3.7から使えるようになったdataclassについて、機械学習の実装における私の実際の活用パターンを用いて具体的な活用方法を紹介したいと思います。dataclassは書く人だけでなく見る側にとっても嬉しいのでもっと使う人が増えて欲しいと思っています。,Poster Session(Individuals),pt_i,株式会社エウレカBIチーム。機械学習やおもしろ分析をやってます。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,,,
 317,Joji KOIKE,PySparkだけで頑張らないApache Sparkによる分散処理実装,"Apache Sparkによる分散処理実装において勃発した、
 実装言語選定にまつわるPythonistaとの対立と、
 その平和的解決に至るまでを余す所無くお話し致します。",Poster Session(Individuals),pt_i,"# 所属：株式会社スカラコミュニケーションズ
@@ -1075,7 +1070,7 @@ Pythonは最強だよ♪",Poster Session(Individuals),pt_i,IoTや産業用機器
 2019年のDjango Girls Workshopは11/16です。それに向けてコーチ・メンターを募集します。",Poster Session(Community),pt_c,Django Girls Japan スタッフ,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
 408,清水川貴之,Sphinxの紹介: Python製ドキュメンテーションツール,SphinxはPythonのデファクトスタンダードなドキュメンテーションツールです。 体裁の整ったドキュメントを簡単に作成することができるドキュメンテーションツールを探している方へ Sphinx を紹介します。,Poster Session(Community),pt_c,「Sphinxをはじめよう第2版」執筆メンバーです。Sphinx-users.jp からの参加です。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
 409,PyCon JP 2019 コンテンツチーム,PyCon JP 2019 Program Committee,PyCon JP 2019 コンテンツチームの活動内容を共有します。,Poster Session(Community),pt_c,PyCon JP 2019 コンテンツチーム。キーノート、トーク、チュートリアルなどの企画を中心に活動しているチームです。,Large Exhibition Hall,,,1006,日本語と英語/Japanese and English,日本語/Japanese,jpen,jp,All,,,
-410,PyLadies Japan, PyLadies Japan活動報告2019,日本にあるPyLadiesコミュニティーの紹介、PyLadies Caravanの紹介、2019年度活動報告、スタッフ紹介などをポスターにします。 9月以降のイベントの紹介もします。 ,Poster Session(Community),pt_c,PyLadiesは、Pythonが好きな女性を結ぶ国際的なコミュニティです。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
+410,PyLadies Japan,PyLadies Japan活動報告2019,日本にあるPyLadiesコミュニティーの紹介、PyLadies Caravanの紹介、2019年度活動報告、スタッフ紹介などをポスターにします。 9月以降のイベントの紹介もします。,Poster Session(Community),pt_c,PyLadiesは、Pythonが好きな女性を結ぶ国際的なコミュニティです。,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
 411,Takeshi Akutsu,Start Python Club,「Pythonと技術を楽しく学ぶ場を提供する」ことをミッションとして、毎月、東京で勉強会を開催しています。ライブ中継もやっていますので、地方の方でもご覧になれます。ご関心のある方はポスターまで。,Poster Session(Community),pt_c,"Start Python Club, Co-founder & Director",Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
 412,メッシュ農業気象データ管理者チーム 片柳薫子,1kmメッシュ農業気象データ提供システム,"メッシュ農業気象データシステム（The Agro-Meteorological Grid Square Data, NARO）は、気象情報が農業現場で有効に活用されることを目指して農研機構が開発・運用する気象データサービスシステムであり、現在約500名の利用者がいます。データの取得と可視化を容易にするPythonライブラリを提供し、その利活用のために講習会を開催しています。また、Slackによる技術相談も受け付けています。",Poster Session(Community),pt_c,気象情報が農業現場で有効に活用されることを目指して気象データサービスシステムを開発・運営する国立研究開発法人農業・食品産業技術総合研究機構(農研機構)のチーム,Large Exhibition Hall,,,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,,,
 413,Ryuji Tsutsui,Python Boot Campで全国にPythonの環を広げよう！（2019年版）,"一般社団法人PyCon JPが主催するPythonの初心者向けチュートリアル「Python Boot Camp（略称: PyCamp）」を紹介します。 Python Boot Campは2016年から活動を始め、多くの参加者から好評の声をいただいています。 このポスターセッションを通して、今までの活動実績・開催方法などについてみなさんにお伝えしたいと思います。
@@ -1089,3 +1084,16 @@ Shonan.py(https://shonan-py.connpass.com/)というPython勉強会を定期的�
 2.「稟議に使えるPython市場データ解説。Python3エンジニア認定試験の解説も」一般社団法人Pythonエンジニア育成推進協会　代表理事：吉政忠志
 3.  「Who is Enthought?」　Enthought Inc. 髙味空也
 4. 「Lovot 開発における Go と Python」Groove X株式会社 林淳哉",
+502,Cory Althoff,基調講演,コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。,Keynote,keynote,,,1,,,,,,,,,,
+503,小池 誠,基調講演,"静岡県にある太平洋に面したのどかな町で農業を営んでいます。
+6年前までは組込みエンジニアとしてC言語を使った開発に携わっていましたが、退職を期にPythonを独学で学ぶことを始めました。",Keynote,keynote,,,2,,,,,,,,,,
+504,,ライトニングトーク,"1. petertc / Is your bot ALIVE? Monitor chatbot from a user's perspective
+
+2. 栗田真 / Pythonで始めるオレオレブラウザ
+
+3. Wei Lee / How to get more than just PyCon in a PyCon",LT,lt,,,1,,,,,,,,,,
+505,,ライトニングトーク,"1.  Shunsuke Kawai / Python製シェルxonshの紹介
+
+2. Huang Kunxian / Python in the Belle II experiment
+
+3.長谷川大耀 / pythonで、処理をより効率化するためのTips集",LT,lt,,,2,,,,,,,,,,
