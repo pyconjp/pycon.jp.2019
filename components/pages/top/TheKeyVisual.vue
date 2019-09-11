@@ -47,22 +47,32 @@
                             v-btn(disabled block round).subheading {{ $t("basic.apply-soldout") }}
                         v-flex.text-md-center.py-3.body-2.grey--text
                             span {{ $t('home.keyvisual.soldout-desc') }}
-                        v-flex.text-md-left.mb-2.subheading
+                        v-flex.text-md-left.mb-2(
+                            :class="{'body-2': $vuetify.breakpoint.smAndDown, 'subheading': $vuetify.breakpoint.mdAndUp }"
+                        )
                             v-layout.align-center
                                 v-flex.shrink
                                     v-icon(large color="secondaryText") tag_faces
                                 v-flex
                                     span.secondaryText--text.ml-2.font-weight-bold {{ $t("home.keyvisual.child-workshop") }}
                         v-flex.text-xs-center
-                            v-card(color="secondaryText").pa-3.text-xs-left
+                            v-card(color="secondaryText").pa-1.text-xs-left(
+                                :class="{'pa-3': $vuetify.breakpoint.mdAndUp }"
+                            )
                                 span.title.white--text.font-weight-bold Youth Coder Workshop
-                                v-btn(color="white" block large style="height: 40px;" :href="$t('links.child-workshop')" target="_blank")
-                                    v-flex.align-end
-                                        span.headline.heading-font 09.16
-                                        span.caption.ml-2.font-weight-bold {{ $t("weekday.mon") }}
-                                    v-spacer
-                                    span.secondary--text.subheading.font-weight-bold {{ $t("basic.apply") }}
-                                    v-icon.secondary--text.ml-2 keyboard_arrow_right
+                                v-btn(
+                                    color="white" block large style="height: 40px;" :href="$t('links.child-workshop')" target="_blank"
+                                ).px-3
+                                    v-layout.justify-center.align-center
+                                        v-flex.text-md-right
+                                            span.headline.heading-font 09.16
+                                            span.caption.ml-2.font-weight-bold {{ $t("weekday.mon") }}
+                                        v-spacer
+                                        v-flex.text-xs-right.text-xs-center
+                                            span(
+                                                :class="{'body-2': $vuetify.breakpoint.smAndDown, 'subheading': $vuetify.breakpoint.mdAndUp }"
+                                            ).secondary--text.font-weight-bold {{ $t("basic.apply") }}
+                                            v-icon.secondary--text.ml-2 keyboard_arrow_right
 </template>
 
 

@@ -28,12 +28,18 @@
     row(time="12:10" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md4.pa-2
-                simple-card(:roomIds="[1006, 1001]") {{ $t("timetable.lunch") }}
+                simple-card(:roomIds="[1006, 1001]")
+                    p(
+                        :class="{'pt-3': $vuetify.breakpoint.smAndDown, 'pt-5': $vuetify.breakpoint.mdAndUp}"
+                    ) {{ $t("timetable.lunch") }}
             v-flex.xs12.sm12.md2.pa-2
                 simple-card(:roomIds="[1002]" :session="jobfairSeseion" :seeDetail="true") {{ $t("timetable.jobfair") }}
                     template(#detail)  {{ $t("timetable.jobfair_desc") }}
             v-flex.xs12.sm12.md6.pa-2
-                simple-card(:roomIds="[1003, 1004, 1005]") {{ $t("timetable.lunch") }}
+                simple-card(:roomIds="[1003, 1004, 1005]") 
+                    p(
+                        :class="{'pt-3': $vuetify.breakpoint.smAndDown, 'pt-5': $vuetify.breakpoint.mdAndUp}"
+                    ) {{ $t("timetable.lunch") }}
     row(time="13:40" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
@@ -107,11 +113,11 @@ export default Vue.extend({
         }
     },
     computed: {
-        keynoteSeseion() {
-            return this.sessions.filter(s => s.id == 502)[0]
-        },
         jobfairSeseion() {
             return this.sessions.filter(s => s.id == 501)[0]
+        },
+        keynoteSeseion() {
+            return this.sessions.filter(s => s.id == 502)[0]
         },
         ltSeseion() {
             console.log("lt", this.sessions.filter(s => s.id == 504)[0])
