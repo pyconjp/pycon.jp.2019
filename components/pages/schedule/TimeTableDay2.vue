@@ -15,7 +15,10 @@
     row(time="10:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
-                simple-card(:roomIds="[1006]") {{ $t("timetable.keynote") }}
+                simple-card(:roomIds="[1006]" :session="keynoteSeseion") {{ $t("timetable.keynote") }}
+                    template(#detail) 
+                        p {{ keynoteSeseion.name }}
+                        p {{ keynoteSeseion.abstract }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="11:15" :day="day")
         v-layout.wrap
@@ -49,7 +52,8 @@
     row(time="16:45" :day="day")
         v-layout
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
-                simple-card(:roomIds="[1006]") {{ $t("timetable.lt") }}
+                simple-card(:roomIds="[1006]" :session="ltSeseion") {{ $t("timetable.lt") }}
+                    template(#detail) {{ ltSeseion.abstract }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="17:20" :day="day")
         v-layout
@@ -97,6 +101,15 @@ export default Vue.extend({
         }
     },
     created() {
+    },
+    computed: {
+        keynoteSeseion() {
+            return this.sessions.filter(s => s.id == 503)[0]
+        },
+        ltSeseion() {
+            console.log("lt", this.sessions.filter(s => s.id == 504)[0])
+            return this.sessions.filter(s => s.id == 505)[0]
+        }
     },
     methods: {
         matchSession(roomId, no) {

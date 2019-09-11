@@ -27,7 +27,7 @@ export default {
     SessionCard 
   },
   created() {
-    console.log(this.sessions)
+    // console.log(this.sessions)
   },
 
 }
