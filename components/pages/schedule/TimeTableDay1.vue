@@ -5,7 +5,7 @@
         v-layout.wrap
             v-flex.xs12.sm12.md2.text-md-center(v-for="(room, idx) in rooms" :key="idx")
                 p.body-2.font-weight-bold {{ $t('rooms.' + roomsMaster[room]) }}
-    row(time="09:30" :day="day")
+    row(time="09:00" :day="day")
         v-layout.wrap
             v-flex.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.open") }}
     row(time="09:45" :day="day")
