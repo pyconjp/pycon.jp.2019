@@ -15,7 +15,7 @@
             hs {{ $t("conference.sections.summary") }}
             .summary__schedule
                 h3 {{ $t("basic.schedule") }}
-                schedule-table(day16 day17 day16Time="09:30 - 20:30" day17Time="09:30 - 19:00")
+                schedule-table(day16 day17 day16Time="09:00 - 20:30" day17Time="09:00 - 19:00")
                     template(#day16-detail) {{ $t('events.lunch_oyatsu_party') }}
                     template(#day17-detail) {{ $t('events.lunch_oyatsu') }}
             .summary__place
