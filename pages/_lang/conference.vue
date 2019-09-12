@@ -33,7 +33,7 @@
                     talk-card(
                         profileImg="cory_althoff.png"
                         speakerName="Cory Althoff"
-                        sessionTheme="TBD"
+                        sessionTheme="Why Python is Eating the World"
                         :profile="$t('home.conference.cory_profile')"
                     )
                 template(#right)
@@ -42,7 +42,7 @@
                     talk-card(
                         profileImg="koike.png"
                         speakerName="小池 誠"
-                        sessionTheme="TBD"
+                        sessionTheme="Pythonで切り開く新しい農業"
                         :profile="$t('home.conference.koike_profile')"
                     )
     section.invited-lecture

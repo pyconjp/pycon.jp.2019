@@ -29,7 +29,7 @@
                     :weekday="$t('weekday.mon')"
                     profileImg="cory_althoff.png"
                     speakerName="Cory Althoff"
-                    sessionTheme="TBD"
+                    sessionTheme="Why Python is Eating the World"
                     :profile="$t('home.conference.cory_profile')"
                 )
             v-flex.xs12.sm12.md6.pt-1(
@@ -40,7 +40,7 @@
                     :weekday="$t('weekday.tue')"
                     profileImg="koike.png"
                     speakerName="小池 誠"
-                    sessionTheme="TBD"
+                    sessionTheme="Pythonで切り開く新しい農業"
                     :profile="$t('home.conference.koike_profile')"
                 )
         .spacer.py-4
