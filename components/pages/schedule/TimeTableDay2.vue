@@ -12,6 +12,11 @@
     row(time="09:00" :day="day")
         v-layout.wrap
             v-flex.pa-2.text-md-center.text-xs-center.subheading {{ $t("timetable.open") }}
+    row(time="09:45" :day="day")
+        v-layout.wrap
+            v-flex.xs12.sm12.md2.pa-2.blueGrey2
+                simple-card(:roomIds="[1006]") {{ $t("timetable.opening") }}
+            v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="10:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
