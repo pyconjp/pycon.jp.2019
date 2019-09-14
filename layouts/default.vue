@@ -32,6 +32,8 @@ import Footer from '@/components/partials/Footer'
 import NavigationDrawer from '@/components/partials/NavigationDrawer'
 import GA from '@/components/partials/GA.vue';
 
+const env = process.env.PYCONJP_ENV
+
 export default {
   components: {
     'pyconjp-header': Header,
@@ -43,10 +45,11 @@ export default {
   data() {
     return {
       windowTop: window.top.scrollY,
-      env: process.env.PYCONJP_ENV
+      env: env
     }
   },
   mounted() {
+    console.log("now env is " + this.env)
     window.addEventListener("scroll", this.onScroll)
     // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
   },
