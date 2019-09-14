@@ -21,7 +21,7 @@
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]" :session="keynoteSeseion") {{ $t("timetable.keynote") }}<br> {{ keynoteSeseion.title }}
-                    template(#detail) 
+                    template(#detail)
                         p {{ keynoteSeseion.name }}
                         p {{ keynoteSeseion.abstract }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
@@ -45,6 +45,11 @@
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]") {{ $t("timetable.poster") }} / {{ $t("timetable.coffee") }}
+                    .pt-1.pb-1
+                    .bottom.py-1(style="width: 95%")
+                        v-divider
+                        configurable-link(path="/sessions?category=poster")
+                            .pt-1.text-md-center.text-xs-center {{ $t("timetable.poster_link") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="15:45" :day="day")
         v-layout.wrap
@@ -59,6 +64,12 @@
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]" :session="ltSeseion") {{ $t("timetable.lt") }}
                     template(#detail) {{ ltSeseion.abstract }}
+                    template(#seeDetail)
+                        .pt-1.pb-1
+                        .bottom.py-1(style="width: 95%")
+                            v-divider
+                            configurable-link(path="/sessions?category=lt")
+                                .pt-1.text-md-center.text-xs-center {{ $t("timetable.lt_link") }}
             v-flex.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="17:20" :day="day")
         v-layout
@@ -89,6 +100,7 @@ import Vue from 'vue'
 
 import Card from "@/components/pages/schedule/Card"
 import SimpleCard from "@/components/pages/schedule/SimpleCard"
+import ConfigurableLink from "@/components/parts/ConfigurableLink"
 import Row from "@/components/pages/schedule/Row"
 import { roomsMaster } from "@/plugins/constants"
 
@@ -96,7 +108,10 @@ export default Vue.extend({
     name: "time-table",
     props: ['sessions'],
     components: {
-        "card": Card, "row": Row, "simple-card": SimpleCard
+        "card": Card,
+        "row": Row,
+        "simple-card": SimpleCard,
+        "configurable-link": ConfigurableLink
     },
     data()  {
         return {

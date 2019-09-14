@@ -7,14 +7,16 @@ v-card(height="100%").pa-1
         slot
     .text-md-left.text-xs-left.caption.grey--text(style="white-space: pre-line;")
         slot(name="detail")
-    template(v-if="seeDetail")
-        .detail.py-1
-            v-divider
-            v-dialog(v-model="dialog")
-                template(#activator="{ on }")
-                    a(v-on="on")
-                        .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
-                SessionModalWindow(:session="session" @close="dialog = false")
+    .text-md-center.text-xs-center.font-weight-bold.body-2
+        slot(name="seeDetail")
+            template(v-if="seeDetail")
+                .detail.py-1
+                    v-divider
+                    v-dialog(v-model="dialog")
+                        template(#activator="{ on }")
+                            a(v-on="on")
+                                .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
+                        SessionModalWindow(:session="session" @close="dialog = false")
     
 </template>
 

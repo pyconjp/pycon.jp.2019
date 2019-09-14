@@ -16,6 +16,7 @@ v-app(
       v-icon keyboard_arrow_up
   contact
   pyconjp-footer
+  ga(v-if="env === 'prd'")
 </template>
 
 <style lang="sass">
@@ -29,22 +30,23 @@ import Header from '@/components/partials/Header'
 import Contact from '@/components/partials/Contact'
 import Footer from '@/components/partials/Footer'
 import NavigationDrawer from '@/components/partials/NavigationDrawer'
+import GA from '@/components/partials/GA.vue';
 
 export default {
   components: {
     'pyconjp-header': Header,
     contact: Contact,
     'pyconjp-footer': Footer,
-    'navigation-drawer': NavigationDrawer
+    'navigation-drawer': NavigationDrawer,
+    ga: GA
   },
   data() {
     return {
-
-      windowTop: window.top.scrollY
+      windowTop: window.top.scrollY,
+      env: process.env.PYCONJP_ENV
     }
   },
   mounted() {
-    console.log(this)
     window.addEventListener("scroll", this.onScroll)
     // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
   },
