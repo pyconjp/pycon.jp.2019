@@ -116,6 +116,16 @@ export default {
     }
   },
   created() {
+    if(this.$route.query.category) {
+      switch (this.$route.query.category) {
+        case "lt":
+          this.activeTab = 1
+          break
+        case "poster": 
+          this.activeTab = 2
+          break
+      }
+    }
   },
   methods: {
     debug(val) {

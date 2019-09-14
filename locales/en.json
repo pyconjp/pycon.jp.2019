@@ -348,6 +348,8 @@
         "lunch": "Lunch",
         "jobfair": "Jobfair",
         "poster": "PosterSession",
+        "poster_link": "See poster sessions",
+        "lt_link": "LT details",
         "coffee": "Coffee Break",
         "lt": "LightningTalk",
         "photo": "Photo Session",

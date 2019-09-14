@@ -79,11 +79,7 @@ export default {
     middleware: 'i18n',
     base: routerBase,
     scrollBehavior (to, from, savedPosition) {
-      if (to.hash) {
-        return {
-          selector: to.hash
-        }
-      }
+        return { x: 0, y: 0 }
     }
   },
   generate: {
