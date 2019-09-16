@@ -20,7 +20,10 @@
     row(time="10:00" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
-                simple-card(:roomIds="[1006]" :session="keynoteSeseion") {{ $t("timetable.keynote") }}<br> {{ keynoteSeseion.title }}
+                simple-card(:roomIds="[1006]" :session="keynoteSeseion")
+                    p.my-0 {{ $t("timetable.keynote") }} 
+                    p.my-0 {{ keynoteSeseion.title }}
+                    p.my-0.body-2.font-weight-normal ({{ $t("timetable.interpret") }})
                     template(#detail)
                         p {{ keynoteSeseion.name }}
                         p {{ keynoteSeseion.abstract }}

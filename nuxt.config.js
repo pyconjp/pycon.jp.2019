@@ -83,7 +83,10 @@ export default {
     }
   },
   generate: {
-    routes: ['/en/code-of-conduct', '/en/sponsors', '/en/schedule', '/en/conference', '/en/sessions', '/en/youth', '/en/tutorial', '/en/sprint']
+    routes: [
+      '/ja', '/ja/code-of-conduct', '/ja/sponsors', '/ja/schedule', '/ja/conference', '/ja/sessions', '/ja/youth', '/ja/tutorial', '/ja/sprint',
+      '/en', '/en/code-of-conduct', '/en/sponsors', '/en/schedule', '/en/conference', '/en/sessions', '/en/youth', '/en/tutorial', '/en/sprint'
+    ]
   },
   render: {
   },
