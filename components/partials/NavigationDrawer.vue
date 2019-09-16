@@ -2,7 +2,7 @@
 v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
     v-divider
     .pa-0
-        configurable-link(:path="toLocale")
+        nuxt-link(:to="toLocale")
           v-layout.align-center.justify-end.pa-3
               v-icon.apply--text fas fa-globe
               div.ml-2.apply--text {{ toLang }}
