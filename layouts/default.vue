@@ -49,7 +49,6 @@ export default {
     }
   },
   mounted() {
-    console.log("now env is " + this.env)
     window.addEventListener("scroll", this.onScroll)
     // if(this.$route.path === "/") setTimeout(() => this.scrollFix(this.$route.hash), 5)
   },
