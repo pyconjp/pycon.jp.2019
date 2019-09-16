@@ -4,7 +4,7 @@ configurable-link(:path="href" :target="target")
          :block="block" :color="color" :[size]="true" :outline="outline" round :style="customStyle"
          :disabled="disabled" :dark="dark" :flat="flat" @click="$emit('click')"
     ).parent
-        span.font-weight-bold(:class="{'is-not-block': !block}")
+        span.font-weight-bold(:class="{'is-not-block': !block}" style="padding-right: 15px")
             slot
         v-icon(v-if="right" :[size]="true").child-right keyboard_arrow_right
         v-icon(v-else :[size]="true").child-left keyboard_arrow_left
@@ -17,7 +17,7 @@ configurable-link(:path="href" :target="target")
     position: relative
 .child-right
     position: absolute
-    right: -10px
+    right: -30px
 .is-not-block
     padding: 0 2em
 @media #{$display-breakpoint-lg-and-up}
