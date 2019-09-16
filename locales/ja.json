@@ -373,7 +373,8 @@
         "photo2": "フォトセッション2",
         "smlt": "Same Day LT",
         "closing": "クロージング",
-        "party": "パーティ"
+        "party": "パーティ",
+        "noSession": "該当するセッションがありません"
     },
     "sessions": {
         "search": {

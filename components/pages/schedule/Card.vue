@@ -21,7 +21,7 @@
             v-divider
             v-dialog(v-model="dialog")
                 template(#activator="{ on }")
-                    a(v-on="on")
+                    a(v-on="on" @click="onClick")
                         .pt-1.text-md-center.text-xs-center {{ $t("timetable.detail") }}
                 SessionModalWindow(:session="session" @close="dialog = false")
 </template>
@@ -71,6 +71,36 @@ export default {
                     return "advanced"
                 default:
                     break;
+            }
+        },
+        onClick() {
+            // this.$router.push({ query: { sessionId: this.session.id } })
+            // this.$router.replace({ query: { sessionId: this.session.id } })
+            // console.log(this.$route)
+            // this.$route.query['sessionId'] = this.session.id 
+            console.log("clicked")
+            this.addParamsToLocation({sessionId: this.session.id})
+        },
+        addParamsToLocation(params) {
+            window.history.pushState(
+                {},
+                null,
+                this.$route.path +
+                '?' +
+                Object.keys(params)
+                    .map(key => {
+                    return (
+                        encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
+                    )
+                    })
+                    .join('&')
+            )
+        }
+    },
+    watch: {
+        dialog(new_, old) {
+            if(!new_) {
+                window.history.go(-1)
             }
         }
     },

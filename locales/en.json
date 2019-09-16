@@ -358,7 +358,8 @@
         "photo2": "Photo Session2",
         "smlt": "Same Day LT",
         "closing": "Closing",
-        "party": "Party"
+        "party": "Party",
+        "noSession": "This session doesn't exist"
     },
     "sessions": {
         "level": "Level",

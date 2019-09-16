@@ -139,7 +139,6 @@ export default Vue.extend({
             return this.sessions.filter(s => s.id == 502)[0]
         },
         ltSeseion() {
-            console.log("lt", this.sessions.filter(s => s.id == 504)[0])
             return this.sessions.filter(s => s.id == 504)[0]
         }
     },
