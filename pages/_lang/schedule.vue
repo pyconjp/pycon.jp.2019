@@ -90,7 +90,7 @@ export default {
   watch: {
     dialog(new_, old) {
       if(!new_) {
-        window.history.pushState({}, null, this.$route.path)
+        window.history.pushState({}, null, this.$router.history.base + this.$route.path)
       }
     }
   },

@@ -74,18 +74,14 @@ export default {
             }
         },
         onClick() {
-            // this.$router.push({ query: { sessionId: this.session.id } })
-            // this.$router.replace({ query: { sessionId: this.session.id } })
-            // console.log(this.$route)
-            // this.$route.query['sessionId'] = this.session.id 
-            console.log("clicked")
+            console.log(this)
             this.addParamsToLocation({sessionId: this.session.id})
         },
         addParamsToLocation(params) {
             window.history.pushState(
                 {},
                 null,
-                this.$route.path +
+                this.$router.history.base + this.$route.path +
                 '?' +
                 Object.keys(params)
                     .map(key => {
