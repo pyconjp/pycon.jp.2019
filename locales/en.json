@@ -83,8 +83,9 @@
         "title": "Top page",
         "keyvisual": {
             "child-workshop": "We will also hold a workshop for children",
+            "finish": "finished",
             "soldout-desc": "PyCon JP Regular tickets are sold out. PyCon JP is not involved in ticket transfers. If canceled, the participation fee cannot be refunded. We recommend that you don't cancel and hand over the connpass receipt to the applicant. ",
-            "youtube": "Live Streaming on Youtube",
+            "youtube": "Sessions on Youtube",
             "presentation": "Presentation Materials",
             "timetable": "See timetables",
             "sessions": "Sessions"

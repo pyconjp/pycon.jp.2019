@@ -13,9 +13,9 @@
                             .title.font-weight-bold {{ item.title }}
                         v-flex.xs12.pt-4
                             .subheading {{ item.description }}
-                    v-layout(v-show="item.canApply").py-2
-                        v-flex.xs12.text-xs-center.px-5
-                            button-with-arrow(:dark="true" :outline="true" :href="item.url" target="_blank" color="themeColor3" size="normal") {{ $t("basic.apply") }}
+                    //- v-layout(v-show="item.canApply").py-2
+                    //-     v-flex.xs12.text-xs-center.px-5
+                    //-         button-with-arrow(:dark="true" :outline="true" :href="item.url" target="_blank" color="themeColor3" size="normal") {{ $t("basic.apply") }}
 </template>
 
 <script>

@@ -5,7 +5,7 @@
     news
     overview
     conference
-    access
+    //- access
     support
     sponsor
 </template>
