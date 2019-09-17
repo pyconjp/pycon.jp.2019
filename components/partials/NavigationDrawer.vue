@@ -7,30 +7,30 @@ v-navigation-drawer.elevation-0(v-model="drawer" right absolute)
               v-icon.apply--text fas fa-globe
               div.ml-2.apply--text {{ toLang }}
         // 参加申し込み
-        v-expansion-panel(dark).apply
-          v-expansion-panel-content(expand-icon="arrow_drop_down" color="apply")
-            template(#header style="color")
-              span.subheading.font-weight-bold  {{$t("basic.apply")}}
-            v-card(flat)
-              v-layout.column.py-1.px-3(v-if="applies.length !== 0")
-                  v-flex(v-for='apply in applies' :key="apply.id").pa-2
-                    template(v-if="apply.submenus").pt-2
-                      .body-1 {{ apply.name }}
-                      .py-2
-                        .py-1(
-                          v-for="submenu in apply.submenus" :key="submenu.id"
-                        )
-                          configurable-link(:path="submenu.link" :target="submenu.pageTrans ? '_blank' : '_self'")
-                            span.subheading.white--text.font-weight-bold ─
-                            span.body-1.ml-2 {{ submenu.name }}
-                            v-icon(v-if="submenu.pageTrans" small color="white").ml-1 keyboard_arrow_right
-                    template(v-else).pt-2
-                      configurable-link(:path="apply.link" :target="apply.pageTrans ? '_blank' : '_self'")
-                        v-layout.align-center
-                          v-flex.shrink
-                            span.body-2 {{ apply.name }}
-                          v-flex
-                            v-icon(v-if="apply.pageTrans" color="white").ml-1 keyboard_arrow_right
+        //- v-expansion-panel(dark).apply
+        //-   v-expansion-panel-content(expand-icon="arrow_drop_down" color="apply")
+        //-     template(#header style="color")
+        //-       span.subheading.font-weight-bold  {{$t("basic.apply")}}
+        //-     v-card(flat)
+        //-       v-layout.column.py-1.px-3(v-if="applies.length !== 0")
+        //-           v-flex(v-for='apply in applies' :key="apply.id").pa-2
+        //-             template(v-if="apply.submenus").pt-2
+        //-               .body-1 {{ apply.name }}
+        //-               .py-2
+        //-                 .py-1(
+        //-                   v-for="submenu in apply.submenus" :key="submenu.id"
+        //-                 )
+        //-                   configurable-link(:path="submenu.link" :target="submenu.pageTrans ? '_blank' : '_self'")
+        //-                     span.subheading.white--text.font-weight-bold ─
+        //-                     span.body-1.ml-2 {{ submenu.name }}
+        //-                     v-icon(v-if="submenu.pageTrans" small color="white").ml-1 keyboard_arrow_right
+        //-             template(v-else).pt-2
+        //-               configurable-link(:path="apply.link" :target="apply.pageTrans ? '_blank' : '_self'")
+        //-                 v-layout.align-center
+        //-                   v-flex.shrink
+        //-                     span.body-2 {{ apply.name }}
+        //-                   v-flex
+        //-                     v-icon(v-if="apply.pageTrans" color="white").ml-1 keyboard_arrow_right
         // Navigations
         v-layout.column.justify-start.py-2
           v-expansion-panel.navigation

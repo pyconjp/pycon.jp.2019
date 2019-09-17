@@ -29,17 +29,17 @@
                                 v-icon(size=40).themeColor3--text location_on
                                 span.ml-3 {{ $t("basic.pio") }}
                         v-flex.xs12.pa-3
-                            GmapMap(
-                                :center="{lat:35.558812, lng:139.724187}"
-                                :zoom="16"
-                                map-type-id="roadmap"
-                                style="width: 100%; height: 400px"
-                            )
-                                GmapMarker(
-                                    :position="{lat:35.558812, lng:139.724187}"
-                                    :clickable="true"
-                                    :draggable="true"
-                                )
+                            //- GmapMap(
+                            //-     :center="{lat:35.558812, lng:139.724187}"
+                            //-     :zoom="16"
+                            //-     map-type-id="roadmap"
+                            //-     style="width: 100%; height: 400px"
+                            //- )
+                            //-     GmapMarker(
+                            //-         :position="{lat:35.558812, lng:139.724187}"
+                            //-         :clickable="true"
+                            //-         :draggable="true"
+                            //-     )
             v-flex.xs12.sm12.md4.px-2(
                 :class="{'pt-4': $vuetify.breakpoint.smAndDown, 'pt-0': $vuetify.breakpoint.mdAndUp }"
             )
@@ -57,17 +57,17 @@
                                 v-icon(size=40).apply--text location_on
                                 span.ml-3 {{ $t("basic.hennge") }}
                         v-flex.xs12.pa-3
-                            GmapMap(
-                                :center="{lat:35.654938, lng:139.694813}"
-                                :zoom="16"
-                                map-type-id="roadmap"
-                                style="width: 100%; height: 400px"
-                            )
-                                GmapMarker(
-                                    :position="{lat:35.654938, lng:139.694813}"
-                                    :clickable="true"
-                                    :draggable="true"
-                                )
+                            //- GmapMap(
+                            //-     :center="{lat:35.654938, lng:139.694813}"
+                            //-     :zoom="16"
+                            //-     map-type-id="roadmap"
+                            //-     style="width: 100%; height: 400px"
+                            //- )
+                            //-     GmapMarker(
+                            //-         :position="{lat:35.654938, lng:139.694813}"
+                            //-         :clickable="true"
+                            //-         :draggable="true"
+                            //-     )
 </template>
 
 <style lang="sass" scoped>

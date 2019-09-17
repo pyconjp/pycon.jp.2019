@@ -21,7 +21,9 @@
                     v-layout.column.right-padding
                         template(v-if="$vuetify.breakpoint.mdAndUp")
                             v-flex
-                                h2.display-2.themeColor3--text.font-weight-bold.heading-font Conference
+                                h2.display-2.themeColor3--text.font-weight-bold.heading-font 
+                                    span Conference
+                                    span.subheading.pl-2 ({{ $t("home.keyvisual.finish") }})
                             v-flex.caption
                                 span.themeColor3--text.font-weight-bold カンファレンス
                             v-flex.py-4.text-md-left
