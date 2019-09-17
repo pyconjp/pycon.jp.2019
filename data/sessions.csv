@@ -634,7 +634,7 @@ Several key points that we have learned from our development process includes:
 - Utilizing memory profiler and pdb properly will help you in pinpointing application bottleneck
 - Python for-loops vs generators
 - And several other common pitfalls",Iskandar Setiadi
-207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,https://www.youtube.com/watch?v=5Y465VRIBME,https://drive.google.com/file/d/1SXn7_u9OddelLPQ0Jn2H8vflL-hBp2Az/view?usp=sharing,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
+207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,,https://drive.google.com/file/d/1SXn7_u9OddelLPQ0Jn2H8vflL-hBp2Az/view?usp=sharing,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
 Dineでは最適なマッチングを実現するために日々改善が続けられており、本トークではそこで得られた経験や知見についてお伝えします。
 具体的にはGoogle Cloud Dataflow (Apache Beam Python SDK)を使ったデータプロセッシング、Cloud Machine Learningを使った機械学習の活用を中心にお話する予定です。
 
