@@ -586,7 +586,7 @@ Covered items will include: an overview of Trio's *structured concurrency* and w
 
 - Python標準の関数型機能
     - itertools / functools",Terajima Satoshi
-204,石田 光一,KubernetesとJupyterHubで構築する機械学習eラーニングサイト,https://www.youtube.com/watch?v=VjH2P2xcJyg,,JupyterHubはユーザごとにJupyter notebookを提供するシステムです。eラーニングサイトのKubernetes上でJupyterHubを運用するノウハウをお届けします。,Talk (45 minutes),45min,10Xでタベリーの開発をしているエンジニアです。業務委託で他の会社のサービスをよくするための技術相談や実装もやってます。,Convention Hall UGUISU,2,1,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python in education(including science and maths),"### eラーニングサイトの紹介
+204,石田 光一,KubernetesとJupyterHubで構築する機械学習eラーニングサイト,https://www.youtube.com/watch?v=VjH2P2xcJyg,https://speakerdeck.com/wapa5pow/kubernetes-k8s-tojupyterhubdegou-zhu-suru-ji-jie-xue-xi-eraningusaito,JupyterHubはユーザごとにJupyter notebookを提供するシステムです。eラーニングサイトのKubernetes上でJupyterHubを運用するノウハウをお届けします。,Talk (45 minutes),45min,10Xでタベリーの開発をしているエンジニアです。業務委託で他の会社のサービスをよくするための技術相談や実装もやってます。,Convention Hall UGUISU,2,1,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python in education(including science and maths),"### eラーニングサイトの紹介
 
 eラーニングサイトをデモして、「機械学習のコンテンツ」と、そのコンテンツを写経するためにユーザごとに「Jupyter Notebook」がブラウザで実行できることを紹介します。サイトを紹介することによってこれから説明するアーキテクチャと運用がなぜ必要かが理解しやすくなります。
 
@@ -634,7 +634,7 @@ Several key points that we have learned from our development process includes:
 - Utilizing memory profiler and pdb properly will help you in pinpointing application bottleneck
 - Python for-loops vs generators
 - And several other common pitfalls",Iskandar Setiadi
-207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,,https://drive.google.com/file/d/1SXn7_u9OddelLPQ0Jn2H8vflL-hBp2Az/view?usp=sharing,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
+207,森岡 崇,婚活・恋活領域におけるPythonを使ったマッチング最適化,,https://www.slideshare.net/TakashiMorioka/python-172910459,晩婚・少子化が叫ばれる中、婚活・恋活分野でのIT活用が進んでいます。 本トークではPythonで開発されているマッチングアプリ「Dine」におけるマッチング最適化への取り組みをご紹介します。,Talk (30 minutes),30min,"株式会社Mrk&Co Co-Founder, CTO",Small Exhibition Hall,2,2,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"株式会社Mrk&Coではマッチングアプリ「Dine」を開発・運営しており、バックエンド開発はPythonで行われています。
 Dineでは最適なマッチングを実現するために日々改善が続けられており、本トークではそこで得られた経験や知見についてお伝えします。
 具体的にはGoogle Cloud Dataflow (Apache Beam Python SDK)を使ったデータプロセッシング、Cloud Machine Learningを使った機械学習の活用を中心にお話する予定です。
 
