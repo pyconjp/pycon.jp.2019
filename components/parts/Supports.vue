@@ -18,8 +18,8 @@ section.my-5.support.blueGrey2
                     .card-content
                         h3 {{ $t('events.supports.nursery.title') }}
                         p {{ $t('events.supports.nursery.content') }}
-                        v-spacer
-                        button-with-arrow(color="themeColor1" outline :dark="true" :block="false" target="_blank" href="https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et") {{ $t('events.supports.nursery.to_apply') }}
+                        //- v-spacer
+                        //- button-with-arrow(color="themeColor1" outline :dark="true" :block="false" target="_blank" href="https://cscs.alpha-co.com/event_yoyaku_kihon_form.jsp?E=1712898*9X7Et") {{ $t('events.supports.nursery.to_apply') }}
             v-flex(xs12 md4 :class="{'ml-3': $vuetify.breakpoint.mdAndUp, 'mt-2': $vuetify.breakpoint.smAndDown}")
                 v-card.flex-card(height="100%")
                     v-img(max-height="20vh" :src="require('@/assets/images/support-local.png')")
