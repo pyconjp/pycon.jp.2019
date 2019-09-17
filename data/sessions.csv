@@ -730,7 +730,7 @@ https://github.com/fukatani/rujaion のように競技プログラミングな�
 **Deep learning** We use VGG-16(16-layer network) in Keras with Tensorflow backend as our CNN model. Using GPU to accelerate, we have trained 10 epochs and 1000 steps per epoch. The MSE of the model is 1.3066. Besides, the valuation MSE is 1.1721. Overall, the result is robust enough to predict a new palm. (You can find our code here.)
 
 **Chatbot** compared with App and Web, is more accessible to mobile users, and it is also easier to spread on social media. Therefore, we used Chatfuel to create an AI chatbot on Facebook Messenger. Below you can see the user flow of Handbot. The smooth UX we designed help us achieve 80% user retention rate.",徐愷
-213,Rei Suyama,unittestで始めるユニットテスト入門,https://www.youtube.com/watch?v=8I9piVgcHoE,,標準ライブラリにあるunittestを使ったユニットテストの始め方を紹介します。また、テストフレームワークであるpytestとの比較、unittestからpytestへの以降についても解説します。,Talk (30 minutes),30min,尾道の向島で暮らすプログラマ。学生時代からずっとPython好き。シンプルなコード、シンプルな設計を目指してます。,Convention Hall UME,2,3,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"# unittestで始めるユニットテスト入門
+213,Rei Suyama,unittestで始めるユニットテスト入門,https://www.youtube.com/watch?v=8I9piVgcHoE,https://docs.google.com/presentation/d/1F0fkcbuuQBCbVDLD2v8YQlMOqEMnF_PpI2AAR5nwhfI/edit?usp=drive_open&ouid=113399945814025860754,標準ライブラリにあるunittestを使ったユニットテストの始め方を紹介します。また、テストフレームワークであるpytestとの比較、unittestからpytestへの以降についても解説します。,Talk (30 minutes),30min,尾道の向島で暮らすプログラマ。学生時代からずっとPython好き。シンプルなコード、シンプルな設計を目指してます。,Convention Hall UME,2,3,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"# unittestで始めるユニットテスト入門
 
 ## 概要
 プログラムの品質を向上させるためにはユニットテストが不可欠です。
@@ -831,7 +831,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 
 ## 話さないこと
 機械学習、統計",Naoki Matsuda
-217,加藤皓也（Hiroya Kato）,メディアが運用すべき持続可能なVTuberをつくる技術,https://www.youtube.com/watch?v=oXhGABVWV8k,,VTuberは運用コストの高いコンテンツです。今回は、Pythonによる声質変換や文章要約を用いて運用コストを抑えたVTuber像を２案紹介します。併せて、声質変換モデルの構築方法も詳しく解説します。,Talk (15 minutes),15min,日経でフロント／バック／DevOpsを担うWebエンジニア。機械学習とVTuberとゲーム実況が好き。,Small Exhibition Hall,2,4,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"一般にVTuber運用には、動画投稿やタレント活動など、定期的な活動が必要です。しかし、動画企画・制作のコストや""中の人""の属人性の高さから、VTuber運用の長期継続は困難です。
+217,加藤皓也（Hiroya Kato）,メディアが運用すべき持続可能なVTuberをつくる技術,https://www.youtube.com/watch?v=oXhGABVWV8k,https://www.slideshare.net/HiroyaKato1/vtuber-172745103,VTuberは運用コストの高いコンテンツです。今回は、Pythonによる声質変換や文章要約を用いて運用コストを抑えたVTuber像を２案紹介します。併せて、声質変換モデルの構築方法も詳しく解説します。,Talk (15 minutes),15min,日経でフロント／バック／DevOpsを担うWebエンジニア。機械学習とVTuberとゲーム実況が好き。,Small Exhibition Hall,2,4,1002,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Project case studies,"一般にVTuber運用には、動画投稿やタレント活動など、定期的な活動が必要です。しかし、動画企画・制作のコストや""中の人""の属人性の高さから、VTuber運用の長期継続は困難です。
 そんなVTuber運用の課題に対し、メディアが持つリソースを用いた以下２つのVTuber像を提案します。
 
 - 自動生成型VTuber
@@ -948,7 +948,7 @@ docstringを書いておくことによってクラスや関数の役割を伝�
 - どんな情報を埋め込めるのか
 
 ということをお話したいと思います。",ku-mu
-225,あべんべん,pytestによるCIレボリューション,https://www.youtube.com/watch?v=gv1jjsDbuFY,,Pythonは非常に扱いやすい言語です。しかし、しっかりテストしないとプロダクトが台無しになるかもしれませんので、テストの方法としてpytestを使ったクラウドベースのCIの有用性について紹介します。,Talk (15 minutes),15min,金融機関の研究所で技術調査や研究業務支援をしながら、6つのITコミュニティの運営、技術書の執筆・査読をしてます。,Room D,2,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Programming tools,皆さんはPythonでユニットテストやCIツールを使いこなせているでしょうか？そういった悩みへの参考としてユニットテストやCIツールの概要や種類について解説をしてから、その中でもPytestを使った場合のメリットや開発プロセス全体への波及効果について発表します。,あべんべん
+225,あべんべん,pytestによるCIレボリューション,https://www.youtube.com/watch?v=gv1jjsDbuFY,https://speakerdeck.com/abenben/pytestniyorucireboriyusiyon,Pythonは非常に扱いやすい言語です。しかし、しっかりテストしないとプロダクトが台無しになるかもしれませんので、テストの方法としてpytestを使ったクラウドベースのCIの有用性について紹介します。,Talk (15 minutes),15min,金融機関の研究所で技術調査や研究業務支援をしながら、6つのITコミュニティの運営、技術書の執筆・査読をしてます。,Room D,2,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Programming tools,皆さんはPythonでユニットテストやCIツールを使いこなせているでしょうか？そういった悩みへの参考としてユニットテストやCIツールの概要や種類について解説をしてから、その中でもPytestを使った場合のメリットや開発プロセス全体への波及効果について発表します。,あべんべん
 151,Atsushi Odagiri,Python開発を円滑に進めるためのツール設定,,,実際の開発ではただ動かすだけでなく、品質をあげるためにレビューやコーディング規約のチェックなどが行われます。 Pythonでの開発で利用できる規約や静的解析を行うflake8をはじめとしたツールを活用して開発を円滑に進められる環境づくりを行います。,Beginner Session (45 minutes),begginer_session,株式会社オープンコレクター所属,Large Exhibition Hall,1,1,1006,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Beginner Session,"- flake8
 - black
 - mypy
