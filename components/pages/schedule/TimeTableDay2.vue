@@ -27,6 +27,15 @@
                     template(#detail)
                         p {{ keynoteSeseion.name }}
                         p {{ keynoteSeseion.abstract }}
+                        v-layout.justify-center.wrap
+                            v-flex.text-xs-center.text-md-center(v-if="keynoteSeseion.youtube")
+                                v-btn(small round flat :href="keynoteSeseion.youtube" target="_blank").pa-0.ma-0 
+                                    v-icon(small) fab fa-youtube
+                                    span.caption.pl-1 {{ $t("basic.youtube") }}
+                            v-flex.text-xs-center.text-md-center(v-if="keynoteSeseion.presentation")
+                                v-btn(small round flat  :href="keynoteSeseion.presentation" target="_blank").pa-0.ma-0
+                                    v-icon(small) fas fa-tv
+                                    span.caption.pl-1 {{ $t("basic.presentation") }}
             v-flex.xs12.sm12.md2(v-for="(_, idx) in 5" :key="idx")
     row(time="11:15" :day="day")
         v-layout.wrap
@@ -68,6 +77,11 @@
                 simple-card(:roomIds="[1006]" :session="ltSeseion") {{ $t("timetable.lt") }}
                     template(#detail) {{ ltSeseion.abstract }}
                     template(#seeDetail)
+                        v-layout.justify-center.wrap
+                            v-flex.text-xs-center.text-md-center
+                                v-btn(small round flat href="https://www.youtube.com/watch?v=UShlTE8wdzU" target="_blank").pa-0.ma-0 
+                                    v-icon(small) fab fa-youtube
+                                    span.caption.pl-1 {{ $t("basic.youtube") }}
                         .pt-1.pb-1
                         .bottom.py-1(style="width: 95%")
                             v-divider

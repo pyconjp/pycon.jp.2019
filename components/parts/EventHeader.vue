@@ -27,8 +27,8 @@
             .place
                 v-icon place
                 span {{ place }}
-            .apply-button.text-xs-center.text-sm-left(v-if="applyLink")
-                button-with-arrow(color="applyLighten" :disabled="applyDisable" target="_blank" :dark="!applyDisable" :block="false"  :href="applyLink") {{ $t("basic.apply") }}
+            //- .apply-button.text-xs-center.text-sm-left(v-if="applyLink")
+            //-     button-with-arrow(color="applyLighten" :disabled="applyDisable" target="_blank" :dark="!applyDisable" :block="false"  :href="applyLink") {{ $t("basic.apply") }}
         .content-page-header__right
             .content-page-header__image
                 v-img.v-img(:src="image" height="100%")

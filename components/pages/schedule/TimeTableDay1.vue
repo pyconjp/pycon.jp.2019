@@ -23,7 +23,15 @@
                     template(#detail)
                         p {{ keynoteSeseion.name }}
                         p {{ keynoteSeseion.abstract }}
-            v-flex.md2(v-for="(_, idx) in 5" :key="idx")
+                        v-layout.justify-center.wrap
+                            v-flex.text-xs-center.text-md-center(v-if="keynoteSeseion.youtube")
+                                v-btn(small round flat :href="keynoteSeseion.youtube" target="_blank").pa-0.ma-0 
+                                    v-icon(small) fab fa-youtube
+                                    span.caption.pl-1 {{ $t("basic.youtube") }}
+                            v-flex.text-xs-center.text-md-center(v-if="keynoteSeseion.presentation")
+                                v-btn(small round flat  :href="keynoteSeseion.presentation" target="_blank").pa-0.ma-0
+                                    v-icon(small) fas fa-tv
+                                    span.caption.pl-1 {{ $t("basic.presentation") }}
     row(time="11:25" :day="day")
         v-layout.wrap
             v-flex.xs12.sm12.md2.pa-2(v-for="(room, idx) in rooms" :key="idx" :class="idx % 2 == 0 ? 'blueGrey2' : ''")
@@ -75,6 +83,11 @@
             v-flex.xs12.sm12.md2.pa-2.blueGrey2
                 simple-card(:roomIds="[1006]" :session="ltSeseion") {{ $t("timetable.lt") }}
                     template(#detail) {{ ltSeseion.abstract }}
+                        v-layout.justify-center.wrap
+                            v-flex.text-xs-center.text-md-center
+                                v-btn(small round flat href="https://www.youtube.com/watch?v=UShlTE8wdzU" target="_blank").pa-0.ma-0 
+                                    v-icon(small) fab fa-youtube
+                                    span.caption.pl-1 {{ $t("basic.youtube") }}
                     template(#seeDetail)
                         .pt-1.pb-1
                         .bottom.py-1(style="width: 95%")
