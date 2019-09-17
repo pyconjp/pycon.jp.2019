@@ -18,9 +18,13 @@
                 span.ml-1.px-1.level(:class="ClassForLevel(session.audience_level)") {{ session.audience_level }}
         v-layout.justify-center.wrap
             v-flex.text-xs-center.text-md-center(v-if="session.youtube")
-                v-btn(small round flat color="theme3" :href="session.youtube" target="_blank").caption.pa-0.ma-0 {{ $t("basic.youtube") }}
+                v-btn(small round flat :href="session.youtube" target="_blank").pa-0.ma-0 
+                    v-icon(small) fab fa-youtube
+                    span.caption.pl-1 {{ $t("basic.youtube") }}
             v-flex.text-xs-center.text-md-center(v-if="session.presentation")
-                v-btn(small round flat color="theme3" :href="session.presentation" target="_blank").caption.pa-0.ma-0 {{ $t("basic.presentation") }}
+                v-btn(small round flat  :href="session.presentation" target="_blank").pa-0.ma-0
+                    v-icon(small) fas fa-tv
+                    span.caption.pl-1 {{ $t("basic.presentation") }}
         .pt-3.pb-3
         .bottom.py-1(style="width: 95%")
             v-divider
