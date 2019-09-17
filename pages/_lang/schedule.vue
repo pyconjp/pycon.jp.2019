@@ -66,7 +66,7 @@ export default {
   },
   data() {
     return {
-      activeDay: new Date() < new Date(2019, 8, 16, 18, 0, 0) ? 1 : 2, // 1日目の18時に2日目に切り替わる
+      activeDay: 1,
       sessions: sessions,
       dialog: false,
       missingDialog: false,
