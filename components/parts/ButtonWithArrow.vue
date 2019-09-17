@@ -18,13 +18,13 @@ configurable-link(:path="href" :target="target")
 .child-right
     position: absolute
     right: -30px
-.is-not-block
-    padding: 0 2em
+// .is-not-block
+//     padding: 0 2em
 @media #{$display-breakpoint-lg-and-up}
     .child
         right: -.5em
-    .is-not-block
-        padding: 0 3em
+    // .is-not-block
+    //     padding: 0 3em
 
 .v-btn.v-btn--outline
     border-width: 2px
