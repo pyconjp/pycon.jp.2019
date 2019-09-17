@@ -48,6 +48,8 @@
                                     button-with-arrow(color="apply" :outline="true" :href=" '/sessions'") {{ $t("home.keyvisual.sessions") }}
                         v-flex.text-md-center.py-0.px-2
                             button-with-arrow(color="apply" :outline="true" target="_blank" href="https://www.youtube.com/user/PyConJP/videos?view=2&sort=dd") {{ $t("home.keyvisual.youtube") }}
+                        v-flex.text-md-center.py-0.px-2
+                            button-with-arrow(color="apply" :outline="true" target="_blank" href="https://pyconjp.connpass.com/event/135734/presentation/") {{ $t("home.keyvisual.presentation") }}
                             //- v-btn(disabled block round).subheading {{ $t("basic.apply-soldout") }}
                         //- v-flex.text-md-center.py-3.body-2.grey--text
                         //-     span {{ $t('home.keyvisual.soldout-desc') }}
