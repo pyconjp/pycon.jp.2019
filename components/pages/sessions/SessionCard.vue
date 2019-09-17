@@ -35,8 +35,16 @@ v-dialog(v-model="dialog")
           .session-card__content.py-2
             v-layout
               v-flex.my-1.title.font-weight-black.session-card__content--title {{ session.title }}
-            v-layout
-              v-flex.my-1.speaker {{ session.name }}
+            v-layout.justify-start.align-center.my-1
+              v-flex.shrink.speaker {{ session.name }}
+              v-flex.shrink.ml-1(v-if="session.youtube")
+                v-btn(small round flat :href="session.youtube" target="_blank").pa-0.ma-0 
+                  v-icon(small) fab fa-youtube
+                  span.caption.pl-1 {{ $t("basic.youtube") }}
+              v-flex.shrink.ml-1(v-if="session.presentation")
+                v-btn(small round flat  :href="session.presentation" target="_blank").pa-0.ma-0
+                    v-icon(small) fas fa-tv
+                    span.caption.pl-1 {{ $t("basic.presentation") }}
         v-flex.sm1.md1.py-2.px-1.subheading.text-xs-center.clickable.detail(v-on="on")
           span.themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
 
