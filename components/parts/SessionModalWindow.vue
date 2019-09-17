@@ -38,8 +38,19 @@
 
       v-layout.my-3.session-card__head--title
         h1.title.font-weight-bold {{ session.title }}
-      v-layout.mb-4.session-card__head--abstract
+      v-layout.mb-2.session-card__head--abstract
         h2.body-2 {{ session.abstract }}
+      v-layout.wrap.pb-2(
+        :class="{'justify-center': $vuetify.breakpoint.smAndDown, 'justify-start': $vuetify.breakpoint.mdAndUp }"
+      )
+        v-flex.shrink.text-xs-center.text-md-center(v-if="session.youtube")
+            v-btn(small round flat :href="session.youtube" target="_blank").pa-0.ma-0 
+                v-icon(small) fab fa-youtube
+                span.caption.pl-1 {{ $t("basic.youtube") }}
+        v-flex.shrink.text-xs-center.text-md-center(v-if="session.presentation")
+            v-btn(small round flat  :href="session.presentation" target="_blank").pa-0.ma-0
+                v-icon(small) fas fa-tv
+                span.caption.pl-1 {{ $t("basic.presentation") }}
     .pb-3.session-card__content
       v-layout.my-3
         v-flex
