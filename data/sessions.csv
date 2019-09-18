@@ -649,7 +649,7 @@ Dineでは最適なマッチングを実現するために日々改善が続け�
 This talk is going to cover `mighty_patcher`, a library that supports automatic hot reloading of Python. This lets you avoid classic ""auto-reload"" tricks that force you to restart your entire program. 
 
 I will go over the basics of what this does, how it can be used (quicker testing, live coding, interactive art), and how it's implemented. Walking through the details of how this tool works should help people to rethink what is possible in Python once you become aware of how the internals work.",Raphael Gaschignard
-209,田中 慎太郎,Pythonでライブをしよう -FoxDotを使った新時代のPython活用法-,https://www.youtube.com/watch?v=lCQWLAJf6xQ,,本セッションではライブコーディングを実演しつつ、FoxDotというライブラリについてお話します。ここでいうライブコーディングとは、「生でプログラミングしながら、演奏すること」を指します。,Talk (30 minutes),30min,長野県長野市の会社、日本システム技研所属のプログラマ バックエンド開発からフロントエンド開発まで手掛けます,Convention Hall UGUISU,2,2,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python libraries,"本セッションでは実際にライブコーディングを交えつつ、[FoxDot](https://foxdot681713046.wordpress.com/)というライブラリについてお話しようと思います。
+209,田中 慎太郎,Pythonでライブをしよう -FoxDotを使った新時代のPython活用法-,https://www.youtube.com/watch?v=lCQWLAJf6xQ,https://speakerdeck.com/sin_tanaka_21/pyconjp-2019,本セッションではライブコーディングを実演しつつ、FoxDotというライブラリについてお話します。ここでいうライブコーディングとは、「生でプログラミングしながら、演奏すること」を指します。,Talk (30 minutes),30min,長野県長野市の会社、日本システム技研所属のプログラマ バックエンド開発からフロントエンド開発まで手掛けます,Convention Hall UGUISU,2,2,1004,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,All,Python libraries,"本セッションでは実際にライブコーディングを交えつつ、[FoxDot](https://foxdot681713046.wordpress.com/)というライブラリについてお話しようと思います。
 
 ## 話すこと
 - ライブコーディングについて
