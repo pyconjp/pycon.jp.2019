@@ -41,7 +41,7 @@ id,name,title,youtube,presentation,abstract,talk_format_origin,talk_format,profi
     1. AutoML Tables
     1. AutoML Vision
     1. AutoML Natural Language",Masashi SHIBATA
-104,Takanori Suzuki,Automate the Boring Stuff with Slackbot,https://www.youtube.com/watch?v=rbNI2LzwaqE,,"I created a chatbot to automate various boring tasks. In this talk, I will explain how to create and extend a bot and work with a libs and APIs.",Talk (45 minutes),45min,Takanori(@takanory) is a Vice Chair of PyCon JP Committee. He is also a Director of BeProud Inc.,Convention Hall UGUISU,1,1,1004,English Only,英語/English,en,en,Intermediate,Project case studies,"The outline of my presentation is below:
+104,Takanori Suzuki,Automate the Boring Stuff with Slackbot,https://www.youtube.com/watch?v=rbNI2LzwaqE,https://gitpitch.com/takanory/slides?p=20190917pyconjp,"I created a chatbot to automate various boring tasks. In this talk, I will explain how to create and extend a bot and work with a libs and APIs.",Talk (45 minutes),45min,Takanori(@takanory) is a Vice Chair of PyCon JP Committee. He is also a Director of BeProud Inc.,Convention Hall UGUISU,1,1,1004,English Only,英語/English,en,en,Intermediate,Project case studies,"The outline of my presentation is below:
 
 - Who am I (1m)
 - Back ground, motivation (2m)
@@ -157,7 +157,7 @@ Python から Excel データを読み込む方法はいくつかあるが、本
  - テスト駆動開発による堅牢さ向上
 
 などといった具体的なテクニックについて紹介します。",Takumi Sueda
-141,Renyuan Lyu,"Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot",https://www.youtube.com/watch?v=L1zaX0hQ9YQ,,"In this speech, I will sort out  my previous speeches at Pycon JP 
+141,Renyuan Lyu,"Using Python in Music Signal Processing, Speech Recognition and Intent Classification in Chatbot",https://www.youtube.com/watch?v=L1zaX0hQ9YQ,https://www.slideshare.net/tarzanlyu/py-conjp2019-renyuanlyu3-172389132,"In this speech, I will sort out  my previous speeches at Pycon JP 
 for several consecutive years (2015~2017). The topics includes using Python to study signal processing, especially in speech spectrum analysis, speech recognition, and intent recognition in chat bots. By the way, I also wish to share my experience and passion for learning and enjoying Japanese songs and language, all via the help of Python.",invited_talk (45 minutes),invited_talk,"I am a university faculty member, engaged in teaching and research in the Department of Computer Science, Chang Gung University, TAIWAN. My expertise is probability, statistics, signal processing, speech/pattern recognition, and artificial intelligence.",Small Exhibition Hall,1,2,1002,日本語と英語/Japanese and English,英語/English,jpen,en,,invited_talk,,
 108,Sebastian Witowski,It’s 2019 and I’m still using Python 2. Should I be worried?,https://www.youtube.com/watch?v=8a_TEjCl8NQ,https://www.dropbox.com/s/asw9cin03dydblo/It%20is%202019%20and%20I%20am%20using%20Python2.pdf?dl=0,"What will happen with Python 2 in 2020?
 What are the risks of staying on the unsupported version?
@@ -490,7 +490,7 @@ Also, in this talk, I would like to convey the goodness of handling Python in th
    - キャプションをつける
 - Excelへのエクスポート
 - Styling使用時の注意点",Tomoko FURUKI
-123,成瀬基樹,ListはIteratorですか？,https://www.youtube.com/watch?v=Ig6X6VH15RY,,タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがItera*tor*ではありません。このようなPython組込のクラスの型について発表します。,Talk (15 minutes),15min,Pythonが大好きです！趣味も仕事もウェブアプリ開発です。CPythonとtypeshedにコントリビュートしました。,Room D,1,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがIteratorではありません。
+123,成瀬基樹,ListはIteratorですか？,https://www.youtube.com/watch?v=Ig6X6VH15RY,https://docs.google.com/presentation/d/1mXOBuUIG_jlyKwxO792Nk6WQphyts2uuerPkDarwGFg/edit?usp=sharing,タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがItera*tor*ではありません。このようなPython組込のクラスの型について発表します。,Talk (15 minutes),15min,Pythonが大好きです！趣味も仕事もウェブアプリ開発です。CPythonとtypeshedにコントリビュートしました。,Room D,1,5,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Best practices,"タイトルの「ListはIteratorですか？」の答えは「いいえ」です。ListはIterableですがIteratorではありません。
 本発表の主役は[typing](https://docs.python.org/ja/3/library/typing.html)、[collections.abc](https://docs.python.org/ja/3/library/collections.abc.html)、それと[mypy](http://mypy-lang.org/)です。
 Pythonにはintやlistといった様々な組込の型があります。本発表ではその中でもlist(typing.List)やdict(typing.Dict)といった、何かを保持するための型に特に焦点を合わせます。これらの型のうち、Pythonプログラマが最初に触れるのはlistやdictで、次にtuple(typing.Tuple)やset(typing.Set)、さらにiterator(typing.Iterator)と進むのが一般的だと思います。
 これらは静的型チェックを行っていなくても、効率の良いプログラムを書こうと考えれば意識することになることです。これらの型を知っている、使っているだけではなく、それらの関係が分かると静的型チェックやドキュメントに引数の型をうまく書けるようになります。
