@@ -45,7 +45,7 @@ v-dialog(v-model="dialog")
                 v-btn(small round flat  :href="session.presentation" target="_blank").pa-0.ma-0
                     v-icon(small) fas fa-tv
                     span.caption.pl-1 {{ $t("basic.presentation") }}
-        v-flex.sm1.md1.py-2.px-1.subheading.text-xs-center.clickable.detail(v-on="on")
+        v-flex.sm1.md1.py-2.px-1.subheading.text-xs-center.clickable.detail(v-on="on" @click="onClick")
           span.themeColor3--text.font-weight-bold {{ $t('sessions.detail') }}
 
   session-modal-window(:session="session" @close="dialog = false")
@@ -77,10 +77,54 @@ export default {
       return this.roomsMaster[this.session.room_id]
     },
     langOfSlideArray() {
-      return this.session.lang_of_slide === 'jpen' ? ['jp', 'en'] : [this.session.lang_of_slide]
+      return this.session.lang_of_slide === 'jpen'
+        ? ['jp', 'en']
+        : [this.session.lang_of_slide]
     },
     isPoster() {
       return this.session.talk_format_origin.match(/^Poster/)
+    }
+  },
+  methods: {
+    ClassForLevel(level) {
+      switch (level) {
+        case 'All':
+          return 'all'
+        case 'Beginner':
+          return 'beginner'
+        case 'Intermediate':
+          return 'intermediate'
+        case 'Advanced':
+          return 'advanced'
+        default:
+          break
+      }
+    },
+    onClick() {
+      this.addParamsToLocation({ sessionId: this.session.id })
+    },
+    addParamsToLocation(params) {
+      window.history.pushState(
+        {},
+        null,
+        this.$router.history.base +
+          this.$route.path +
+          '?' +
+          Object.keys(params)
+            .map(key => {
+              return (
+                encodeURIComponent(key) + '=' + encodeURIComponent(params[key])
+              )
+            })
+            .join('&')
+      )
+    }
+  },
+  watch: {
+    dialog(new_, old) {
+      if (!new_) {
+        window.history.go(-1)
+      }
     }
   }
 }
@@ -100,7 +144,7 @@ $green: hsl(143, 100%, 59%);
   cursor: pointer;
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 960px) {
   .detail {
     border-top: 1px solid $blueGrey2;
   }
