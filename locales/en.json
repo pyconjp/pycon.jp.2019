@@ -366,6 +366,7 @@
         "noSession": "This session doesn't exist"
     },
     "sessions": {
+        "title": "Sessions",
         "level": "Level",
         "lang_of_talk": "Language of Talk",
         "lang_of_slide": "Language of Slide",
