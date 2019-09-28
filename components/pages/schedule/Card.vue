@@ -83,7 +83,6 @@ export default {
             }
         },
         onClick() {
-            console.log(this)
             this.addParamsToLocation({sessionId: this.session.id})
         },
         addParamsToLocation(params) {

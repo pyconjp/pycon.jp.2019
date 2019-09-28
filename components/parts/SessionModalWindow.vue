@@ -201,6 +201,9 @@ $green: hsl(143, 100%, 59%);
     &--head {
       color: $themeColor3;
     }
+    ol {
+      line-height: 15px;
+    }
   }
   &__foot {
     border-top: 1px solid $themeColor3Transparent;

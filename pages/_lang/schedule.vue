@@ -12,7 +12,6 @@
       v-flex.xs6.text-md-center.tab(:class="activeDay === 2 ? 'active' : ''")
         v-btn(block flat @click="activeDay = 2" :class="activeDay === 2 ? 'themeColor3--text' : ''")
           tab-button(:day="$t('days.day2' )" date="09/17" :weekday="$t('weekday.tue' )" :isMobile="$vuetify.breakpoint.smAndDown")
-
     v-layout.tab-item
       v-flex.mt-2(v-if="activeDay === 1" :class="{'mt-5': $vuetify.breakpoint.mdAndUp}")
         time-table-day-1(:sessions="day1Sessions")
@@ -57,7 +56,7 @@ export default {
     TimeTableDay1,
     TimeTableDay2,
     TabButton,
-    SessionModalWindow,
+    SessionModalWindow
   },
   head(){
     return {

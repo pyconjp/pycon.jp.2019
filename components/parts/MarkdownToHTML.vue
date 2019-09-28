@@ -1,5 +1,5 @@
 <template lang="pug">
-v-flex(v-html="compiledText" class="description" style="white-space: pre-line;")
+v-flex(v-html="compiledText" class="description")
 </div>
 
 </template>
