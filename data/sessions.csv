@@ -108,7 +108,7 @@ id,name,title,youtube,presentation,abstract,talk_format_origin,talk_format,profi
   - Let's connect your bot with libraries and APIs
   - Automate your Boring Stuff with bot
 - Questions and Answers",Takanori Suzuki
-105,武山 文信,Excel と Python による社会インフラシステムの設定ファイルの自動生成,https://www.youtube.com/watch?v=kiAvupsuA6U,,"
+105,武山 文信,Excel と Python による社会インフラシステムの設定ファイルの自動生成,https://www.youtube.com/watch?v=kiAvupsuA6U,https://www.slideshare.net/FuminobuTAKEYAMA/excelpython,"
 Excelデータから設定ファイルを生成するツールを開発する際に用いた、ツールの配布方法、データクラスオブジェクトの作成方法、テンプレートエンジンによる設定ファイルの生成方法ついて説明する。",Talk (45 minutes),45min,東芝グループ内のソフトウェア開発部門のツール開発やプロセス改善などの支援と研究開発に従事,Room D,1,1,1005,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Intermediate,Best practices,"社会インフラシステムは、仕向け毎に仕様の一部が異なることが多く、仕様の差異を多数の設定パラメータとして管理することがある。このような設定パラメータはしばしば Excel を用いてドキュメント化され、同時に、マクロとして実装されたツールにより、アプリケーションが解釈可能な設定ファイルの生成が行われている。しかしながら、このようなツールにはソースコードとしてのマクロの構成管理の難しさや、継続的インテグレーション（CI）を実現するツールからの実行が困難などの課題がある。
 
 そこで、我々はある社会インフラシステムの向けに、Excel で管理された設定データをもとに、設定ファイルを生成するツールを Python で開発した。本発表では、ツールの開発で得られた以下の知見について述べる。
@@ -843,7 +843,7 @@ unittestにはないpytestの優れた点を紹介し、実例をまじえてuni
 
 本セッションでは、これら２つのVTuber像を構成する技術について紹介します。
 今回は特に、後者の""多重人格型VTuber""を構成する声質変換について、初心者にも分かりやすいように詳しく解説する予定です。",加藤皓也
-218,山入端孝浩,機械学習ライブラリのPython API作成方法,https://www.youtube.com/watch?v=8Lye_opsLVY,,Jupyter Notebook上で機械学習ライブラリを実行するためには、Python APIの作成が必要です。本発表では完成までの作業内容や注意点などを実体験に基づいてお話しします。,Talk (15 minutes),15min,NECソリューションイノベータ株式会社にて分析プラットフォームの開発に従事。最近はシステムテストを担当。,Convention Hall UME,2,4,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Machine learning and data science,"Jupyter Notebookはデータサイエンスの分野で広く利用されるようになっております。
+218,山入端孝浩,機械学習ライブラリのPython API作成方法,https://www.youtube.com/watch?v=8Lye_opsLVY,https://speakerdeck.com/tyamanohanec/ji-jie-xue-xi-raiburarifalsepython-apizuo-cheng-fang-fa-fa-biao-shi-pythonratupazuo-cheng-dechuan-etai2tufalsekoto,Jupyter Notebook上で機械学習ライブラリを実行するためには、Python APIの作成が必要です。本発表では完成までの作業内容や注意点などを実体験に基づいてお話しします。,Talk (15 minutes),15min,NECソリューションイノベータ株式会社にて分析プラットフォームの開発に従事。最近はシステムテストを担当。,Convention Hall UME,2,4,1003,日本語のみ/Japanese Only,日本語/Japanese,jp,jp,Beginner,Machine learning and data science,"Jupyter Notebookはデータサイエンスの分野で広く利用されるようになっております。
 しかし、Jupyter Notebook上では基本的にPython APIでライブラリを実行するため、
 Python APIを持たない機械学習ライブラリは扱いにくく敬遠されがちという問題があります。
 
@@ -1084,7 +1084,7 @@ Shonan.py(https://shonan-py.connpass.com/)というPython勉強会を定期的�
 2.「稟議に使えるPython市場データ解説。Python3エンジニア認定試験の解説も」一般社団法人Pythonエンジニア育成推進協会　代表理事：吉政忠志
 3.  「Who is Enthought?」　Enthought Inc. 髙味空也
 4. 「Lovot 開発における Go と Python」Groove X株式会社 林淳哉",
-502,Cory Althoff,Why Python is Eating the World,https://www.youtube.com/watch?v=Bcxz-jXMLZk,,コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。,Keynote,keynote,,,1,,,,,,,,,,
+502,Cory Althoff,Why Python is Eating the World,https://www.youtube.com/watch?v=Bcxz-jXMLZk,https://speakerdeck.com/pyconjp/why-python-is-eating-the-world,コーリー・アルソフは大学卒業後、プログラミングを独学する中で、Pythonを初めて知った。Pythonを独学した後、彼はeBayにソフトウェアエンジニアとして就職した。,Keynote,keynote,,,1,,,,,,,,,,
 503,小池 誠,Pythonで切り開く新しい農業,https://www.youtube.com/watch?v=0bTPOsVvG7g,https://www.slideshare.net/ikemkt/pyconjp2019python,"静岡県にある太平洋に面したのどかな町で農業を営んでいます。
 6年前までは組込みエンジニアとしてC言語を使った開発に携わっていましたが、退職を期にPythonを独学で学ぶことを始めました。",Keynote,keynote,,,2,,,,,,,,,,
 504,,ライトニングトーク,https://www.youtube.com/watch?v=7U2D5tcMZb4,,"1. petertc / Is your bot ALIVE? Monitor chatbot from a user's perspective
