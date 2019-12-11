@@ -14,5 +14,4 @@ $ yarn install
 ## Branch運用
 
 masterにPRを出してください。masterは常にデプロイ可能な状態を保ってください。
-
 本番にデプロイしたい場合はproductionにPRを切ってmergeしてください。(CircleCIでデプロイされます。)
