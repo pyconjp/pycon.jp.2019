@@ -21,7 +21,7 @@
     "@nuxtjs/vuetify": "0.5.5",
     "core-js": "3",
     "csv2json": "./scripts/csv2json",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "marked": "^0.7.0",
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
